@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema1_7_Selection
   m_EditorClassIdentifier: 
-  mainText: "\xBFPor qu\xE9 reportamos al Banco de M\xE9xico y CNBV?"
-  rightOption: Para que nos aprueben viajes espaciales
-  leftOption: "Porque son entidades que regulan nuestra operaci\xF3n"
-  rigthCorrect: 0
+  mainText: "\xBFY por qu\xE9 reportamos al Banco de M\xE9xico y CNBV?"
+  rightOption: "Porque son entidades que regulan nuestra operaci\xF3n"
+  leftOption: "Para que nos aprueben la tecnolog\xEDa de viajes espaciales"
+  rigthCorrect: 1
   feedbackCorrect: {fileID: 11400000, guid: 1f6ee5537cbffc34585f48ebd635d65c, type: 2}
   feedbackIncorrect: {fileID: 11400000, guid: e1f061f4389434e4fb18ac92fb238b9a, type: 2}

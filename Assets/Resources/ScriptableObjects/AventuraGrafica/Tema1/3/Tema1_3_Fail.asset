@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Tema1_3_Fail
   m_EditorClassIdentifier: 
   mainText: "\xA1Error! \u26A0\uFE0F\nEl ENJAMBRE se acerca. El Gobierno de Ciberseguridad
-    en Profuturo busca garantizar\u2026\n\nLa triada CID: Confidencialidad, Integridad
+    en Profuturo busca garantizar\u2026\n\nLa tr\xEDada CID: Confidencialidad, Integridad
     y Disponibilidad de la informaci\xF3n."
-  rightOption: Vamos
+  rightOption: "\xA1Perfecto!"
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: 8d075ab6647c55c48a6c7118628aba34, type: 2}

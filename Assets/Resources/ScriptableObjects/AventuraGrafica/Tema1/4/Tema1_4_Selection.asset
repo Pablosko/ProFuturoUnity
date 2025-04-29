@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema1_4_Selection
   m_EditorClassIdentifier: 
-  mainText: "\xBFCu\xE1l es el VERDADERO prop\xF3sito gobierno de ciberseguridad?"
+  mainText: "\xBFCu\xE1l es el VERDADERO prop\xF3sito de gobierno de ciberseguridad?"
   rightOption: "\xBFEstablecer defensas s\xF3lidas?"
   leftOption: "\xBFCrear un sistema de burocracia?"
   rigthCorrect: 1

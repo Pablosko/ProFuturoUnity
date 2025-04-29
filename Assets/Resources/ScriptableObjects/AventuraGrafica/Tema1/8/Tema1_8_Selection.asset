@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema1_8_Selection
   m_EditorClassIdentifier: 
-  mainText: "\xBFPor qu\xE9 reportamos al Banco de M\xE9xico y CNBV?"
-  rightOption: Para que nos aprueben viajes espaciales
-  leftOption: "Porque son entidades que regulan nuestra operaci\xF3n"
-  rigthCorrect: 0
+  mainText: "\xBFSabr\xEDas decirme qu\xE9 significa CISO?"
+  rightOption: CISO (Chief Information Security Officer)
+  leftOption: CISO (Cyber Information Security Omnicanal)
+  rigthCorrect: 1
   feedbackCorrect: {fileID: 11400000, guid: 776ed808b719cb742af08313dcdc086e, type: 2}
   feedbackIncorrect: {fileID: 11400000, guid: 4d62426731f38da4b94f9014ae0ae931, type: 2}

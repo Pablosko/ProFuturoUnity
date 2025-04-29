@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema1_8_Correct
   m_EditorClassIdentifier: 
-  mainText: "\xA1Correcto! \u270B\nSon como los c\xF3digos interestelares que debemos
-    seguir como galaxia.\n\nAs\xED, nos aseguramos el cumplimiento ante entidades
-    normativas a las que estamos sujetos como por ejemplo (Banco de Mexico, INDEVAL,
-    CNBV, CONSAR, CNSF, etc)"
+  mainText: "\xA1Correcto! \u270B \xA1Est\xE1s en todo Guardi\xE1n!\nUn CISO es el
+    responsable de seguridad de la informaci\xF3n de la organizaci\xF3n.\n\nY est\xE1
+    respaldado por tres gerencias: 'Gobierno de ciberseguridad', 'Ciberseguridad'
+    y 'Control de Accesos y Continuidad'."
   rightOption: "\xA1Perfecto!"
   leftOption: 
   rigthCorrect: 0

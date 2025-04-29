@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
-  m_Name: Tema1_11_Screen
+  m_Name: Tema1_10_Screen
   m_EditorClassIdentifier: 
   mainText: "\xA1As\xED se hace, Guardi\xE1n! \U0001F31FHas identificado el coraz\xF3n
-    de nuestra defensa...\nPeeeero, \xA1\xA1espera un momento!!"
-  rightOption: Continuar
+    de nuestra defensa... Peeeero, \xA1\xA1espera un momento!!"
+  rightOption: "\xBFQu\xE9 pas\xF3 CRYPTO?"
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 0}

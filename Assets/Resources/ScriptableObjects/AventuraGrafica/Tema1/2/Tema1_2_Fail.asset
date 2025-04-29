@@ -16,7 +16,7 @@ MonoBehaviour:
     de ciberseguridad...\n\nEs el conjunto de estrategias, pol\xEDticas, procesos
     y controles que protegen los activos de informaci\xF3n e infraestructuras tecnol\xF3gicas
     frente a amenazas."
-  rightOption: "\xA1Perfecto!"
+  rightOption: Siguiente
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: ee5fe486b41c32846a686aa6c911a4ca, type: 2}

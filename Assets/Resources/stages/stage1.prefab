@@ -180,6 +180,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -3.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5727015630691445042, guid: 0649f0af9ca193e4a85109034d7abb39, type: 3}
+      propertyPath: aura
+      value: 
+      objectReference: {fileID: 5528212856753770250}
     - target: {fileID: 6544951616587939864, guid: 0649f0af9ca193e4a85109034d7abb39, type: 3}
       propertyPath: m_IsActive
       value: 0

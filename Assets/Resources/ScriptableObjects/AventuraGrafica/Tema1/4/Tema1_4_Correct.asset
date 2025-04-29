@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Tema1_4_Correct
   m_EditorClassIdentifier: 
   mainText: "\xA1Genial, Guardi\xE1n! \u270B\nLa verdadera meta de nuestro gobierno
-    de ciberseguridad es...\n\nProtecci\xF3n \xE1gil y estructura s\xF3lida que proteja
-    nuestra informaci\xF3n, minimice riesgos y fortalezca nuestra reacci\xF3n ante
-    amenazas digitales."
-  rightOption: Continuar
+    de ciberseguridad es...\n\nContar con una estructura s\xF3lida para proteger
+    \xE1gilmente nuestra informaci\xF3n, minimizar riesgos y fortalecer nuestra reacci\xF3n
+    ante amenazas digitales."
+  rightOption: Adelante
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: 19e4474d19c32c940b05df128fdf5707, type: 2}

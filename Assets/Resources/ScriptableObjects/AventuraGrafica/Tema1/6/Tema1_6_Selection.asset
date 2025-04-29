@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema1_6_Selection
   m_EditorClassIdentifier: 
-  mainText: "Un asteroide (riesgo) se acerca. \xBFQu\xE9 har\xEDa PRIMERO el \xE1rea
-    Gesti\xF3n de Riesgos?"
-  rightOption: "Esperar a que impacte para medir da\xF1os"
-  leftOption: Analizar su trayectoria y activar escudos
-  rigthCorrect: 0
+  mainText: "Estamos pasando cerca de un planeta, queremos evitar colisionar con
+    los meteoros. \xBFQu\xE9 har\xEDa PRIMERO el \xE1rea Gesti\xF3n de Riesgos?"
+  rightOption: Minimizar la probabilidad de impacto activando los escudos
+  leftOption: Aceptar que inevitablemente nos va a afectar
+  rigthCorrect: 1
   feedbackCorrect: {fileID: 11400000, guid: cb4375f568796a64ab5eadaaf75b46ac, type: 2}
   feedbackIncorrect: {fileID: 11400000, guid: 44cfc822077314242936060322812ed3, type: 2}

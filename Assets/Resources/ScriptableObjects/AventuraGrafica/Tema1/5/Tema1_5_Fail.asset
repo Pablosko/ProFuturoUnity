@@ -15,7 +15,7 @@ MonoBehaviour:
   mainText: "\xA1Cuidado, Guardi\xE1n! \u26A0\uFE0F\nLa autonom\xEDa sin coordinaci\xF3n
     es caos.\n\nProteger la integridad, disponibilidad y confidencialidad de la informaci\xF3n
     dentro de la compa\xF1\xEDa."
-  rightOption: Vamos
+  rightOption: Entendido
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: d765c03548fff724ba46814785d607c3, type: 2}

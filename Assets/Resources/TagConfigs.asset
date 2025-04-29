@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tags:
   - tagName: yellow
-    color: {r: 0.8396226, g: 0.62735665, b: 0.13861692, a: 0}
+    color: {r: 0.8113208, g: 0.6046636, b: 0.12629052, a: 0}
   - tagName: blue
     color: {r: 0.11725702, g: 0.3537989, b: 0.8018868, a: 0}

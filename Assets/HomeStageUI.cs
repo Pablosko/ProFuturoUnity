@@ -14,6 +14,7 @@ public class HomeStageUI : MonoBehaviour
     public Button navigateButton;
     public UnityEvent startEvent;
     public GameObject miniGame;
+    public GameObject aura;
     public int temario;
     public SubSequenceManager subsequenceManager;
     void Awake()
@@ -29,6 +30,7 @@ public class HomeStageUI : MonoBehaviour
     {
         animator.SetBool("Clickable", true);
         animator.SetBool("Unlocked", false);
+        aura.SetActive(true);
 
     }
     public void MoveTo() 

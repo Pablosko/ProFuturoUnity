@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema1_7_Fail
   m_EditorClassIdentifier: 
-  mainText: "\xA1Casi! \u26A0\uFE0F\nEs por cumplir regulaciones de seguridad financiera\u2026\n\nAs\xED,
-    nos aseguramos el cumplimiento ante entidades normativas a las que estamos sujetos
-    como por ejemplo (Banco de Mexico, INDEVAL, CNBV, CONSAR, CNSF, etc)"
+  mainText: "\xA1Casi! \u26A0\uFE0F\nEllos regulan operaciones de seguridad financieras,
+    no tecnol\xF3gicas.\n\nAs\xED, nos aseguramos el cumplimiento ante entidades
+    normativas a las que estamos sujetos, como Banco de M\xE9xico, INDEVAL, CNBV,
+    CONSAR, CNSF, etc."
   rightOption: Continuar
   leftOption: 
   rigthCorrect: 0

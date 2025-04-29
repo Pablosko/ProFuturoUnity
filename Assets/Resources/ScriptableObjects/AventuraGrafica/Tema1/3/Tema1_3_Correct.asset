@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema1_3_Correct
   m_EditorClassIdentifier: 
-  mainText: "\xA1Bingo! \u270B\nSin esta triada, los datos ser\xEDan como planetas
-    sin atm\xF3sfera.\n\nEl ENJAMBRE los devorar\xEDa. La triada CID: Confidencialidad,
-    Integridad y Disponibilidad de la informaci\xF3n."
-  rightOption: Vamos
+  mainText: "\xA1Bingo! \u270B\nSin esta tr\xEDada, los datos ser\xEDan como planetas
+    sin atm\xF3sfera.\n\nLa tr\xEDada CID: Confidencialidad, Integridad y Disponibilidad
+    de la informaci\xF3n."
+  rightOption: "\xA1Perfecto!"
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: 8d075ab6647c55c48a6c7118628aba34, type: 2}

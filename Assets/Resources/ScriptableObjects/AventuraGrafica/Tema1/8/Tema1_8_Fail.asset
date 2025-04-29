@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema1_8_Fail
   m_EditorClassIdentifier: 
-  mainText: "\xA1Casi! \u26A0\uFE0F\nEs por cumplir regulaciones de seguridad financiera\u2026\n\nAs\xED,
-    nos aseguramos el cumplimiento ante entidades normativas a las que estamos sujetos
-    como por ejemplo (Banco de Mexico, INDEVAL, CNBV, CONSAR, CNSF, etc)"
-  rightOption: Continuar
+  mainText: "\xA1Vaya, no es por ah\xED! \u26A0\uFE0F\nEl t\xE9rmino CISO significa:
+    Chief Information Security Officer\n\nUn CISO es el responsable de seguridad
+    de la informaci\xF3n de la organizaci\xF3n. Y est\xE1 respaldado por tres gerencias:
+    'Gobierno de ciberseguridad', 'Ciberseguridad' y 'Control de Accesos y Continuidad'."
+  rightOption: Vamos
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: bc334153325018b49b4890226a9cdb6a, type: 2}

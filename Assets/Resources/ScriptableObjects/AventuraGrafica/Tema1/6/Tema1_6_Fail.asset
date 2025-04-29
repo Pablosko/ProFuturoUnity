@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema1_6_Fail
   m_EditorClassIdentifier: 
-  mainText: "\xA1El ENJAMBRE festejar\xEDa! \u26A0\uFE0F\nPrimero se identifica 
-    y mitiga, no se reacciona tarde.\n\nEs justo lo que hace la Gesti\xF3n de Riesgos,
-    busca identificar y mitigar la posibilidad de que una amenaza pueda afectar a
-    nuestra galaxia."
-  rightOption: Adelante
+  mainText: "\xA1El ENJAMBRE festejar\xEDa! \u26A0\uFE0F\nAceptar es la \xFAltima
+    carta que debemos tomar.\n\nEs justo lo que hace la Gesti\xF3n de Riesgos, busca
+    identificar y mitigar la posibilidad de que una amenaza pueda afectar a nuestra
+    galaxia."
+  rightOption: Continuar
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: eb56debe2347ed74bafea36b883929d9, type: 2}

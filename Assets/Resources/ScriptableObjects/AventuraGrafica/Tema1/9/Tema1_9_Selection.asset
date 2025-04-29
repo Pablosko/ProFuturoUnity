@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema1_9_Selection
   m_EditorClassIdentifier: 
-  mainText: "\xBFSabr\xEDas decirme qu\xE9 significa CISO?"
-  rightOption: CISO (Chief Information Security Officer)
-  leftOption: CISO (Cyber Information Security Omnicanal)
+  mainText: "La Gerencia de Ciberseguridad es como nuestros 'hackers \xE9ticos'.
+    \xBFQu\xE9 acci\xF3n realizan?"
+  rightOption: "\xBFSimular ciberataques para probar defensas?"
+  leftOption: "\xBFDeterminar los requisitos operativos de hardware para los equipos
+    nuevos?"
   rigthCorrect: 1
   feedbackCorrect: {fileID: 11400000, guid: 614e67e34e6874e4388b8836a96b30be, type: 2}
   feedbackIncorrect: {fileID: 11400000, guid: aa6f6abfc811c0e4a998fecd63d0580b, type: 2}

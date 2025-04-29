@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Tema1_2_Selection
   m_EditorClassIdentifier: 
   mainText: "\xBFQu\xE9 crees que incluye el gobierno de ciberseguridad?"
-  rightOption: "\xBFTecnolog\xEDa como firewalls?"
-  leftOption: "\xBFPol\xEDticas y procesos?"
-  rigthCorrect: 0
+  rightOption: "\xBFPol\xEDticas y procesos?"
+  leftOption: "\xBFTecnolog\xEDa como firewalls?"
+  rigthCorrect: 1
   feedbackCorrect: {fileID: 11400000, guid: cfd15e7f997c1f7479fe49d7c3451f9e, type: 2}
   feedbackIncorrect: {fileID: 11400000, guid: 78273a796ad1a1444a547a9e44b15a6e, type: 2}

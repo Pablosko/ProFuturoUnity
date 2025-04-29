@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema1_9_Fail
   m_EditorClassIdentifier: 
-  mainText: "\xA1Pues no! \u26A0\uFE0F\nEl t\xE9rmino CISO significa: Chief Information
-    Security Officer\n\nUn CISO es el director de seguridad de la informaci\xF3n
-    de la organizaci\xF3n. Adem\xE1s trabaja con tres gerencias m\xE1s: \u201CGobierno
-    de ciberseguridad\u201D, \u201CCiberseguridad\u201D, \u201CControl de Accesos
-    y Continuidad\u201D"
+  mainText: "\xA1Error! \u26A0\uFE0F\nAunque afecta a seguridad, eso lo define TI.\n\nNuestro
+    equipo de ciberseguridad vela porque nuestros controles de seguridad est\xE9n
+    siempre al nivel que nuestra nave requiere. Se encargan de detectar amenazas
+    y establecer estrategias para evitar alg\xFAn impacto en Profuturo, incluso,
+    est\xE1 capacitado para pensar como atacante."
   rightOption: "\xA1Perfecto!"
   leftOption: 
   rigthCorrect: 0
-  feedbackCorrect: {fileID: 11400000, guid: 630c075929b063a40a06e00597330251, type: 2}
+  feedbackCorrect: {fileID: 11400000, guid: 5b7e52def13db5d4e8f9b2c1c8067101, type: 2}
   feedbackIncorrect: {fileID: 0}

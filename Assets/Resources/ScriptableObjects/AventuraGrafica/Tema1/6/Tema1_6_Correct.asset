@@ -15,7 +15,7 @@ MonoBehaviour:
   mainText: "\xA1Bingo! \u270B\nAs\xED evitamos que +90% de amenazas lleguen a Profuturo.\n\nEs
     justo lo que hace la Gesti\xF3n de Riesgos, busca identificar y mitigar la posibilidad
     de que una amenaza pueda afectar a nuestra galaxia."
-  rightOption: "\xA1Perfecto!"
+  rightOption: Siguiente
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: eb56debe2347ed74bafea36b883929d9, type: 2}

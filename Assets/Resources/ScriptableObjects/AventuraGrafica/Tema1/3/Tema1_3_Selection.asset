@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Tema1_3_Selection
   m_EditorClassIdentifier: 
   mainText: "\xBFQu\xE9 'defiende' nuestro Gobierno de Ciberseguridad en Profuturo?"
-  rightOption: "\xBFProteger nuestros servidores f\xEDsicos?"
-  leftOption: "\xBFLa triada CID?"
-  rigthCorrect: 0
+  rightOption: "\xBFLa tr\xEDada CID?"
+  leftOption: "\xBFProteger nuestros servidores f\xEDsicos?"
+  rigthCorrect: 1
   feedbackCorrect: {fileID: 11400000, guid: eb386f1d0dd442747955589e8342bcb6, type: 2}
   feedbackIncorrect: {fileID: 11400000, guid: e5dee9a5520e62d4383406c65203df90, type: 2}
