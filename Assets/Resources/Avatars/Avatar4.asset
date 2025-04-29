@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 490455e426cf37442bea2b563346ecf8, type: 3}
+  m_Name: Avatar4
+  m_EditorClassIdentifier: 
+  avatarName: NOVA
+  info: "Perfil operativo - Guardi\xE1n de la tripulaci\xF3n\n\_\nEs un maestro del
+    control de acceso. La continuidad y arquitectura de seguridad ha perfeccionado
+    sus habilidades en diferentes planetas. En situaciones de emergencia, su dominio
+    sobre la continuidad operativa le permite restaurar sistemas en cuesti\xF3n de
+    minutos, manteniendo a la tripulaci\xF3n de los Guardianes a salvo de cualquier
+    ataque cibern\xE9tico que amenace con destruir la galaxia.\n\_\nFrase \xE9pica:
+    \"En un cosmos donde todo puede colapsar en un segundo, recuerda esto: No hay
+    acceso sin permiso, ni futuro sin seguridad.\"\n\_\nFortaleza clave: Sensibilidad
+    al negocio para mantener su continuidad y riguroso al momento de determinar el
+    acceso del equipo."
+  fullSprite: {fileID: 21300000, guid: 62e9f33ef38d09240b963b6370582ca6, type: 3}
+  headerSprite: {fileID: 21300000, guid: 89853090e30d8134a8e52acb605117e9, type: 3}

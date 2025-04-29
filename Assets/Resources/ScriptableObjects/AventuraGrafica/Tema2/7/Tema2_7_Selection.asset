@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
+  m_Name: Tema2_7_Selection
+  m_EditorClassIdentifier: 
+  mainText: "Un colega de la galaxia te pide ver un informe confidencial que no es
+    de su \xE1rea. \xBFSe lo muestras?"
+  rightOption: "S\xED"
+  leftOption: No
+  rigthCorrect: 0
+  feedbackCorrect: {fileID: 11400000, guid: ee2b6372a1ec0a747b758839b2b11ebd, type: 2}
+  feedbackIncorrect: {fileID: 11400000, guid: e17a1d426dcf57c4689f730c6a17610c, type: 2}

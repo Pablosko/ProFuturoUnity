@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
+  m_Name: Tema2_9_Selection
+  m_EditorClassIdentifier: 
+  mainText: "Terminaste un reporte gal\xE1ctico importante. \xBFLo guardas en la
+    carpeta general sin etiquetar?"
+  rightOption: "S\xED"
+  leftOption: No
+  rigthCorrect: 0
+  feedbackCorrect: {fileID: 11400000, guid: 06a1fd54989fa9d488253ac71b2e7ab1, type: 2}
+  feedbackIncorrect: {fileID: 11400000, guid: 3954677ca3d005b4cb1ced473781d0de, type: 2}

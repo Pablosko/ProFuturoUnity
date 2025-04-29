@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
+  m_Name: Tema1_9_Correct
+  m_EditorClassIdentifier: 
+  mainText: "\xA1Correcto! \u270B \xA1Est\xE1s en todo Guardi\xE1n!\nUn CISO es el
+    director de seguridad de la informaci\xF3n de la organizaci\xF3n.\n\nAdem\xE1s
+    trabaja con tres gerencias m\xE1s: \u201CGobierno de ciberseguridad\u201D, \u201CCiberseguridad\u201D,
+    \u201CControl de Accesos y Continuidad\u201D"
+  rightOption: Siguiente
+  leftOption: 
+  rigthCorrect: 0
+  feedbackCorrect: {fileID: 11400000, guid: 630c075929b063a40a06e00597330251, type: 2}
+  feedbackIncorrect: {fileID: 0}

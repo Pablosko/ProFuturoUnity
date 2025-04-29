@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
+  m_Name: Tema1_5_Fail
+  m_EditorClassIdentifier: 
+  mainText: "\xA1Cuidado, Guardi\xE1n! \u26A0\uFE0F\nLa autonom\xEDa sin coordinaci\xF3n
+    es caos.\n\nProteger la integridad, disponibilidad y confidencialidad de la informaci\xF3n
+    dentro de la compa\xF1\xEDa."
+  rightOption: Vamos
+  leftOption: 
+  rigthCorrect: 0
+  feedbackCorrect: {fileID: 11400000, guid: d765c03548fff724ba46814785d607c3, type: 2}
+  feedbackIncorrect: {fileID: 0}

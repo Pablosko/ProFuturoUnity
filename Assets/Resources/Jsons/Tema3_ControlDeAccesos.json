@@ -1,0 +1,38 @@
+[
+  {
+    "id": "3.1.1.1",
+    "hasScreen": true,
+    "screenText": "¡Bienvenido(a) al tercer desafío, Guardián! Antes de entregarte la Insignia del Guardián de los Portales, debes superar tu conocimiento en Controles de Acceso y ser más astuto(a) que el hacker estelar.",
+    "screenButtonText": "¡Perfecto!"
+  },
+  {
+    "id": "3.1.1.2",
+    "hasScreen": true,
+    "screenText": "¡Guardián! Cómo sabes, resguardar nuestros activos digitales de la galaxia Profuturo es más que fundamental para nuestra seguridad diaria cósmica…",
+    "screenButtonText": "¡Claro!"
+  },
+  {
+    "id": "3.1.1.3",
+    "hasScreen": true,
+    "screenText": "Por ello, nos reservamos el derecho de admisión al acceso de nuestras aplicaciones y con ello, mantener la confidencialidad e integridad galáctica de la información…",
+    "screenButtonText": "¡Entiendo!"
+  },
+  {
+    "id": "3.1.1.4",
+    "hasScreen": true,
+    "screenText": "¡Si te parece Guardián! A continuación te mostraré sus principales aspectos:\n\nAutenticación: Esta es la verificación de la identidad galáctica del usuario que intenta acceder. Puede ser mediante contraseñas, huellas dactilares, reconocimiento facial, tarjetas de acceso, etc.",
+    "screenButtonText": "¡Bien, lo capto!"
+  },
+  {
+    "id": "3.1.1.5",
+    "hasScreen": true,
+    "screenText": "Autorización: Esto es la determinación de qué acciones o recursos están permitidos para un usuario galáctico una vez autenticado. Se basa en políticas, perfiles o permisos asignados.",
+    "screenButtonText": "Segundo aspecto, ¡entendido!"
+  },
+  {
+    "id": "3.1.1.6",
+    "hasScreen": true,
+    "screenText": "Para poderte autorizar el acceso a la siguiente fase del programa de entrenamiento es necesario que conozcas a OKTA, nuestra plataforma de gestión de Identidades y accesos. ¿Estas listo/a?",
+    "screenButtonText": "¿OKTA? ¡Sí, cuéntame más!"
+  }
+]

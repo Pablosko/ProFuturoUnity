@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
+  m_Name: Tema1_10_Fail
+  m_EditorClassIdentifier: 
+  mainText: "\xA1Error! \u26A0\uFE0F\nAunque afecta a seguridad, eso lo define TI.\n\nNuestra
+    Ciberseguridad vela por nuestros niveles de seguridad, detecta amenazas y establece
+    estrategias para evitar alg\xFAn impacto en Profuturo. Incluso, piensa como atacante."
+  rightOption: "\xA1Perfecto!"
+  leftOption: 
+  rigthCorrect: 0
+  feedbackCorrect: {fileID: 11400000, guid: 3f84c9c7b1489b14ca6a42e246c09600, type: 2}
+  feedbackIncorrect: {fileID: 0}

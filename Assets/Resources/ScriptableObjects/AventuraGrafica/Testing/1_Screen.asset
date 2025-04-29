@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
+  m_Name: 1_Screen
+  m_EditorClassIdentifier: 
+  mainText: "\xA1Bienvenido(a) al primer desaf\xEDo, Guardi\xE1n! Antes de entregarte
+    la Insignia del Gobierno Cibern\xE9tico, debo probar tu conocimiento en Gobierno
+    de Ciberseguridad. Cada respuesta incorrecta... alimenta al ENJAMBRE. \xA1Elige
+    sabiamente!"
+  rightOption: "\xA1Perfecto!"
+  leftOption: 
+  rigthCorrect: 0
+  feedbackCorrect: {fileID: 11400000, guid: 426675e3a182c114681713e53ae706d9, type: 2}
+  feedbackIncorrect: {fileID: 0}

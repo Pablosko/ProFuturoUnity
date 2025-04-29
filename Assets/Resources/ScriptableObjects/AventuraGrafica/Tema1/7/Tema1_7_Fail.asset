@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
+  m_Name: Tema1_7_Fail
+  m_EditorClassIdentifier: 
+  mainText: "\xA1Casi! \u26A0\uFE0F\nEs por cumplir regulaciones de seguridad financiera\u2026\n\nAs\xED,
+    nos aseguramos el cumplimiento ante entidades normativas a las que estamos sujetos
+    como por ejemplo (Banco de Mexico, INDEVAL, CNBV, CONSAR, CNSF, etc)"
+  rightOption: Continuar
+  leftOption: 
+  rigthCorrect: 0
+  feedbackCorrect: {fileID: 11400000, guid: 5117011c26bb49748b77251a9546647b, type: 2}
+  feedbackIncorrect: {fileID: 0}

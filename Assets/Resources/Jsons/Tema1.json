@@ -1,0 +1,167 @@
+[
+  {
+    "id": "1.1.0",
+    "hasScreen": true,
+    "screenText": "¡Bienvenido(a) al primer desafío, Guardián! Antes de entregarte la Insignia del Gobierno Cibernético, debo probar tu conocimiento en Gobierno de Ciberseguridad. Cada respuesta incorrecta... alimenta al ENJAMBRE. ¡Elige sabiamente!",
+    "screenButtonText": "¡Perfecto!"
+  },
+  {
+    "id": "1.1.1",
+    "question": "¿Qué crees que incluye el gobierno de ciberseguridad?",
+    "leftOption": "¿Tecnología como firewalls?",
+    "rightOption": "¿Políticas y procesos?",
+    "rightIsCorrect": true,
+    "feedbackCorrect": {
+      "title": "¡Exacto! ✋ La ciberseguridad no es solo tecnología, sino…",
+      "text": "Es el conjunto de estrategias, políticas, procesos y controles que protegen los activos de información e infraestructuras tecnológicas frente a amenazas.",
+      "detail": ""
+    },
+    "feedbackIncorrect": {
+      "title": "¡Casi! Pero no solo...",
+      "text": "Los firewalls son herramientas, el gobierno de ciberseguridad...",
+      "detail": "Es el conjunto de estrategias, políticas, procesos y controles que protegen los activos de información e infraestructuras tecnológicas frente a amenazas."
+    }
+  },
+  {
+    "id": "1.1.2",
+    "question": "¿Qué 'defiende' nuestro Gobierno de Ciberseguridad en Profuturo?",
+    "leftOption": "¿Proteger nuestros servidores físicos?",
+    "rightOption": "¿La triada CID?",
+    "rightIsCorrect": true,
+    "feedbackCorrect": {
+      "title": "¡Bingo! ✋",
+      "text": "Sin esta triada, los datos serían como planetas sin atmósfera.",
+      "detail": "El ENJAMBRE los devoraría. La triada CID: Confidencialidad, Integridad y Disponibilidad de la información."
+    },
+    "feedbackIncorrect": {
+      "title": "¡Error! ⚠️",
+      "text": "El ENJAMBRE se acerca. El Gobierno de Ciberseguridad en Profuturo busca garantizar…",
+      "detail": "La triada CID: Confidencialidad, Integridad y Disponibilidad de la información."
+    }
+  },
+  {
+    "id": "1.1.3",
+    "question": "¿Cuál es el VERDADERO propósito gobierno de ciberseguridad?",
+    "leftOption": "¿Crear un sistema de burocracia?",
+    "rightOption": "¿Establecer defensas sólidas?",
+    "rightIsCorrect": true,
+    "feedbackCorrect": {
+      "title": "¡Genial, Guardián! ✋",
+      "text": "La verdadera meta de nuestro gobierno de ciberseguridad es...",
+      "detail": "Protección ágil y estructura sólida que proteja nuestra información, minimice riesgos y fortalezca nuestra reacción ante amenazas digitales."
+    },
+    "feedbackIncorrect": {
+      "title": "¡Alerta crítica, Guardián! ⚠️",
+      "text": "El ENJAMBRE ama los trámites lentos. La verdadera meta de nuestro gobierno de ciberseguridad es...",
+      "detail": "Protección ágil y estructura sólida que proteja nuestra información, minimice riesgos y fortalezca nuestra reacción ante amenazas digitales."
+    }
+  },
+  {
+    "id": "1.1.4",
+    "question": "Nuestra Política de Seguridad de la Información es como el manual de vuelo de la nave. ¿Qué garantiza?",
+    "leftOption": "Que todos los departamentos tengan independencia total",
+    "rightOption": "Confidencialidad de la información dentro de la compañía",
+    "rightIsCorrect": true,
+    "feedbackCorrect": {
+      "title": "¡Exacto, Guardián! ✋",
+      "text": "En Profuturo contamos con una política de Seguridad de la Información que nos ayuda a...",
+      "detail": ""
+    },
+    "feedbackIncorrect": {
+      "title": "¡Cuidado, Guardián! ⚠️",
+      "text": "La autonomía sin coordinación es caos.",
+      "detail": "Proteger la integridad, disponibilidad y confidencialidad de la información dentro de la compañía."
+    }
+  },
+  {
+    "id": "1.1.5",
+    "question": "Un asteroide (riesgo) se acerca. ¿Qué haría PRIMERO el área Gestión de Riesgos?",
+    "leftOption": "Esperar a que impacte para medir daños",
+    "rightOption": "Analizar su trayectoria y activar escudos",
+    "rightIsCorrect": true,
+    "feedbackCorrect": {
+      "title": "¡Bingo! ✋",
+      "text": "Así evitamos que +90% de amenazas lleguen a Profuturo.",
+      "detail": "Es justo lo que hace la Gestión de Riesgos, busca identificar y mitigar la posibilidad de que una amenaza pueda afectar a nuestra galaxia."
+    },
+    "feedbackIncorrect": {
+      "title": "¡El ENJAMBRE festejaría! ⚠️",
+      "text": "Primero se identifica  y mitiga, no se reacciona tarde.",
+      "detail": "Es justo lo que hace la Gestión de Riesgos, busca identificar y mitigar la posibilidad de que una amenaza pueda afectar a nuestra galaxia."
+    }
+  },
+  {
+    "id": "1.1.6",
+    "question": "¿Por qué reportamos al Banco de México y CNBV?",
+    "leftOption": "Para que nos aprueben viajes espaciales",
+    "rightOption": "Porque son entidades que regulan nuestra operación",
+    "rightIsCorrect": true,
+    "feedbackCorrect": {
+      "title": "¡Correcto! ✋",
+      "text": "Son como los códigos interestelares que debemos seguir como galaxia.",
+      "detail": "Así, nos aseguramos el cumplimiento ante entidades normativas a las que estamos sujetos como por ejemplo (Banco de Mexico, INDEVAL, CNBV, CONSAR, CNSF, etc)"
+    },
+    "feedbackIncorrect": {
+      "title": "¡Casi! ⚠️",
+      "text": "Es por cumplir regulaciones de seguridad financiera…",
+      "detail": "Así, nos aseguramos el cumplimiento ante entidades normativas a las que estamos sujetos como por ejemplo (Banco de Mexico, INDEVAL, CNBV, CONSAR, CNSF, etc)"
+    }
+  },
+  {
+    "id": "1.1.7",
+    "question": "¿Por qué reportamos al Banco de México y CNBV?",
+    "leftOption": "Para que nos aprueben viajes espaciales",
+    "rightOption": "Porque son entidades que regulan nuestra operación",
+    "rightIsCorrect": true,
+    "feedbackCorrect": {
+      "title": "¡Correcto! ✋",
+      "text": "Son como los códigos interestelares que debemos seguir como galaxia.",
+      "detail": "Así, nos aseguramos el cumplimiento ante entidades normativas a las que estamos sujetos como por ejemplo (Banco de Mexico, INDEVAL, CNBV, CONSAR, CNSF, etc)"
+    },
+    "feedbackIncorrect": {
+      "title": "¡Casi! ⚠️",
+      "text": "Es por cumplir regulaciones de seguridad financiera…",
+      "detail": "Así, nos aseguramos el cumplimiento ante entidades normativas a las que estamos sujetos como por ejemplo (Banco de Mexico, INDEVAL, CNBV, CONSAR, CNSF, etc)"
+    }
+  },
+  {
+    "id": "1.1.8",
+    "question": "¿Sabrías decirme qué significa CISO?",
+    "leftOption": "CISO (Cyber Information Security Omnicanal)",
+    "rightOption": "CISO (Chief Information Security Officer)",
+    "rightIsCorrect": true,
+    "feedbackCorrect": {
+      "title": "¡Correcto! ✋ ¡Estás en todo Guardián!",
+      "text": "Un CISO es el director de seguridad de la información de la organización.",
+      "detail": "Además trabaja con tres gerencias más: “Gobierno de ciberseguridad”, “Ciberseguridad”, “Control de Accesos y Continuidad”"
+    },
+    "feedbackIncorrect": {
+      "title": "¡Pues no! ⚠️",
+      "text": "El término CISO significa: Chief Information Security Officer",
+      "detail": "Un CISO es el director de seguridad de la información de la organización. Además trabaja con tres gerencias más: “Gobierno de ciberseguridad”, “Ciberseguridad”, “Control de Accesos y Continuidad”"
+    }
+  },
+  {
+    "id": "1.1.9",
+    "question": "La Gerencia de Ciberseguridad es como nuestros 'hackers éticos'. ¿Qué acción realizan?",
+    "leftOption": "¿Determinar los requisitos de hardware para los equipos nuevos?",
+    "rightOption": "¿Simular ciberataques para probar defensas?",
+    "rightIsCorrect": true,
+    "feedbackCorrect": {
+      "title": "¡Genial! ✋ ¡Qué bien pensaste!",
+      "text": "Nuestra Ciberseguridad vela por nuestros niveles de seguridad, detecta amenazas y establece estrategias para evitar algún impacto en Profuturo.",
+      "detail": "Incluso, piensa como atacante."
+    },
+    "feedbackIncorrect": {
+      "title": "¡Error! ⚠️",
+      "text": "Aunque afecta a seguridad, eso lo define TI.",
+      "detail": "Nuestra Ciberseguridad vela por nuestros niveles de seguridad, detecta amenazas y establece estrategias para evitar algún impacto en Profuturo. Incluso, piensa como atacante."
+    }
+  },
+  {
+    "id": "1.1.10",
+    "hasScreen": true,
+    "screenText": "¡Así se hace, Guardián! 🌟Has identificado el corazón de nuestra defensa...\nPeeeero, ¡¡espera un momento!!",
+    "screenButtonText": "Continuar"
+  }
+]

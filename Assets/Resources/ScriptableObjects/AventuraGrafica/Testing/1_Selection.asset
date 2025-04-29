@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
+  m_Name: 1_Selection
+  m_EditorClassIdentifier: 
+  mainText: "Antes de proteger Profuturo, necesitas entender qu\xE9 orquesta nuestra
+    defensa. \xBFQu\xE9 crees que incluye el gobierno de ciberseguridad?"
+  rightOption: "\xBFPol\xEDticas y procesos?"
+  leftOption: "\xBFTecnolog\xEDa como firewalls?"
+  rigthCorrect: 1
+  feedbackCorrect: {fileID: 11400000, guid: f80bc5b4fd2d1c943a1c53f13e9fb3fb, type: 2}
+  feedbackIncorrect: {fileID: 11400000, guid: 040da11ed8726974fa880cf258318b53, type: 2}

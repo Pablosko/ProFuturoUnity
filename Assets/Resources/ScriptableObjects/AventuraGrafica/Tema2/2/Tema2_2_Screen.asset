@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
+  m_Name: Tema2_2_Screen
+  m_EditorClassIdentifier: 
+  mainText: "Ahora, es tiempo que conozcas un concepto b\xE1sico que todo guardi\xE1n
+    debe dominar: \u201CLos activos de informaci\xF3n\u201D."
+  rightOption: "Genial, \xA1cu\xE9ntame m\xE1s!"
+  leftOption: 
+  rigthCorrect: 0
+  feedbackCorrect: {fileID: 11400000, guid: 8ccde08b1eb442e40b76f1a4fa6aea01, type: 2}
+  feedbackIncorrect: {fileID: 0}

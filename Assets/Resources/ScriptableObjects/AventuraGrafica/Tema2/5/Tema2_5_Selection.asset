@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
+  m_Name: Tema2_5_Selection
+  m_EditorClassIdentifier: 
+  mainText: "\xA1Alerta, Guardi\xE1n! Es fin de semana y tu nave (laptop corporativo)
+    la tienes cerca. \xBFLa usas para retos personales?"
+  rightOption: "S\xED"
+  leftOption: No
+  rigthCorrect: 0
+  feedbackCorrect: {fileID: 11400000, guid: 772c95a7f9da2364ca658ee0ead94571, type: 2}
+  feedbackIncorrect: {fileID: 11400000, guid: cb949a18233b8b24aa6fb065cc200d9f, type: 2}

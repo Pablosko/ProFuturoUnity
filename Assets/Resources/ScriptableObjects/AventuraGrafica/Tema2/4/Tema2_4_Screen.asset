@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
+  m_Name: Tema2_4_Screen
+  m_EditorClassIdentifier: 
+  mainText: "Por ejemplo, estados de cuenta, informes ejecutivos, procedimientos,
+    manuales, correo electr\xF3nico, bases de datos y otros recursos relacionados
+    con la informaci\xF3n. Diferenciar y clasificar la informaci\xF3n bien y con
+    criterio, es fundamental, as\xED que vamos a practicar un poco, \xBFte parece?"
+  rightOption: "\xA1Adelante!"
+  leftOption: 
+  rigthCorrect: 0
+  feedbackCorrect: {fileID: 11400000, guid: ee1de60c0c8cfb545a0b9dcd61984dd0, type: 2}
+  feedbackIncorrect: {fileID: 0}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
+  m_Name: Tema1_2_Selection
+  m_EditorClassIdentifier: 
+  mainText: "\xBFQu\xE9 crees que incluye el gobierno de ciberseguridad?"
+  rightOption: "\xBFTecnolog\xEDa como firewalls?"
+  leftOption: "\xBFPol\xEDticas y procesos?"
+  rigthCorrect: 0
+  feedbackCorrect: {fileID: 11400000, guid: cfd15e7f997c1f7479fe49d7c3451f9e, type: 2}
+  feedbackIncorrect: {fileID: 11400000, guid: 78273a796ad1a1444a547a9e44b15a6e, type: 2}

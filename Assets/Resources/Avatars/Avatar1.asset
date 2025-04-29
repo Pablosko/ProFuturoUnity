@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 490455e426cf37442bea2b563346ecf8, type: 3}
+  m_Name: Avatar1
+  m_EditorClassIdentifier: 
+  avatarName: ZETA
+  info: "Perfil Defensivo \u2013 La Sombra Digital\n\n\nOjos en todas partes, mente
+    anal\xEDtica. Nova es la estratega de la defensa, siempre un paso adelante de
+    los atacantes. Monitorea redes, analiza patrones y previene intrusiones antes
+    de que ocurran. Es el escudo del equipo, la primera y \xFAltima l\xEDnea de defensa
+    contra cualquier amenaza.\n\nFrase \xE9pica: \u201CSi intentas atacar, vas demasiado
+    tarde. Ya te vi primero.\u201D\n\nFortaleza clave: Predicci\xF3n t\xE1ctica \u2013
+    Detecta patrones y anticipa ataques antes de que sucedan."
+  fullSprite: {fileID: 21300000, guid: 2c4e2770af7b54444aaaf58e53474890, type: 3}
+  headerSprite: {fileID: 21300000, guid: 118533d4d4d8ca84ab90467268931929, type: 3}

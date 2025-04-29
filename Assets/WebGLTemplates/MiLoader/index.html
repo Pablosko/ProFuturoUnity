@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Guardianes del Ciberespacio</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: #000 url("fondo.jpg") no-repeat center center fixed;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        #unity-container {
+            width: 1366px;
+            height: 768px;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #unity-canvas {
+            width: 1366px;
+            height: 768px;
+            background: transparent;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        #loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            z-index: 10;
+        }
+
+        #progress-bar {
+            width: 300px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        #progress-bar-fill {
+            height: 100%;
+            background: #00ffff;
+            width: 0%;
+            transition: width 0.2s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="unity-container">
+        <canvas id="unity-canvas"></canvas>
+
+        <div id="loading">
+            <img src="logo.png" alt="Logo Guardianes" width="160" />
+            <div id="progress-bar">
+                <div id="progress-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCORM Wrapper Script -->
+    <script src="SCORM_API_wrapper.js"></script> <!-- SCORM 1.2 -->
+    <script>
+        var scorm = pipwerks.SCORM;
+        scorm.version = "1.2"; // Cambiar a "2004" si usas SCORM 2004
+
+        function initSCORM() {
+            console.log("🔵 Iniciando conexión SCORM...");
+            var success = scorm.init();
+            if (!success) {
+                console.warn("⚠️ No se pudo inicializar SCORM.");
+            }
+        }
+
+        function saveData(value) {
+            console.log("💾 Guardando dato SCORM:", value);
+            scorm.set("cmi.core.score.raw", value);
+            scorm.save();
+        }
+
+        function completeCourse() {
+            console.log("🏁 Marcando curso como completado en SCORM.");
+            scorm.set("cmi.core.lesson_status", "completed");
+            scorm.save();
+        }
+
+        function getScore() {
+            var score = scorm.get("cmi.core.score.raw");
+            console.log("📥 Obteniendo puntuación SCORM:", score);
+            return score;
+        }
+
+        function quitSCORM() {
+            console.log("🚪 Cerrando sesión SCORM.");
+            scorm.quit();
+        }
+    </script>
+
+    <!-- Unity Loader -->
+    <script>
+        // Inicia SCORM antes de cargar el juego
+        initSCORM();
+
+        const buildUrl = "Build";
+        const loaderUrl = `${buildUrl}/Build.loader.js`;
+
+        const config = {
+            dataUrl: `${buildUrl}/Build.data`,
+            frameworkUrl: `${buildUrl}/Build.framework.js`,
+            codeUrl: `${buildUrl}/Build.wasm`,
+            streamingAssetsUrl: "StreamingAssets",
+            companyName: "Guardianes",
+            productName: "Guardianes del Ciberespacio",
+            productVersion: "1.0",
+            showBanner: function () { } // Oculta "Made with Unity"
+        };
+
+        const canvas = document.querySelector("#unity-canvas");
+        const loading = document.querySelector("#loading");
+        const barFill = document.querySelector("#progress-bar-fill");
+
+        // Inicia el juego
+        const script = document.createElement("script");
+        script.src = loaderUrl;
+        script.onload = () => {
+            createUnityInstance(canvas, config, (progress) => {
+                barFill.style.width = `${progress * 100}%`;
+            }).then(() => {
+                loading.style.display = "none";
+            }).catch((err) => {
+                console.error("❌ Error al iniciar Unity:", err);
+                alert("Error al cargar Unity: " + err);
+            });
+        };
+        document.body.appendChild(script);
+    </script>
+</body>
+</html>

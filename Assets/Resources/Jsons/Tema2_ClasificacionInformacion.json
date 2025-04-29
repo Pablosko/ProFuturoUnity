@@ -1,0 +1,145 @@
+[
+  {
+    "id": "2.1.1.0",
+    "hasScreen": true,
+    "screenText": "¡Bienvenido(a) al segundo desafío, Guardián! Antes de entregarte la Insignia del Archivero Estelar, debo probar tu conocimiento en Clasificación de Información Intergaláctica y saber que dominas el arte de etiquetar datos sensibles.",
+    "screenButtonText": "¡Perfecto!"
+  },
+  {
+    "id": "2.1.1.1",
+    "hasScreen": true,
+    "screenText": "Ahora, es tiempo que conozcas un concepto básico que todo guardián debe dominar: “Los activos de información”.",
+    "screenButtonText": "Genial, ¡cuéntame más!"
+  },
+  {
+    "id": "2.1.1.2",
+    "hasScreen": true,
+    "screenText": "Los activos de información son elementos valiosos dentro de una organización intergaláctica, por lo que deben ser protegidos para mantener su confidencialidad, disponibilidad e integridad.",
+    "screenButtonText": "Súper, ¿por ejemplo?"
+  },
+  {
+    "id": "2.1.1.3",
+    "hasScreen": true,
+    "screenText": "Por ejemplo, estados de cuenta, informes ejecutivos, procedimientos, manuales, correo electrónico, bases de datos y otros recursos relacionados con la información. Diferenciar y clasificar la información bien y con criterio, es fundamental, así que vamos a practicar un poco, ¿te parece?",
+    "screenButtonText": "¡Adelante!"
+  },
+  {
+    "id": "2.1.2.1",
+    "question": "¡Alerta, Guardián! Es fin de semana y tu nave (laptop corporativo) la tienes cerca. ¿La usas para retos personales?",
+    "leftOption": "Sí",
+    "rightOption": "No",
+    "rightIsCorrect": true,
+    "feedbackCorrect": {
+      "title": "¡Genial! ¡Protocolo de seguridad activado! 🛡️",
+      "text": "Los activos de la Red Galáctica son sagrados.",
+      "detail": "Así evitamos que el ENJAMBRE encuentre puntos débiles."
+    },
+    "feedbackIncorrect": {
+      "title": "¡Brecha de seguridad detectada! 🔥",
+      "text": "Usar equipos de Profuturo para asuntos externos es como dejar la escotilla abierta.",
+      "detail": "Malware o fugas de datos podrían colarse. ¡Usa tu nave personal!"
+    }
+  },
+  {
+    "id": "2.1.2.2",
+    "question": "Un archivo que necesitas urgente es sospechoso y flota cerca. ¿Lo descargas en la nave?",
+    "leftOption": "Sí",
+    "rightOption": "No",
+    "rightIsCorrect": true,
+    "feedbackCorrect": {
+      "title": "¡Buen ojo, Guardián! 👁️‍🗨️",
+      "text": "La prevención mantiene limpio el ciberespacio de Profuturo.",
+      "detail": ""
+    },
+    "feedbackIncorrect": {
+      "title": "¡Contaminación detectada! 🦠",
+      "text": "Ese archivo podría ser un caballo de Troya del ENJAMBRE.",
+      "detail": "¡Siempre escanea con el radar de TI antes de descargar!"
+    }
+  },
+  {
+    "id": "2.1.2.3",
+    "question": "Un colega de la galaxia te pide ver un informe confidencial que no es de su área. ¿Se lo muestras?",
+    "leftOption": "Sí",
+    "rightOption": "No",
+    "rightIsCorrect": true,
+    "feedbackCorrect": {
+      "title": "¡Perfecto, barreras de seguridad reforzadas! 🚪",
+      "text": "Así protegemos los secretos de la Red Galáctica.",
+      "detail": "Cumplimos con regulaciones como la GDPR."
+    },
+    "feedbackIncorrect": {
+      "title": "¡Fuga de plasma crítico! 💢",
+      "text": "La información confidencial es como el núcleo de la nave.",
+      "detail": "Solo para tripulación autorizada. ¡Podrías violar leyes galácticas!"
+    }
+  },
+  {
+    "id": "2.1.2.4",
+    "question": "Un familiar te pregunta sobre el Proyecto innovador Nova (ultrasecreto). ¿Compartes algo?",
+    "leftOption": "Sí",
+    "rightOption": "No",
+    "rightIsCorrect": true,
+    "feedbackCorrect": {
+      "title": "¡Juramento de secreto cumplido! 🤐",
+      "text": "Los Guardianes como tú evitan filtraciones a competidores.",
+      "detail": ""
+    },
+    "feedbackIncorrect": {
+      "title": "¡El ENJAMBRE escucha siempre! 👂",
+      "text": "Hasta un detalle puede darles la clave para hackearnos.",
+      "detail": "¡Silencio absoluto sobre proyectos!"
+    }
+  },
+  {
+    "id": "2.1.2.5",
+    "question": "Terminaste un reporte galáctico importante. ¿Lo guardas en la carpeta general sin etiquetar?",
+    "leftOption": "Sí",
+    "rightOption": "No",
+    "rightIsCorrect": true,
+    "feedbackCorrect": {
+      "title": "¡Sistema de archivos protegido! 🗃️",
+      "text": "Así el ENJAMBRE no encontrará joyas en medio de basura espacial.",
+      "detail": ""
+    },
+    "feedbackIncorrect": {
+      "title": "¡Caos en los archivos! 📂",
+      "text": "Sin clasificar, cualquiera podría borrar, modificar o robar el informe.",
+      "detail": "¡Etiqueta siempre según su sensibilidad!"
+    }
+  },
+  {
+    "id": "2.1.2.6",
+    "question": "Un correo de 'RH' pide cambiar tu contraseña. ¿Clic?",
+    "leftOption": "Sí",
+    "rightOption": "No",
+    "rightIsCorrect": true,
+    "feedbackCorrect": {
+      "title": "¡Deflectores activados! 🛡️",
+      "text": "Tu escepticismo salvó tus credenciales.",
+      "detail": ""
+    },
+    "feedbackIncorrect": {
+      "title": "¡PHISHING DETECTADO! 🎣",
+      "text": "Es URL falsa del ENJAMBRE.",
+      "detail": "Verifica siempre la URL y reporta correos sospechosos a TI."
+    }
+  },
+  {
+    "id": "2.1.2.7",
+    "question": "Encuentras datos de clientes antiguos en tu equipo. ¿Los borras para liberar espacio?",
+    "leftOption": "Sí",
+    "rightOption": "No",
+    "rightIsCorrect": true,
+    "feedbackCorrect": {
+      "title": "¡Cumplimiento normativo excelente! 📜",
+      "text": "Cumplimos con normativas como GDPR.",
+      "detail": "Protegemos a la empresa y a los clientes."
+    },
+    "feedbackIncorrect": {
+      "title": "¡Violación de protocolo! ⚖️",
+      "text": "Algunos datos deben guardarse por ley.",
+      "detail": "Borrarlos sin consultar al área legal podría costarle multas a Profuturo."
+    }
+  }
+]

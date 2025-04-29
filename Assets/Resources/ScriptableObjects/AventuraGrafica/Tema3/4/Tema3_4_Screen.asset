@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
+  m_Name: Tema3_4_Screen
+  m_EditorClassIdentifier: 
+  mainText: "\xA1Si te parece Guardi\xE1n! A continuaci\xF3n te mostrar\xE9 sus principales
+    aspectos:\n\nAutenticaci\xF3n: Esta es la verificaci\xF3n de la identidad gal\xE1ctica
+    del usuario que intenta acceder. Puede ser mediante contrase\xF1as, huellas dactilares,
+    reconocimiento facial, tarjetas de acceso, etc."
+  rightOption: "\xA1Bien, lo capto!"
+  leftOption: 
+  rigthCorrect: 0
+  feedbackCorrect: {fileID: 11400000, guid: 5970bbc4cb4b06c42b4564c1d78950a8, type: 2}
+  feedbackIncorrect: {fileID: 0}
