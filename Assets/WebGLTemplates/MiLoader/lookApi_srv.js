@@ -220,18 +220,8 @@ function createCourse()
 	API = getAPI();
 	if (API == null) 
 	{ 
-	
 	     //alert("No se ha encontrado la API de comunicación con la plataforma");	 
-
-	        makeCookie();
-          API = new COOKIE_API(); 
-          tmpAPI = API;
-          // Se crea el objeto CURSO que trabaja con el objeto tmpAPI                
-          CURSO = new CURSO_API(tmpAPI,API,estructura_curso);
-          CURSO.Initialize(""); // LMSInitialize de cookie_api external_api
-          CURSO.init();    
-      
-	     return 1;  	     	     				
+	     return 0;  	     	     				
 	}	
 	else
 	{	     	
@@ -260,15 +250,16 @@ function cargarCurso()
    else
    {
 	      n++;	      	  
-	      if (n < 2 )
+	      if (n < 10 )
 	      {
 	      	
 	      	setTimeout('esCorrecte = createCourse();cargarCurso();',1000);	        
 	      }  
 	      	
-	      if (n == 2)
+	      if (n == 10)
 	      {
-	       // alert("No se ha podido cargar la API de Servidor, versión local");	        
+	        alert("No se ha podido cargar la API de Servidor, versión server");	
+           /**        
 	        makeCookie();
 	        API = new COOKIE_API(); 
 	        tmpAPI = API;
@@ -278,6 +269,7 @@ function cargarCurso()
           CURSO.init();    
           //CURSO.initEvaluacion();       
           setTimeout('fcent.location = "basenoie.htm";',50);
+          **/
 	      }  
    }
 }   
