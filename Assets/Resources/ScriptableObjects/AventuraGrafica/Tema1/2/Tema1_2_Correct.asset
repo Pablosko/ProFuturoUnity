@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema1_2_Correct
   m_EditorClassIdentifier: 
-  mainText: "\xA1Exacto! \u270B\nLa ciberseguridad no es solo tecnolog\xEDa, sino\u2026\n\nEs
-    el conjunto de estrategias, pol\xEDticas, procesos y controles que protegen los
-    activos de informaci\xF3n e infraestructuras tecnol\xF3gicas frente a amenazas."
-  rightOption: Continuar
+  mainText: "<b>\xA1Exacto!</b> \u270B La ciberseguridad no es solo tecnolog\xEDa,
+    sino\u2026\nEs el conjunto de estrategias, pol\xEDticas, procesos y controles
+    que protegen los activos de informaci\xF3n e infraestructuras tecnol\xF3gicas
+    frente a amenazas.\n\n"
+  rightOption: Vamos
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: ee5fe486b41c32846a686aa6c911a4ca, type: 2}

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      avatar-select-adorno_0: 5291147186876146524
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      btn-largo-hover_0: -4183764316910121133
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

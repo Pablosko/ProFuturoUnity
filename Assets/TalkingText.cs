@@ -9,8 +9,10 @@ public struct TalkingTextContent
 {
     [TextArea(3, 5)]
     public string message;
+    public string nextmessage;
     public UnityEvent onStartTalkEvent;
     public UnityEvent onEndTalkEvent;
+    public UnityEvent undoButtonEvent;
 }
 
 public class TalkingText : MonoBehaviour
@@ -50,6 +52,7 @@ public class TalkingText : MonoBehaviour
 
     void ShowMessage(string message)
     {
+        SetNextMessage();
         if (typingCoroutine != null)
             StopCoroutine(typingCoroutine);
 
@@ -128,6 +131,7 @@ public class TalkingText : MonoBehaviour
 
         if (currentMessageIndex > 0)
         {
+            messages[currentMessageIndex].undoButtonEvent?.Invoke();
             currentMessageIndex--;
             ShowMessage(ProcessTags(messages[currentMessageIndex].message));
         }
@@ -182,6 +186,7 @@ public class TalkingText : MonoBehaviour
         }
 
         contentText.text = currentFullMessage;
+        SetNextMessage();
         isTyping = false;
         messages[currentMessageIndex].onEndTalkEvent?.Invoke();
 
@@ -189,4 +194,10 @@ public class TalkingText : MonoBehaviour
             onLastMessageEnd?.Invoke();
 
     }
+    public void SetNextMessage() 
+    {
+        if(nextButton != null)
+        nextButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = messages[currentMessageIndex].nextmessage == "" ? "Siguiente" : messages[currentMessageIndex].nextmessage;
+    }
+
 }

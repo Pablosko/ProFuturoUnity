@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      backgroundendaventura_0: 7827687190956032216
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -59,14 +59,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5066305, g: 0.601184, b: 0.9339623, a: 0.6392157}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3218644999118768396, guid: 7ce71c6c3cc64664b8139cbee1bc5bdc, type: 3}
+  m_Sprite: {fileID: 5977791661744858516, guid: 67e2cf9e57452554eb7baf556a405ecc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -110,7 +110,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 19.19397, y: 0.8076172}
+  m_AnchoredPosition: {x: 16, y: 2}
   m_SizeDelta: {x: -770.40796, y: -499.4724}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2921551853336576660
@@ -134,14 +134,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.38679248, g: 0.36672306, b: 0.36672306, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dbea210518b5bd04db7bd4fdc86f9f8a, type: 3}
+  m_Sprite: {fileID: 1699438112109177694, guid: 622fce6c271ec0f4ca011b841f98e2d4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -162,6 +162,15 @@ PrefabInstance:
     - target: {fileID: 690033532215096245, guid: cdf7b6d05cfb3b74284992497a3bcd27, type: 3}
       propertyPath: m_Name
       value: TextBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 5621432902830187617, guid: cdf7b6d05cfb3b74284992497a3bcd27, type: 3}
+      propertyPath: m_text
+      value: "Has sido llamado(a) a convertirte en el pr\xF3ximo(a) GUARDI\xC1N DEL
+        CIBERESPACIO.\L\r\n<b>Tu misi\xF3n ser\xE1 defender la RED GAL\xC1CTICA del
+        ENJAMBRE SOMBR\xCDO para salvar la galaxia Profuturo...</b>\L\r\nPero antes
+        de iniciar este viaje retador junto con el resto de equipo, debes integrar
+        los conceptos b\xE1sicos que todo guardi\xE1n legendario(a) debe portar dentro.\L\L\r\n\xBFSer\xE1s
+        capaz de conseguirlo?."
       objectReference: {fileID: 0}
     - target: {fileID: 7458210948524299305, guid: cdf7b6d05cfb3b74284992497a3bcd27, type: 3}
       propertyPath: m_Pivot.x

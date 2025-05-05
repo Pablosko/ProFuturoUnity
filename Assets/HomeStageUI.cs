@@ -9,6 +9,7 @@ public class HomeStageUI : MonoBehaviour
     public float zoomFactor;
     public Animator animator;
     public Animator playerAnim;
+    public Animator portalAnim;
     public GameObject buttons;
     public GameObject adventurePrefab;
     public Button navigateButton;
@@ -67,16 +68,21 @@ public class HomeStageUI : MonoBehaviour
         if (adventurePrefab == null)
             return;
         playerAnim.SetTrigger("Alpha1to0");
-        Invoke("DelayedCall", 1.2f);
+        portalAnim.SetTrigger("portalSpawn");
+        Invoke("DelayedCall", 2f);
     }
     public void DelayedCall()
     {
         buttons.SetActive(false);
-
-        GameObject instance = Instantiate(adventurePrefab, HudController.instance.transform);
+        TransitionController.instance.PlayFadeOff();
+        Invoke("DelayedDelayed", 0.5f);
+    }
+    public void DelayedDelayed() 
+    {
+        GameObject instance = Instantiate(adventurePrefab, HudController.instance.stagesTransform);
         instance.SetActive(true);
         var aventura = instance.GetComponent<AventuraGrafica>();
-      
+
 
         Home.instance.gameObject.SetActive(false);
     }

@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Avatar2
   m_EditorClassIdentifier: 
   avatarName: XERO
-  info: "Perfil Ofensivo \u2013 El Hacker \xC9tico\n\n\nPiensa como un hacker, act\xFAa
-    como un guardi\xE1n. Xero es el experto en ataques controlados, aquel que simula
-    ser la amenaza para probar la seguridad del sistema. Intr\xE9pido, veloz y con
-    una mente afilada, desaf\xEDa los l\xEDmites para fortalecer la ciberseguridad
-    desde dentro.\n\nFrase \xE9pica: \u201CPara vencer al enemigo, primero hay que
-    pensar como \xE9l.\u201D\n\nFortaleza clave: Ingenio letal \u2013 Rompe cualquier
-    barrera digital en cuesti\xF3n de segundos."
-  fullSprite: {fileID: 21300000, guid: 8dea090361af10447bdec402e87a1020, type: 3}
+  info: "Perfil Ofensivo \u2013 El Hacker \xC9tico\r\n\r\nPiensa como un hacker,
+    act\xFAa como un guardi\xE1n. Xero es el <b>experto en ataques controlados</b>,
+    aquel que simula ser la amenaza para probar la seguridad del sistema. Intr\xE9pido,
+    veloz y con una mente afilada, desaf\xEDa los l\xEDmites para fortalecer la ciberseguridad
+    desde dentro.\r\n\r\n<b>Frase \xE9pica:</b> \u201CPara vencer al enemigo, primero
+    hay que pensar como \xE9l.\u201D\r\n\r\n<b>Fortaleza clave:</b> Ingenio letal
+    \u2013 Rompe cualquier barrera digital en cuesti\xF3n de segundos."
+  fullSprite: {fileID: 21300000, guid: d5c377866d1508346921f2e0a90280d2, type: 3}
   headerSprite: {fileID: 21300000, guid: 42169c0f47c5673459189f841770737a, type: 3}

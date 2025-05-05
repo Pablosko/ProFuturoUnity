@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainText: "\xA1Alerta, Guardi\xE1n! Es fin de semana y tu nave (laptop corporativo)
     la tienes cerca. \xBFLa usas para retos personales?"
-  rightOption: "S\xED"
-  leftOption: No
-  rigthCorrect: 0
+  rightOption: No
+  leftOption: "S\xED"
+  rigthCorrect: 1
   feedbackCorrect: {fileID: 11400000, guid: 772c95a7f9da2364ca658ee0ead94571, type: 2}
   feedbackIncorrect: {fileID: 11400000, guid: cb949a18233b8b24aa6fb065cc200d9f, type: 2}

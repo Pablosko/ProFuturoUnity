@@ -1,5 +1,6 @@
 ﻿using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LoadEffect : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class LoadEffect : MonoBehaviour
     public SequenceBase sequence;
     private float timer;
     private bool isLoading;
-
+    public Image fillImage;
     void Start()
     {
         isLoading = true;
@@ -22,7 +23,7 @@ public class LoadEffect : MonoBehaviour
             float progress = Mathf.Clamp01(timer / fakeLoadTime);
             int percent = Mathf.RoundToInt(progress * 100f);
             text.text = percent + "%";
-
+            fillImage.fillAmount = progress;
             if (progress >= 1f)
             {
                 isLoading = false;

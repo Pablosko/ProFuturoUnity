@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainText: "\xA1Deflectores activados! \U0001F6E1\uFE0F\nTu escepticismo salv\xF3
     tus credenciales.\n\n"
-  rightOption: Vamos
+  rightOption: Continuar
   leftOption: 
   rigthCorrect: 0
-  feedbackCorrect: {fileID: 0}
+  feedbackCorrect: {fileID: 11400000, guid: 4c15359545bd84f41b02b3cf630405c3, type: 2}
   feedbackIncorrect: {fileID: 0}

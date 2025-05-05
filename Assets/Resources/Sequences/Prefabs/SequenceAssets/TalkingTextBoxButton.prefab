@@ -306,15 +306,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messages:
   - message: 
+    nextmessage: 
     onStartTalkEvent:
       m_PersistentCalls:
         m_Calls: []
-  - message: 
-    onStartTalkEvent:
+    onEndTalkEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    undoButtonEvent:
       m_PersistentCalls:
         m_Calls: []
   - message: 
+    nextmessage: 
     onStartTalkEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    onEndTalkEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    undoButtonEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - message: 
+    nextmessage: 
+    onStartTalkEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    onEndTalkEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    undoButtonEvent:
       m_PersistentCalls:
         m_Calls: []
   contentText: {fileID: 5621432902830187617}
@@ -322,7 +343,10 @@ MonoBehaviour:
   tagCongifs: {fileID: 11400000, guid: 833b0f1369fab4c47b5a6a355a116c8a, type: 2}
   nextButton: {fileID: 6158045299412447314}
   previusButton: {fileID: 0}
-  onTextFinished:
+  onEndConversation:
+    m_PersistentCalls:
+      m_Calls: []
+  onLastMessageEnd:
     m_PersistentCalls:
       m_Calls: []
   autoSpeak: 0

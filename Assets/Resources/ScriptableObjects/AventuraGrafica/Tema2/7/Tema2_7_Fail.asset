@@ -15,8 +15,8 @@ MonoBehaviour:
   mainText: "\xA1Fuga de plasma cr\xEDtico! \U0001F4A2\nLa informaci\xF3n confidencial
     es como el n\xFAcleo de la nave.\n\nSolo para tripulaci\xF3n autorizada. \xA1Podr\xEDas
     violar leyes gal\xE1cticas!"
-  rightOption: Continuar
+  rightOption: Siguiente
   leftOption: 
   rigthCorrect: 0
-  feedbackCorrect: {fileID: 0}
+  feedbackCorrect: {fileID: 11400000, guid: f83b17dfe913ed4469dd77c58c164178, type: 2}
   feedbackIncorrect: {fileID: 0}

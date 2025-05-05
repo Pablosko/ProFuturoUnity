@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      zeta-nave_0: 7206169333146548520
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

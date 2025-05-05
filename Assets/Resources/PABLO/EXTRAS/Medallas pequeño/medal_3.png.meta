@@ -116,12 +116,12 @@ TextureImporter:
       name: medal_3_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 10
-        width: 141
-        height: 145
+        x: 19
+        y: 24
+        width: 130
+        height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7f0e64659ad69d54e8acf605ea28cb2a
     internalID: 0
     vertices: []
     indices: 
@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      medal_3_0: -7200925933908278283
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

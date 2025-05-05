@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainText: "\xA1PHISHING DETECTADO! \U0001F3A3\nEs URL falsa del ENJAMBRE.\n\nVerifica
     siempre la URL y reporta correos sospechosos a TI."
-  rightOption: Siguiente
+  rightOption: Continuar
   leftOption: 
   rigthCorrect: 0
-  feedbackCorrect: {fileID: 0}
+  feedbackCorrect: {fileID: 11400000, guid: 4c15359545bd84f41b02b3cf630405c3, type: 2}
   feedbackIncorrect: {fileID: 0}

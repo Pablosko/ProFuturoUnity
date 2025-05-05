@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainText: "\xA1Perfecto, barreras de seguridad reforzadas! \U0001F6AA\nAs\xED protegemos
     los secretos de la Red Gal\xE1ctica.\n\nCumplimos con regulaciones como la GDPR."
-  rightOption: Vamos
+  rightOption: Adelante
   leftOption: 
   rigthCorrect: 0
-  feedbackCorrect: {fileID: 0}
+  feedbackCorrect: {fileID: 11400000, guid: f83b17dfe913ed4469dd77c58c164178, type: 2}
   feedbackIncorrect: {fileID: 0}

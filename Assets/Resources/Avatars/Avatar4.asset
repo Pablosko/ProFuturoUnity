@@ -13,15 +13,12 @@ MonoBehaviour:
   m_Name: Avatar4
   m_EditorClassIdentifier: 
   avatarName: NOVA
-  info: "Perfil operativo - Guardi\xE1n de la tripulaci\xF3n\n\_\nEs un maestro del
-    control de acceso. La continuidad y arquitectura de seguridad ha perfeccionado
-    sus habilidades en diferentes planetas. En situaciones de emergencia, su dominio
-    sobre la continuidad operativa le permite restaurar sistemas en cuesti\xF3n de
-    minutos, manteniendo a la tripulaci\xF3n de los Guardianes a salvo de cualquier
-    ataque cibern\xE9tico que amenace con destruir la galaxia.\n\_\nFrase \xE9pica:
-    \"En un cosmos donde todo puede colapsar en un segundo, recuerda esto: No hay
-    acceso sin permiso, ni futuro sin seguridad.\"\n\_\nFortaleza clave: Sensibilidad
-    al negocio para mantener su continuidad y riguroso al momento de determinar el
-    acceso del equipo."
-  fullSprite: {fileID: 21300000, guid: 62e9f33ef38d09240b963b6370582ca6, type: 3}
+  info: "Perfil Defensivo \u2013 La Sombra Digital\r\n\r\nOjos en todas partes, mente
+    anal\xEDtica. Nova es <b>la primera l\xEDnea de defensa</b> encargada de detectar
+    cualquier amenaza. Monitorea redes, analiza patrones y previene intrusiones antes
+    de que ocurran. Es el escudo del equipo, la primera y \xFAltima l\xEDnea de defensa
+    contra cualquier amenaza.\r\n\r\n<b>Frase \xE9pica:</b> \u201CSi intentas atacar,
+    vas demasiado tarde. Ya te vi primero.\u201D\r\n\r\n<b>Fortaleza clave:</b> Predicci\xF3n
+    t\xE1ctica \u2013 Detecta patrones y anticipa ataques antes de que sucedan."
+  fullSprite: {fileID: 21300000, guid: 4d2bc93183d67674ea8c866931023287, type: 3}
   headerSprite: {fileID: 21300000, guid: 89853090e30d8134a8e52acb605117e9, type: 3}

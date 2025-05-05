@@ -92,6 +92,10 @@ PrefabInstance:
       propertyPath: buttons
       value: 
       objectReference: {fileID: 8237434826297384436}
+    - target: {fileID: 4980564163204173451, guid: 6ec534996c9402e47aa89d31052c6ef4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5217137588645426929, guid: 6ec534996c9402e47aa89d31052c6ef4, type: 3}
       propertyPath: m_Name
       value: AdventureScreenInfo

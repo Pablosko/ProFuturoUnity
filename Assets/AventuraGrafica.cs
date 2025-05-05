@@ -22,6 +22,10 @@ public class AventuraGrafica : MonoBehaviour
 
     void OnEnable()
     {
+        Invoke("Delay", 0.5f);
+    }
+    public void Delay() 
+    {
         SetAdventureFromTema(temaNumero);
     }
 

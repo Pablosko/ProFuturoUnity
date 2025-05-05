@@ -322,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      question banner_0: 6587942292140693718
+      question banner_1: -8394484789551212462
+      question banner_2: 4020528283818432598
+      question banner_3: -6092344246170771605
+      question banner_4: 8509176044358662610
+      question banner_5: 2521832113686512342
+      question banner_6: 871534302941657283
+      question banner_7: 3972330494608520115
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

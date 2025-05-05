@@ -74,17 +74,58 @@
     </div>
 
     <!-- SCORM Wrapper Script -->
-    <script src="SCORM_API_wrapper.js"></script> <!-- SCORM 1.2 -->
-    <script>
-        var scorm = pipwerks.SCORM;
-        scorm.version = "1.2"; // Cambiar a "2004" si usas SCORM 2004
+    <script language="JavaScript" src="jspdf.js"></script>
+    <script language="JavaScript" src="launch_data.js"></script>
+    <script language="JavaScript" src="cookies.js"></script>
+    <script language="JavaScript" src="utilidades_curso.js"></script>
+    <script language="JavaScript" src="cookie_api.js"></script>
+    <script language="JavaScript" src="lookApi.js"></script>
+    <script language="JavaScript">
 
-        function initSCORM() {
-            console.log("🔵 Iniciando conexión SCORM...");
-            var success = scorm.init();
-            if (!success) {
-                console.warn("⚠️ No se pudo inicializar SCORM.");
+        // Variables globales
+        var API = null;
+        var CURSO = null;
+        var tmpAPI = null;
+        //var AICC_Protocol = "cmi.core_lesson.data";     //-----> Learning Space
+        var AICC_Protocol = "cmi.suspend_data";           //-----> ADL SCORM
+        //esCorrecte = createCourse();
+        var UserClicked = false;
+        var UserClosed = false;
+        document.onkeydown = spyclick;
+        document.onmousedown = spyclick;
+
+        function spyclick() {
+            UserClicked = true;
+            setTimeout("UserClicked=false", 2000);
+        }
+        function finalizar() {
+            if ((!UserClicked) && (!UserClosed)) {
+                //console.log("sdaf");
+                // CURSO.ActualizarDatos(CURSO.puntuacion());
+                CURSO.Commit("");
+
+                CURSO.Finish("");
             }
+        }
+        window.onbeforeunload = finalizar;
+
+    </script>
+
+    <!-- Standardised web app manifest -->
+
+    <link rel="manifest" href="appmanifest.json" />
+    <script>
+        function initScorm()
+        {
+            createCourse();
+            console.log("🔵 Iniciando conexión SCORM...");
+            
+        }
+        function getCurseData() {
+            console.log("🔵 Cargando Data...");
+            let data = API.LMSGetValue("cmi.suspend_data")
+            console.log(data);
+            return data
         }
 
         function saveData(value) {
@@ -114,7 +155,7 @@
     <!-- Unity Loader -->
     <script>
         // Inicia SCORM antes de cargar el juego
-        initSCORM();
+        initScorm();
 
         const buildUrl = "Build";
         const loaderUrl = `${buildUrl}/Build.loader.js`;

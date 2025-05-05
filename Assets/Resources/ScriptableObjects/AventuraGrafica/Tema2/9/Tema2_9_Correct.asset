@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainText: "\xA1Sistema de archivos protegido! \U0001F5C3\uFE0F\nAs\xED el ENJAMBRE
     no encontrar\xE1 joyas en medio de basura espacial.\n\n"
-  rightOption: Continuar
+  rightOption: "\xA1Perfecto!"
   leftOption: 
   rigthCorrect: 0
-  feedbackCorrect: {fileID: 0}
+  feedbackCorrect: {fileID: 11400000, guid: 71b3f157c7916644e98ea2e7d953b2ba, type: 2}
   feedbackIncorrect: {fileID: 0}

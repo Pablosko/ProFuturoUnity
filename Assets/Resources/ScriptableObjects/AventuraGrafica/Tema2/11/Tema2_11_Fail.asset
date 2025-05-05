@@ -15,7 +15,7 @@ MonoBehaviour:
   mainText: "\xA1Violaci\xF3n de protocolo! \u2696\uFE0F\nAlgunos datos deben guardarse
     por ley.\n\nBorrarlos sin consultar al \xE1rea legal podr\xEDa costarle multas
     a Profuturo."
-  rightOption: Siguiente
+  rightOption: Continuar
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 0}

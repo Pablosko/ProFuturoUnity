@@ -101,6 +101,7 @@ public class TinderGame : MonoBehaviour
     void UpdateRoundsText()
     {
         questionCounterText.text = $"{correctAnswers}/{totalRounds}";
+        UpdateProgress();
     }
     void UpdateProgress() 
     {

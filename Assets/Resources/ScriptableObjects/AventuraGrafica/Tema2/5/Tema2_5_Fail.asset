@@ -15,8 +15,8 @@ MonoBehaviour:
   mainText: "\xA1Brecha de seguridad detectada! \U0001F525\nUsar equipos de Profuturo
     para asuntos externos es como dejar la escotilla abierta.\n\nMalware o fugas
     de datos podr\xEDan colarse. \xA1Usa tu nave personal!"
-  rightOption: Continuar
+  rightOption: Siguiente
   leftOption: 
   rigthCorrect: 0
-  feedbackCorrect: {fileID: 0}
+  feedbackCorrect: {fileID: 11400000, guid: 22411f0f8c9b2de4e9e4f1a877b6403a, type: 2}
   feedbackIncorrect: {fileID: 0}

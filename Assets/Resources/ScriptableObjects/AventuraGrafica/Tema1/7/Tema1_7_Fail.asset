@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema1_7_Fail
   m_EditorClassIdentifier: 
-  mainText: "\xA1Casi! \u26A0\uFE0F\nEllos regulan operaciones de seguridad financieras,
-    no tecnol\xF3gicas.\n\nAs\xED, nos aseguramos el cumplimiento ante entidades
-    normativas a las que estamos sujetos, como Banco de M\xE9xico, INDEVAL, CNBV,
-    CONSAR, CNSF, etc."
-  rightOption: Continuar
+  mainText: "<b>\xA1Casi!</b> \u26A0\uFE0F\nEl ENJAMBRE podr\xEDa explotar con esa
+    confusi\xF3n. Ellos regulan operaciones de seguridad financieras, no tecnol\xF3gicas.
+    As\xED, nos aseguramos el cumplimiento ante entidades normativas a las que estamos
+    sujetos, por ejemplo (Banco de M\xE9xico, INDEVAL, CNBV, CONSAR, CNSF, etc.)\n\n"
+  rightOption: Entendido
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: 5117011c26bb49748b77251a9546647b, type: 2}

@@ -46,6 +46,15 @@ public class SubSequenceManager : MonoBehaviour
         GetCurrent().startSequenceEvents?.Invoke();
 
     }
+    public void PrevSubSequence() 
+    {
+        if(index > 0)
+            GetCurrent().activationSequence.SetActive(false);
+
+        index--;
+        if (index <= 0)
+            index = 0;
+    }
     public void NextSubSequence() 
     {
         index++;

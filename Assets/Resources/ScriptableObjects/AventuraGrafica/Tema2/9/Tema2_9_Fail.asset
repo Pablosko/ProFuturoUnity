@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainText: "\xA1Caos en los archivos! \U0001F4C2\nSin clasificar, cualquiera podr\xEDa
     borrar, modificar o robar el informe.\n\n\xA1Etiqueta siempre seg\xFAn su sensibilidad!"
-  rightOption: Siguiente
+  rightOption: Adelante
   leftOption: 
   rigthCorrect: 0
-  feedbackCorrect: {fileID: 0}
+  feedbackCorrect: {fileID: 11400000, guid: 71b3f157c7916644e98ea2e7d953b2ba, type: 2}
   feedbackIncorrect: {fileID: 0}

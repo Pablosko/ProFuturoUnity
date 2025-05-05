@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      screen-ejercicio1-error-top_0: 8373548528655572514
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainText: "\xA1Cumplimiento normativo excelente! \U0001F4DC\nCumplimos con normativas
     como GDPR.\n\nProtegemos a la empresa y a los clientes."
-  rightOption: "\xA1Perfecto!"
+  rightOption: Siguiente
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 0}

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      nave-bloqueada_0: -8551650645708880162
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema1_8_Selection
   m_EditorClassIdentifier: 
-  mainText: "\xBFSabr\xEDas decirme qu\xE9 significa CISO?"
+  mainText: "\xA1Bien! Como Guardi\xE1n debes familiarizarte con la terminolog\xEDa
+    necesaria para actuar con criterio. Vamos a probar un poco tu intuici\xF3n\u2026
+    \xBFSabr\xEDas decirme qu\xE9 significa CISO?"
   rightOption: CISO (Chief Information Security Officer)
   leftOption: CISO (Cyber Information Security Omnicanal)
   rigthCorrect: 1

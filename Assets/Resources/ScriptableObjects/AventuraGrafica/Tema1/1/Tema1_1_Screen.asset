@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema1_1_Screen
   m_EditorClassIdentifier: 
-  mainText: "\xA1Bienvenido(a) al primer desaf\xEDo, Guardi\xE1n! Antes de entregarte
-    la Insignia del Gobierno Cibern\xE9tico, debo probar tu conocimiento en Gobierno
-    de Ciberseguridad. Cada respuesta incorrecta... alimenta al ENJAMBRE. \xA1Elige
-    sabiamente!"
+  mainText: "\xA1Bienvenido(a) al primer desaf\xEDo, Guardi\xE1n! <b>Antes de entregarte
+    la Insignia del Gobierno</b> Cibern\xE9tico, debo probar tu conocimiento en <b>Gobierno
+    de Ciberseguridad.</b> Cada respuesta incorrecta... alimenta al <b>ENJAMBRE.</b>
+    \xA1Elige sabiamente!"
   rightOption: "\xA1Perfecto!"
   leftOption: 
   rigthCorrect: 0

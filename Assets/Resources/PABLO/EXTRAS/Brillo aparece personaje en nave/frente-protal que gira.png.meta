@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      frente-protal que gira_0: 5023464508790010850
+      frente-protal que gira_1: 6874946859348109481
+      frente-protal que gira_2: 847973716385919438
+      frente-protal que gira_3: 2136818270480429684
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

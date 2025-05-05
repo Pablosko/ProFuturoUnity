@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainText: "Encuentras datos de clientes antiguos en tu equipo. \xBFLos borras para
     liberar espacio?"
-  rightOption: "S\xED"
-  leftOption: No
-  rigthCorrect: 0
+  rightOption: No
+  leftOption: "S\xED"
+  rigthCorrect: 1
   feedbackCorrect: {fileID: 11400000, guid: ff01dc13bfb13a54da3a0328bc957d40, type: 2}
   feedbackIncorrect: {fileID: 11400000, guid: 9e0f8e6708eedcc4f913c6f295411cf9, type: 2}

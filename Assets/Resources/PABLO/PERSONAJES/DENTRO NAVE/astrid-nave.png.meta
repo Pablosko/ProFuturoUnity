@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      astrid-nave_0: 1225021942592860252
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

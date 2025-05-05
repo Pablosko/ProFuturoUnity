@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Avatar3
   m_EditorClassIdentifier: 
   avatarName: ASTRID
-  info: "Perfil de Gesti\xF3n \u2013 La Estratega del Ciberespacio\n\n\nCada decisi\xF3n
+  info: "Perfil de Gesti\xF3n \u2013 La Estratega del Ciberespacio\r\n\r\nCada decisi\xF3n
     es una jugada maestra. Astrid no solo conoce la ciberseguridad, sino tambi\xE9n
-    el arte de la estrategia. Analiza riesgos, asigna recursos y coordina respuestas
-    con precisi\xF3n quir\xFArgica. Con su liderazgo, el equipo siempre juega con
-    ventaja.\n\nFrase \xE9pica: \"La diferencia entre ganar y perder est\xE1 en qui\xE9n
-    controla el tablero.\"\n\nFortaleza clave: Mente estrat\xE9gica \u2013 Encuentra
-    la mejor soluci\xF3n con rapidez y eficacia."
-  fullSprite: {fileID: 21300000, guid: 63f8b173984d26a46a40c8b605afb876, type: 3}
+    <b>el arte de la estrategia.</b> Analiza riesgos, asigna recursos y coordina
+    respuestas con precisi\xF3n quir\xFArgica. Con su liderazgo, el equipo siempre
+    juega con ventaja.\r\n\r\n<b>Frase \xE9pica:</b> \"La diferencia entre ganar
+    y perder est\xE1 en qui\xE9n controla el tablero.\"\r\n\r\n<b>Fortaleza clave:</b>
+    Mente estrat\xE9gica \u2013 Encuentra la mejor soluci\xF3n con rapidez y eficacia."
+  fullSprite: {fileID: 21300000, guid: 2952920f7de248a469634d799cabf336, type: 3}
   headerSprite: {fileID: 21300000, guid: 597da605c7ef4e84b9e445621a67c2d9, type: 3}

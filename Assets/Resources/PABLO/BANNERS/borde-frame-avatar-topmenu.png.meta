@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      borde-frame-avatar-topmenu_0: -2041592351611633465
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

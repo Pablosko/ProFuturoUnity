@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      screen-ejercicio1-bottom-multiply_0: 8599751558978124645
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
