@@ -19,8 +19,6 @@ public class SequenceManager : MonoBehaviour
         if (currentSequence != null)
             Destroy(currentSequence);
         sequenceIndex = 0;
-        if (sequences.Count == 0)
-            Debug.LogError("No sequences assigned");
         StartCurrentSequence();
     }
     void Update()
@@ -28,7 +26,7 @@ public class SequenceManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
             currentSequence.End();
     }
-    public void EndStage() 
+    public void End() 
     {
         gameObject.SetActive(false);
         if(endStageActivationGo != null)
@@ -41,13 +39,18 @@ public class SequenceManager : MonoBehaviour
 
         if (IsLastSequence()) 
         {
-            EndStage();
+            End();
             return;
         }
         StartCurrentSequence();
     }
     public void StartCurrentSequence() 
     {
+        if (sequenceIndex >= sequences.Count) 
+        {
+            End();
+            return;
+        }
         currentSequence = Instantiate(sequences[sequenceIndex], transform).GetComponent<SequenceBase>();
         currentSequence.OnStart(this);
 

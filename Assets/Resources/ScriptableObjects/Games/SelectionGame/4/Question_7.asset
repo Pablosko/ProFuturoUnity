@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e76eba1ca9b6f43afe58519e3930e1, type: 3}
+  m_Name: Question_7
+  m_EditorClassIdentifier: 
+  text: "\xBFGuardar\xEDas copias de seguridad en tu equipo local?"
+  rightText: No, uso la nube.
+  leftText: "Claro, es m\xE1s r\xE1pido."
+  successMessage: "\u2705 Excelencia superior: Tus respaldos est\xE1n seguros en
+    la nube."
+  errorMessage: "\u274C P\xE9rdida en Agujero Negro: Ransomware cifra tu PC y copias.
+    Sin recuperaci\xF3n."
+  correct: 1
+  correctSprite: {fileID: 0}
+  IncorrectSprite: {fileID: 0}

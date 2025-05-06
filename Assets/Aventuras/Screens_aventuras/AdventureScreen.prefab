@@ -53,9 +53,9 @@ MonoBehaviour:
   startButton: {fileID: 5639810048483558676, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
   option1: {fileID: 5639810048483558676, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
   option2: {fileID: 5505710021021674017, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
-  speedText: {fileID: 2882443920610606815, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
   buttons: {fileID: 8237434826297384436, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
   textboxImage: {fileID: 2611412690492989901, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
+  randomizer: {fileID: 0}
 --- !u!1 &5299708114510410783
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,6 +242,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3648333041126958071, guid: 4403a3ddb81820246ba37faceeaa73f4, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802414851164700901, guid: 4403a3ddb81820246ba37faceeaa73f4, type: 3}
+      propertyPath: autoSpeak
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5802414851164700901, guid: 4403a3ddb81820246ba37faceeaa73f4, type: 3}

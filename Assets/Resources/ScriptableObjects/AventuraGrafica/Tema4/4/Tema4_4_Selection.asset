@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
+  m_Name: Tema4_4_Selection
+  m_EditorClassIdentifier: 
+  mainText: "Love is in the Air! Y en este caso el WIFI es una de las v\xEDas m\xE1s
+    recurrentes donde el ENJAMBRE roba la informaci\xF3n\u2026 \xBFPor qu\xE9 crees
+    que pase?"
+  rightOption: "El Wi-Fi puede ser inseguro porque las redes p\xFAblicas a menudo
+    no est\xE1n encriptadas"
+  leftOption: "Mientras est\xE9 en mi casa no pasa nada, seguridad total"
+  rigthCorrect: 1
+  feedbackCorrect: {fileID: 11400000, guid: b44ed39e7daf2d04f8b4d963a9920a44, type: 2}
+  feedbackIncorrect: {fileID: 11400000, guid: ba555e53e63da2c4697456b1e1b6a6b0, type: 2}

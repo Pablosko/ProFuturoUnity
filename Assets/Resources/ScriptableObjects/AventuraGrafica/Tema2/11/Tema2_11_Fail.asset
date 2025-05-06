@@ -18,5 +18,5 @@ MonoBehaviour:
   rightOption: Continuar
   leftOption: 
   rigthCorrect: 0
-  feedbackCorrect: {fileID: 0}
+  feedbackCorrect: {fileID: 11400000, guid: 8030dcf2a7814eb4cb1be0b530ab7099, type: 2}
   feedbackIncorrect: {fileID: 0}

@@ -9,5 +9,15 @@ public class GameQuestion : ScriptableObject
     public string successMessage;
     public string errorMessage;
     public bool correct;
-  
+
+    public void Shuffle() 
+    {
+        if (Random.Range(0, 100) >= 50) 
+        {
+            correct = !correct;
+            string temp = rightText;
+            rightText = leftText;
+            leftText = temp;
+        }
+    }
 }

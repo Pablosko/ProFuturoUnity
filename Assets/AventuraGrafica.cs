@@ -24,6 +24,13 @@ public class AventuraGrafica : MonoBehaviour
     {
         Invoke("Delay", 0.5f);
     }
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            End();
+        }
+    }
     public void Delay() 
     {
         SetAdventureFromTema(temaNumero);
@@ -53,10 +60,13 @@ public class AventuraGrafica : MonoBehaviour
         if (screenObj != null)
             Destroy(screenObj);
 
-        if(data.IsFinal())
+        if (data.IsFinal())
             screenObj = Instantiate(lastFeedbackScreen, instanciateScreenTransform);
-        else if (data.IsQuestion())
+        else if (data.IsQuestion()) 
+        {
             screenObj = Instantiate(questionScreenPrefab, instanciateScreenTransform);
+            screenObj.GetComponent<AventuraGraficaScreen>().randomizer.RandimzeAll();
+        }
         else
             screenObj = Instantiate(feedbackScreenPrefab, instanciateScreenTransform);
 
@@ -64,7 +74,7 @@ public class AventuraGrafica : MonoBehaviour
 
         AventuraGraficaScreen screen = screenObj.GetComponent<AventuraGraficaScreen>();
 
-        if (screen is AdventureScreenFeedback feedbackScreen)
+        if (screen is AdventureScreenFeedback feedbackScreen && !data.IsFinal())
         {
             switch (pendingBackground)
             {
@@ -105,7 +115,11 @@ public class AventuraGrafica : MonoBehaviour
         var nextData = currentData.GetNextScreenData(realCorrect);
         SetScreen(nextData);
     }
-
+    public void End() 
+    {
+        Instantiate(nextSequenceManager, HudController.instance.transform);
+        Destroy(gameObject);
+    }
 
 }
 

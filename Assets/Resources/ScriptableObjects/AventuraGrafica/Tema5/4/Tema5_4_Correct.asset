@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
+  m_Name: Tema5_4_Correct
+  m_EditorClassIdentifier: 
+  mainText: "\xA1As\xED es! \u270B\nEs como dejar la llave de la nave bajo el felpudo.
+    Uno de los errores comunes es usar fechas de nacimiento, aniversario y \xA1fechas
+    especiales!\n\n\xA1Usa combinaciones \xFAnicas!"
+  rightOption: Continuar
+  leftOption: 
+  rigthCorrect: 0
+  feedbackCorrect: {fileID: 11400000, guid: 8bbe714ba3429f04e9be80fca27ebdf7, type: 2}
+  feedbackIncorrect: {fileID: 0}

@@ -5,7 +5,7 @@ using System.IO;
 public class GameQuestionGenerator : EditorWindow
 {
     private string jsonInput = "";
-    private string basePath = "Assets/Resources/ScriptableObjects/Games/SelectionGame";
+    private string basePath = "Assets/Resources/ScriptableObjects/Games/SelectionGame/2";
 
     [MenuItem("Tools/Generar Preguntas de Juego (Selection)")]
     public static void ShowWindow()

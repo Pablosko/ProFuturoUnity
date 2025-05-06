@@ -8,6 +8,7 @@ public class HeaderUI : MonoBehaviour
     public List<Sprite> medals;
     public List<Image> medalsUI;
     public Image avatarImage;
+    public Sprite spawnedAvatar;
     void Start()
     {
         
@@ -35,8 +36,20 @@ public class HeaderUI : MonoBehaviour
             
         }
     }
-    public void SetAvatar(Sprite sprite) 
+    public void SetAllMedals(int stage)
+    {
+        int index = 0;
+        foreach (Image ui in medalsUI)
+        {
+            if (index >= stage)
+                return;
+            SetMedalState(index, true);
+            index++;
+        }
+    }
+    public void SetAvatar(Sprite sprite,Sprite full) 
     {
         avatarImage.sprite = sprite;
+        spawnedAvatar = full;
     }
 }

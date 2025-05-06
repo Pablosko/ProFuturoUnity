@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
+  m_Name: Tema5_3_Correct
+  m_EditorClassIdentifier: 
+  mainText: "\xA1Excelente! \u270B\nEl error com\xFAn es que se usen nombres de familia/conocidos
+    y tambi\xE9n utilizar hechos com\xFAnmente conocidos o publicados sobre su persona.\n\n"
+  rightOption: Adelante
+  leftOption: 
+  rigthCorrect: 0
+  feedbackCorrect: {fileID: 11400000, guid: 9e0add861d266ca41941d6f5fbcf3579, type: 2}
+  feedbackIncorrect: {fileID: 0}

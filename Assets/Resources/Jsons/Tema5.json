@@ -1,0 +1,82 @@
+[
+  {
+    "id": "5.1.1",
+    "hasScreen": true,
+    "screenText": "La última parte del entrenamiento ha llegado y quizás, es una de las más importantes. Nuestra nave no se deja pilotar por cualquiera, por ello deberás crear una contraseña segura y obtener la última insignia que valide que eres digno de confianza como Guardián Legendario(a). Nuestra salida, está apunto de comenzar…",
+    "screenButtonText": "¡De acuerdo!"
+  },
+  {
+    "id": "5.1.2",
+    "question": "¿Cuál crees que sea la contraseña más usada en el ‘planeta sabio’ la Tierra?",
+    "leftOption": "FiruLAis!",
+    "rightOption": "1234",
+    "rightIsCorrect": true,
+    "feedbackCorrect": {
+      "title": "¡Exacto! ✋",
+      "text": "Sorprendente, ¿no? Cómo es que esta humanidad es capaz de crear maravillas como Chichen-itza y tenga tan poco cuidado con la creación de contraseñas.",
+      "detail": "También usar patrones del teclado es un error común (p.ej. qwerty)."
+    },
+    "feedbackIncorrect": {
+      "title": "¡Noo!",
+      "text": "Aunque no lo creas, esta opción puede ser más segura que… 1234 que es una de las contraseñas más usadas en ¡toda la galaxia!",
+      "detail": "También usar patrones del teclado es un error común (p.ej. qwerty)."
+    }
+  },
+  {
+    "id": "5.1.3",
+    "question": "Los humanos son conocidos por sus fuertes lazos sociales, ¿qué error común crees que cometen a la hora de crear contraseñas seguras?",
+    "leftOption": "Usar los nombres de sus “ex”",
+    "rightOption": "Usar nombres de familia y conocidos",
+    "rightIsCorrect": true,
+    "feedbackCorrect": {
+      "title": "¡Excelente! ✋",
+      "text": "El error común es que se usen nombres de familia/conocidos y también utilizar hechos comúnmente conocidos o publicados sobre su persona.",
+      "detail": ""
+    },
+    "feedbackIncorrect": {
+      "title": "Vaya vaya… ¡No!",
+      "text": "¡Estaría bien que la cambies! … El error común es que se usen nombres de familia/conocidos y también utilizar hechos comúnmente conocidos o publicados sobre su persona.",
+      "detail": ""
+    }
+  },
+  {
+    "id": "5.1.4",
+    "question": "¡Guardián! ¡Te regalan la mascota que querías! Tu quieres usar el nombre de tu mascota y la fecha especial en tu contraseña. Eso es...",
+    "leftOption": "¡Acertado! Siempre la recordaré",
+    "rightOption": "¡Peligroso! Nos ponemos en peligro",
+    "rightIsCorrect": true,
+    "feedbackCorrect": {
+      "title": "¡Así es! ✋",
+      "text": "Es como dejar la llave de la nave bajo el felpudo. Uno de los errores comunes es usar fechas de nacimiento, aniversario y ¡fechas especiales!",
+      "detail": "¡Usa combinaciones únicas!"
+    },
+    "feedbackIncorrect": {
+      "title": "¡Error crítico! 💥",
+      "text": "Así hackearon la base de datos de la Estación Alpha. El ENJAMBRE le es más fácil si dejas referencias de tu vida o cosas evidentes.",
+      "detail": "Usar fechas de nacimiento, aniversarios es un… ¡error muy común! ¡Usa combinaciones únicas!"
+    }
+  },
+  {
+    "id": "5.1.5",
+    "question": "¡Guardián! El ENJAMBRE está probando 10,000 contraseñas por segundo. ¿Cómo elevas tus defensas?",
+    "leftOption": "Usar caracteres alfanuméricos (p.ej. P3rr1To, Pr0fu7uR0)",
+    "rightOption": "Cambiar mis contraseñas cada 90 días",
+    "rightIsCorrect": true,
+    "feedbackCorrect": {
+      "title": "¡Brillante!",
+      "text": "Renovar tus contraseñas es ¡la clave!",
+      "detail": "Utilizar palabras o combinaciones de caracteres alfanuméricos, numéricos y símbolos deducibles fácilmente (p.ej. P3rr1To, Pr0fu7uR0, C4r0l1n4, etc.) mejor: ¡Evítalo!"
+    },
+    "feedbackIncorrect": {
+      "title": "¡Casi!",
+      "text": "Aunque podría dar la sensación de seguridad es relativamente sencillo para los hackers encontrar el patrón.",
+      "detail": "Y más si dejamos alguna referencia personal."
+    }
+  },
+  {
+    "id": "5.1.6",
+    "hasScreen": true,
+    "screenText": "¡Genial Guardián! Tu criterio ha blindado nuestros sistemas... Pero el ENJAMBRE no descansa. Ahora mismo sus hackers oscuros escanean cada contraseña de la Red Galáctica.\n\n📌 Decálogo del Guardián Legendario:\nA continuación, te mostraré las leyes de acero que mantendrán a salvo la Red Galáctica. Si aceptas cada una, ¿te comprometes a cumplir con estas reglas demostrando tu honor?",
+    "screenButtonText": "Sí, ¡acepto!"
+  }
+]

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e76eba1ca9b6f43afe58519e3930e1, type: 3}
+  m_Name: Question_5
+  m_EditorClassIdentifier: 
+  text: "Hoy es la gran fiesta en la nave, pero detecto un comportamiento extra\xF1o
+    en mi m\xE1quina\u2026 \xBFTerminando la fiesta lo reporto?"
+  rightText: "\xA1No! Inmediatamente lo reporto al equipo de soporte y seguridad"
+  leftText: "S\xED, ya con m\xE1s calma lo revisamos"
+  successMessage: "\u2705 Efecto magistral: La nave no fue comprometida. La anomal\xEDa
+    era un intento de ataque."
+  errorMessage: "\u274C Crisis en la nave: La fiesta dur\xF3 1 d\xEDa y el miembro
+    de la colmena forz\xF3 el acceso a trav\xE9s de tu m\xE1quina."
+  correct: 1
+  correctSprite: {fileID: 0}
+  IncorrectSprite: {fileID: 0}

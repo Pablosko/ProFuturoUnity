@@ -122,10 +122,10 @@ TextureImporter:
       name: medalla2_0
       rect:
         serializedVersion: 2
-        x: 290
-        y: 347
-        width: 842
-        height: 807
+        x: 426
+        y: 505
+        width: 576
+        height: 576
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,10 +144,10 @@ TextureImporter:
       name: medalla2_1
       rect:
         serializedVersion: 2
-        x: 633
-        y: 347
-        width: 12
-        height: 6
+        x: 634
+        y: 348
+        width: 10
+        height: 4
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,10 +166,10 @@ TextureImporter:
       name: medalla2_2
       rect:
         serializedVersion: 2
-        x: 686
-        y: 347
-        width: 6
-        height: 6
+        x: 687
+        y: 348
+        width: 4
+        height: 4
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
