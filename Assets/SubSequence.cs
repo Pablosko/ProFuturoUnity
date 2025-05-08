@@ -12,6 +12,8 @@ public class SubSequence : MonoBehaviour
     public virtual void OnStart(SubSequenceManager sm)
     {
         sequenceManager = sm;
+        transform.localScale = Vector3.one;
+        transform.position = Vector3.zero;
     }
     public virtual void Update()
     {

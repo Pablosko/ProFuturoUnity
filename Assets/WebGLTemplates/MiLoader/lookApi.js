@@ -62,7 +62,7 @@ function getAPI()
    // and the current window has an opener window
    if ( (theAPI == null) && (window.opener != null) && (typeof(window.opener) != "undefined") )
    {
-      // try to find the API in the current window’s opener
+      // try to find the API in the current windowï¿½s opener
       theAPI = findAPI(window.opener);
    }
    // if the API has not been found
@@ -97,7 +97,7 @@ function getTmpAPI()
    // and the current window has an opener window
    if ( (theTmpAPI == null) && (window.opener != null) && (typeof(window.opener) != "undefined") )
    {
-      // try to find the API in the current window’s opener
+      // try to find the API in the current windowï¿½s opener
       theTmpAPI = findTmpAPI(window.opener);
    }
    // if the API has not been found
@@ -191,7 +191,7 @@ function getCURSO_API()
    // and the current window has an opener window
    if ( (theCURSO_API == null) && (window.opener != null) && (typeof(window.opener) != "undefined") )
    {
-      // try to find the API in the current window’s opener
+      // try to find the API in the current windowï¿½s opener
       theCURSO_API = findCURSO_API(window.opener);
    }
    // if the API has not been found
@@ -221,7 +221,7 @@ function createCourse()
   if (API == null) 
   { 
   
-       //alert("No se ha encontrado la API de comunicación con la plataforma");  
+       //alert("No se ha encontrado la API de comunicaciï¿½n con la plataforma");  
 
           makeCookie();
           API = new COOKIE_API(); 
@@ -268,7 +268,7 @@ function cargarCurso()
           
         if (n == 2)
         {
-         // alert("No se ha podido cargar la API de Servidor, versión local");          
+         // alert("No se ha podido cargar la API de Servidor, versiï¿½n local");          
           makeCookie();
           API = new COOKIE_API(); 
           tmpAPI = API;

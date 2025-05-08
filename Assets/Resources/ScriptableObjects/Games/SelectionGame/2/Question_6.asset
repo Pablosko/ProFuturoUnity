@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e76eba1ca9b6f43afe58519e3930e1, type: 3}
+  m_Name: Question_6
+  m_EditorClassIdentifier: 
+  text: "Un email urgente de tu banco pide datos. \xBFClic r\xE1pido en el enlace
+    y los proporcionas?"
+  rightText: "S\xED, \xA1es mi banco!"
+  leftText: "\xA1No, no me fio!"
+  successMessage: "\u2705 \xA1Sabia decisi\xF3n! Siempre verifica la autenticidad
+    de los sitios \U0001F4E7 Los hackers suplantan hasta al Alto Mando."
+  errorMessage: "\u274C \xA1Alerta de phishing! \xA1Brecha de seguridad! Podr\xEDas
+    estar cayendo en una trampa."
+  correct: 1

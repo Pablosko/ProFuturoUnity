@@ -349,7 +349,7 @@ MonoBehaviour:
   onLastMessageEnd:
     m_PersistentCalls:
       m_Calls: []
-  autoSpeak: 0
+  autoSpeak: 1
 --- !u!1 &3519079745465682381
 GameObject:
   m_ObjectHideFlags: 0

@@ -32,6 +32,10 @@ PrefabInstance:
       propertyPath: instanciateScreenTransform
       value: 
       objectReference: {fileID: 8618033213674759506}
+    - target: {fileID: 2957748007327108593, guid: d5373ea585fa3b54eb4b6c6cf5d8ae36, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -4
+      objectReference: {fileID: 0}
     - target: {fileID: 5859604697630594355, guid: d5373ea585fa3b54eb4b6c6cf5d8ae36, type: 3}
       propertyPath: m_Sprite
       value: 

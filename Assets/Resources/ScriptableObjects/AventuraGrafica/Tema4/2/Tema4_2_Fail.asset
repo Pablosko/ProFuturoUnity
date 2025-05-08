@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
+  m_Name: Tema4_2_Fail
+  m_EditorClassIdentifier: 
+  mainText: "Entiendo tu intenci\xF3n...\n\xBFTe sentir\xEDas c\xF3modo/a si todos
+    en la oficina de correos leyeran ese mensaje tan personal?\n\nEn el mundo digital,
+    enviar informaci\xF3n sin cifrar es como enviar una postal. Cualquiera podr\xEDa
+    \"leerla\" en el camino. Reflexiona sobre la importancia de la privacidad en
+    tus comunicaciones diarias. El cifrado es ese 'sobre cerrado' que asegura que
+    tu informaci\xF3n solo llegue a quien t\xFA quieres."
+  rightOption: Entendido
+  leftOption: 
+  rigthCorrect: 0
+  feedbackCorrect: {fileID: 11400000, guid: 3bc60ff38c5530a43908d2ab2de24726, type: 2}
+  feedbackIncorrect: {fileID: 0}

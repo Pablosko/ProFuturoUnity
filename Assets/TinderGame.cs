@@ -2,8 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-
-public class TinderGame : MonoBehaviour
+public class TinderGame : Game
 {
     public List<GameQuestion> questions;
     public GameObject cardPerfab;
@@ -32,13 +31,26 @@ public class TinderGame : MonoBehaviour
     public TextMeshProUGUI correctText;
     public TextMeshProUGUI incorrectText;
 
+    [TextArea(3,5)]
+    public string endCorrectText;
+    [TextArea(3, 5)]
+    public string endinCorrectText;
+
     private void Awake()
     {
         instance = this;
 
         // Cargar preguntas desde Resources
-        questions = new List<GameQuestion>(Resources.LoadAll<GameQuestion>("ScriptableObjects/Games/SelectionGame"));
+        questions = new List<GameQuestion>(Resources.LoadAll<GameQuestion>("ScriptableObjects/Games/SelectionGame/" + stageGame));
         Debug.Log($"Cargadas {questions.Count} preguntas.");
+    }
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            correctAnswers = 10;
+            EndGame();
+        }
     }
 
     void OnEnable()
@@ -65,19 +77,21 @@ public class TinderGame : MonoBehaviour
             var temp = questions[i];
             int randomIndex = Random.Range(i, questions.Count);
             questions[i] = questions[randomIndex];
+            questions[i].Shuffle();
             questions[randomIndex] = temp;
         }
     }
 
     GameQuestion GetCurrentQuestion()
     {
-        return questions[currentRound];
+        return questions[currentRound - 1];
     }
 
     public void NextCard()
     {
         feedBackMessage.gameObject.SetActive(false);
-        if (currentRound >= totalRounds || currentRound >= questions.Count)
+        currentRound++;
+        if (currentRound >= totalRounds || currentRound > questions.Count)
         {
             EndGame();
             return;
@@ -88,12 +102,6 @@ public class TinderGame : MonoBehaviour
             Destroy(currentCard.gameObject);
         currentCard = Instantiate(cardPerfab, cardTransform).GetComponent<GameCard>();
         currentCard.SetData(question, cardTransform.GetComponent<RectTransform>(), lerpTransform);
-        currentRound++;
-        if (currentRound >= questions.Count)
-        {
-            EndGame();
-            return;
-        }
         cardTransform.gameObject.SetActive(true);
         UpdateRoundsText();
     }
@@ -122,6 +130,7 @@ public class TinderGame : MonoBehaviour
 
     void EndGame()
     {
+        UpdateRoundsText();
         float ratio = (float)correctAnswers / totalRounds;
         Debug.Log($"Juego terminado. Ratio: {ratio}");
         cardTransform.gameObject.SetActive(false);
@@ -144,10 +153,15 @@ public class TinderGame : MonoBehaviour
         feedBackMessage.gameObject.SetActive(true);
         feedBackMessage.SetData(correct, message, type);
     }
-    public void TerminateGame() 
+  
+}
+public class Game : MonoBehaviour 
+{
+    public int stageGame;
+    public void TerminateGame()
     {
         Destroy(gameObject);
         Home.instance.gameObject.SetActive(true);
-        Home.instance.StartStage(2);
+        Home.instance.StartStage(stageGame+ 1);
     }
 }

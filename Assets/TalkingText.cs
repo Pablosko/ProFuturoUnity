@@ -44,10 +44,12 @@ public class TalkingText : MonoBehaviour
 
     void Update()
     {
+        /*
         if (!autoSpeak && isTyping && Input.GetMouseButtonDown(0))
         {
             PutAllText();
         }
+        */
     }
 
     void ShowMessage(string message)

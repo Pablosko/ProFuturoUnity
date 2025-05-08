@@ -15,7 +15,7 @@ public class AventuraGraficaScreen : MonoBehaviour
     protected AventuraGrafica adventure;
 
     protected GraphicAdventureData currentData;
-
+    public ButtonRandomizer randomizer;
     public virtual void SetScreen(GraphicAdventureData data, AventuraGrafica controller)
     {
         adventure = controller;

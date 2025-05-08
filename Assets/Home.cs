@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using JetBrains.Annotations;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -31,9 +32,17 @@ public class Home : MonoBehaviour
     }
     public void StartStage(int stage)
     {
+        if (stage >= 7)
+            return;
         currentStage = stage;
-        homeStagesUI[stage - 1].BackToShip();
-        Instantiate(SequenceManagers[stage - 1],HudController.instance.stagesTransform).GetComponent<SequenceManager>().LoadFirstSequence();
+        if (stage == 6) 
+            homeStagesUI[0].BackToShip();
+        else
+            homeStagesUI[stage - 1].BackToShip();
+        SequenceManager sq = Instantiate(SequenceManagers[stage - 1], HudController.instance.stagesTransform).GetComponent<SequenceManager>();
+        sq.GetComponent<RectTransform>().position = Vector3.zero;
+        sq.GetComponent<RectTransform>().localScale = Vector3.one;
+        sq.LoadFirstSequence();
     }
     public void StartStageSubSequence(int stage) 
     {
@@ -59,6 +68,7 @@ public class Home : MonoBehaviour
 
     public void MoveCameraToStage(HomeStageUI stage)
     {
+        SetNavegableState(false);
         FocusOnElement(stage, duration);
     }
 
@@ -67,6 +77,7 @@ public class Home : MonoBehaviour
         if (currentCoroutine != null)
             StopCoroutine(currentCoroutine);
 
+        SetNavegableState(true);
         currentCoroutine = StartCoroutine(ResetCameraView(duration));
     }
 

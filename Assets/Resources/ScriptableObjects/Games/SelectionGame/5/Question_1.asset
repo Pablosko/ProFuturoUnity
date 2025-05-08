@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e76eba1ca9b6f43afe58519e3930e1, type: 3}
+  m_Name: Question_1
+  m_EditorClassIdentifier: 
+  text: "Un proveedor que conoces de hace mucho, te ofrece acelerar el proceso omitiendo
+    la auditor\xEDa de seguridad 'esta vez'. \xBFAceptas?"
+  rightText: No, exiges cumplir el proceso.
+  leftText: "S\xED, es de confianza."
+  successMessage: "\u2705 Beneficio: Auditor\xEDa encontr\xF3 vulnerabilidades cr\xEDticas.
+    Mitigaste un riesgo cr\xEDtico de forma magistral."
+  errorMessage: "\u274C Consecuencia: Mes despu\xE9s, sufren un ataque por malware
+    en su sistema. Pol\xEDtica 1 existe porque un alto porcentaje de las brechas
+    vienen de terceros."
+  correct: 1
+  correctSprite: {fileID: 0}
+  IncorrectSprite: {fileID: 0}

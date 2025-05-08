@@ -44,6 +44,6 @@ public class AvatarSelectionScript : MonoBehaviour
     }
     public void SelectAvatar() 
     {
-        HudController.instance.header.SetAvatar(avatars[selectedIndex].headerSprite);
+        HudController.instance.header.SetAvatar(avatars[selectedIndex].headerSprite, avatars[selectedIndex].fullSprite);
     }
 }

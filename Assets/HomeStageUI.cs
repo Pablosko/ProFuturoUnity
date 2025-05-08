@@ -22,6 +22,11 @@ public class HomeStageUI : MonoBehaviour
     {
         Image img = GetComponent<Image>();
         img.alphaHitTestMinimumThreshold = 1;
+        SetPlayerImage();
+    }
+    public void SetPlayerImage() 
+    {
+        playerAnim.gameObject.GetComponent<Image>().sprite = HudController.instance.header.spawnedAvatar;
     }
     public void StartSubSequence() 
     {

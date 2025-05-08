@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
+  m_Name: Tema4_4_Correct
+  m_EditorClassIdentifier: 
+  mainText: "\xA1Genial, Guardi\xE1n! \u270B\nPor eso, aseg\xFArate cuando te conectes
+    a una red Wi-Fi, de que tenga una contrase\xF1a segura y que est\xE9 configurada
+    con mecanismos de seguridad, ya sea WPA2 o WPA3.\n\nEstos protegen tus datos
+    cuando navegas de forma inal\xE1mbrica."
+  rightOption: Vamos
+  leftOption: 
+  rigthCorrect: 0
+  feedbackCorrect: {fileID: 11400000, guid: 33a03983881854f4bbdf803dd493a59c, type: 2}
+  feedbackIncorrect: {fileID: 0}

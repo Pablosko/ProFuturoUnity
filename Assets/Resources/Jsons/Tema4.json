@@ -1,0 +1,76 @@
+[
+  {
+    "id": "4.1.0",
+    "hasScreen": true,
+    "screenText": "¡Bienvenido(a) Guardián! Hoy estaremos en la Tierra observando los comportamientos de las personas que habitan este singular planeta. Nuestro objetivo es conocer con rigor cómo operan las comunicaciones seguras y detectar vulnerabilidades comunes aprovechadas por el ENJAMBRE para robar activos ¿preparado(a)?",
+    "screenButtonText": "¡Adelante!"
+  },
+  {
+    "id": "4.1.1",
+    "question": "¿Qué significa que la comunicación de mis dispositivos sea segura?",
+    "leftOption": "Una postal",
+    "rightOption": "Un sobre cerrado",
+    "rightIsCorrect": true,
+    "feedbackCorrect": {
+      "title": "¡Exacto!",
+      "text": "Quieres que tu mensaje sea privado y seguro, y eso es precisamente lo que significa una comunicación segura en tus dispositivos.",
+      "detail": "El \"sobre cerrado\" es el cifrado, que protege tu información de miradas indiscretas. El cifrado es ese 'sobre cerrado' que asegura que tu información solo llegue a quien tú quieres."
+    },
+    "feedbackIncorrect": {
+      "title": "Entiendo tu intención...",
+      "text": "¿Te sentirías cómodo/a si todos en la oficina de correos leyeran ese mensaje tan personal?",
+      "detail": "En el mundo digital, enviar información sin cifrar es como enviar una postal. Cualquiera podría \"leerla\" en el camino. Reflexiona sobre la importancia de la privacidad en tus comunicaciones diarias. El cifrado es ese 'sobre cerrado' que asegura que tu información solo llegue a quien tú quieres."
+    }
+  },
+  {
+    "id": "4.1.2",
+    "question": "¿Dónde usó principalmente las comunicaciones seguras?",
+    "leftOption": "La “S” significa que hay información secreta",
+    "rightOption": "La “S” significa que es segura",
+    "rightIsCorrect": true,
+    "feedbackCorrect": {
+      "title": "¡Bingo! ✋",
+      "text": "La \"S\" al final significa que la comunicación entre tu navegador y el sitio web está cifrada y es segura.",
+      "detail": ""
+    },
+    "feedbackIncorrect": {
+      "title": "¡No realmente! ⚠️",
+      "text": "La \"S\" al final significa que la comunicación entre tu navegador y el sitio web está cifrada y es segura.",
+      "detail": ""
+    }
+  },
+  {
+    "id": "4.1.3",
+    "question": "Love is in the Air! Y en este caso el WIFI es una de las vías más recurrentes donde el ENJAMBRE roba la información… ¿Por qué crees que pase?",
+    "leftOption": "Mientras esté en mi casa no pasa nada, seguridad total",
+    "rightOption": "El Wi-Fi puede ser inseguro porque las redes públicas a menudo no están encriptadas",
+    "rightIsCorrect": true,
+    "feedbackCorrect": {
+      "title": "¡Genial, Guardián! ✋",
+      "text": "Por eso, asegúrate cuando te conectes a una red Wi-Fi, de que tenga una contraseña segura y que esté configurada con mecanismos de seguridad, ya sea WPA2 o WPA3.",
+      "detail": "Estos protegen tus datos cuando navegas de forma inalámbrica."
+    },
+    "feedbackIncorrect": {
+      "title": "Mmm podría ser... ⚠️",
+      "text": "Pero mejor cuando te conectes a una red Wi-Fi, asegúrate de que tenga una contraseña segura y que esté configurada con mecanismos de seguridad, ya sea WPA2 o WPA3.",
+      "detail": "Estos protegen tus datos cuando navegas de forma inalámbrica."
+    }
+  },
+  {
+    "id": "4.1.4",
+    "question": "Por último quiero compartirte un secreto… Los verdaderos Guardianes de la seguridad saben ocultar su rastro especialmente cuando se conectan a WIFIs públicas, utilizando una VPN: Herramienta que permite asegurar que los datos no sean vistos por otras personas.",
+    "leftOption": "¡Genial! Camuflaje para evitar intrusos",
+    "rightOption": "",
+    "rightIsCorrect": false,
+    "feedbackCorrect": {
+      "title": "",
+      "text": "",
+      "detail": ""
+    },
+    "feedbackIncorrect": {
+      "title": "",
+      "text": "",
+      "detail": ""
+    }
+  }
+]

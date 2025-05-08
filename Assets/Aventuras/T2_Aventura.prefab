@@ -19,11 +19,11 @@ PrefabInstance:
     - target: {fileID: 2838250755775656704, guid: d5373ea585fa3b54eb4b6c6cf5d8ae36, type: 3}
       propertyPath: lastFeedbackScreen
       value: 
-      objectReference: {fileID: 288820260778972186, guid: bd4d953782797c14381272377f20e936, type: 3}
+      objectReference: {fileID: 288820260778972186, guid: be1e3f044146f014380d4986e3e1c3bb, type: 3}
     - target: {fileID: 2838250755775656704, guid: d5373ea585fa3b54eb4b6c6cf5d8ae36, type: 3}
       propertyPath: nextSequenceManager
       value: 
-      objectReference: {fileID: 1604702391409720733, guid: 8d1ef533ec815ef4eb3d88b508347c40, type: 3}
+      objectReference: {fileID: 1604702391409720733, guid: 5937ef0dc14c45b498dade381d7aece5, type: 3}
     - target: {fileID: 2838250755775656704, guid: d5373ea585fa3b54eb4b6c6cf5d8ae36, type: 3}
       propertyPath: feedbackScreenPrefab
       value: 
@@ -36,6 +36,14 @@ PrefabInstance:
       propertyPath: instanciateScreenTransform
       value: 
       objectReference: {fileID: 8618033213674759506}
+    - target: {fileID: 5859604697630594355, guid: d5373ea585fa3b54eb4b6c6cf5d8ae36, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4089256790139926089, guid: 7b2ff608f17b00149aba1b0b6de18a07, type: 3}
+    - target: {fileID: 6854409880060792773, guid: d5373ea585fa3b54eb4b6c6cf5d8ae36, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7694272445039290779, guid: d5373ea585fa3b54eb4b6c6cf5d8ae36, type: 3}
       propertyPath: m_Name
       value: T2_Aventura
