@@ -121,34 +121,24 @@
             console.log("🔵 Iniciando conexión SCORM...");
             
         }
-        function getCurseData() {
-            console.log("🔵 Cargando Data...");
-            let data = API.LMSGetValue("cmi.suspend_data")
-            console.log(data);
-            return data
+
+        function initPage(pageId) {
+            console.log("🔵 Iniciando pagina... "+pageId);
+            CURSO.iniciarPagina(pageId);
+            
         }
 
-        function saveData(value) {
-            console.log("💾 Guardando dato SCORM:", value);
-            scorm.set("cmi.core.score.raw", value);
-            scorm.save();
+        function endPage(pageId) {
+            console.log("🔵 Finalizando pagina... "+pageId);
+            CURSO.finalizarPagina(pageId, "");
+            CURSO.setPages();
         }
 
-        function completeCourse() {
-            console.log("🏁 Marcando curso como completado en SCORM.");
-            scorm.set("cmi.core.lesson_status", "completed");
-            scorm.save();
-        }
-
-        function getScore() {
-            var score = scorm.get("cmi.core.score.raw");
-            console.log("📥 Obteniendo puntuación SCORM:", score);
-            return score;
-        }
-
-        function quitSCORM() {
-            console.log("🚪 Cerrando sesión SCORM.");
-            scorm.quit();
+        function pageState(pageId) {
+            console.log("🔵 Checkeando pagina... "+pageId);
+            var state = CURSO.paginaEstado(pageId);
+            console.log("🔵 Estado "+pageId)+": "+state;
+            return state;
         }
     </script>
 

@@ -23,35 +23,28 @@ public class SCORMManager : MonoBehaviour
     private static extern int initScorm();
 #else
     // Dummy (falsas) funciones para cuando no estás en WebGL
-    private static string getCurseData() { Debug.Log("SCORM INIT (Dummy)"); return "test data"; }
     private static int initScorm() { Debug.Log("SCORM INIT (Dummy)"); return 1; }
-    private static void saveData(string value) { Debug.Log("SAVE DATA (Dummy): " + value); }
-    private static void completeCourse() { Debug.Log("COMPLETE COURSE (Dummy)"); }
-    private static string getScore() { Debug.Log("GET SCORE (Dummy)"); return "0"; }
-    private static void quitSCORM() { Debug.Log("QUIT SCORM (Dummy)"); }
+    private static void initPage(string value) { Debug.Log("INIT PAGE (Dummy): " + value); }
+    private static void endPage(string value) { Debug.Log("END page(Dummy): " + value); }
+    private static string pageState(string value) { Debug.Log("GET STATE (Dummy): " + value); return "0"; }
 #endif
 
     void Start()
     {
-       InitScorm();
+       initScorm();
        //Debug.Log(getCurseData()); // Ahora no dará error en Editor
     }
 
-    public void SaveScore(int score)
+    public void InitPage(string pageId)
     {
-        saveData(score.ToString());
+        initPage(pageId);
     }
-    public int InitScorm() 
+    public void EndPage(string pageId)
     {
-        return initScorm();
+        endPage(pageId);
     }
-    public void Complete()
+    public string PageState(string pageId)
     {
-        completeCourse();
-    }
-
-    public void Quit()
-    {
-        quitSCORM();
+        return pageState(pageId);
     }
 }

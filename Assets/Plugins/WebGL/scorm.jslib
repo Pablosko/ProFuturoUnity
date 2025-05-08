@@ -1,26 +1,20 @@
 mergeInto(LibraryManager.library, {
-    getCurseData: function () {
-        var str = getCurseData(); // llamada a la función definida en HTML
-        var buffer = allocate(intArrayFromString(str), 'i8', ALLOC_STACK);
-        return buffer;
-    },
     initScorm: function () {
         initScorm();
         return 1; // o cualquier valor que esperes
     },
-    saveData: function (ptr) {
+    initPage: function (ptr) {
         var str = UTF8ToString(ptr);
-        saveData(str);
+        initPage(str);
     },
-    completeCourse: function () {
-        completeCourse();
+    endPage: function (ptr) {
+        var str = UTF8ToString(ptr);
+        endPage(str);
     },
-    getScore: function () {
-        var str = getScore();
-        var buffer = allocate(intArrayFromString(str), 'i8', ALLOC_STACK);
+    pageState: function (ptr) {
+        var str = UTF8ToString(ptr);
+        var str2 = pageSate(str);
+        var buffer = allocate(intArrayFromString(str2), 'i8', ALLOC_STACK);
         return buffer;
-    },
-    quitSCORM: function () {
-        quitSCORM();
     }
 });
