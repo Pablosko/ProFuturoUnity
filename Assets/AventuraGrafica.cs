@@ -20,6 +20,17 @@ public class AventuraGrafica : MonoBehaviour
     private enum FeedbackType { None, Correct, Incorrect }
     private FeedbackType pendingBackground = FeedbackType.None;
 
+    AudioManager audioManager;
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
+    private void Start()
+    {
+        audioManager.PlayMusic(audioManager.storytellingBg);
+    }
+
     void OnEnable()
     {
         Invoke("Delay", 0.5f);
@@ -81,13 +92,15 @@ public class AventuraGrafica : MonoBehaviour
                 case FeedbackType.Correct:
                     feedbackScreen.text.autoSpeak = true;
                     feedbackScreen.SetBackground(true);
+                    audioManager.PlaySFX(audioManager.storytellingFbOk);
                     break;
                 case FeedbackType.Incorrect:
                     feedbackScreen.text.autoSpeak = true;
                     feedbackScreen.SetBackground(false);
+                    audioManager.PlaySFX(audioManager.storytellingFbKo, 0.5f);
                     break;
                 default:
-                    feedbackScreen.SetBackground(null);
+                    feedbackScreen.SetBackground(null);                    
                     break;
             }
         }
@@ -104,6 +117,7 @@ public class AventuraGrafica : MonoBehaviour
             pendingBackground = realCorrect ? FeedbackType.Correct : FeedbackType.Incorrect;
         else
             pendingBackground = FeedbackType.None;
+            audioManager.PlaySFX(audioManager.nextBtn);
 
         if (currentData.IsFinal())
         {

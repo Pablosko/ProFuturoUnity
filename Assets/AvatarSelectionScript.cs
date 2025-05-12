@@ -11,6 +11,13 @@ public class AvatarSelectionScript : MonoBehaviour
     public TextMeshProUGUI infoText;
     public Image avatarImage;
 
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
     void Start()
     {
         ApplyInfo();
@@ -28,22 +35,23 @@ public class AvatarSelectionScript : MonoBehaviour
     }
     public void ChangeRigth() 
     {
+        audioManager.PlaySFX(audioManager.avatarSelect);
         selectedIndex++;
-        
         if (selectedIndex >= avatars.Count)
             selectedIndex = 0;
         ApplyInfo();
     }
     public void ChangeLeft()
     {
+        audioManager.PlaySFX(audioManager.avatarSelect);
         selectedIndex--;
-
         if (selectedIndex < 0)
             selectedIndex = avatars.Count- 1;
         ApplyInfo();
     }
     public void SelectAvatar() 
     {
+        audioManager.PlaySFX(audioManager.avatarChange);
         HudController.instance.header.SetAvatar(avatars[selectedIndex].headerSprite, avatars[selectedIndex].fullSprite);
     }
 }

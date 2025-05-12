@@ -8,6 +8,12 @@ public class UnlockMedal : MonoBehaviour
     public int number;
     public List<Sprite> medallas = new();
     public Image bigMedalImage;
+
+    AudioManager audioManager;
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
     private void Start()
     {
         bigMedalImage.sprite = medallas[number - 1];
@@ -15,6 +21,7 @@ public class UnlockMedal : MonoBehaviour
     }
     public void UnlockMedalByint(int number) 
     {
+        audioManager.PlaySFX(audioManager.winMedal);
         HudController.instance.header.SetMedalState(number - 1, true);
     }
 

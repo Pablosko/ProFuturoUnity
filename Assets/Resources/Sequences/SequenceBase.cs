@@ -5,9 +5,15 @@ public class SequenceBase : MonoBehaviour
     [HideInInspector]
     public SequenceManager sequenceManager;
     public bool hasTransition;
-    public void Start() 
+
+    AudioManager audioManager;
+    private void Awake()
     {
-    
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
+    private void Start() 
+    {
     }
     public virtual void OnStart(SequenceManager sm)
     {
@@ -47,5 +53,10 @@ public class SequenceBase : MonoBehaviour
     public void Desactivate() 
     {
         gameObject.SetActive(false);
+    }
+
+    public void PlayNextSFX()
+    {
+        audioManager.PlaySFX(audioManager.nextBtn);
     }
 }

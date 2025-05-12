@@ -31,7 +31,12 @@ public class TalkingText : MonoBehaviour
 
     private bool isTyping = false;
     private string currentFullMessage;
-
+   
+    AudioManager audioManager;
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
     void Start()
     {
         CheckButtonStates();
@@ -109,6 +114,7 @@ public class TalkingText : MonoBehaviour
             PutAllText();
             return;
         }
+        audioManager.PlaySFX(audioManager.nextBtn);
 
         if (currentMessageIndex < messages.Count - 1)
         {
@@ -130,7 +136,7 @@ public class TalkingText : MonoBehaviour
             PutAllText();
             return;
         }
-
+        audioManager.PlaySFX(audioManager.prevBtn);
         if (currentMessageIndex > 0)
         {
             messages[currentMessageIndex].undoButtonEvent?.Invoke();

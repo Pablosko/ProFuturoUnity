@@ -81,6 +81,7 @@ public class CardAnswer : MonoBehaviour
     public void EndDrag()
     {
         isDragging = false;
+        TinderGame.instance.playDragSound();
 
         Vector3 delta = (Input.mousePosition - initialMousePos) * sensitivity;
 

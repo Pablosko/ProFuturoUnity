@@ -36,6 +36,8 @@ public class TinderGame : Game
     [TextArea(3, 5)]
     public string endinCorrectText;
 
+    AudioManager audioManager;
+
     private void Awake()
     {
         instance = this;
@@ -43,6 +45,7 @@ public class TinderGame : Game
         // Cargar preguntas desde Resources
         questions = new List<GameQuestion>(Resources.LoadAll<GameQuestion>("ScriptableObjects/Games/SelectionGame/" + stageGame));
         Debug.Log($"Cargadas {questions.Count} preguntas.");
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
     public void Update()
     {
@@ -63,7 +66,7 @@ public class TinderGame : Game
         maingameobject.SetActive(true);
         currentRound = 0;
         correctAnswers = 0;
-
+        audioManager.PlayMusic(audioManager.minigameBg, 0.3f);
         ShuffleQuestions();
         NextCard();
         UpdateProgress();
@@ -118,13 +121,15 @@ public class TinderGame : Game
     }
 
     public void CompleteSelection(bool correct)
-    {
+    {        
         if (correct)
         {
             correctAnswers++;
             UpdateRoundsText();
+            audioManager.PlaySFX(audioManager.minigameFbOk);
             OpenFeedBack(true,GetCurrentQuestion().successMessage,MessageType.NextCard);
         }else
+            audioManager.PlaySFX(audioManager.minigameFbKo);
             OpenFeedBack(false, GetCurrentQuestion().errorMessage, MessageType.NextCard); 
     }
 
@@ -153,7 +158,11 @@ public class TinderGame : Game
         feedBackMessage.gameObject.SetActive(true);
         feedBackMessage.SetData(correct, message, type);
     }
-  
+
+    public  void playDragSound()
+    {
+        audioManager.PlaySFX(audioManager.minigameCardSlide);
+    }
 }
 public class Game : MonoBehaviour 
 {
