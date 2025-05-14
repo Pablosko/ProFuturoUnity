@@ -10,6 +10,7 @@ public class SequenceManager : MonoBehaviour
     public int sequenceIndex;
     public GameObject endStageActivationGo;
     public UnityEvent endActions;
+
     void Start()
     {
         LoadFirstSequence();
@@ -68,5 +69,6 @@ public class SequenceManager : MonoBehaviour
     {
         Home.instance.StartStageSubSequence(index);
     }
+    
 }
 

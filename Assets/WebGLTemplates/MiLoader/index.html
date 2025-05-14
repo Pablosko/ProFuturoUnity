@@ -140,14 +140,29 @@
         }
 
         window.onbeforeunload = finalizar;
-
         function initScorm() {
-            try {
-                createCourse();
-                console.log("🔵 SCORM inicializado");
-            } catch (e) {
-                console.warn("⚠️ Error SCORM:", e);
-            }
+            createCourse();
+            console.log("🔵 Iniciando conexión SCORM...");
+
+        }
+
+        function initPage(pageId) {
+            console.log("🔵 Iniciando pagina... " + pageId);
+            CURSO.iniciarPagina(pageId);
+
+        }
+
+        function endPage(pageId) {
+            console.log("🔵 Finalizando pagina... " + pageId);
+            CURSO.finalizarPagina(pageId, "");
+            CURSO.setPages();
+        }
+
+        function pageState(pageId) {
+            console.log("🔵 Checkeando pagina... " + pageId);
+            var state = CURSO.paginaEstado(pageId);
+            console.log("🔵 Estado " + pageId) + ": " + state;
+            return state;
         }
     </script>
 

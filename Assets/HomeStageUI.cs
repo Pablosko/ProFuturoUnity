@@ -18,11 +18,14 @@ public class HomeStageUI : MonoBehaviour
     public GameObject aura;
     public int temario;
     public SubSequenceManager subsequenceManager;
+    AudioManager audioManager;
+
     void Awake()
     {
         Image img = GetComponent<Image>();
         img.alphaHitTestMinimumThreshold = 1;
         SetPlayerImage();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
     public void SetPlayerImage() 
     {
@@ -74,6 +77,7 @@ public class HomeStageUI : MonoBehaviour
             return;
         playerAnim.SetTrigger("Alpha1to0");
         portalAnim.SetTrigger("portalSpawn");
+        audioManager.PlaySFX(audioManager.portal);
         Invoke("DelayedCall", 2f);
     }
     public void DelayedCall()
