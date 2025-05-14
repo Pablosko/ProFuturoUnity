@@ -1,0 +1,100 @@
+{
+  "screens": [
+    {
+      "text": "Muy bien orgánico(a), veo que aprendes rápido, pero te queda la prueba final: Conocer qué es el <b>MFA</b> o Authentication MultiFactor.",
+      "inputData": null,
+      "feedbackCorrectText": "",
+      "feedbackIncorrectText": ""
+    },
+    {
+      "text": "El <b>MFA</b> (Authentication MultiFactor) es un mecanismo de seguridad que utiliza <b>múltiples métodos de verificación</b> para confirmar la identidad de un usuario.",
+      "inputData": null,
+      "feedbackCorrectText": "",
+      "feedbackIncorrectText": ""
+    },
+    {
+      "text": "<b>¿Qué conoces?</b> - generalmente es una <b>contraseña</b> o una <b>clave</b> que solo tú resguardas.",
+      "inputData": null,
+      "feedbackCorrectText": "",
+      "feedbackIncorrectText": ""
+    },
+    {
+      "text": "<b>¿Qué tienes?</b> - Es <b>un elemento</b> que te fue asignado y <b>que tendrás que demostrar que dispones de ello</b> en ese momento. Ejemplo: un token, un USB o tu celular donde se valida el acceso.",
+      "inputData": null,
+      "feedbackCorrectText": "",
+      "feedbackIncorrectText": ""
+    },
+    {
+      "text": "<b>¿Qué eres?</b> - Se refiere a una <b>característica única</b> y que se utiliza <b>para validar que eres tú</b>. Ejemplo: huella digital, iris, voz, etc.",
+      "inputData": null,
+      "feedbackCorrectText": "",
+      "feedbackIncorrectText": ""
+    },
+    {
+      "text": "Antes de que valore si tienes mi confianza para avanzar, me gustaría comprobar que los conceptos te han quedado claros…",
+      "inputData": null,
+      "feedbackCorrectText": "",
+      "feedbackIncorrectText": ""
+    },
+    {
+      "text": "EL FACTOR X\nIdentifica y elige el <b>factor de verificación</b> predominante en cada uno de los escenarios que te iré mostrando.",
+      "inputData": null,
+      "feedbackCorrectText": "",
+      "feedbackIncorrectText": ""
+    },
+    {
+      "text": "Escenario 1:\nSofía debe ingresar su contraseña y aprobar una notificación en su celular.\n¿Qué se utiliza además de la contraseña?",
+      "inputData": {
+        "options": [
+          "Una contraseña adicional",
+          "El teléfono celular"
+        ],
+        "correctOption": "El teléfono celular"
+      },
+      "feedbackCorrectText": "<b>¡Correcto!</b> El teléfono celular es un ejemplo de <b>\"¿Qué tienes?\"</b>.",
+      "feedbackIncorrectText": "<b>Incorrecto.</b> No es otra contraseña, es el teléfono móvil."
+    },
+    {
+      "text": "Escenario 2:\nLuis debe escanear su huella digital.\n¿Qué se utiliza para la verificación?",
+      "inputData": {
+        "options": [
+          "El PIN del teléfono",
+          "La huella digital"
+        ],
+        "correctOption": "La huella digital"
+      },
+      "feedbackCorrectText": "<b>¡Correcto!</b> La huella digital es un ejemplo de <b>\"¿Qué eres?\"</b>.",
+      "feedbackIncorrectText": "Incorrecto. Se especifica que se usa la huella, no el PIN."
+    },
+    {
+      "text": "Escenario 3:\nMaría debe ingresar un PIN de 6 dígitos.\n¿Qué se utiliza para la verificación?",
+      "inputData": {
+        "options": [
+          "Un token USB",
+          "Un PIN de 6 dígitos"
+        ],
+        "correctOption": "Un PIN de 6 dígitos"
+      },
+      "feedbackCorrectText": "<b>¡Correcto!</b> El PIN es un ejemplo de <b>\"¿Qué conoces?\"</b>.",
+      "feedbackIncorrectText": "Incorrecto. No se menciona un token USB."
+    },
+    {
+      "text": "Escenario 4:\nPedro usa algo que recuerda y luego una contraseña.\n¿Qué se usa además de la contraseña?",
+      "inputData": {
+        "options": [
+          "Reconocimiento facial",
+          "Una tarjeta de acceso"
+        ],
+        "correctOption": "Una tarjeta de acceso"
+      },
+      "feedbackCorrectText": "<b>¡Correcto!</b> Es un ejemplo de <b>\"¿Qué tienes?\"</b>.",
+      "feedbackIncorrectText": "Incorrecto. No se menciona reconocimiento facial."
+    },
+    {
+      "text": "¡Enhorabuena! Has conseguido un gran conocimiento y con ello… <b>¡GUARDIÁN DE LA CIBERSEGURIDAD!</b>",
+      "inputData": null,
+      "feedbackCorrectText": "",
+      "feedbackIncorrectText": ""
+    }
+  ]
+}

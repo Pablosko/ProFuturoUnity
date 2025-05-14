@@ -117,8 +117,8 @@ MonoBehaviour:
     b\xE1sicos que todo guardi\xE1n legendario(a) debe portar dentro.\L\L\r\n\xBFSer\xE1s
     capaz de conseguirlo?."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5aea5319ed8226c4a844289a312e4d59, type: 2}
-  m_sharedMaterial: {fileID: -7420302498599075428, guid: 5aea5319ed8226c4a844289a312e4d59, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 267a2c953077d2a43b2b7a10919f4c14, type: 2}
+  m_sharedMaterial: {fileID: -2947752749771674610, guid: 267a2c953077d2a43b2b7a10919f4c14, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6207865425391118836
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 288820260778972186, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_Name
+      value: 4_11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557173048293826810, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_text
+      value: "\xA1M\xE1s que listo(a)! "
+      objectReference: {fileID: 0}
+    - target: {fileID: 2057297354755933397, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -112
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121216000529841500, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121216000529841500, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121216000529841500, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121216000529841500, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121216000529841500, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121216000529841500, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121216000529841500, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121216000529841500, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121216000529841500, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121216000529841500, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121216000529841500, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121216000529841500, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121216000529841500, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121216000529841500, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121216000529841500, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121216000529841500, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121216000529841500, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121216000529841500, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121216000529841500, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5121216000529841500, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686437264630922164, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_text
+      value: "\xA1Atenci\xF3n, Guardi\xE1n! \U0001F6A8 Los controles de esta nave
+        requieren <b>credenciales indestructibles\u2026</b> Es momento que demuestres
+        todo tu saber.\r\n\xBFPodr\xE1s forjar una contrase\xF1a tan poderosa que
+        hasta el ENJAMBRE se rendir\xE1 ante ella? \U0001F510\u2728El destino de
+        la Red Gal\xE1ctica depende de tu habilidad.\r\n\r\n\r\n\xBFListo(a) para
+        desbloquear el poder de contrase\xF1as legendarias?\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686437264630922164, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412157428600983277, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7755658670467567200, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 902
+      objectReference: {fileID: 0}
+    - target: {fileID: 7755658670467567200, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 7755658670467567200, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 126
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 26720237e5b550343ba13cc33105d97e, type: 3}

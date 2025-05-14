@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb72754acebfdbc479db01149dce0621, type: 3}
+  m_Name: Pass_2
+  m_EditorClassIdentifier: 
+  programName: MFA
+  hightScreenConfiguration: {fileID: 11400000, guid: 9b5731992b7376e43a92cc013011119c, type: 2}
+  lowScreenConfiguration: {fileID: 11400000, guid: 21d3551bcf2cbab44a19aa1a19fb973f, type: 2}
+  components:
+  - {fileID: 0}
+  mainScreenComponents:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  screens:
+  - {fileID: 11400000, guid: c0415f0bd21e89d4f9a05f946912b501, type: 2}
+  - {fileID: 11400000, guid: 5c582fffa1907a24298ea2b7d1ee1492, type: 2}
+  - {fileID: 11400000, guid: 0b76e0c586fa4d74fb0e37c853c20d9b, type: 2}
+  - {fileID: 11400000, guid: 073777ab83e918346b8a802cd9d311c0, type: 2}

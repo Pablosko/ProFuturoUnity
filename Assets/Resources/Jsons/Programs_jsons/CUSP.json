@@ -1,0 +1,44 @@
+{
+  "screens": [
+    {
+      "text": "<b>CUSP</b> (Clave Única de Sistemas Profuturo): Es un <b>identificador</b> que se utiliza para <b>distinguir de manera exclusiva a un usuario.</b>",
+      "inputData": null,
+      "feedbackCorrectText": "",
+      "feedbackIncorrectText": ""
+    },
+    {
+      "text": "Y es utilizado para ingresar a los diferentes sistemas desarrollados por <b>Profuturo</b>",
+      "inputData": null,
+      "feedbackCorrectText": "",
+      "feedbackIncorrectText": ""
+    },
+    {
+      "text": "Está <b>conformado por la primera inicial del nombre y el primer apellido</b>, seguido de un <b>número consecutivo</b> (número de empleado).",
+      "inputData": null,
+      "feedbackCorrectText": "",
+      "feedbackIncorrectText": ""
+    },
+    {
+      "text": "Crea una clave única, utilizando la primera inicial de tu nombre y primer apellido.\n(Solo permite dos caracteres en letra)",
+      "inputData": {
+        "expectedInput": "MA",
+        "startInput": "",
+        "endInput": "",
+        "addSpaces": false
+      },
+      "feedbackCorrectText": "",
+      "feedbackIncorrectText": ""
+    },
+    {
+      "text": "Ahora añade tu número de empleado. (Si no lo conoces puedes ingresar 6 números aleatorios)",
+      "inputData": {
+        "expectedInput": "MA123456",
+        "startInput": "",
+        "endInput": "",
+        "addSpaces": false
+      },
+      "feedbackCorrectText": "¡Muy bien! Debes saber que en ambos casos, <b>la contraseña</b> que utilizas <b>es la misma y que se sincroniza con las diferentes aplicaciones.</b>",
+      "feedbackIncorrectText": "Si el usuario falla al dar “enviar” con menos de 6 caracteres aparece en la pantalla un mensaje de error"
+    }
+  ]
+}

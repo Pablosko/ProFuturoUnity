@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Guardianes del Ciberespacio</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
     <style>
         html, body {
             margin: 0;
@@ -12,12 +12,13 @@
             background: #000 url("fondo.jpg") no-repeat center center fixed;
             background-size: cover;
             overflow: hidden;
+            backface-visibility: hidden;
+            -webkit-font-smoothing: antialiased;
         }
 
         #unity-container {
-            width: 1366px;
-            height: 768px;
-            margin: auto;
+            width: 80vw;
+            aspect-ratio: 16 / 9;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -25,11 +26,9 @@
         }
 
         #unity-canvas {
-            width: 1366px;
-            height: 768px;
+            width: 100%;
+            height: 100%;
             background: transparent;
-            max-width: 100%;
-            max-height: 100%;
         }
 
         #loading {
@@ -38,8 +37,8 @@
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
-            color: white;
             font-family: Arial, sans-serif;
+            color: white;
             z-index: 10;
         }
 
@@ -58,13 +57,49 @@
             width: 0%;
             transition: width 0.2s ease;
         }
+
+        #html-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80vw;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            background: black;
+            z-index: 999;
+            display: none;
+            transition: opacity 0.4s ease;
+            opacity: 0;
+        }
+
+            #html-video.showing {
+                opacity: 1;
+            }
+
+        #skip-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: none;
+            padding: 10px 20px;
+            background: rgba(0,0,0,0.6);
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+            #skip-button:hover {
+                background: rgba(255, 0, 0, 0.6);
+            }
     </style>
 </head>
 
 <body>
     <div id="unity-container">
         <canvas id="unity-canvas"></canvas>
-
         <div id="loading">
             <img src="logo.png" alt="Logo Guardianes" width="160" />
             <div id="progress-bar">
@@ -73,122 +108,160 @@
         </div>
     </div>
 
-    <!-- SCORM Wrapper Script -->
-    <script language="JavaScript" src="jspdf.js"></script>
-    <script language="JavaScript" src="launch_data.js"></script>
-    <script language="JavaScript" src="cookies.js"></script>
-    <script language="JavaScript" src="utilidades_curso.js"></script>
-    <script language="JavaScript" src="cookie_api.js"></script>
-    <script language="JavaScript" src="lookApi.js"></script>
-    <script language="JavaScript">
+    <video id="html-video" muted playsinline preload="auto" autoplay>
+        <source src="" type="video/mp4">
+        Tu navegador no soporta este video.
+    </video>
 
-        // Variables globales
+    <button id="skip-button" onclick="skipHTMLVideo()">SALTAR</button>
+
+    <!-- SCORM VARIABLES -->
+    <script>
         var API = null;
         var CURSO = null;
         var tmpAPI = null;
-        //var AICC_Protocol = "cmi.core_lesson.data";     //-----> Learning Space
-        var AICC_Protocol = "cmi.suspend_data";           //-----> ADL SCORM
-        //esCorrecte = createCourse();
+        var AICC_Protocol = "cmi.suspend_data";
         var UserClicked = false;
         var UserClosed = false;
+
         document.onkeydown = spyclick;
         document.onmousedown = spyclick;
 
         function spyclick() {
             UserClicked = true;
-            setTimeout("UserClicked=false", 2000);
+            setTimeout(() => UserClicked = false, 2000);
         }
-        function finalizar() {
-            if ((!UserClicked) && (!UserClosed)) {
-                //console.log("sdaf");
-                // CURSO.ActualizarDatos(CURSO.puntuacion());
-                CURSO.Commit("");
 
-                CURSO.Finish("");
+        function finalizar() {
+            if (!UserClicked && !UserClosed) {
+                CURSO?.Commit?.("");
+                CURSO?.Finish?.("");
             }
         }
+
         window.onbeforeunload = finalizar;
 
-    </script>
-
-    <!-- Standardised web app manifest -->
-
-    <link rel="manifest" href="appmanifest.json" />
-    <script>
-        function initScorm()
-        {
-            createCourse();
-            console.log("🔵 Iniciando conexión SCORM...");
-            
-        }
-        function getCurseData() {
-            console.log("🔵 Cargando Data...");
-            let data = API.LMSGetValue("cmi.suspend_data")
-            console.log(data);
-            return data
-        }
-
-        function saveData(value) {
-            console.log("💾 Guardando dato SCORM:", value);
-            scorm.set("cmi.core.score.raw", value);
-            scorm.save();
-        }
-
-        function completeCourse() {
-            console.log("🏁 Marcando curso como completado en SCORM.");
-            scorm.set("cmi.core.lesson_status", "completed");
-            scorm.save();
-        }
-
-        function getScore() {
-            var score = scorm.get("cmi.core.score.raw");
-            console.log("📥 Obteniendo puntuación SCORM:", score);
-            return score;
-        }
-
-        function quitSCORM() {
-            console.log("🚪 Cerrando sesión SCORM.");
-            scorm.quit();
+        function initScorm() {
+            try {
+                createCourse();
+                console.log("🔵 SCORM inicializado");
+            } catch (e) {
+                console.warn("⚠️ Error SCORM:", e);
+            }
         }
     </script>
 
-    <!-- Unity Loader -->
+    <!-- SCORM FILES -->
+    <script defer src="jspdf.js"></script>
+    <script defer src="launch_data.js"></script>
+    <script defer src="cookies.js"></script>
+    <script defer src="utilidades_curso.js"></script>
+    <script defer src="cookie_api.js"></script>
+    <script defer src="lookApi.js"></script>
+
+    <!-- UNITY LOADER -->
     <script>
-        // Inicia SCORM antes de cargar el juego
-        initScorm();
+        window.onload = () => {
+            initScorm();
 
-        const buildUrl = "Build";
-        const loaderUrl = `${buildUrl}/Build.loader.js`;
+            const buildUrl = "Build";
+            const loaderUrl = `${buildUrl}/Build.loader.js`;
 
-        const config = {
-            dataUrl: `${buildUrl}/Build.data`,
-            frameworkUrl: `${buildUrl}/Build.framework.js`,
-            codeUrl: `${buildUrl}/Build.wasm`,
-            streamingAssetsUrl: "StreamingAssets",
-            companyName: "Guardianes",
-            productName: "Guardianes del Ciberespacio",
-            productVersion: "1.0",
-            showBanner: function () { } // Oculta "Made with Unity"
+            const config = {
+                dataUrl: `${buildUrl}/Build.data`,
+                frameworkUrl: `${buildUrl}/Build.framework.js`,
+                codeUrl: `${buildUrl}/Build.wasm`,
+                streamingAssetsUrl: "StreamingAssets",
+                companyName: "Guardianes",
+                productName: "Guardianes del Ciberespacio",
+                productVersion: "1.0",
+                showBanner: function () { },
+                webglContextAttributes: {
+                    preserveDrawingBuffer: false,
+                    antialias: false
+                }
+            };
+
+            const canvas = document.querySelector("#unity-canvas");
+            const loading = document.querySelector("#loading");
+            const barFill = document.querySelector("#progress-bar-fill");
+
+            const script = document.createElement("script");
+            script.src = loaderUrl;
+            script.onload = () => {
+                createUnityInstance(canvas, config, (progress) => {
+                    barFill.style.width = `${progress * 100}%`;
+                }).then(() => {
+                    loading.style.display = "none";
+                }).catch((err) => {
+                    console.error("❌ Error al iniciar Unity:", err);
+                    alert("Error al cargar Unity: " + err);
+                });
+            };
+            document.body.appendChild(script);
         };
+    </script>
 
-        const canvas = document.querySelector("#unity-canvas");
-        const loading = document.querySelector("#loading");
-        const barFill = document.querySelector("#progress-bar-fill");
+    <!-- VIDEO CONTROL -->
+    <script>
+        const htmlVideo = document.getElementById("html-video");
+        const skipButton = document.getElementById("skip-button");
+        let videoInterval = null;
 
-        // Inicia el juego
-        const script = document.createElement("script");
-        script.src = loaderUrl;
-        script.onload = () => {
-            createUnityInstance(canvas, config, (progress) => {
-                barFill.style.width = `${progress * 100}%`;
-            }).then(() => {
-                loading.style.display = "none";
-            }).catch((err) => {
-                console.error("❌ Error al iniciar Unity:", err);
-                alert("Error al cargar Unity: " + err);
+        function playHTMLVideo(path) {
+            htmlVideo.src = path;
+            htmlVideo.style.display = "block";
+            htmlVideo.classList.add("showing");
+            skipButton.style.display = "block";
+            htmlVideo.currentTime = 0;
+
+            htmlVideo.play().then(() => {
+                console.log("▶ Reproduciendo video:", path);
+            }).catch(err => {
+                console.warn("⚠️ No se pudo reproducir automáticamente:", err);
             });
+
+            // Fallback por si onended falla
+            clearInterval(videoInterval); // <--- agrega esto antes de iniciar uno nuevo
+            videoInterval = setInterval(() => {
+                if (htmlVideo.ended) {
+                    console.log("🕒 Fallback: video ha terminado (via interval)");
+                    endHTMLVideo();
+                }
+            }, 500);
+        }
+
+        function skipHTMLVideo() {
+            htmlVideo.pause();
+            htmlVideo.style.display = "none";
+            htmlVideo.classList.remove("showing");
+            skipButton.style.display = "none";
+
+            if (typeof unityInstance !== 'undefined') {
+                console.log("⏭ SALTAR → Unity");
+                unityInstance.SendMessage("VideoBridge", "OnHTMLVideoFinished");
+            }
+        }
+
+
+        htmlVideo.onended = () => {
+            console.log("✅ onended ejecutado por navegador");
+            endHTMLVideo();
         };
-        document.body.appendChild(script);
+
+        function endHTMLVideo() {
+            if (htmlVideo.style.display === "none") return; // ya fue cerrado
+
+            htmlVideo.style.display = "none";
+            htmlVideo.classList.remove("showing");
+            skipButton.style.display = "none";
+            clearInterval(videoInterval);
+
+            if (typeof unityInstance !== 'undefined') {
+                console.log("📩 Unity.SendMessage → VideoBridge.OnHTMLVideoFinished");
+                unityInstance.SendMessage("VideoBridge", "OnHTMLVideoFinished");
+            }
+        }
     </script>
 </body>
 </html>

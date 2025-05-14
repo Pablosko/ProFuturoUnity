@@ -53,6 +53,9 @@ MonoBehaviour:
   - {fileID: 3286334052818711933, guid: 23cc5662420f1484abb56a90b3eefa91, type: 3}
   - {fileID: 3286334052818711933, guid: ee2a72b5c5f6bd34fa9fbee57ecb1b77, type: 3}
   - {fileID: 3286334052818711933, guid: 859a4fe8d53f2a8459ee6acd0881f8a0, type: 3}
+  - {fileID: 8010823267944007177, guid: e10fbc7c5a474b84e85dbf00a0358ab5, type: 3}
+  - {fileID: 288820260778972186, guid: 06a13fef80fc02f468c390942e41bb0f, type: 3}
+  - {fileID: 5919098568307080686, guid: 08df384f016f2d14bb9640092351b557, type: 3}
   currentSequence: {fileID: 0}
   sequenceIndex: 0
   endStageActivationGo: {fileID: 0}

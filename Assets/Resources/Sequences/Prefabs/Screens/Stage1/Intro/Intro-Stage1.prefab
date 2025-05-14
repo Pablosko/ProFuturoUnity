@@ -51,6 +51,7 @@ MonoBehaviour:
   sequences:
   - {fileID: 2394244041744600750, guid: 1597973c5d9d1114292f690af6cf9ee8, type: 3}
   - {fileID: 2394244041744600750, guid: f0ec4f033e7aa4a428f80d216e09e197, type: 3}
+  - {fileID: 3811688293085360887, guid: c96dcb95b56fc2040941ced7c12d0b94, type: 3}
   - {fileID: 2394244041744600750, guid: 86b30eca44c3d24408f8064cfcf4bcfd, type: 3}
   - {fileID: 7095361182702579054, guid: 48e9f53288108564590c6ce0a13f13cd, type: 3}
   - {fileID: 159476767697997213, guid: 8dff7438bfe38cb4c87586a1ea408c45, type: 3}

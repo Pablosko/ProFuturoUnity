@@ -1,0 +1,33 @@
+{
+  "screens": [
+    {
+      "text": "<b>El Identificador Único</b> (\"User ID\" o \"ID de usuario\"), es un <b>valor único asignado a cada usuario</b> dentro de la plataforma.",
+      "inputData": null,
+      "feedbackCorrectText": "",
+      "feedbackIncorrectText": ""
+    },
+    {
+      "text": "<b>Está conformado por letras y números.</b>",
+      "inputData": null,
+      "feedbackCorrectText": "",
+      "feedbackIncorrectText": ""
+    },
+    {
+      "text": "El sistema te ha asignado este <b>USER ID</b>\n<b>SRR-30243</b>\n<b>¡MEMORIZALO!</b>",
+      "inputData": null,
+      "feedbackCorrectText": "",
+      "feedbackIncorrectText": ""
+    },
+    {
+      "text": "Selecciona los elementos necesarios.\n3 2 0 S 4 R 3 R",
+      "inputData": {
+        "expectedInput": "SRR30243",
+        "startInput": "USER ID: ",
+        "endInput": "",
+        "addSpaces": false
+      },
+      "feedbackCorrectText": "¡Nada mal! Ahora vayamos a conocer qué es <b>CUSP</b> o <b>Clave Única de Sistemas Profuturo</b>",
+      "feedbackIncorrectText": "Si el usuario falla al dar “enviar”, las letras y/o números incorrectos vuelven al sitio original. El usuario puede intentar el número de veces que necesite. El usuario puede visitar la página anterior de la pantalla."
+    }
+  ]
+}

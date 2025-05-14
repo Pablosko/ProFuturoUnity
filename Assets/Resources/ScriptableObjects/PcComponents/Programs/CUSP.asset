@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb72754acebfdbc479db01149dce0621, type: 3}
+  m_Name: CUSP
+  m_EditorClassIdentifier: 
+  programName: CUSP
+  hightScreenConfiguration: {fileID: 11400000, guid: 9b5731992b7376e43a92cc013011119c, type: 2}
+  lowScreenConfiguration: {fileID: 11400000, guid: 732293c36ffa73f448caa525a80d7cc1, type: 2}
+  components:
+  - {fileID: 0}
+  - {fileID: 0}
+  mainScreenComponents:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  screens:
+  - {fileID: 11400000, guid: 344d2c68c566725449d429cdbd3f598b, type: 2}
+  - {fileID: 11400000, guid: 268cbc196b3d2bf42ae93fe04df441b7, type: 2}
+  - {fileID: 11400000, guid: 84cec1c3cc19fae40951d8de3e12dbb4, type: 2}
+  - {fileID: 11400000, guid: 04a9099ae5010ff4db46f2ba756639d1, type: 2}
+  - {fileID: 11400000, guid: 5de6b627dc5967c4db728c42d0acafa1, type: 2}

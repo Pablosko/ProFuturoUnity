@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb72754acebfdbc479db01149dce0621, type: 3}
+  m_Name: "Identificador \xDAnico"
+  m_EditorClassIdentifier: 
+  programName: "Identificador \xDAnico"
+  hightScreenConfiguration: {fileID: 11400000, guid: 9b5731992b7376e43a92cc013011119c, type: 2}
+  lowScreenConfiguration: {fileID: 11400000, guid: 21d3551bcf2cbab44a19aa1a19fb973f, type: 2}
+  components:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  mainScreenComponents:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  screens:
+  - {fileID: 11400000, guid: f36492e289c60cb4f8d52992522de2e7, type: 2}
+  - {fileID: 11400000, guid: 83966287eca5a8443b4998588e2dc531, type: 2}
+  - {fileID: 11400000, guid: 5e44d340d8af5c04080ed2af13b386c9, type: 2}

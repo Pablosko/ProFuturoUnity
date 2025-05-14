@@ -172,13 +172,17 @@ PrefabInstance:
       value: Volver
       objectReference: {fileID: 0}
     - target: {fileID: 8393267641738568253, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
+      propertyPath: m_fontSize
+      value: 18.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393267641738568253, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 5aea5319ed8226c4a844289a312e4d59, type: 2}
+      objectReference: {fileID: 11400000, guid: 267a2c953077d2a43b2b7a10919f4c14, type: 2}
     - target: {fileID: 8393267641738568253, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -7420302498599075428, guid: 5aea5319ed8226c4a844289a312e4d59, type: 2}
+      objectReference: {fileID: -2947752749771674610, guid: 267a2c953077d2a43b2b7a10919f4c14, type: 2}
     - target: {fileID: 8393267641738568253, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
       propertyPath: m_HorizontalAlignment
       value: 4

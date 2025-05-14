@@ -1,0 +1,317 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2755568557006546185
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7316825167336181395}
+  - component: {fileID: 9023088273059079289}
+  - component: {fileID: 7907077436330724538}
+  m_Layer: 0
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7316825167336181395
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2755568557006546185}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8859467849401553353}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 168, y: 168}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &9023088273059079289
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2755568557006546185}
+  m_CullTransparentMesh: 1
+--- !u!114 &7907077436330724538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2755568557006546185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 6725277810133233552, guid: 421d6b4e569a92d40b4534c9e6a1de1d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &4583088640080047388
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8859467849401553353}
+  - component: {fileID: 8884959361974697973}
+  - component: {fileID: 1503546590679193687}
+  m_Layer: 0
+  m_Name: Screen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8859467849401553353
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4583088640080047388}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7316825167336181395}
+  m_Father: {fileID: 6438383815458069315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -10.5, y: 65}
+  m_SizeDelta: {x: -810, y: -510.90002}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &8884959361974697973
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4583088640080047388}
+  m_CullTransparentMesh: 1
+--- !u!114 &1503546590679193687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4583088640080047388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1001 &5960148384421008174
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1055498911212490554, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: m_text
+      value: "Antes de lanzarnos a defender la galaxia Profuturo, debes conseguir
+        las 5 insignias que todo Guardi\xE1n Legendario(a) del Ciberespacio debe
+        portar dentro y as\xED poder activar la nave que nos llevar\xE1 a nuestro
+        destino, \xBFlisto(a) para darlo todo?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1055498911212490554, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2375807445524145127, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 9160525489358511276, guid: e597ec3987fecd14f91c0f16e822b7b5, type: 3}
+    - target: {fileID: 4255422420296747487, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: m_Name
+      value: 3_1_PCtalking
+      objectReference: {fileID: 0}
+    - target: {fileID: 6711473062348456698, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6711473062348456698, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6711473062348456698, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6711473062348456698, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6711473062348456698, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6711473062348456698, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6711473062348456698, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6711473062348456698, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6711473062348456698, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6711473062348456698, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6711473062348456698, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6711473062348456698, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6711473062348456698, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6711473062348456698, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6711473062348456698, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6711473062348456698, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6711473062348456698, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6711473062348456698, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6711473062348456698, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6711473062348456698, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980135636494603582, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: messages.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980135636494603582, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: messages.Array.data[0].message
+      value: "Perm\xEDteme Guardi\xE1n, presentarte a <b>OKTA, El Gran Computador
+        de gesti\xF3n de identidades y accesos estelar</b> que permite a las organizaciones
+        gal\xE1cticas gestionar de manera segura el acceso a aplicaciones y datos\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980135636494603582, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: messages.Array.data[1].message
+      value: "<b>\xA1Mmmm bueno! OKTA</b> es un poco reservada. Para ganarse su confianza,
+        es necesario que aprendas a usarla a trav\xE9s del conocimiento. La hemos
+        convencido para hacer una simulaci\xF3n con ella, \xBFest\xE1s listo/?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980135636494603582, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: messages.Array.data[2].message
+      value: "Para completar la prueba debes completar <b>al 100%</b> la simulaci\xF3n
+        <b>de gesti\xF3n de identidades y accesos estelar.</b> Con ello, la barra
+        de confianza de OKTA estar\xE1 listo para abrirte el camino."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980135636494603582, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: messages.Array.data[3].message
+      value: 'Es importante que sepas que <b>OKTA se integra con una amplia variedad
+        de aplicaciones,</b> lo que permite gestionar el acceso a estas aplicaciones
+        de manera centralizada y mediante <b>un solo acceso.</b> '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980135636494603582, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: messages.Array.data[0].nextmessage
+      value: "\xA1Hola OKTA!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980135636494603582, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: messages.Array.data[1].nextmessage
+      value: "\xA1Adelante! "
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980135636494603582, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: messages.Array.data[2].nextmessage
+      value: "\xA1Quiero su confianza!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8980135636494603582, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: messages.Array.data[3].nextmessage
+      value: "\xA1Perfecto!"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 859915499659118701, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8859467849401553353}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+--- !u!224 &6438383815458069315 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 859915499659118701, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+  m_PrefabInstance: {fileID: 5960148384421008174}
+  m_PrefabAsset: {fileID: 0}
