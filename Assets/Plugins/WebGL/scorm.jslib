@@ -13,7 +13,7 @@ mergeInto(LibraryManager.library, {
     },
     pageState: function (ptr) {
         var str = UTF8ToString(ptr);
-        var str2 = pageSate(str);
+        var str2 = pageState(str);
         var buffer = allocate(intArrayFromString(str2), 'i8', ALLOC_STACK);
         return buffer;
     }

@@ -5,22 +5,18 @@ using UnityEngine;
 public class SCORMManager : MonoBehaviour
 {
 #if UNITY_WEBGL && !UNITY_EDITOR
-    [DllImport("__Internal")]
-    private static extern string getCurseData();
 
     [DllImport("__Internal")]
-    private static extern void saveData(string value);
-
-    [DllImport("__Internal")]
-    private static extern void completeCourse();
-
-    [DllImport("__Internal")]
-    private static extern string getScore();
-
-    [DllImport("__Internal")]
-    private static extern void quitSCORM();
-       [DllImport("__Internal")]
     private static extern int initScorm();
+
+    [DllImport("__Internal")]
+    private static extern void initPage(string value);
+
+    [DllImport("__Internal")]
+    private static extern void endPage(string value);
+
+    [DllImport("__Internal")]
+    private static extern string pageState(string value);
 #else
     // Dummy (falsas) funciones para cuando no estás en WebGL
     private static int initScorm() { Debug.Log("SCORM INIT (Dummy)"); return 1; }

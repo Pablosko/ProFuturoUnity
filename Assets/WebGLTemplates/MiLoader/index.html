@@ -140,6 +140,17 @@
         }
 
         window.onbeforeunload = finalizar;
+    </script>
+
+    <!-- SCORM FILES -->
+    <script defer src="jspdf.js"></script>
+    <script defer src="launch_data.js"></script>
+    <script defer src="cookies.js"></script>
+    <script defer src="utilidades_curso.js"></script>
+    <script defer src="cookie_api.js"></script>
+    <script defer src="lookApi.js"></script>
+
+    <script type="text/javascript">
         function initScorm() {
             createCourse();
             console.log("🔵 Iniciando conexión SCORM...");
@@ -165,15 +176,6 @@
             return state;
         }
     </script>
-
-    <!-- SCORM FILES -->
-    <script defer src="jspdf.js"></script>
-    <script defer src="launch_data.js"></script>
-    <script defer src="cookies.js"></script>
-    <script defer src="utilidades_curso.js"></script>
-    <script defer src="cookie_api.js"></script>
-    <script defer src="lookApi.js"></script>
-
     <!-- UNITY LOADER -->
     <script>
         window.onload = () => {
