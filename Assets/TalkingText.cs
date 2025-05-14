@@ -19,7 +19,7 @@ public class TalkingText : MonoBehaviour
 {
     public List<TalkingTextContent> messages;
     public TextMeshProUGUI contentText;
-    public float typingSpeed = 0.05f;
+    public float typingSpeed = 0.1f;
     private int currentMessageIndex = 0;
     private Coroutine typingCoroutine;
     public TagConfigs tagCongifs;

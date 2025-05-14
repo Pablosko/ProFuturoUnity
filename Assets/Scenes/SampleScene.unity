@@ -1623,7 +1623,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -4197,6 +4197,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5223991942691291950, guid: 1f539fc11452d4740970b6ddc4d6aaba, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -76
+      objectReference: {fileID: 0}
     - target: {fileID: 5401920040479550068, guid: 1f539fc11452d4740970b6ddc4d6aaba, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -4385,7 +4389,7 @@ PrefabInstance:
       objectReference: {fileID: 77986303}
     - target: {fileID: 8747613857486231699, guid: c36eeafd2d517ba42ba2d58af9eb816f, type: 3}
       propertyPath: sequences.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8747613857486231699, guid: c36eeafd2d517ba42ba2d58af9eb816f, type: 3}
       propertyPath: 'sequences.Array.data[6]'
@@ -4460,3 +4464,4 @@ SceneRoots:
   - {fileID: 1459561167}
   - {fileID: 1585067346}
   - {fileID: 1731515873}
+  - {fileID: 819058087}

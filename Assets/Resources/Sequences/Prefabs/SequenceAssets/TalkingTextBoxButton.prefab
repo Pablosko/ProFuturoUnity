@@ -339,7 +339,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   contentText: {fileID: 5621432902830187617}
-  typingSpeed: 0.05
+  typingSpeed: 0.1
   tagCongifs: {fileID: 11400000, guid: 833b0f1369fab4c47b5a6a355a116c8a, type: 2}
   nextButton: {fileID: 6158045299412447314}
   previusButton: {fileID: 0}

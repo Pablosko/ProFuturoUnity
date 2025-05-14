@@ -94,7 +94,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6745794279351640614, guid: 55b7d470b5684684fbc5556079a16601, type: 3}
       propertyPath: m_Name
-      value: TinderGame15
+      value: TinderGame5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

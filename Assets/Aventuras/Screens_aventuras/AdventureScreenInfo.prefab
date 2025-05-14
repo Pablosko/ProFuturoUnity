@@ -208,6 +208,7 @@ MonoBehaviour:
   option2: {fileID: 5505710021021674017}
   buttons: {fileID: 8237434826297384436}
   textboxImage: {fileID: 2611412690492989901}
+  randomizer: {fileID: 0}
   correctBackground: {fileID: -336984590258604858, guid: 69ed3bea21f84194ebafbb8cd012476a, type: 3}
   incorrectBackground: {fileID: -7201900449997871351, guid: 75474ae35939ece47bf7a0061e30cbfb, type: 3}
   defaultBackground: {fileID: -2692326157372587357, guid: 81eaed89068cc40468c6657661faeea7, type: 3}

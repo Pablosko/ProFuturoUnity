@@ -29,6 +29,10 @@ PrefabInstance:
       value: Prev
       objectReference: {fileID: 0}
     - target: {fileID: 4339618546995002981, guid: 54bdb10b4c01c2749943a2630be2a2c8, type: 3}
+      propertyPath: typingSpeed
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4339618546995002981, guid: 54bdb10b4c01c2749943a2630be2a2c8, type: 3}
       propertyPath: messages.Array.size
       value: 1
       objectReference: {fileID: 0}

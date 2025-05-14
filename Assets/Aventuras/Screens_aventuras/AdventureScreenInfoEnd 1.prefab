@@ -34,7 +34,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1491220156111115180, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: m_Name
-      value: AdventureScreenInfoEnd
+      value: AdventureScreenInfoEnd 1
       objectReference: {fileID: 0}
     - target: {fileID: 2416770649818713288, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: m_AnchorMax.x

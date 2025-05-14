@@ -64,6 +64,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 24
       objectReference: {fileID: 0}
+    - target: {fileID: 2170362019505787402, guid: 557c07b6c3e58a84b96b35c6115a7a38, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2170362019505787402, guid: 557c07b6c3e58a84b96b35c6115a7a38, type: 3}
+      propertyPath: m_margin.y
+      value: -14.797928
+      objectReference: {fileID: 0}
     - target: {fileID: 3683319082788780552, guid: 557c07b6c3e58a84b96b35c6115a7a38, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -178,6 +186,10 @@ PrefabInstance:
     - target: {fileID: 4339618546995002981, guid: 557c07b6c3e58a84b96b35c6115a7a38, type: 3}
       propertyPath: messages.Array.data[0].onEndTalkEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399992909778619357, guid: 557c07b6c3e58a84b96b35c6115a7a38, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -5.3
       objectReference: {fileID: 0}
     - target: {fileID: 4423088064403119970, guid: 557c07b6c3e58a84b96b35c6115a7a38, type: 3}
       propertyPath: m_IsActive
@@ -622,6 +634,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6299311640502893546, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 6299311640502893546, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7261783393836562062, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -653,6 +673,14 @@ PrefabInstance:
     - target: {fileID: 8393267641738568253, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_text
       value: "\xA1VOY CON TODO!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393267641738568253, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393267641738568253, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
+      propertyPath: m_margin.w
+      value: -10.514267
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
