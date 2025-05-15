@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema4_5_Screen
   m_EditorClassIdentifier: 
-  mainText: "Por \xFAltimo quiero compartirte un secreto\u2026 Los <b>verdaderos
+  mainText: "Por \xFAltimo, quiero compartirte un secreto\u2026 Los <b>verdaderos
     Guardianes de la seguridad saben ocultar su rastro</b> especialmente cuando se
     conectan a WIFIs p\xFAblicas, utilizando una VPN: Herramienta que permite asegurar
     que los datos no sean vistos por otras personas."

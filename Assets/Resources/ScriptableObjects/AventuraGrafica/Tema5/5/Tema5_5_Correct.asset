@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema5_5_Correct
   m_EditorClassIdentifier: 
-  mainText: "\xA1Brillante!\nRenovar tus contrase\xF1as es \xA1la clave!\n\nUtilizar
-    palabras o combinaciones de caracteres alfanum\xE9ricos, num\xE9ricos y s\xEDmbolos
-    deducibles f\xE1cilmente (p.ej. P3rr1To, Pr0fu7uR0, C4r0l1n4, etc.) mejor: \xA1Ev\xEDtalo!"
+  mainText: "<b>\xA1Brillante!</b> Renovar tus contrase\xF1as \xA1es la clave! Evita
+    usar combinaciones f\xE1ciles de adivinar como palabras o nombres comunes con
+    n\xFAmeros (p. e. P3rr1To, C4r0l1n4, etc.). mejor: <b>\xA1Ev\xEDtalo!</b>"
   rightOption: Perfecto
   leftOption: 
   rigthCorrect: 0

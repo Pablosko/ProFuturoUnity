@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Tema4_1_Screen
   m_EditorClassIdentifier: 
   mainText: "\xA1Bienvenido(a) Guardi\xE1n! Hoy estaremos en la Tierra observando
-    los comportamientos de las personas que habitan este singular planeta. Nuestro
-    objetivo es conocer con rigor c\xF3mo operan las comunicaciones seguras y detectar
-    vulnerabilidades comunes aprovechadas por el ENJAMBRE para robar activos \xBFpreparado(a)?"
+    los comportamientos de las personas que habitan este singular planeta. \r\nNuestro
+    objetivo es <b>conocer con rigor c\xF3mo operan las comunicaciones seguras</b>
+    y <b>detectar vulnerabilidades</b> comunes aprovechadas por el ENJAMBRE para
+    robar activos \xBFpreparado(a)?"
   rightOption: "\xA1Adelante!"
   leftOption: 
   rigthCorrect: 0

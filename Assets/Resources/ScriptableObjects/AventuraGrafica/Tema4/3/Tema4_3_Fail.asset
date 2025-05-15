@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema4_3_Fail
   m_EditorClassIdentifier: 
-  mainText: "\xA1No realmente! \u26A0\uFE0F\nLa \"S\" al final significa que la comunicaci\xF3n
-    entre tu navegador y el sitio web est\xE1 cifrada y es segura.\n\n"
+  mainText: "<b>\xA1No realmente !</b> La <b>\"S\"</b> al final significa que la
+    comunicaci\xF3n entre tu navegador y el sitio web <b>est\xE1 cifrada y es segura.</b>"
   rightOption: Entendido
   leftOption: 
   rigthCorrect: 0

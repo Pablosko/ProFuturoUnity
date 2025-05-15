@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema5_4_Fail
   m_EditorClassIdentifier: 
-  mainText: "\xA1Error cr\xEDtico! \U0001F4A5\nAs\xED hackearon la base de datos
-    de la Estaci\xF3n Alpha. El ENJAMBRE le es m\xE1s f\xE1cil si dejas referencias
-    de tu vida o cosas evidentes.\n\nUsar fechas de nacimiento, aniversarios es un\u2026
-    \xA1error muy com\xFAn! \xA1Usa combinaciones \xFAnicas!"
+  mainText: "Error cr\xEDtico!  As\xED hackearon la base de datos de la Estaci\xF3n
+    Alpha. Al ENJAMBRE le es m\xE1s f\xE1cil si dejas referencias de tu vida o cosas
+    evidentes. Usar fechas de nacimiento, aniversarios o nombres de tus mascotas
+    es un\u2026 \xA1error muy com\xFAn! \xA1Usa combinaciones \xFAnicas!"
   rightOption: Entendido
   leftOption: 
   rigthCorrect: 0

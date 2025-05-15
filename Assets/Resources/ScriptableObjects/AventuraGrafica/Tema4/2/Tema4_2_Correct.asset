@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema4_2_Correct
   m_EditorClassIdentifier: 
-  mainText: "\xA1Exacto!\nQuieres que tu mensaje sea privado y seguro, y eso es precisamente
-    lo que significa una comunicaci\xF3n segura en tus dispositivos.\n\nEl \"sobre
-    cerrado\" es el cifrado, que protege tu informaci\xF3n de miradas indiscretas.
-    El cifrado es ese 'sobre cerrado' que asegura que tu informaci\xF3n solo llegue
-    a quien t\xFA quieres."
+  mainText: "<b>\xA1Exacto! Quieres que tu mensaje sea privado y seguro,</b> y eso
+    es precisamente lo que significa una comunicaci\xF3n segura en tus dispositivos.
+    <b>El \"sobre cerrado\" es el cifrado,</b> que protege tu informaci\xF3n de miradas
+    indiscretas. "
   rightOption: Perfecto
   leftOption: 
   rigthCorrect: 0

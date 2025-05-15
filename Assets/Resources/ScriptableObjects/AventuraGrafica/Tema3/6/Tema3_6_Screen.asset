@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema3_6_Screen
   m_EditorClassIdentifier: 
-  mainText: "Para poderte autorizar el acceso a la siguiente fase del programa de
-    entrenamiento es necesario que conozcas a OKTA, nuestra plataforma de gesti\xF3n
-    de Identidades y accesos. \xBFEstas listo/a?"
+  mainText: "Para poderte </b>autorizar el acceso</b> a la siguiente fase del programa
+    de entrenamiento es necesario que conozcas a <b>OKTA, nuestra plataforma de gesti\xF3n
+    de identidades y accesos.</b> \xBFEst\xE1s listo(a)?"
   rightOption: "\xBFOKTA? \xA1S\xED, cu\xE9ntame m\xE1s!"
   leftOption: 
   rigthCorrect: 0

@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema4_2_Fail
   m_EditorClassIdentifier: 
-  mainText: "Entiendo tu intenci\xF3n...\n\xBFTe sentir\xEDas c\xF3modo/a si todos
-    en la oficina de correos leyeran ese mensaje tan personal?\n\nEn el mundo digital,
-    enviar informaci\xF3n sin cifrar es como enviar una postal. Cualquiera podr\xEDa
-    \"leerla\" en el camino. Reflexiona sobre la importancia de la privacidad en
-    tus comunicaciones diarias. El cifrado es ese 'sobre cerrado' que asegura que
-    tu informaci\xF3n solo llegue a quien t\xFA quieres."
+  mainText: "Entiendo que quieres que el mensaje llegue, pero piensa en esto: \xBFte
+    sentir\xEDas c\xF3modo si todos en la oficina de correos leyeran ese mensaje
+    <b>tan personal</b>? En el mundo digital, <b>enviar informaci\xF3n sin cifrar
+    es como enviar una postal.</b> Cualquiera podr\xEDa \"leerla\" en el camino.
+    <b>Reflexiona</b> sobre la importancia de la privacidad en tus comunicaciones
+    diarias."
   rightOption: Entendido
   leftOption: 
   rigthCorrect: 0

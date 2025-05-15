@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema5_2_Correct
   m_EditorClassIdentifier: 
-  mainText: "\xA1Exacto! \u270B\nSorprendente, \xBFno? C\xF3mo es que esta humanidad
-    es capaz de crear maravillas como Chichen-itza y tenga tan poco cuidado con la
-    creaci\xF3n de contrase\xF1as.\n\nTambi\xE9n usar patrones del teclado es un
-    error com\xFAn (p.ej. qwerty)."
+  mainText: "<b>\xA1Exacto!</b> Sorprendente, \xBFno? \xBFC\xF3mo es que esta humanidad
+    es capaz de crear maravillas como Chichen-Itz\xE1 y tenga tan poco cuidado con
+    la creaci\xF3n de contrase\xF1as? Otro error com\xFAn es usar patrones del teclado
+    como contrase\xF1a (p.e. qwerty)"
   rightOption: Perfecto
   leftOption: 
   rigthCorrect: 0

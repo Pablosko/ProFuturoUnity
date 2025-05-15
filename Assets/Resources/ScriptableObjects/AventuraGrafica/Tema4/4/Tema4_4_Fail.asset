@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema4_4_Fail
   m_EditorClassIdentifier: 
-  mainText: "Mmm podr\xEDa ser... \u26A0\uFE0F\nPero mejor cuando te conectes a una
-    red Wi-Fi, aseg\xFArate de que tenga una contrase\xF1a segura y que est\xE9 configurada
-    con mecanismos de seguridad, ya sea WPA2 o WPA3.\n\nEstos protegen tus datos
+  mainText: "<b>Mmm podr\xEDa ser...</b> Pero mejor cuando te conectes a una red
+    Wi-Fi, aseg\xFArate de que tenga una contrase\xF1a segura y que est\xE9 configurada
+    con mecanismos de seguridad, ya sea <b>WPA2 o WPA3.</b> Estos protegen tus datos
     cuando navegas de forma inal\xE1mbrica."
   rightOption: Entendido
   leftOption: 

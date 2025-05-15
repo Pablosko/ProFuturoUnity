@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema5_3_Fail
   m_EditorClassIdentifier: 
-  mainText: "Vaya vaya\u2026 \xA1No!\n\xA1Estar\xEDa bien que la cambies! \u2026
-    El error com\xFAn es que se usen nombres de familia/conocidos y tambi\xE9n utilizar
-    hechos com\xFAnmente conocidos o publicados sobre su persona.\n\n"
+  mainText: "<b>Vaya vaya\u2026 \xA1No!</b> \xA1Estar\xEDa bien que la cambies! \u2026
+    El <b>error com\xFAn</b> es que se usen <b>nombres de familia/conocidos</b> y
+    tambi\xE9n <b>utilizar hechos com\xFAnmente</b> conocidos o publicados sobre
+    su persona. \xA1Recuerda revisar la Pol\xEDtica de Construcci\xF3n de Contrase\xF1as
+    Robustas con la que contamos en Profuturo! La cual indica que una contrase\xF1a
+    segura se conforma de <b>m\xEDnimo dos n\xFAmeros, dos may\xFAsculas, dos min\xFAsculas,
+    dos caracteres especiales y m\xE1ximo tiene 16 caracteres.</b>"
   rightOption: Entendido
   leftOption: 
   rigthCorrect: 0
