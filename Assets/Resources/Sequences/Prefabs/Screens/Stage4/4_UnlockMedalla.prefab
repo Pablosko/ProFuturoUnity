@@ -660,10 +660,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4339618546995002981, guid: 54bdb10b4c01c2749943a2630be2a2c8, type: 3}
       propertyPath: messages.Array.data[0].message
-      value: "<b>\xA1Insignia Forjador de Llaves desbloqueada!</b>  \u2728 Con esta
-        cuarta insignia eres m\xE1s que <b>llaves indescifrables</b> para blindar
-        las puertas digitales. Ya falta nada para terminar nuestra primera misi\xF3n
-        Guardi\xE1n\u2026"
+      value: "<b>\xA1Enhorabuena, Guardi\xE1n!</b> \xA1Conseguiste la <b>Insignia
+        del Guardi\xE1n de los Portales!</b> Controlas a otro nivel gal\xE1ctico
+        qui\xE9n cruza los umbrales digitales de Profuturo. \xA1Ni el hacker m\xE1s
+        astuto burlar\xE1 tus permisos! Queda poco, <b>faltan 2 insignias</b> para
+        activar la nave."
       objectReference: {fileID: 0}
     - target: {fileID: 4339618546995002981, guid: 54bdb10b4c01c2749943a2630be2a2c8, type: 3}
       propertyPath: messages.Array.data[1].message

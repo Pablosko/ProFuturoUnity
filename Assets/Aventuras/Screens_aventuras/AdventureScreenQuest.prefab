@@ -25,8 +25,24 @@ PrefabInstance:
       value: -51.152954
       objectReference: {fileID: 0}
     - target: {fileID: 184276025356081503, guid: 6ec534996c9402e47aa89d31052c6ef4, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 184276025356081503, guid: 6ec534996c9402e47aa89d31052c6ef4, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 184276025356081503, guid: 6ec534996c9402e47aa89d31052c6ef4, type: 3}
       propertyPath: m_fontSizeBase
       value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 184276025356081503, guid: 6ec534996c9402e47aa89d31052c6ef4, type: 3}
+      propertyPath: m_charWidthMaxAdj
+      value: 1.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 184276025356081503, guid: 6ec534996c9402e47aa89d31052c6ef4, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 826076624985677751, guid: 6ec534996c9402e47aa89d31052c6ef4, type: 3}
       propertyPath: m_Pivot.x

@@ -613,7 +613,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8393267641738568253, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_text
-      value: ESTOY LISTO(A)
+      value: "\xA1Estoy emocionado(a)!"
       objectReference: {fileID: 0}
     - target: {fileID: 8393267641738568253, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_HorizontalAlignment
@@ -660,9 +660,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4339618546995002981, guid: 54bdb10b4c01c2749943a2630be2a2c8, type: 3}
       propertyPath: messages.Array.data[0].message
-      value: "\xA1Insignia del Gobierno Cibern\xE9tico conseguida! \u2728 Esta insignia
-        representa las leyes de la galaxia Profuturo. Sin ellas, el caos reinar\xEDa.
-        Pero... a\xFAn faltan 4 insignias para activar la nave."
+      value: "<b>\xA1Enhorabuena!</b> \xA1Conseguiste la <b>Insignia del Custodio
+        de Secretos</b>! Esta insignia representa que ninguna contrase\xF1a d\xE9bil
+        escapar\xE1 a tu vigilancia. \xA1El ENJAMBRE jam\xE1s descifrar\xE1 hoy tus
+        c\xF3digos! \xBFTe das cuenta lo que significa eso?"
       objectReference: {fileID: 0}
     - target: {fileID: 4339618546995002981, guid: 54bdb10b4c01c2749943a2630be2a2c8, type: 3}
       propertyPath: messages.Array.data[1].message

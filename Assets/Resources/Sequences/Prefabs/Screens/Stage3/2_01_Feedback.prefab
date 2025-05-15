@@ -118,9 +118,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3198553375220459014, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: messages.Array.data[0].message
-      value: "\xA1Genial! \xA1Laberinto descontaminado! \U0001F3C6 Los archivos est\xE1n
-        blindados en sus ubicaciones correctas Guardi\xE1n y el Enjambre ya no podr\xE1
-        con ello. \xBFSabes lo que significa eso?"
+      value: "\xA1Genial! \xA1Laberinto descontaminado! Los archivos est\xE1n blindados
+        en sus ubicaciones correctas, Guardi\xE1n y el Enjambre ya no podr\xE1 con
+        ello. \xBFSabes lo que significa eso?"
       objectReference: {fileID: 0}
     - target: {fileID: 3198553375220459014, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: messages.Array.data[0].nextmessage
