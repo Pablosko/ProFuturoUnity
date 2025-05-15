@@ -556,8 +556,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundImage: {fileID: 1398833735079490622}
-  correctBackground: {fileID: -336984590258604858, guid: 69ed3bea21f84194ebafbb8cd012476a, type: 3}
-  inCorrectBackground: {fileID: -7201900449997871351, guid: 75474ae35939ece47bf7a0061e30cbfb, type: 3}
+  correctBackground: {fileID: 7447129724392309640, guid: 2e88041c9d29b794897ef9f0acbab0e7, type: 3}
+  inCorrectBackground: {fileID: -643948000943594672, guid: aa1ca233aac147a4a8291935f56c1d8d, type: 3}
   contentText: {fileID: 8449164797025048917}
   restartButton: {fileID: 5077036461170100603}
   nextGeniallyButton: {fileID: 1010955689669870274}
@@ -696,7 +696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
+  m_Color: {r: 0.3301887, g: 0.31928623, b: 0.31928623, a: 0.49019608}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1132,7 +1132,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 68.71405}
-  m_SizeDelta: {x: 759.6749, y: 215.4281}
+  m_SizeDelta: {x: 650, y: 215.4281}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6570550977736692779
 CanvasRenderer:
@@ -1162,7 +1162,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Esto es lo que ha pasado
+  m_text: ejemplo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5aea5319ed8226c4a844289a312e4d59, type: 2}
   m_sharedMaterial: {fileID: -7420302498599075428, guid: 5aea5319ed8226c4a844289a312e4d59, type: 2}
@@ -2641,7 +2641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1557173048293826810, guid: 5eb0459fea167b84b8c46c495ddd571c, type: 3}
       propertyPath: m_fontSize
-      value: 15.65
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2057297354755933397, guid: 5eb0459fea167b84b8c46c495ddd571c, type: 3}
       propertyPath: m_SizeDelta.y
