@@ -121,4 +121,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sequenceManager: {fileID: 0}
   hasTransition: 1
+  id: 6_1_2
   videoName: video_cierre_t5

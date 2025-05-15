@@ -258,6 +258,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8049344270457731090, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
+      propertyPath: id
+      value: 3_1_10
+      objectReference: {fileID: 0}
     - target: {fileID: 8980135636494603582, guid: 2b951d7db7890c34c9f4f5f5b6d14e2f, type: 3}
       propertyPath: messages.Array.size
       value: 4

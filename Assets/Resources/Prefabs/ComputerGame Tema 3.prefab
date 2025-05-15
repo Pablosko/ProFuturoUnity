@@ -515,6 +515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageGame: 3
+  id: 3_1_11
   programs:
   - {fileID: 11400000, guid: 5dc5f32761eba9449bbe60ee5023588d, type: 2}
   - {fileID: 11400000, guid: bee03e1321531664483de14600fa9caf, type: 2}
