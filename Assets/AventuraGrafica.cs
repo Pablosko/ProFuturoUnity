@@ -16,7 +16,7 @@ public class AventuraGrafica : MonoBehaviour
     public int temaNumero = 1;
     private GraphicAdventureData currentData;
     GameObject screenObj;
-
+    public int TotalScreens;
     private enum FeedbackType { None, Correct, Incorrect }
     private FeedbackType pendingBackground = FeedbackType.None;
 
@@ -45,17 +45,21 @@ public class AventuraGrafica : MonoBehaviour
             }
         }
     }
+    public int GetScreenCount() 
+    {
+        return TotalScreens;
+    }
     public void Delay() 
     {
         SetAdventureFromTema(temaNumero);
     }
 
-    public void SetAdventureFromTema(int tema)
+    public void SetAdventureFromTema(int tema,int screen = 1)
     {
         if (currentData != null)
             return;
-        string folderPath = $"ScriptableObjects/AventuraGrafica/Tema{tema}/1";
-        string assetName = $"Tema{tema}_1_Screen";
+        string folderPath = $"ScriptableObjects/AventuraGrafica/Tema{tema}/" + screen;
+        string assetName = $"Tema{tema}_"+screen+"_Screen";
         var data = Resources.Load<GraphicAdventureData>($"{folderPath}/{assetName}");
 
         if (data != null)
@@ -65,7 +69,10 @@ public class AventuraGrafica : MonoBehaviour
         }
         else
         {
-            Debug.LogError($"❌ No se encontró la pantalla inicial en: {folderPath}/{assetName}");
+            assetName = $"Tema{tema}_" + screen + "_Selection";
+            data = Resources.Load<GraphicAdventureData>($"{folderPath}/{assetName}");
+            if(data == null)
+                Debug.LogError($"❌ No se encontró la pantalla inicial en: {folderPath}/{assetName}");
         }
     }
     void SetScreen(GraphicAdventureData data)
@@ -137,6 +144,9 @@ public class AventuraGrafica : MonoBehaviour
         Instantiate(nextSequenceManager, HudController.instance.transform);
         Destroy(gameObject);
     }
-
+    public void SetToScreen(int index) 
+    {
+        SetAdventureFromTema(temaNumero, index);
+    }
 }
 

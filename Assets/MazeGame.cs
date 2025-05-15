@@ -65,7 +65,8 @@ public class MazeGame : Game
             }
         }
 
-        if (Input.GetMouseButtonDown(1)) CancelConnection();
+        if (Input.GetMouseButtonUp(0)) CancelConnection();
+
         HandleWASDInput();
     }
 
@@ -125,6 +126,7 @@ public class MazeGame : Game
 
     public void StartPlacingCable(ConnectionPoint point, Color color)
     {
+
         if (point.tile != null && point.tile.HasCable())
         {
             foreach (var pos in point.tile.cablePath)
@@ -148,7 +150,8 @@ public class MazeGame : Game
     }
 public void CancelConnection()
 {
-    isPlacing = false;
+     startPoint.animator.SetBool("Selected", false);
+        isPlacing = false;
     if (currentPath != null && currentPath.Count > 0)
     {
         List<Vector3Int> toFade = new(currentPath);
@@ -335,6 +338,7 @@ public void CancelConnection()
                 GameObject trigger = Instantiate(connectionPrefab, worldPos, Quaternion.identity,transform);
                 trigger.GetComponent<BoxCollider2D>().isTrigger = true;
                 trigger.GetComponent<BoxCollider2D>().size = new Vector2(45.69503f, 45.69503f);
+                trigger.gameObject.transform.localScale = Vector2.one;
                 trigger.GetComponent<ConnectionPoint>().tipo = conTile.tipo;
             }
         }

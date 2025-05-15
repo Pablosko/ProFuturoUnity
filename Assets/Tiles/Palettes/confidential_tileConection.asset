@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38c5acc75defe0c4ebe861629f46a67d, type: 3}
   m_Name: confidential_tileConection
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 3051e548bdfc7524e9f990ccce1da727, type: 3}
-  m_Color: {r: 0.8584906, g: 0.31181023, b: 0.31181023, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 97cb702b9a450e24e9b19950bdd5bc08, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
     e01: 0
@@ -31,9 +31,9 @@ MonoBehaviour:
     e31: 0
     e32: 0
     e33: 1
-  m_InstancedGameObject: {fileID: 0}
+  m_InstancedGameObject: {fileID: 8945629026640975682, guid: 55f22e9a31c199c4da1159a856548d4d, type: 3}
   m_Flags: 1
-  m_ColliderType: 1
+  m_ColliderType: 2
   tipo: 1
   tileColor: {r: 1, g: 0, b: 0, a: 1}
   input: 1

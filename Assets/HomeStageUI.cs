@@ -57,6 +57,7 @@ public class HomeStageUI : MonoBehaviour
         animator.SetBool("Clickable", false);
         animator.SetBool("Unlocked", true);
         animator.StopPlayback();
+        aura.SetActive(false);
         effectImge.color = new Color(0, 0, 0, 0);
     }
     public void ArriveSite()
@@ -87,13 +88,15 @@ public class HomeStageUI : MonoBehaviour
         TransitionController.instance.PlayFadeOff();
         Invoke("DelayedDelayed", 0.5f);
     }
-    public void DelayedDelayed() 
+    public AventuraGrafica DelayedDelayed() 
     {
         GameObject instance = Instantiate(adventurePrefab, HudController.instance.stagesTransform);
         instance.SetActive(true);
         var aventura = instance.GetComponent<AventuraGrafica>();
 
-
+        if(Home.instance != null)
         Home.instance.gameObject.SetActive(false);
+
+        return aventura;
     }
 }

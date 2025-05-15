@@ -3,27 +3,30 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 public enum TipoConexion { Public, Confidential, Private, Restricted }
 
-public class ConnectionPoint : MonoBehaviour, IPointerClickHandler
+public class ConnectionPoint : MonoBehaviour, IPointerDownHandler
 {
     public TipoConexion tipo;
     public ParticleSystem onConnectParticleSystem;
     public ConnectionTile tile;
     bool connected = false;
-    private void Awake()
+    public Animator animator;
+    private void Start()
     {
         Vector3Int cellPos = MazeGame.Instance.tilemap.WorldToCell(transform.position);
         tile = MazeGame.Instance.tilemap.GetTile<ConnectionTile>(cellPos);
         tile.ClearPath();
     }
-    public void OnPointerClick(PointerEventData eventData)
+    public void OnPointerDown(PointerEventData eventData)
     {
         if (tile == null)
             return;
-  
+        animator.SetBool("Selected", true);
 
         // Si ya tiene un cable conectado → se borra al hacer clic
         if (tile.HasCable())
         {
+            MazeGame.Instance.CancelConnection();
+
             foreach (var pos in tile.cablePath)
             {
                 MazeGame.Instance.cableTilemap.SetTile(pos, null);
@@ -46,7 +49,6 @@ public class ConnectionPoint : MonoBehaviour, IPointerClickHandler
             Debug.Log("[ConnectionPoint] ⛔ No se puede iniciar desde un punto de entrada.");
             return;
         }
-        MazeGame.Instance.CancelConnection();
         // Si no hay cable, comenzamos
         MazeGame.Instance.StartPlacingCable(this, tile.tileColor);
     }

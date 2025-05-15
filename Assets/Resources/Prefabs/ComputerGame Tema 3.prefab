@@ -174,7 +174,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3403083623617663402}
   - component: {fileID: 859379468385931911}
-  - component: {fileID: 4240168264425373474}
+  - component: {fileID: 8413238427315969837}
   m_Layer: 0
   m_Name: BackGroundLow
   m_TagString: Untagged
@@ -210,7 +210,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2052842517485631696}
   m_CullTransparentMesh: 1
---- !u!114 &4240168264425373474
+--- !u!114 &8413238427315969837
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -223,14 +223,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -6934125806738243528, guid: d4a571e16545f0d4bb9002f650485a84, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -287,7 +287,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5151155824711134118}
   - component: {fileID: 1520429118185856741}
-  - component: {fileID: 1502204579240174717}
+  - component: {fileID: 6495685019218450405}
   m_Layer: 0
   m_Name: BackgroundHigh
   m_TagString: Untagged
@@ -313,7 +313,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1123, y: 415}
+  m_SizeDelta: {x: 1128.6, y: 422.75}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &1520429118185856741
 CanvasRenderer:
@@ -323,7 +323,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7582024537346349325}
   m_CullTransparentMesh: 1
---- !u!114 &1502204579240174717
+--- !u!114 &6495685019218450405
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -336,14 +336,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 6606942175498295780, guid: 3695fa9c41b4c3445b3f52c617322edf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -389,9 +389,17 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 5209634907871409296, guid: ed3c2c4ecec344449aab1a3953ad06fe, type: 3}
+    - target: {fileID: 2401869512444109796, guid: 5417a6fef568c964abbf6b15db6b6d22, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4225497905360194012, guid: 5417a6fef568c964abbf6b15db6b6d22, type: 3}
       propertyPath: m_Name
-      value: ComputerGame
+      value: ComputerGame Tema 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4225497905360194012, guid: 5417a6fef568c964abbf6b15db6b6d22, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6669346029487358713, guid: 5417a6fef568c964abbf6b15db6b6d22, type: 3}
       propertyPath: m_Pivot.x
@@ -513,12 +521,13 @@ MonoBehaviour:
   incorrectFeedBackNoText: {fileID: 3112471921619178224, guid: 4996cd1a0cf9cd6438c18127f33fa492, type: 3}
   highScreenTransform: {fileID: 9060589517101809034}
   lowScreenTransform: {fileID: 453063383143568560}
-  upScreenImage: {fileID: 1502204579240174717}
-  lowScreenImage: {fileID: 4240168264425373474}
+  upScreenImage: {fileID: 0}
+  lowScreenImage: {fileID: 0}
   correct: {r: 0.16741641, g: 0.5849056, b: 0.1462264, a: 0.07058824}
   incorrect: {r: 0.6509434, g: 0.19344072, b: 0.19344072, a: 0.07058824}
   normal: {r: 1, g: 1, b: 1, a: 0}
   index: 0
+  hardcodedNumberOneTime: 0
 --- !u!224 &6503913052938918106 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6669346029487358713, guid: 5417a6fef568c964abbf6b15db6b6d22, type: 3}

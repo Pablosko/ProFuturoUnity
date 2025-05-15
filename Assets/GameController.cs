@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
     public void MuteSound() 
     {
         muteBar.SetActive(!muteBar.activeSelf);
+        AudioManager.instance.SetVolumne(!muteBar.activeSelf);
     }
     public void Update()
     {

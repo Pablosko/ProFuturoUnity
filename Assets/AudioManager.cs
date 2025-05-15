@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
@@ -56,5 +57,10 @@ public class AudioManager : MonoBehaviour
     public void PlaySFX(AudioClip clip, float volume = 1f) {
         SFXSource.volume = volume;
         SFXSource.PlayOneShot(clip);
+    }
+    public void SetVolumne(bool state) 
+    {
+        musicSource.volume = state == true ? 1:0 ;
+        SFXSource.volume = state == true ? 1:0;
     }
 }

@@ -30,6 +30,10 @@ public class SequenceManager : MonoBehaviour
                 currentSequence.End();
         }
     }
+    public int GetCount() 
+    {
+        return sequences.Count;
+    }
     public void End() 
     {
         gameObject.SetActive(false);
@@ -46,6 +50,11 @@ public class SequenceManager : MonoBehaviour
             End();
             return;
         }
+        StartCurrentSequence();
+    }
+    public void GoToSequence(int index) 
+    {
+        sequenceIndex = index;
         StartCurrentSequence();
     }
     public void StartCurrentSequence() 
