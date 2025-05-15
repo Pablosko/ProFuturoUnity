@@ -269,12 +269,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonLarge
       objectReference: {fileID: 0}
+    - target: {fileID: 6299311640502893546, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6299311640502893546, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -3.9
+      objectReference: {fileID: 0}
     - target: {fileID: 7261783393836562062, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7261783393836562062, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7261783393836562062, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7261783393836562062, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
@@ -282,7 +294,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8467153876942356323}
     - target: {fileID: 7261783393836562062, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 8467153876942356323}
+    - target: {fileID: 7261783393836562062, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7261783393836562062, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7261783393836562062, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
@@ -290,16 +310,36 @@ PrefabInstance:
       value: End
       objectReference: {fileID: 0}
     - target: {fileID: 7261783393836562062, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayNextSFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 7261783393836562062, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SequenceBase, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7261783393836562062, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: SequenceBase, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7261783393836562062, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7261783393836562062, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8393267641738568253, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_text
       value: Jugar ahora
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393267641738568253, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393267641738568253, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
+      propertyPath: m_margin.y
+      value: -11.298813
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

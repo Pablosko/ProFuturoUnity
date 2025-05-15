@@ -230,7 +230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messages: []
   contentText: {fileID: 5621432902830187617}
-  typingSpeed: 0.025
+  typingSpeed: 0.02
   tagCongifs: {fileID: 11400000, guid: 833b0f1369fab4c47b5a6a355a116c8a, type: 2}
   nextButton: {fileID: 6158045299412447314}
   previusButton: {fileID: 5754434618923007893}
@@ -700,6 +700,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonMediumRigth
       objectReference: {fileID: 0}
+    - target: {fileID: 6233388488326962426, guid: 93d887c76bce2dd44bf203b68ab39756, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -22.2214
+      objectReference: {fileID: 0}
+    - target: {fileID: 6233388488326962426, guid: 93d887c76bce2dd44bf203b68ab39756, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -26.3543
+      objectReference: {fileID: 0}
+    - target: {fileID: 6233388488326962426, guid: 93d887c76bce2dd44bf203b68ab39756, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 7.199997
+      objectReference: {fileID: 0}
+    - target: {fileID: 6233388488326962426, guid: 93d887c76bce2dd44bf203b68ab39756, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7290728320702992798, guid: 93d887c76bce2dd44bf203b68ab39756, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -727,6 +743,10 @@ PrefabInstance:
     - target: {fileID: 7290728320702992798, guid: 93d887c76bce2dd44bf203b68ab39756, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8471331584129041709, guid: 93d887c76bce2dd44bf203b68ab39756, type: 3}
+      propertyPath: m_fontSize
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -835,6 +855,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonMediumLeft
       objectReference: {fileID: 0}
+    - target: {fileID: 6233388488326962426, guid: 12cddefa77c4765419472c751107c94c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -21.6259
+      objectReference: {fileID: 0}
+    - target: {fileID: 6233388488326962426, guid: 12cddefa77c4765419472c751107c94c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -24.1475
+      objectReference: {fileID: 0}
+    - target: {fileID: 6233388488326962426, guid: 12cddefa77c4765419472c751107c94c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6233388488326962426, guid: 12cddefa77c4765419472c751107c94c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7290728320702992798, guid: 12cddefa77c4765419472c751107c94c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -862,6 +898,10 @@ PrefabInstance:
     - target: {fileID: 7290728320702992798, guid: 12cddefa77c4765419472c751107c94c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8471331584129041709, guid: 12cddefa77c4765419472c751107c94c, type: 3}
+      propertyPath: m_fontSize
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
