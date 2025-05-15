@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: "Est\xE1s en tu oficina y necesitas pararte, \xBFle encargas tu m\xE1quina
     sin bloquear a tu compa\xF1ero(a)?"
-  rightText: "No, bloqueo mi m\xE1quina y despu\xE9s salgo\u2026"
-  leftText: "\xA1S\xED! Somos compa\xF1eros y nos cuidamos\u2026"
-  successMessage: "\u2705 Decisi\xF3n insuperable: Recuerda que formas parte de la
-    primera l\xEDnea de defensa de la nave."
-  errorMessage: "\u274C Riesgo. Alguien us\xF3 tu m\xE1quina sin permiso. Cuida tu
+  rightText: "\xA1S\xED! Somos compa\xF1eros y nos cuidamos\u2026"
+  leftText: "No, bloqueo mi m\xE1quina y despu\xE9s salgo\u2026"
+  successMessage: "<b>Decisi\xF3n insuperable:</b> Si bien tus compa\xF1eros son
+    de confianza, no basta con depositar la responsabilidad de cuidar nuestra informaci\xF3n
+    con nuestros amigos(as). Recuerda que formas parte de la <b>primera l\xEDnea
+    de defensa</b> de la nave, cuida tu informaci\xF3n y as\xED \xA1nos cuidamos
+    todos!"
+  errorMessage: "<b>Oh no! Riesgo.</b> A tu compa\xF1ero(a) le marcaron por tel\xE9fono
+    y no se dio cuenta que alguien us\xF3 <b>tu m\xE1quina sin permiso.</b> Recuerda
+    que formas parte de la <b>primera l\xEDnea de defensa</b> de la nave, cuida tu
     informaci\xF3n y as\xED \xA1nos cuidamos todos!"
-  correct: 1
-  correctSprite: {fileID: 0}
-  IncorrectSprite: {fileID: 0}
+  correct: 0

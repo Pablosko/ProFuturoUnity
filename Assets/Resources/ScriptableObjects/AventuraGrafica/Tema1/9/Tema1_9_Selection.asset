@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema1_9_Selection
   m_EditorClassIdentifier: 
-  mainText: "<b>Gerencia de Ciberseguridad</b> La Gerencia de Ciberseguridad es como
-    nuestros 'hackers \xE9ticos'. \xBFQu\xE9 acci\xF3n realizan?"
+  mainText: "<b>Gerencia de Ciberseguridad</b>\r\nLa Gerencia de Ciberseguridad es
+    como nuestros 'hackers \xE9ticos'. \xBFQu\xE9 acci\xF3n realizan?\r"
   rightOption: "\xBFSimular ciberataques para probar defensas?"
   leftOption: "\xBFDeterminar los requisitos operativos de hardware para los equipos
     nuevos?"

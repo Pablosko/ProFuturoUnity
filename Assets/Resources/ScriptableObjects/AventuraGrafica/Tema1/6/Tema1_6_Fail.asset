@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema1_6_Fail
   m_EditorClassIdentifier: 
-  mainText: "<b>\xA1El ENJAMBRE festejar\xEDa!</b> \u26A0\uFE0F\nAceptar es la \xFAltima
-    carta que debemos tomar. Nuestra prioridad es mitigar el impacto o disminuir
-    la probabilidad de ocurrencia. Es justo lo que hace la Gesti\xF3n de Riesgos,
-    busca identificar y mitigar la posibilidad de que una amenaza pueda afectar a
-    nuestra galaxia.\n\n"
-  rightOption: Siguiente
+  mainText: "<b>\xA1El ENJAMBRE festejar\xEDa!</b> Aceptar, es la \xFAltima carta
+    que debemos tomar. Nuestra prioridad es mitigar el impacto o disminuir la probabilidad
+    de ocurrencia.\r\n\r\nEs justo lo que hace la Gesti\xF3n de Riesgos, busca identificar
+    y mitigar la posibilidad de que una amenaza pueda afectar a nuestra galaxia.\r"
+  rightOption: Entendido
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: eb56debe2347ed74bafea36b883929d9, type: 2}

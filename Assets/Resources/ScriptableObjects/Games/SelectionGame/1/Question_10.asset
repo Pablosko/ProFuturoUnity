@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: "\xBFTe conectar\xEDas al WiFi de hotel sin VPN para enviar un informe 'urgente'?"
   rightText: No, espero a activar mi VPN.
-  leftText: "S\xED, son solo 5 minutos."
-  successMessage: "\u2705 Seguridad gal\xE1ctica: \xA1Bien hecho, tripulante! La
-    misi\xF3n fue un \xE9xito."
-  errorMessage: "\u274C Robo de informaci\xF3n: El informe cay\xF3 en manos equivocadas.
-    Robaron datos confidenciales."
+  leftText: "S\xED, son solo 5 minutos. S\xED, es provisional."
+  successMessage: "<b>Seguridad gal\xE1ctica:</b> \xA1Bien hecho, tripulante! Toda
+    tu informaci\xF3n viaj\xF3 protegida hacia la nave de Profuturo gracias a tu
+    VPN. La misi\xF3n fue un \xE9xito."
+  errorMessage: "<b>Robo de informaci\xF3n en la nave:</b> El informe cay\xF3 en
+    manos equivocadas. Los miembros de la colmena lograron visualizar tu informaci\xF3n
+    y \xA1robaron datos confidenciales! "
   correct: 1
-  correctSprite: {fileID: 0}
-  IncorrectSprite: {fileID: 0}

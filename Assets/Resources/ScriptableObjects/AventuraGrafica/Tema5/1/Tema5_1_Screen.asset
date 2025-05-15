@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema5_1_Screen
   m_EditorClassIdentifier: 
-  mainText: "La \xFAltima parte del entrenamiento ha llegado y quiz\xE1s, es una
-    de las m\xE1s importantes. Nuestra nave no se deja pilotar por cualquiera, por
-    ello deber\xE1s crear una contrase\xF1a segura y obtener la \xFAltima insignia
-    que valide que eres digno de confianza como Guardi\xE1n Legendario(a). Nuestra
-    salida, est\xE1 apunto de comenzar\u2026"
+  mainText: "La <b>\xFAltima parte del entrenamiento ha llegado</b> y quiz\xE1s,
+    es una de las m\xE1s importantes. Nuestra nave no se deja pilotar por cualquiera,
+    por ello deber\xE1s <b>crear una contrase\xF1a segura</b> y obtener la \xFAltima
+    insignia que valide que eres digno de confianza como Guardi\xE1n Legendario(a). 
+    \r\nNuestra salida est\xE1 a punto de comenzar\u2026 \r"
   rightOption: "\xA1De acuerdo!"
   leftOption: 
   rigthCorrect: 0

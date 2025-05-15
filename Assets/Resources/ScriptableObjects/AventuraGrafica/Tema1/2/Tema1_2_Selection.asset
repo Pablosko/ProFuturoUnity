@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema1_2_Selection
   m_EditorClassIdentifier: 
-  mainText: "\xBFQu\xE9 crees que incluye el gobierno de ciberseguridad?"
+  mainText: "Antes de proteger Profuturo, necesitas entender qu\xE9 orquesta nuestra
+    defensa. \xBFQu\xE9 crees que incluye el gobierno de ciberseguridad?"
   rightOption: "\xBFPol\xEDticas y procesos?"
   leftOption: "\xBFTecnolog\xEDa como firewalls?"
   rigthCorrect: 1

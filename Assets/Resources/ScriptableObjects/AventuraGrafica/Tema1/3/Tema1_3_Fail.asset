@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema1_3_Fail
   m_EditorClassIdentifier: 
-  mainText: "<b>\xA1Error!</b> \u26A0\uFE0F\nEl ENJAMBRE se acerca. El Gobierno de
-    Ciberseguridad en Profuturo busca garantizar\u2026 La tr\xEDada de la seguridad
-    CID: Confidencialidad, Integridad y Disponibilidad de la informaci\xF3n.\n\n"
-  rightOption: Continuar
+  mainText: "<b>\xA1Error!</b> El ENJAMBRE se acerca. El Gobierno de Ciberseguridad
+    en Profuturo busca garantizar\u2026\r\n\r\nLa tr\xEDada de la seguridad CID:
+    Confidencialidad, Integridad y Disponibilidad de la informaci\xF3n.\r"
+  rightOption: Entendido
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: 8d075ab6647c55c48a6c7118628aba34, type: 2}

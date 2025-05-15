@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema3_4_Screen
   m_EditorClassIdentifier: 
-  mainText: "\xA1Si te parece Guardi\xE1n! A continuaci\xF3n te mostrar\xE9 sus principales
-    aspectos:\n\nAutenticaci\xF3n: Esta es la verificaci\xF3n de la identidad gal\xE1ctica
-    del usuario que intenta acceder. Puede ser mediante contrase\xF1as, huellas dactilares,
-    reconocimiento facial, tarjetas de acceso, etc."
+  mainText: "\xA1Si te parece Guardi\xE1n! A continuaci\xF3n, te mostrar\xE9 sus
+    principales aspectos:\r\n<b>Autenticaci\xF3n:</b> Esta es la <b>verificaci\xF3n
+    de la identidad gal\xE1ctica</b> del usuario que intenta acceder. Puede ser mediante
+    contrase\xF1as robustas, huellas dactilares, reconocimiento facial, tarjetas
+    de acceso, etc."
   rightOption: "\xA1Bien, lo capto!"
   leftOption: 
   rigthCorrect: 0

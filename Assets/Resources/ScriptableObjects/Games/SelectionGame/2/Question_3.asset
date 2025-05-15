@@ -16,10 +16,10 @@ MonoBehaviour:
     confidencial. \xBFUsas la red Wi-Fi p\xFAblica del caf\xE9?"
   rightText: "\xA1S\xED!"
   leftText: "\xA1No!"
-  successMessage: "\u2705 \xA1Eres grande! Las redes Wi-Fi p\xFAblicas no son seguras
-    para informaci\xF3n sensible. Si las us\xE1ramos, ser\xEDa como meterse en un
-    campo de asteroides."
-  errorMessage: "\u274C \xA1Alerta! \u2620\uFE0F El ENJAMBRE puede encontrarte en
-    esas redes. \xA1Usa la VPN corporativa! Las redes p\xFAblicas pueden ser peligrosas
-    para la informaci\xF3n confidencial."
+  successMessage: "\xA1Eres grande! Las redes Wi-Fi p\xFAblicas no son seguras para
+    informaci\xF3n sensible. Si las us\xE1ramos, ser\xEDa como meterse en un campo
+    de asteroides."
+  errorMessage: "\xA1Alerta! \u2620\uFE0F El ENJAMBRE puede encontrarte en esas redes.
+    \xA1Usa la VPN corporativa! Las redes p\xFAblicas pueden ser peligrosas para
+    la informaci\xF3n confidencial."
   correct: 1

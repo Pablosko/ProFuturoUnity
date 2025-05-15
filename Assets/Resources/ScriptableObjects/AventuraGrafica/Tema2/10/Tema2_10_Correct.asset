@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema2_10_Correct
   m_EditorClassIdentifier: 
-  mainText: "\xA1Deflectores activados! \U0001F6E1\uFE0F\nTu escepticismo salv\xF3
-    tus credenciales.\n\n"
-  rightOption: Continuar
+  mainText: "\xA1Deflectores activados! Tu escepticismo salv\xF3 tus credenciales
+    de ser pirateadas.\n\n"
+  rightOption: Perfecto
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: 4c15359545bd84f41b02b3cf630405c3, type: 2}

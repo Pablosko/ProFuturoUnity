@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema3_5_Screen
   m_EditorClassIdentifier: 
-  mainText: "Autorizaci\xF3n: Esto es la determinaci\xF3n de qu\xE9 acciones o recursos
-    est\xE1n permitidos para un usuario gal\xE1ctico una vez autenticado. Se basa
-    en pol\xEDticas, perfiles o permisos asignados."
+  mainText: "<b>Autorizaci\xF3n:</b> Esto es la <b>determinaci\xF3n de qu\xE9 acciones
+    o recursos est\xE1n permitidos para un usuario gal\xE1ctico una vez autenticado.</b>
+    Se basa en pol\xEDticas, perfiles o permisos asignados."
   rightOption: "Segundo aspecto, \xA1entendido!"
   leftOption: 
   rigthCorrect: 0

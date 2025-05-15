@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema3_3_Screen
   m_EditorClassIdentifier: 
-  mainText: "Por ello, nos reservamos el derecho de admisi\xF3n al acceso de nuestras
-    aplicaciones y con ello, mantener la confidencialidad e integridad gal\xE1ctica
-    de la informaci\xF3n\u2026"
+  mainText: "Por ello, establecemos controles y buenas pr\xE1cticas al acceso de
+    nuestras aplicaciones para mantener la confidencialidad, disponibilidad e integridad
+    gal\xE1ctica de la informaci\xF3n\u2026"
   rightOption: "\xA1Entiendo!"
   leftOption: 
   rigthCorrect: 0

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema5_4_Correct
   m_EditorClassIdentifier: 
-  mainText: "\xA1As\xED es! \u270B\nEs como dejar la llave de la nave bajo el felpudo.
-    Uno de los errores comunes es usar fechas de nacimiento, aniversario y \xA1fechas
-    especiales!\n\n\xA1Usa combinaciones \xFAnicas!"
-  rightOption: Continuar
+  mainText: "<b>\xA1As\xED es!</b> Es como dejar la llave de la nave en un lugar
+    obvio y f\xE1cil de encontrar. Usar fechas de nacimiento, aniversarios o nombres
+    de tus mascotas es un\u2026 \xA1error muy com\xFAn! \xA1Usa combinaciones \xFAnicas!"
+  rightOption: Perfecto
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: 8bbe714ba3429f04e9be80fca27ebdf7, type: 2}

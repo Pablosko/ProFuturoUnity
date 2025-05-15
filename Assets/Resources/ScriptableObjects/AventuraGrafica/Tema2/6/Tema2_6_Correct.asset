@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema2_6_Correct
   m_EditorClassIdentifier: 
-  mainText: "\xA1Buen ojo, Guardi\xE1n! \U0001F441\uFE0F\u200D\U0001F5E8\uFE0F\nLa
-    prevenci\xF3n mantiene limpio el ciberespacio de Profuturo.\n\n"
-  rightOption: Siguiente
+  mainText: "\xA1Buen ojo, Guardi\xE1n! La prevenci\xF3n mantiene limpio el ciberespacio
+    de Profuturo."
+  rightOption: Perfecto
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: 7c3ac577c18e69f4d828d62e6a6e801a, type: 2}

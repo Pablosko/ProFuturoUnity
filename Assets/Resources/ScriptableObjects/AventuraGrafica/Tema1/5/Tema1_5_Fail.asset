@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema1_5_Fail
   m_EditorClassIdentifier: 
-  mainText: "<b>\xA1Cuidado, Guardi\xE1n!</b> \u26A0\uFE0F\nLa autonom\xEDa sin coordinaci\xF3n
+  mainText: "<b>\xA1Cuidado, Guardi\xE1n!</b> La autonom\xEDa sin coordinaci\xF3n
     es caos. En Profuturo contamos con una pol\xEDtica de Seguridad de la Informaci\xF3n
-    que nos ayuda a\u2026 Proteger la integridad, disponibilidad y confidencialidad
-    de la informaci\xF3n dentro de la compa\xF1\xEDa.\n\n"
-  rightOption: Vamos
+    que nos ayuda a\u2026\r\n\r\nProteger la integridad, disponibilidad y confidencialidad
+    de la informaci\xF3n dentro de la compa\xF1\xEDa.\r"
+  rightOption: Entendido
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: d765c03548fff724ba46814785d607c3, type: 2}

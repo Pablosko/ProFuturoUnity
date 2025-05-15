@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema5_2_Fail
   m_EditorClassIdentifier: 
-  mainText: "\xA1Noo!\nAunque no lo creas, esta opci\xF3n puede ser m\xE1s segura
-    que\u2026 1234 que es una de las contrase\xF1as m\xE1s usadas en \xA1toda la
-    galaxia!\n\nTambi\xE9n usar patrones del teclado es un error com\xFAn (p.ej.
-    qwerty)."
+  mainText: "<b>\xA1Noo!</b> Aunque no lo creas, esta opci\xF3n puede ser m\xE1s
+    segura que\u2026 <b>1234 que es una de las contrase\xF1as m\xE1s usadas</b> en
+    \xA1toda la galaxia! Otro error com\xFAn es usar patrones del teclado como contrase\xF1a
+    (p.e. qwerty)."
   rightOption: Entendido
   leftOption: 
   rigthCorrect: 0

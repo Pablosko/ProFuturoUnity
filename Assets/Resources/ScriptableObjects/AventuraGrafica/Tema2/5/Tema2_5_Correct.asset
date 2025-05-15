@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema2_5_Correct
   m_EditorClassIdentifier: 
-  mainText: "\xA1Genial! \xA1Protocolo de seguridad activado! \U0001F6E1\uFE0F\nLos
-    activos de la Red Gal\xE1ctica son sagrados.\n\nAs\xED evitamos que el ENJAMBRE
-    encuentre puntos d\xE9biles."
-  rightOption: Siguiente
+  mainText: "\xA1Genial! \xA1Protocolo de seguridad activado! Los activos de la Red
+    Gal\xE1ctica son sagrados. As\xED evitamos que el ENJAMBRE encuentre puntos d\xE9biles."
+  rightOption: Perfecto
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: 22411f0f8c9b2de4e9e4f1a877b6403a, type: 2}

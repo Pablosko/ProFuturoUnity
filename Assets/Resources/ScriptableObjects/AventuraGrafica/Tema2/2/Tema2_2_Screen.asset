@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema2_2_Screen
   m_EditorClassIdentifier: 
-  mainText: "Ahora, es tiempo que conozcas un concepto b\xE1sico que todo guardi\xE1n
-    debe dominar: \u201CLos activos de informaci\xF3n\u201D."
+  mainText: "Ahora, es tiempo que conozcas un <b>concepto b\xE1sico</b> que todo
+    guardi\xE1n debe dominar: <b>\u201CLos activos de informaci\xF3n\u201D.</b>"
   rightOption: "Genial, \xA1cu\xE9ntame m\xE1s!"
   leftOption: 
   rigthCorrect: 0

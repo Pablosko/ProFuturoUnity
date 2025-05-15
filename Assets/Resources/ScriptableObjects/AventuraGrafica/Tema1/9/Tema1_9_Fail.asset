@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema1_9_Fail
   m_EditorClassIdentifier: 
-  mainText: "\xA1Error! \u26A0\uFE0F\nAunque afecta a seguridad, eso lo define TI.
-    Nuestro equipo de ciberseguridad... Vela porque nuestros controles de seguridad
-    est\xE9n siempre al nivel que nuestra nave requiere. Se encargan de detectar
-    amenazas y establecer estrategias para evitar alg\xFAn impacto en Profuturo,
-    e incluso, est\xE1 capacitado para pensar como atacante.\n\n"
-  rightOption: "\xA1Perfecto!"
+  mainText: "\xA1Error! Aunque afecta a seguridad, eso lo define TI. Nuestro equipo
+    de ciberseguridad\u2026\r\n\r\nVela porque nuestros controles de seguridad est\xE9n
+    siempre al nivel que nuestra nave requiere. Se encargan de detectar amenazas
+    y establecer estrategias para evitar alg\xFAn impacto en Profuturo, e incluso,
+    est\xE1 capacitado para pensar como atacante."
+  rightOption: Entendido
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: 5b7e52def13db5d4e8f9b2c1c8067101, type: 2}

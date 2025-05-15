@@ -15,10 +15,11 @@ MonoBehaviour:
   text: "\xBFGuardar\xEDas copias de seguridad en tu equipo local?"
   rightText: No, uso la nube.
   leftText: "Claro, es m\xE1s r\xE1pido."
-  successMessage: "\u2705 Excelencia superior: Tus respaldos est\xE1n seguros en
-    la nube."
-  errorMessage: "\u274C P\xE9rdida en Agujero Negro: Ransomware cifra tu PC y copias.
-    Sin recuperaci\xF3n."
+  successMessage: "<b>Excelencia superior:</b> Tus respaldos est\xE1n seguros en
+    la nube (OneDrive). Aunque tu computadora se da\xF1e o la nave se incendie, puedes
+    recuperar tu informaci\xF3n desde cualquier lugar."
+  errorMessage: "<b>P\xE9rdida en Agujero Negro:</b> \u2018Ransomware\u2019 cifra
+    tu PC y las copias. Sin recuperaci\xF3n. Tus respaldos est\xE1n seguros en la
+    nube (OneDrive). Aunque tu computadora se da\xF1e o la nave se incendie, puedes
+    recuperar tu informaci\xF3n desde cualquier lugar."
   correct: 1
-  correctSprite: {fileID: 0}
-  IncorrectSprite: {fileID: 0}

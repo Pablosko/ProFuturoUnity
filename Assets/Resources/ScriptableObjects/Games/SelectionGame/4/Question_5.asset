@@ -16,10 +16,8 @@ MonoBehaviour:
     en mi m\xE1quina\u2026 \xBFTerminando la fiesta lo reporto?"
   rightText: "\xA1No! Inmediatamente lo reporto al equipo de soporte y seguridad"
   leftText: "S\xED, ya con m\xE1s calma lo revisamos"
-  successMessage: "\u2705 Efecto magistral: La nave no fue comprometida. La anomal\xEDa
+  successMessage: "Efecto magistral: La nave no fue comprometida. La anomal\xEDa
     era un intento de ataque."
-  errorMessage: "\u274C Crisis en la nave: La fiesta dur\xF3 1 d\xEDa y el miembro
-    de la colmena forz\xF3 el acceso a trav\xE9s de tu m\xE1quina."
+  errorMessage: "Crisis en la nave: La fiesta dur\xF3 1 d\xEDa y el miembro de la
+    colmena forz\xF3 el acceso a trav\xE9s de tu m\xE1quina."
   correct: 1
-  correctSprite: {fileID: 0}
-  IncorrectSprite: {fileID: 0}

@@ -92,6 +92,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonExtraLargeH
       objectReference: {fileID: 0}
+    - target: {fileID: 6299311640502893546, guid: 9db346a9d68b4e14f9993a780ba8debc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 6299311640502893546, guid: 9db346a9d68b4e14f9993a780ba8debc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7261783393836562062, guid: 9db346a9d68b4e14f9993a780ba8debc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -119,6 +127,18 @@ PrefabInstance:
     - target: {fileID: 7261783393836562062, guid: 9db346a9d68b4e14f9993a780ba8debc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393267641738568253, guid: 9db346a9d68b4e14f9993a780ba8debc, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393267641738568253, guid: 9db346a9d68b4e14f9993a780ba8debc, type: 3}
+      propertyPath: m_margin.w
+      value: -3.1015015
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393267641738568253, guid: 9db346a9d68b4e14f9993a780ba8debc, type: 3}
+      propertyPath: m_margin.y
+      value: -8.330734
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

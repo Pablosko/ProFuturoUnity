@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema5_5_Fail
   m_EditorClassIdentifier: 
-  mainText: "\xA1Casi!\nAunque podr\xEDa dar la sensaci\xF3n de seguridad es relativamente
-    sencillo para los hackers encontrar el patr\xF3n.\n\nY m\xE1s si dejamos alguna
-    referencia personal."
-  rightOption: "\xA1Perfecto!"
+  mainText: "\xA1Casi! Aunque podr\xEDa dar la sensaci\xF3n de seguridad es relativamente
+    sencillo para los hackers encontrar el patr\xF3n y m\xE1s si dejamos alguna referencia
+    personal."
+  rightOption: Entendido
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: b0dd4f861c2f9ff468d6b2377318f5bd, type: 2}

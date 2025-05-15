@@ -90,10 +90,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4339618546995002981, guid: 557c07b6c3e58a84b96b35c6115a7a38, type: 3}
       propertyPath: messages.Array.data[0].message
-      value: "\xA1Alerta, Guardi\xE1n! El ENJAMBRE corrompi\xF3 esta pantalla. Es
-        momento de poner a prueba toda tu val\xEDa. Decide r\xE1pido y c\xF3mo tu
-        accionar\xEDas. Desliza izquierda o derecha para subir toda la informaci\xF3n
-        correcta posible a la nube de Gobierno de Ciberseguridad."
+      value: "\xA1Alerta, Guardi\xE1n! El ENJAMBRE <b>corrompi\xF3 esta pantalla.</b>
+        Es momento de poner a prueba toda tu val\xEDa. \r\n\r\nDecide r\xE1pido y
+        c\xF3mo tu accionar\xEDas. <b>Desliza izquierda o derecha</b> para subir
+        toda la informaci\xF3n correcta posible a la nube de Gobierno de Ciberseguridad."
       objectReference: {fileID: 0}
     - target: {fileID: 4339618546995002981, guid: 557c07b6c3e58a84b96b35c6115a7a38, type: 3}
       propertyPath: onTextFinished.m_PersistentCalls.m_Calls.Array.size
@@ -202,6 +202,45 @@ PrefabInstance:
     - target: {fileID: 4716922279501966509, guid: 557c07b6c3e58a84b96b35c6115a7a38, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5621432902830187617, guid: 557c07b6c3e58a84b96b35c6115a7a38, type: 3}
+      propertyPath: m_text
+      value: "\xA1Alerta, Guardi\xE1n! El ENJAMBRE <b>corrompi\xF3 esta pantalla.</b>
+        Es momento de poner a prueba toda tu val\xEDa. \r\n\r\nDecide r\xE1pido y
+        c\xF3mo tu accionar\xEDas. <b>Desliza izquierda o derecha</b> para subir
+        toda la informaci\xF3n correcta posible a la nube de Gobierno de Ciberseguridad."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5621432902830187617, guid: 557c07b6c3e58a84b96b35c6115a7a38, type: 3}
+      propertyPath: m_fontSize
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 5621432902830187617, guid: 557c07b6c3e58a84b96b35c6115a7a38, type: 3}
+      propertyPath: m_margin.w
+      value: -8.324966
+      objectReference: {fileID: 0}
+    - target: {fileID: 5621432902830187617, guid: 557c07b6c3e58a84b96b35c6115a7a38, type: 3}
+      propertyPath: m_margin.y
+      value: -109.611206
+      objectReference: {fileID: 0}
+    - target: {fileID: 5621432902830187617, guid: 557c07b6c3e58a84b96b35c6115a7a38, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 267a2c953077d2a43b2b7a10919f4c14, type: 2}
+    - target: {fileID: 5621432902830187617, guid: 557c07b6c3e58a84b96b35c6115a7a38, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5621432902830187617, guid: 557c07b6c3e58a84b96b35c6115a7a38, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 5621432902830187617, guid: 557c07b6c3e58a84b96b35c6115a7a38, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -2947752749771674610, guid: 267a2c953077d2a43b2b7a10919f4c14, type: 2}
+    - target: {fileID: 5621432902830187617, guid: 557c07b6c3e58a84b96b35c6115a7a38, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5630818761998307473, guid: 557c07b6c3e58a84b96b35c6115a7a38, type: 3}
       propertyPath: m_SizeDelta.x
@@ -608,11 +647,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4239060035493091782, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 114
+      value: 123
       objectReference: {fileID: 0}
     - target: {fileID: 4239060035493091782, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -144
+      value: -168
       objectReference: {fileID: 0}
     - target: {fileID: 4239060035493091782, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema2_9_Fail
   m_EditorClassIdentifier: 
-  mainText: "\xA1Caos en los archivos! \U0001F4C2\nSin clasificar, cualquiera podr\xEDa
-    borrar, modificar o robar el informe.\n\n\xA1Etiqueta siempre seg\xFAn su sensibilidad!"
-  rightOption: Adelante
+  mainText: "\xA1Caos en los archivos! Sin clasificar, cualquiera podr\xEDa borrar,
+    modificar o robar el informe. \xA1Etiqueta siempre seg\xFAn su sensibilidad!
+    (Ej: \u2018Confidencial\u2019, \u2018Restringida\u2019, \u2018Privada\u2019 y
+    \u2018P\xFAblica\u2019)"
+  rightOption: Entendido
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: 71b3f157c7916644e98ea2e7d953b2ba, type: 2}

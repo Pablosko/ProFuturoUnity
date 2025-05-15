@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema2_11_Correct
   m_EditorClassIdentifier: 
-  mainText: "\xA1Cumplimiento normativo excelente! \U0001F4DC\nCumplimos con normativas
-    como GDPR.\n\nProtegemos a la empresa y a los clientes."
-  rightOption: Siguiente
+  mainText: "\xA1Cumplimiento normativo excelente! Cumplir con normativas (como LFPDPPP),
+    protegemos a la empresa de sanciones y a los clientes."
+  rightOption: Perfecto
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: 8030dcf2a7814eb4cb1be0b530ab7099, type: 2}

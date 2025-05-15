@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema2_4_Screen
   m_EditorClassIdentifier: 
-  mainText: "Por ejemplo, estados de cuenta, informes ejecutivos, procedimientos,
-    manuales, correo electr\xF3nico, bases de datos y otros recursos relacionados
-    con la informaci\xF3n. Diferenciar y clasificar la informaci\xF3n bien y con
-    criterio, es fundamental, as\xED que vamos a practicar un poco, \xBFte parece?"
+  mainText: "Por ejemplo, equipos de c\xF3mputo, aplicaciones, estados de cuenta,
+    informes ejecutivos,  manuales, correo electr\xF3nico, bases de datos, c\xF3digo
+    de aplicaciones y otros recursos relacionados con la informaci\xF3n. \r\n<b>Diferenciar
+    y clasificar la informaci\xF3n</b> bien y con criterio, es fundamental, as\xED
+    que vamos a practicar un poco, \xBFte parece?"
   rightOption: "\xA1Adelante!"
   leftOption: 
   rigthCorrect: 0

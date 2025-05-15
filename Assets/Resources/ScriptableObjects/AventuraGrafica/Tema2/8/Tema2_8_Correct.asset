@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema2_8_Correct
   m_EditorClassIdentifier: 
-  mainText: "\xA1Juramento de secreto cumplido! \U0001F910\nLos Guardianes como t\xFA
-    evitan filtraciones a competidores.\n\n"
-  rightOption: Vamos
+  mainText: "\xA1Juramento de secreto cumplido! Los Guardianes como t\xFA evitan
+    filtraciones a competidores."
+  rightOption: Perfecto
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: 83e542732e0733145beb11c27fe112b5, type: 2}

@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema2_8_Fail
   m_EditorClassIdentifier: 
-  mainText: "\xA1El ENJAMBRE escucha siempre! \U0001F442\nHasta un detalle puede
-    darles la clave para hackearnos.\n\n\xA1Silencio absoluto sobre proyectos!"
-  rightOption: Continuar
+  mainText: "\xA1El ENJAMBRE escucha siempre! Hasta un detalle puede darles la clave
+    para hackearnos o que llegue a los competidores. \xA1Silencio absoluto sobre
+    proyectos!"
+  rightOption: Entendido
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: 83e542732e0733145beb11c27fe112b5, type: 2}

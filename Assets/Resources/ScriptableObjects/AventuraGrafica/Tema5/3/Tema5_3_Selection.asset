@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainText: "Los humanos son conocidos por sus fuertes lazos sociales, \xBFqu\xE9
     error com\xFAn crees que cometen a la hora de crear contrase\xF1as seguras?"
-  rightOption: Usar nombres de familia y conocidos
+  rightOption: "Usar una combinaci\xF3n aleatoria de letras, n\xFAmeros y caracteres
+    especiales"
   leftOption: "Usar los nombres de sus \u201Cex\u201D"
   rigthCorrect: 1
   feedbackCorrect: {fileID: 11400000, guid: 45fcd47480e2eb747a70e1b0bbe6ffdd, type: 2}

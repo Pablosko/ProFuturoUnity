@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainText: "Un colega de la galaxia te pide ver un informe confidencial que no es
     de su \xE1rea. \xBFSe lo muestras?"
-  rightOption: No
-  leftOption: "S\xED"
+  rightOption: "No \u2192 \"Le explico que necesita permiso del responsable\"."
+  leftOption: "S\xED \u2192 \"Obvio, conf\xEDo en \xE9l, no hay problema\"."
   rigthCorrect: 1
   feedbackCorrect: {fileID: 11400000, guid: ee2b6372a1ec0a747b758839b2b11ebd, type: 2}
   feedbackIncorrect: {fileID: 11400000, guid: e17a1d426dcf57c4689f730c6a17610c, type: 2}

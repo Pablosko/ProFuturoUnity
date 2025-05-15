@@ -50,6 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sequences:
   - {fileID: 3783551553215246939, guid: 37e5fb82c5d48584cac6ac4851aa315d, type: 3}
+  - {fileID: 4255422420296747487, guid: b137239e611b5a949895b0cb6dc6166a, type: 3}
   currentSequence: {fileID: 0}
   sequenceIndex: 0
   endStageActivationGo: {fileID: 0}

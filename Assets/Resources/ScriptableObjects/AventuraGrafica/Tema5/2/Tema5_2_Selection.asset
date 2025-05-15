@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema5_2_Selection
   m_EditorClassIdentifier: 
-  mainText: "\xBFCu\xE1l crees que sea la contrase\xF1a m\xE1s usada en el \u2018planeta
-    sabio\u2019 la Tierra?"
+  mainText: "\xBFCu\xE1l crees que sea la contrase\xF1a m\xE1s usada en el \u2018sabio\u2019
+    planeta Tierra?"
   rightOption: 1234
-  leftOption: FiruLAis!
+  leftOption: Fiiru.LAis!42
   rigthCorrect: 1
   feedbackCorrect: {fileID: 11400000, guid: 3f74b138c0ec547499f8991f24e090b4, type: 2}
   feedbackIncorrect: {fileID: 11400000, guid: d41892120b79af9439ecf86be07c0f00, type: 2}

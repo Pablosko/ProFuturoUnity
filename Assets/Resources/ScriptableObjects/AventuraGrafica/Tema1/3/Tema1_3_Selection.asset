@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema1_3_Selection
   m_EditorClassIdentifier: 
-  mainText: "\xBFY qu\xE9 'defiende' nuestro Gobierno de Ciberseguridad en Profuturo?"
+  mainText: "\xBFY qu\xE9 \"defiende\" nuestro Gobierno de Ciberseguridad en Profuturo?"
   rightOption: "\xBFLa tr\xEDada CID?"
   leftOption: "\xBFProteger nuestros servidores f\xEDsicos?"
   rigthCorrect: 1

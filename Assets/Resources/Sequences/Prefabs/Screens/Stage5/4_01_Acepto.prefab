@@ -271,6 +271,22 @@ PrefabInstance:
       value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 6798658882535422978, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
+      propertyPath: m_margin.w
+      value: -56.792023
+      objectReference: {fileID: 0}
+    - target: {fileID: 6798658882535422978, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
+      propertyPath: m_margin.x
+      value: -170.5886
+      objectReference: {fileID: 0}
+    - target: {fileID: 6798658882535422978, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
+      propertyPath: m_margin.y
+      value: -65.29675
+      objectReference: {fileID: 0}
+    - target: {fileID: 6798658882535422978, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
+      propertyPath: m_margin.z
+      value: 115.28082
+      objectReference: {fileID: 0}
+    - target: {fileID: 6798658882535422978, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: m_fontSizeBase
       value: 24
       objectReference: {fileID: 0}
@@ -288,7 +304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6808959531028220146, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 100.46033
+      value: 124
       objectReference: {fileID: 0}
     - target: {fileID: 6808959531028220146, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -328,7 +344,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8868250481838295510, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -67.8438
+      value: -127.2855
       objectReference: {fileID: 0}
     - target: {fileID: 8868250481838295510, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: m_SizeDelta.y
@@ -336,7 +352,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8868250481838295510, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 33.921875
+      value: 137
       objectReference: {fileID: 0}
     - target: {fileID: 8868250481838295510, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: m_AnchoredPosition.y

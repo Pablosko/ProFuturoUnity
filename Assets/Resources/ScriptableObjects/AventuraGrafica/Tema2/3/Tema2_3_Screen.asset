@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema2_3_Screen
   m_EditorClassIdentifier: 
-  mainText: "Los activos de informaci\xF3n son elementos valiosos dentro de una organizaci\xF3n
-    intergal\xE1ctica, por lo que deben ser protegidos para mantener su confidencialidad,
-    disponibilidad e integridad."
+  mainText: "Los <b>activos</b> de informaci\xF3n son <b>elementos valiosos</b> dentro
+    de una organizaci\xF3n intergal\xE1ctica, por lo que <b>deben ser protegidos
+    para mantener su confidencialidad,</b> integridad y disponibilidad."
   rightOption: "S\xFAper, \xBFpor ejemplo?"
   leftOption: 
   rigthCorrect: 0

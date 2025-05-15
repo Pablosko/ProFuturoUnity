@@ -16,10 +16,8 @@ MonoBehaviour:
     personal?"
   rightText: No, editas o pides permiso.
   leftText: "S\xED, es orgullo corporativo."
-  successMessage: "\u2705 \xA1Bien ah\xED Guardi\xE1n! La confidencialidad de la
-    informaci\xF3n imposibilita a entes de la colmena saber m\xE1s que lo p\xFAblico."
-  errorMessage: "\u274C Gran error Guardi\xE1n. Sin autorizaci\xF3n, expones activos
-    de marca. Diste una idea a miembros de la colmena para usar esa info en tu contra."
+  successMessage: "\xA1Bien ah\xED Guardi\xE1n! La confidencialidad de la informaci\xF3n
+    imposibilita a entes de la colmena saber m\xE1s que lo p\xFAblico."
+  errorMessage: "Gran error Guardi\xE1n. Sin autorizaci\xF3n, expones activos de
+    marca. Diste una idea a miembros de la colmena para usar esa info en tu contra."
   correct: 1
-  correctSprite: {fileID: 0}
-  IncorrectSprite: {fileID: 0}

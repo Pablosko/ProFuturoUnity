@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema3_1_Screen
   m_EditorClassIdentifier: 
-  mainText: "\xA1Bienvenido(a) al tercer desaf\xEDo, Guardi\xE1n! Antes de entregarte
-    la Insignia del Guardi\xE1n de los Portales, debes superar tu conocimiento en
-    Controles de Acceso y ser m\xE1s astuto(a) que el hacker estelar."
+  mainText: "<b>\xA1Bienvenido(a) al tercer desaf\xEDo, Guardi\xE1n!</b> Antes de
+    entregarte la <b orange>Insignia del Guardi\xE1n de los Portales</b>, debes superar
+    tu conocimiento en <b orange>Controles de Acceso</b> y ser m\xE1s astuto(a) que
+    el hacker estelar."
   rightOption: "\xA1Perfecto!"
   leftOption: 
   rigthCorrect: 0

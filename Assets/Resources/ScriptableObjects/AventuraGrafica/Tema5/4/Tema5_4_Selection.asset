@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema5_4_Selection
   m_EditorClassIdentifier: 
-  mainText: "\xA1Guardia\u0301n! \xA1Te regalan la mascota que queri\u0301as! Tu
-    quieres usar el nombre de tu mascota y la fecha especial en tu contrasen\u0303a.
-    Eso es..."
+  mainText: "\xA1Guardian! \xA1Te regalan la mascota que quer\xEDas! Quieres usar
+    el nombre de tu mascota y la fecha de cumplea\xF1os como contrase\xF1a. Eso es..."
   rightOption: "\xA1Peligroso! Nos ponemos en peligro"
   leftOption: "\xA1Acertado! Siempre la recordar\xE9"
   rigthCorrect: 1

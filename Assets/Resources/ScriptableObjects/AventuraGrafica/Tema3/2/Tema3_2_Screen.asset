@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema3_2_Screen
   m_EditorClassIdentifier: 
-  mainText: "\xA1Guardi\xE1n! C\xF3mo sabes, resguardar nuestros activos digitales
-    de la galaxia Profuturo es m\xE1s que fundamental para nuestra seguridad diaria
-    c\xF3smica\u2026"
+  mainText: "Guardi\xE1n! C\xF3mo sabes, <b>el control de acceso efectivo a nuestros
+    sistemas internos de la galaxia Profuturo es m\xE1s que fundamental</b> para
+    nuestra seguridad diaria c\xF3smica\u2026"
   rightOption: "\xA1Claro!"
   leftOption: 
   rigthCorrect: 0

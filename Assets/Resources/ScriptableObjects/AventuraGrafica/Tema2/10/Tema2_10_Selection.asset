@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Tema2_10_Selection
   m_EditorClassIdentifier: 
   mainText: "Un correo de 'RH' pide cambiar tu contrase\xF1a. \xBFClic?"
-  rightOption: No
-  leftOption: "S\xED"
+  rightOption: "No \u2192 \"Verifico con Seguridad de la Informaci\xF3n antes de
+    hacer nada\"."
+  leftOption: "S\xED \u2192 \"Parece leg\xEDtimo, mejor lo hago r\xE1pido\"."
   rigthCorrect: 1
   feedbackCorrect: {fileID: 11400000, guid: f91aabc44b920bc418d2f2eb24732653, type: 2}
   feedbackIncorrect: {fileID: 11400000, guid: 6bebe00cc5d959c41bf10fa2c7aef266, type: 2}

@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema4_3_Selection
   m_EditorClassIdentifier: 
-  mainText: "\xBFD\xF3nde us\xF3 principalmente las comunicaciones seguras?"
+  mainText: "<b>\xBFD\xF3nde us\xF3 principalmente las comunicaciones seguras?</b>
+    \r\n\r\n\xA1Bien!, en este planeta <b>el uso de Internet est\xE1 masificado,</b>
+    sin embargo, detectamos que sus habitantes son <b>poco conscientes</b> sobre
+    los riesgos que implica navegar por la red. \r\nCuando navegas por Internet,
+    aseg\xFArate de que la URL de la p\xE1gina empiece con <b>https://</b>\r\nPero
+    podr\xEDas intuir, \xBFpor qu\xE9?\r"
   rightOption: "La \u201CS\u201D significa que es segura"
   leftOption: "La \u201CS\u201D significa que hay informaci\xF3n secreta"
   rigthCorrect: 1

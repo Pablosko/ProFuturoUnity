@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainText: "Un archivo que necesitas urgente es sospechoso y flota cerca. \xBFLo
     descargas en la nave?"
-  rightOption: No
-  leftOption: "S\xED"
+  rightOption: "No \u2192 \"Reporto el sitio a TI para que lo revisen\"."
+  leftOption: "S\xED \u2192 \"Es solo un PDF, no pasar\xE1 nada\"."
   rigthCorrect: 1
   feedbackCorrect: {fileID: 11400000, guid: 62a12a15fea05a04b9e34933a9622c8c, type: 2}
   feedbackIncorrect: {fileID: 11400000, guid: cbfb25da4d16804408ba7b0e552c8842, type: 2}
