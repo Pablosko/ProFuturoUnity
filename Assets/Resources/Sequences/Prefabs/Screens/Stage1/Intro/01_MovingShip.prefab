@@ -105,6 +105,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7714161663285322952, guid: 32d38a174b7a7f24eb899be5ac917e76, type: 3}
+      propertyPath: id
+      value: 1_1_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7714161663285322952, guid: 32d38a174b7a7f24eb899be5ac917e76, type: 3}
       propertyPath: endSequence
       value: 1
       objectReference: {fileID: 0}

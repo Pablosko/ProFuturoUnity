@@ -1665,6 +1665,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageGame: 1
+  id: 1_1_20
   questions: []
   cardPerfab: {fileID: 2949171410408317853, guid: be642bfcdec358341801812bd5a1eb07, type: 3}
   cardTransform: {fileID: 1798027733572291705}

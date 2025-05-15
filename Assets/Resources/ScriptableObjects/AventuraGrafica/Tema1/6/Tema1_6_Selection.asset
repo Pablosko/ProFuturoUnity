@@ -19,3 +19,4 @@ MonoBehaviour:
   rigthCorrect: 1
   feedbackCorrect: {fileID: 11400000, guid: cb4375f568796a64ab5eadaaf75b46ac, type: 2}
   feedbackIncorrect: {fileID: 11400000, guid: 44cfc822077314242936060322812ed3, type: 2}
+  id: 1_1_14

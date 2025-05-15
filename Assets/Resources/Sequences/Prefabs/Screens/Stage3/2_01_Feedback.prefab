@@ -384,6 +384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sequenceManager: {fileID: 0}
   hasTransition: 1
+  id: 
 --- !u!1 &6843037047713153698 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5639810048483558676, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}

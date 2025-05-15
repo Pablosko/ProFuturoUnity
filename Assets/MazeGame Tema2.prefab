@@ -1273,6 +1273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageGame: 2
+  id: 2_1_17
   tilemap: {fileID: 6134682633742610941}
   cableTilemap: {fileID: 8914949613181068629}
   cableHorizontal: {fileID: 11400000, guid: b79ca4d77d82e444da36bb710c5ab515, type: 2}
