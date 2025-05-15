@@ -16,11 +16,10 @@ MonoBehaviour:
     de que...?"
   rightText: "\xA1Error cr\xEDtico de informaci\xF3n!"
   leftText: "\xA1Es un portal seguro!"
-  successMessage: "\u2705 \xA1Correcto! El candado indica que el sitio utiliza una
-    conexi\xF3n segura y que la informaci\xF3n que env\xEDas est\xE1 protegida, como
-    \xA1los escudos de nuestra nave Guardi\xE1n!"
-  errorMessage: "\u274C \xA1FALSO! Sin candado, hasta un drone del ENJAMBRE podr\xEDa
-    interceptar tus mensajes. El candado es un indicador clave de que la conexi\xF3n
-    est\xE1 protegida. Es importante buscarlo para asegurarte de que tus datos est\xE1n
-    seguros."
+  successMessage: "\xA1Correcto! El candado indica que el sitio utiliza una conexi\xF3n
+    segura y que la informaci\xF3n que env\xEDas est\xE1 protegida, como \xA1los
+    escudos de nuestra nave Guardi\xE1n!"
+  errorMessage: "\xA1FALSO! Sin candado, hasta un drone del ENJAMBRE podr\xEDa interceptar
+    tus mensajes. El candado es un indicador clave de que la conexi\xF3n est\xE1
+    protegida. Es importante buscarlo para asegurarte de que tus datos est\xE1n seguros."
   correct: 1

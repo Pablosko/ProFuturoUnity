@@ -16,10 +16,9 @@ MonoBehaviour:
     cifrado. \xBFSe la env\xEDas?"
   rightText: "Claro, \xA1es mi amigo!"
   leftText: "\xA1No, jam\xE1s!"
-  successMessage: "\u2705 \xA1Muy bien! \xA1As\xED se defiende un Guardi\xE1n! \u2694\uFE0F
+  successMessage: "\xA1Muy bien! \xA1As\xED se defiende un Guardi\xE1n! \u2694\uFE0F
     Nunca compartas contrase\xF1as por canales no seguros. Las contrase\xF1as son
     como c\xF3digos de autodestrucci\xF3n: \xA1solo para ti!"
-  errorMessage: "\u274C \xA1Pi\xE9nsalo dos veces! La informaci\xF3n personal debe
-    protegerse. \xA1El ENJAMBRE disfraza sus drones de aliados! \U0001F916 Nunca
-    compartas llaves."
+  errorMessage: "\xA1Pi\xE9nsalo dos veces! La informaci\xF3n personal debe protegerse.
+    \xA1El ENJAMBRE disfraza sus drones de aliados! \U0001F916 Nunca compartas llaves."
   correct: 1

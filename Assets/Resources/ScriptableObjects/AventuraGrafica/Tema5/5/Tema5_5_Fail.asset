@@ -15,7 +15,7 @@ MonoBehaviour:
   mainText: "\xA1Casi!\nAunque podr\xEDa dar la sensaci\xF3n de seguridad es relativamente
     sencillo para los hackers encontrar el patr\xF3n.\n\nY m\xE1s si dejamos alguna
     referencia personal."
-  rightOption: "\xA1Perfecto!"
+  rightOption: Entendido
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: b0dd4f861c2f9ff468d6b2377318f5bd, type: 2}

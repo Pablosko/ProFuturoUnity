@@ -16,11 +16,9 @@ MonoBehaviour:
     esta t\xE9cnica y nunca caer\xEDa\u201D?"
   rightText: No, tomo el curso.
   leftText: "S\xED, estoy muy capacitado"
-  successMessage: "\u2705 Efecto expansivo estelar: Identificas y reportas 2 intentos
-    de phishing ese mes."
-  errorMessage: "\u274C Error importante estelar: Tu nave fue infectada por un malware\u2026
+  successMessage: 'Efecto expansivo estelar: Identificas y reportas 2 intentos de
+    phishing ese mes.'
+  errorMessage: "Error importante estelar: Tu nave fue infectada por un malware\u2026
     Los atacantes ahora usan IA para mandarte una nota de voz hecha por IA en el
     correo..."
   correct: 1
-  correctSprite: {fileID: 0}
-  IncorrectSprite: {fileID: 0}

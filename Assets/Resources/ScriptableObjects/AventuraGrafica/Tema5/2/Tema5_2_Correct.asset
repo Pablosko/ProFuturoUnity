@@ -16,7 +16,7 @@ MonoBehaviour:
     es capaz de crear maravillas como Chichen-itza y tenga tan poco cuidado con la
     creaci\xF3n de contrase\xF1as.\n\nTambi\xE9n usar patrones del teclado es un
     error com\xFAn (p.ej. qwerty)."
-  rightOption: Entendido
+  rightOption: Perfecto
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: ef0cebed7c0170a4d85d374d3ee6daaa, type: 2}

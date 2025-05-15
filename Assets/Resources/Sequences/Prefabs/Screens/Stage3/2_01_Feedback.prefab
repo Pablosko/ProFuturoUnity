@@ -272,9 +272,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6798658882535422978, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: m_text
-      value: "\xA1Genial! \xA1Laberinto descontaminado! \U0001F3C6 Los archivos est\xE1n
-        blindados en sus ubicaciones correctas Guardi\xE1n y el Enjambre ya no podr\xE1
-        con ello. \xBFSabes lo que significa eso?"
+      value: "\xA1Genial! \xA1Laberinto descontaminado! \nLos archivos est\xE1n blindados
+        en sus ubicaciones correctas Guardi\xE1n y el Enjambre ya no podr\xE1 con
+        ello. \n\xBFSabes lo que significa eso?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6798658882535422978, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
+      propertyPath: m_margin.w
+      value: -82.500565
+      objectReference: {fileID: 0}
+    - target: {fileID: 6798658882535422978, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
+      propertyPath: m_margin.x
+      value: 82.653595
+      objectReference: {fileID: 0}
+    - target: {fileID: 6798658882535422978, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
+      propertyPath: m_margin.y
+      value: -82.32721
       objectReference: {fileID: 0}
     - target: {fileID: 6798658882535422978, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: m_HorizontalAlignment

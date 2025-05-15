@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema2_5_Fail
   m_EditorClassIdentifier: 
-  mainText: "\xA1Brecha de seguridad detectada! \U0001F525\nUsar equipos de Profuturo
-    para asuntos externos es como dejar la escotilla abierta.\n\nMalware o fugas
-    de datos podr\xEDan colarse. \xA1Usa tu nave personal!"
-  rightOption: Siguiente
+  mainText: "\xA1Brecha de seguridad detectada! Usar equipos de Profuturo para asuntos
+    externos es como dejar la escotilla abierta: malware o fugas de datos podr\xEDan
+    colarse. <b>\xA1Usa tu nave personal!</b>"
+  rightOption: Entendido
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: 22411f0f8c9b2de4e9e4f1a877b6403a, type: 2}

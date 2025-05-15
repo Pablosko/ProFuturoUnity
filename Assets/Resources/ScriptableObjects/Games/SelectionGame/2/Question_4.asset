@@ -15,10 +15,10 @@ MonoBehaviour:
   text: "Una web de comercio interestelar usa \u201Chttp://\u201D. \xBFCompras, Guardi\xE1n?"
   rightText: "\xA1Es la hora del shopping!"
   leftText: "\xA1No compro!"
-  successMessage: "\u2705 \xA1Excelente! \xA1Sabia decisi\xF3n! \"https://\" indica
-    una conexi\xF3n segura. Sin \u2018S\u2019, tus cr\xE9ditos gal\xE1cticos podr\xEDan
+  successMessage: "\xA1Excelente! \xA1Sabia decisi\xF3n! \"https://\" indica una
+    conexi\xF3n segura. Sin \u2018S\u2019, tus cr\xE9ditos gal\xE1cticos podr\xEDan
     ser robados y filtrados."
-  errorMessage: "\u274C \xA1Atenci\xF3n! \xA1Peligro! \"http://\" no cifra la informaci\xF3n,
+  errorMessage: "\xA1Atenci\xF3n! \xA1Peligro! \"http://\" no cifra la informaci\xF3n,
     haci\xE9ndola vulnerable. Es muy probable que tus datos y cr\xE9ditos gal\xE1cticos
     podr\xEDan ser robados y filtrados."
   correct: 1

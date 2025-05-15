@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainText: "Encuentras datos de clientes antiguos en tu equipo. \xBFLos borras para
     liberar espacio?"
-  rightOption: No
-  leftOption: "S\xED"
+  rightOption: "No \u2192 \"Pregunto a Seguridad de la Informaci\xF3n c\xF3mo proceder
+    seg\xFAn las pol\xEDticas\"."
+  leftOption: "S\xED \u2192 \"Claro, ya no los usamos, los elimino\"."
   rigthCorrect: 1
   feedbackCorrect: {fileID: 11400000, guid: ff01dc13bfb13a54da3a0328bc957d40, type: 2}
   feedbackIncorrect: {fileID: 11400000, guid: 9e0f8e6708eedcc4f913c6f295411cf9, type: 2}

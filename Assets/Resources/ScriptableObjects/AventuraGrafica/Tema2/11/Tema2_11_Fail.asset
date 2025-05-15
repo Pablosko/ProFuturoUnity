@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema2_11_Fail
   m_EditorClassIdentifier: 
-  mainText: "\xA1Violaci\xF3n de protocolo! \u2696\uFE0F\nAlgunos datos deben guardarse
-    por ley.\n\nBorrarlos sin consultar al \xE1rea legal podr\xEDa costarle multas
-    a Profuturo."
-  rightOption: Continuar
+  mainText: "\xA1Violaci\xF3n de protocolo! Algunos datos deben guardarse por ley
+    (facturas, contratos). Borrarlos <b>sin consultar al \xE1rea legal</b> podr\xEDa
+    costarle multas a Profuturo."
+  rightOption: Entendido
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: 8030dcf2a7814eb4cb1be0b530ab7099, type: 2}

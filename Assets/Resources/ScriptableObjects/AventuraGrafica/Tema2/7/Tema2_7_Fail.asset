@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema2_7_Fail
   m_EditorClassIdentifier: 
-  mainText: "\xA1Fuga de plasma cr\xEDtico! \U0001F4A2\nLa informaci\xF3n confidencial
-    es como el n\xFAcleo de la nave.\n\nSolo para tripulaci\xF3n autorizada. \xA1Podr\xEDas
-    violar leyes gal\xE1cticas!"
-  rightOption: Siguiente
+  mainText: "\xA1Fuga de plasma cr\xEDtico! La <b>informaci\xF3n confidencial</b>
+    es como el n\xFAcleo de la nave: solo para tripulaci\xF3n autorizada. \xA1Podr\xEDas
+    violar leyes gal\xE1cticas (LFPDPPP) o sanciones legales!"
+  rightOption: Entendido
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: f83b17dfe913ed4469dd77c58c164178, type: 2}

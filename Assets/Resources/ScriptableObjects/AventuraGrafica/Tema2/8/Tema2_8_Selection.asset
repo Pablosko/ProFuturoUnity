@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainText: "Un familiar te pregunta sobre el Proyecto innovador Nova (ultrasecreto).
     \xBFCompartes algo?"
-  rightOption: No
-  leftOption: "S\xED"
+  rightOption: "No \u2192 \"Le digo que no puedo hablar del tema por pol\xEDticas
+    de la empresa\"."
+  leftOption: "S\xED \u2192 \"Total, luego lo ordeno\"."
   rigthCorrect: 1
   feedbackCorrect: {fileID: 11400000, guid: e1417703150f7a648aea8904560cc62b, type: 2}
   feedbackIncorrect: {fileID: 11400000, guid: 145bce6610e373d46b6e7fff6609cc1e, type: 2}

@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema2_7_Correct
   m_EditorClassIdentifier: 
-  mainText: "\xA1Perfecto, barreras de seguridad reforzadas! \U0001F6AA\nAs\xED protegemos
-    los secretos de la Red Gal\xE1ctica.\n\nCumplimos con regulaciones como la GDPR."
-  rightOption: Adelante
+  mainText: "\xA1Perfecto, barreras de seguridad reforzadas! As\xED protegemos los
+    secretos de la Red Gal\xE1ctica y evitamos brechas de seguridad cumpliendo con
+    regulaciones como la LFPDPPP."
+  rightOption: Perfecto
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: f83b17dfe913ed4469dd77c58c164178, type: 2}

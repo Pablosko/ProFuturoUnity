@@ -1164,8 +1164,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Esto es lo que ha pasado
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5aea5319ed8226c4a844289a312e4d59, type: 2}
-  m_sharedMaterial: {fileID: -7420302498599075428, guid: 5aea5319ed8226c4a844289a312e4d59, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 267a2c953077d2a43b2b7a10919f4c14, type: 2}
+  m_sharedMaterial: {fileID: -2947752749771674610, guid: 267a2c953077d2a43b2b7a10919f4c14, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1189,8 +1189,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2485,6 +2485,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5349067134850441115, guid: 5eb0459fea167b84b8c46c495ddd571c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5678388450248609604, guid: 5eb0459fea167b84b8c46c495ddd571c, type: 3}
       propertyPath: m_SizeDelta.x
       value: 822
@@ -2503,14 +2507,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5686437264630922164, guid: 5eb0459fea167b84b8c46c495ddd571c, type: 3}
       propertyPath: m_text
-      value: "\xA1Espectacular, Guardi\xE1n! \u2728 Has alcanzado el nivel superior
-        de tu val\xEDa y logramos subir  toda la informaci\xF3n correcta a la nube
-        de Gobierno de Ciberseguridad.\n\n     Creo que te mereces lo que andabas
-        buscando..."
+      value: "<b>\xA1Alerta, alerta!</b> No has llegado al nivel superior que todo
+        Guardi\xE1n debe mostrar. Elige sabiamente. El ENJAMBRE sigue consumiendo
+        nuestros datos.  \n<b>Desliza izquierda o derecha para subir toda la informaci\xF3n
+        correcta</b> a la nube de Gobierno de Ciberseguridad."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686437264630922164, guid: 5eb0459fea167b84b8c46c495ddd571c, type: 3}
+      propertyPath: m_fontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686437264630922164, guid: 5eb0459fea167b84b8c46c495ddd571c, type: 3}
+      propertyPath: m_margin.w
+      value: -64.707
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686437264630922164, guid: 5eb0459fea167b84b8c46c495ddd571c, type: 3}
+      propertyPath: m_margin.x
+      value: 77.49701
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686437264630922164, guid: 5eb0459fea167b84b8c46c495ddd571c, type: 3}
+      propertyPath: m_margin.z
+      value: -11.985962
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686437264630922164, guid: 5eb0459fea167b84b8c46c495ddd571c, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 5686437264630922164, guid: 5eb0459fea167b84b8c46c495ddd571c, type: 3}
       propertyPath: m_HorizontalAlignment
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6571590186484423425, guid: 5eb0459fea167b84b8c46c495ddd571c, type: 3}
       propertyPath: m_Pivot.x
@@ -2641,7 +2665,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1557173048293826810, guid: 5eb0459fea167b84b8c46c495ddd571c, type: 3}
       propertyPath: m_fontSize
-      value: 15.65
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2057297354755933397, guid: 5eb0459fea167b84b8c46c495ddd571c, type: 3}
       propertyPath: m_SizeDelta.y
@@ -2804,10 +2828,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5686437264630922164, guid: 5eb0459fea167b84b8c46c495ddd571c, type: 3}
       propertyPath: m_text
-      value: "\xA1Espectacular, Guardi\xE1n! \u2728 Has alcanzado el nivel superior
-        de tu val\xEDa y logramos subir  toda la informaci\xF3n correcta a la nube
-        de Gobierno de Ciberseguridad.\n\n     Creo que te mereces lo que andabas
-        buscando..."
+      value: "<b>\xA1Espectacular, Guardi\xE1n!</b> Has alcanzado el nivel superior
+        de tu val\xEDa y logramos subir toda la informaci\xF3n correcta a la nube
+        de Gobierno de Ciberseguridad."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686437264630922164, guid: 5eb0459fea167b84b8c46c495ddd571c, type: 3}
+      propertyPath: m_fontSize
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686437264630922164, guid: 5eb0459fea167b84b8c46c495ddd571c, type: 3}
+      propertyPath: m_margin.w
+      value: -85.20772
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686437264630922164, guid: 5eb0459fea167b84b8c46c495ddd571c, type: 3}
+      propertyPath: m_margin.x
+      value: 118.80356
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686437264630922164, guid: 5eb0459fea167b84b8c46c495ddd571c, type: 3}
+      propertyPath: m_margin.z
+      value: 10.186401
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686437264630922164, guid: 5eb0459fea167b84b8c46c495ddd571c, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 5686437264630922164, guid: 5eb0459fea167b84b8c46c495ddd571c, type: 3}
       propertyPath: m_HorizontalAlignment
@@ -2988,6 +3031,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6299311640502893546, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 6299311640502893546, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.0000076293945
+      objectReference: {fileID: 0}
     - target: {fileID: 7261783393836562062, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -3018,9 +3069,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8393267641738568253, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_text
-      value: 'Continuear
+      value: 'Continuar
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393267641738568253, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393267641738568253, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
+      propertyPath: m_margin.w
+      value: -11.07753
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393267641738568253, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
+      propertyPath: m_margin.y
+      value: -16.616318
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -15,8 +15,8 @@ MonoBehaviour:
   text: "Si la URL de un sitio web empieza con 'https://', \xBFqu\xE9 significa?"
   rightText: "\xA1Falso!"
   leftText: "\xA1Cierto!"
-  successMessage: "\u2705 \xA1As\xED es! \"https://\" indica que el sitio utiliza
-    un protocolo seguro, lo que significa que tus datos est\xE1n encriptados."
-  errorMessage: "\u274C Nuuuu exactamente. \"https://\" es crucial para la seguridad,
-    ya que asegura que la conexi\xF3n est\xE1 encriptada y protegida."
+  successMessage: "\xA1As\xED es! \"https://\" indica que el sitio utiliza un protocolo
+    seguro, lo que significa que tus datos est\xE1n encriptados."
+  errorMessage: "Nuuuu exactamente. \"https://\" es crucial para la seguridad, ya
+    que asegura que la conexi\xF3n est\xE1 encriptada y protegida."
   correct: 1

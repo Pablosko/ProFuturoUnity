@@ -16,8 +16,8 @@ MonoBehaviour:
     y los proporcionas?"
   rightText: "S\xED, \xA1es mi banco!"
   leftText: "\xA1No, no me fio!"
-  successMessage: "\u2705 \xA1Sabia decisi\xF3n! Siempre verifica la autenticidad
-    de los sitios \U0001F4E7 Los hackers suplantan hasta al Alto Mando."
-  errorMessage: "\u274C \xA1Alerta de phishing! \xA1Brecha de seguridad! Podr\xEDas
-    estar cayendo en una trampa."
+  successMessage: "\xA1Sabia decisi\xF3n! Siempre verifica la autenticidad de los
+    sitios \U0001F4E7 Los hackers suplantan hasta al Alto Mando."
+  errorMessage: "\xA1Alerta de phishing! \xA1Brecha de seguridad! Podr\xEDas estar
+    cayendo en una trampa."
   correct: 1

@@ -15,9 +15,10 @@ MonoBehaviour:
   text: "\xBFEtiquetar\xEDas como 'P\xFAblico' una base de datos de clientes?"
   rightText: No, uso 'Restringido' desde el inicio.
   leftText: "S\xED, es provisional."
-  successMessage: "\u2705 Privacidad estelar: Protegiste los datos de tus clientes
-    gracias a la correcta clasificaci\xF3n."
-  errorMessage: "\u274C \xA1Error! \xA1Clasificaci\xF3n de informaci\xF3n incorrecta!"
+  successMessage: "<b>Privacidad estelar:</b> Clientes elogian tus est\xE1ndares\u2026
+    \xA1Lo lograste! Protegiste los datos de tus clientes gracias a la correcta clasificaci\xF3n
+    de la informaci\xF3n."
+  errorMessage: "<b>\xA1Error! \xA1Clasificaci\xF3n de informaci\xF3n incorrecta!</b>
+    Recuerda seguir los lineamientos que existen en Profuturo de clasificaci\xF3n
+    de Informaci\xF3n para protegerla."
   correct: 1
-  correctSprite: {fileID: 0}
-  IncorrectSprite: {fileID: 0}

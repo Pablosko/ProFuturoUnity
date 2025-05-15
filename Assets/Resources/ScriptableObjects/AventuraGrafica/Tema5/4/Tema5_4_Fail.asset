@@ -16,7 +16,7 @@ MonoBehaviour:
     de la Estaci\xF3n Alpha. El ENJAMBRE le es m\xE1s f\xE1cil si dejas referencias
     de tu vida o cosas evidentes.\n\nUsar fechas de nacimiento, aniversarios es un\u2026
     \xA1error muy com\xFAn! \xA1Usa combinaciones \xFAnicas!"
-  rightOption: Adelante
+  rightOption: Entendido
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: 8bbe714ba3429f04e9be80fca27ebdf7, type: 2}

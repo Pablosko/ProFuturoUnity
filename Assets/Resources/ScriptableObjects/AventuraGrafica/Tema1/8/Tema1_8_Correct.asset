@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema1_8_Correct
   m_EditorClassIdentifier: 
-  mainText: "<b>\xA1Correcto! \u270B \xA1Est\xE1s en todo Guardi\xE1n!</b>\n<b>Un
-    CISO es el responsable de seguridad de la informaci\xF3n de la organizaci\xF3n.</b>
-    Y \xE9ste, est\xE1 respaldado por tres gerencias: \u201CGobierno de ciberseguridad\u201D,
-    \u201CCiberseguridad\u201D y \u201CControl de Accesos y Continuidad\u201D.\n\n"
-  rightOption: Siguiente
+  mainText: "<b>\xA1Correcto! \xA1Est\xE1s en todo Guardi\xE1n!</b>\r\n\r\n<b>Un
+    CISO es el responsable de seguridad de la informaci\xF3n de la organizaci\xF3n.</b>\r\nY
+    \xE9ste, est\xE1 respaldado por tres gerencias:\r\n\t* \u201CGobierno de ciberseguridad\u201D,
+    \r\n\t* \u201CCiberseguridad\u201D \n\t* \u201CControl de Accesos y Continuidad\u201D\r"
+  rightOption: Perfecto
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: bc334153325018b49b4890226a9cdb6a, type: 2}

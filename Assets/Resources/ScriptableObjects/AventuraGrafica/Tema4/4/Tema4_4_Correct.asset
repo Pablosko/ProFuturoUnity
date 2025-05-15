@@ -16,7 +16,7 @@ MonoBehaviour:
     a una red Wi-Fi, de que tenga una contrase\xF1a segura y que est\xE9 configurada
     con mecanismos de seguridad, ya sea WPA2 o WPA3.\n\nEstos protegen tus datos
     cuando navegas de forma inal\xE1mbrica."
-  rightOption: Vamos
+  rightOption: Perfecto
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: 33a03983881854f4bbdf803dd493a59c, type: 2}

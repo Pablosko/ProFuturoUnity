@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema2_1_Screen
   m_EditorClassIdentifier: 
-  mainText: "\xA1Bienvenido(a) al segundo desaf\xEDo, Guardi\xE1n! Antes de entregarte
-    la Insignia del Archivero Estelar, debo probar tu conocimiento en Clasificaci\xF3n
-    de Informaci\xF3n Intergal\xE1ctica y saber que dominas el arte de etiquetar
-    datos sensibles."
+  mainText: "<b>\xA1Bienvenido(a) al segundo desaf\xEDo, Guardi\xE1n!</b> Antes de
+    entregarte la <b orange>Insignia del Archivero Estelar</b>, debo probar tu conocimiento
+    en <b orange>Clasificaci\xF3n de Informaci\xF3n Intergal\xE1ctica</b> y saber
+    que dominas el arte de etiquetar datos importantes."
   rightOption: "\xA1Perfecto!"
   leftOption: 
   rigthCorrect: 0

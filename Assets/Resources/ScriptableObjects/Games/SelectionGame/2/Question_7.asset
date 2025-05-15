@@ -16,9 +16,9 @@ MonoBehaviour:
     conectas a la VPN corporativa antes de acceder a documentos de la empresa?"
   rightText: "\xA1No, no me fio!"
   leftText: "\xA1Claro!"
-  successMessage: "\u2705 \xA1Perfecto! \xA1Escudo de invisibilidad activado! \U0001F310
+  successMessage: "\xA1Perfecto! \xA1Escudo de invisibilidad activado! \U0001F310
     Ni el ENJAMBRE con superl\xE1ser podr\xEDa rastrearte. La VPN a\xF1ade una capa
     de seguridad esencial."
-  errorMessage: "\u274C \xA1Error fatal! \xA1Sin VPN, eres un blanco f\xE1cil! \U0001F3AF
+  errorMessage: "\xA1Error fatal! \xA1Sin VPN, eres un blanco f\xE1cil! \U0001F3AF
     Hasta un protocol droid te hackear\xEDa. La VPN protege tus datos en redes p\xFAblicas."
   correct: 1

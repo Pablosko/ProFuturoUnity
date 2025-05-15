@@ -15,9 +15,7 @@ MonoBehaviour:
   text: "\xBFC\xF3mo navegar\xEDas de forma segura?"
   rightText: Verificar que los enlaces empiecen con (https)
   leftText: Investigar en cualquier sitio de internet posibles rutas.
-  successMessage: "\u2705 Seguridad integrada: T\xFA conexi\xF3n fue segura y lograste
-    la misi\xF3n \xA1sin ning\xFAn problema!"
-  errorMessage: "\u274C Ca\xEDda estelar: Ahora toda tu informaci\xF3n est\xE1 comprometida."
+  successMessage: "Seguridad integrada: T\xFA conexi\xF3n fue segura y lograste la
+    misi\xF3n \xA1sin ning\xFAn problema!"
+  errorMessage: "Ca\xEDda estelar: Ahora toda tu informaci\xF3n est\xE1 comprometida."
   correct: 1
-  correctSprite: {fileID: 0}
-  IncorrectSprite: {fileID: 0}

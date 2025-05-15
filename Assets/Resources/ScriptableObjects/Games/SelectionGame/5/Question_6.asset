@@ -15,9 +15,6 @@ MonoBehaviour:
   text: "\xBFPides permiso de escritura para una app aunque solo necesitas lectura?"
   rightText: "No, s\xF3lo pido el acceso que necesito."
   leftText: "S\xED, lo puedo llegar a necesitar."
-  successMessage: "\u2705 Cumplimiento superior: Destacado al Guardi\xE1n atento(a)"
-  errorMessage: "\u274C Acto fulminante: Eliminaste datos que no deb\xEDas sin darte
-    cuenta."
+  successMessage: "Cumplimiento superior: Destacado al Guardi\xE1n atento(a)"
+  errorMessage: "Acto fulminante: Eliminaste datos que no deb\xEDas sin darte cuenta."
   correct: 1
-  correctSprite: {fileID: 0}
-  IncorrectSprite: {fileID: 0}

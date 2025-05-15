@@ -15,7 +15,7 @@ MonoBehaviour:
   mainText: "\xA1As\xED es! \u270B\nEs como dejar la llave de la nave bajo el felpudo.
     Uno de los errores comunes es usar fechas de nacimiento, aniversario y \xA1fechas
     especiales!\n\n\xA1Usa combinaciones \xFAnicas!"
-  rightOption: Continuar
+  rightOption: Perfecto
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: 8bbe714ba3429f04e9be80fca27ebdf7, type: 2}

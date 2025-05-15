@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3783551553215246939, guid: 37e5fb82c5d48584cac6ac4851aa315d, type: 3}
       propertyPath: m_Name
-      value: 2_01_InicioJuego2
+      value: 3_01_InicioJuego3
       objectReference: {fileID: 0}
     - target: {fileID: 5957238673314609534, guid: 37e5fb82c5d48584cac6ac4851aa315d, type: 3}
       propertyPath: m_Pivot.x

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainText: "\xA1Excelente! \u270B\nEl error com\xFAn es que se usen nombres de familia/conocidos
     y tambi\xE9n utilizar hechos com\xFAnmente conocidos o publicados sobre su persona.\n\n"
-  rightOption: Adelante
+  rightOption: Perfecto
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: 9e0add861d266ca41941d6f5fbcf3579, type: 2}

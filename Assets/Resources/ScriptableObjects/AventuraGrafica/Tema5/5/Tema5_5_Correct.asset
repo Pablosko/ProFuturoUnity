@@ -15,7 +15,7 @@ MonoBehaviour:
   mainText: "\xA1Brillante!\nRenovar tus contrase\xF1as es \xA1la clave!\n\nUtilizar
     palabras o combinaciones de caracteres alfanum\xE9ricos, num\xE9ricos y s\xEDmbolos
     deducibles f\xE1cilmente (p.ej. P3rr1To, Pr0fu7uR0, C4r0l1n4, etc.) mejor: \xA1Ev\xEDtalo!"
-  rightOption: Entendido
+  rightOption: Perfecto
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: b0dd4f861c2f9ff468d6b2377318f5bd, type: 2}

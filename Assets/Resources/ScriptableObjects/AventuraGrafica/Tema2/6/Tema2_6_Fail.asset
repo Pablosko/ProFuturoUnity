@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema2_6_Fail
   m_EditorClassIdentifier: 
-  mainText: "\xA1Contaminaci\xF3n detectada! \U0001F9A0\nEse archivo podr\xEDa ser
-    un caballo de Troya del ENJAMBRE.\n\n\xA1Siempre escanea con el radar de TI antes
-    de descargar!"
-  rightOption: Continuar
+  mainText: "\xA1Contaminaci\xF3n detectada! Ese archivo podr\xEDa ser un caballo
+    de Troya del ENJAMBRE. \xA1Siempre escanea con el radar de TI antes de descargar!"
+  rightOption: Entendido
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: 7c3ac577c18e69f4d828d62e6a6e801a, type: 2}

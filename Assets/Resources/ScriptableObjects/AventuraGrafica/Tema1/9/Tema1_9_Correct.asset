@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema1_9_Correct
   m_EditorClassIdentifier: 
-  mainText: "<b>\xA1Genial!</b> \u270B \xA1Qu\xE9 bien pensaste!\nNuestro equipo
-    de ciberseguridad... Vela porque nuestros controles de seguridad est\xE9n siempre
-    al nivel que nuestra nave requiere. Se encargan de <b>detectar amenazas y establecer
-    estrategias</b> para evitar alg\xFAn impacto en Profuturo, e incluso, est\xE1
-    capacitado para pensar como <b>atacante.</b>\n\n"
+  mainText: "<b>\xA1Genial!</b> \xA1Qu\xE9 bien pensaste! Nuestro equipo de ciberseguridad\u2026\r\n\r\nVela
+    porque nuestros controles de seguridad est\xE9n siempre al nivel que nuestra
+    nave requiere. Se encargan de <b>detectar amenazas y establecer estrategias</b>
+    para evitar alg\xFAn impacto en Profuturo, e incluso, est\xE1 capacitado para
+    pensar como <b>atacante.</b>"
   rightOption: Perfecto
   leftOption: 
   rigthCorrect: 0

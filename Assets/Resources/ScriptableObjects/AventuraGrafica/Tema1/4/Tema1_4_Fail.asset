@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema1_4_Fail
   m_EditorClassIdentifier: 
-  mainText: "<b>\xA1Alerta cr\xEDtica, Guardi\xE1n!</b> \u26A0\uFE0F\nEl ENJAMBRE
-    ama los tr\xE1mites lentos. La verdadera meta de nuestro gobierno de ciberseguridad
-    es... Contar con una estructura s\xF3lida para proteger \xE1gilmente nuestra
-    informaci\xF3n, minimizar riesgos y fortalecer nuestra reacci\xF3n ante amenazas
-    digitales.\n\n"
-  rightOption: Continuar
+  mainText: "<b>\xA1Alerta cr\xEDtica, Guardi\xE1n!</b> El ENJAMBRE ama los tr\xE1mites
+    lentos. La verdadera meta de nuestro gobierno de ciberseguridad es\u2026\r\n\r\nContar
+    con una estructura s\xF3lida para proteger \xE1gilmente nuestra informaci\xF3n,
+    minimizar riesgos y fortalecer nuestra reacci\xF3n ante amenazas digitales.\r"
+  rightOption: Entendido
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: 19e4474d19c32c940b05df128fdf5707, type: 2}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainText: "\xA1Bingo! \u270B\nLa \"S\" al final significa que la comunicaci\xF3n
     entre tu navegador y el sitio web est\xE1 cifrada y es segura.\n\n"
-  rightOption: Continuar
+  rightOption: Perfecto
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: c45d72c55c18b45419647f6fb95fd094, type: 2}
