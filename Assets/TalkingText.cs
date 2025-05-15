@@ -19,7 +19,7 @@ public class TalkingText : MonoBehaviour
 {
     public List<TalkingTextContent> messages;
     public TextMeshProUGUI contentText;
-    public float typingSpeed = 0.1f;
+    public float lettersPerSecond = 100f;
     private int currentMessageIndex = 0;
     private Coroutine typingCoroutine;
     public TagConfigs tagCongifs;
@@ -82,27 +82,49 @@ public class TalkingText : MonoBehaviour
         int i = 0;
         isTyping = true;
 
+        float accumulatedTime = 0f;
+        float secondsPerLetter = 1f / lettersPerSecond;
+
         while (i < message.Length)
         {
-            if (message[i] == '<')
+            accumulatedTime += Time.deltaTime;
+
+            int lettersToShow = Mathf.FloorToInt(accumulatedTime / secondsPerLetter);
+            if (lettersToShow == 0)
             {
-                int closeTag = message.IndexOf('>', i);
-                if (closeTag != -1)
-                {
-                    string tag = message.Substring(i, closeTag - i + 1);
-                    contentText.text += tag;
-                    i = closeTag + 1;
-                    continue;
-                }
+                yield return null;
+                continue;
             }
 
-            contentText.text += message[i];
-            i++;
-            yield return new WaitForSeconds(typingSpeed);
+            accumulatedTime -= lettersToShow * secondsPerLetter;
+
+            while (lettersToShow > 0 && i < message.Length)
+            {
+                if (message[i] == '<')
+                {
+                    int closeTag = message.IndexOf('>', i);
+                    if (closeTag != -1)
+                    {
+                        string tag = message.Substring(i, closeTag - i + 1);
+                        contentText.text += tag;
+                        i = closeTag + 1;
+                        continue;
+                    }
+                }
+
+                contentText.text += message[i];
+                i++;
+                lettersToShow--;
+            }
+
+            yield return null;
         }
+
         messages[currentMessageIndex].onEndTalkEvent?.Invoke();
+
         if (currentMessageIndex >= messages.Count - 1)
             onLastMessageEnd?.Invoke();
+
         isTyping = false;
     }
 

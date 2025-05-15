@@ -114,7 +114,7 @@ public class AventuraGrafica : MonoBehaviour
 
     public void Next(bool correct)
     {
-        bool realCorrect = correct == currentData.rigthCorrect;
+        bool realCorrect = correct != currentData.rigthCorrect;
 
         if (currentData.IsQuestion())
             pendingBackground = realCorrect ? FeedbackType.Correct : FeedbackType.Incorrect;

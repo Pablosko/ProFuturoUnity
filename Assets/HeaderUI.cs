@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,10 +23,16 @@ public class HeaderUI : MonoBehaviour
     public void SetMedalState(int index,bool unlocked) 
     {
         medalsUI[index].sprite = unlocked == true ? medals[index] : notActiveMedal;
+        if(unlocked)
+            Home.instance.SetUnlocked(index + 1);
     }
     private void OnValidate()
     {
         SetAllMedals();
+    }
+    public bool HasMedal(int stage) 
+    {
+        return medals[stage - 1] == notActiveMedal;
     }
     public void SetAllMedals() 
     {
