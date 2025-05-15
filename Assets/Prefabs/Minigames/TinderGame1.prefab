@@ -2725,10 +2725,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4382129924617085360, guid: 5eb0459fea167b84b8c46c495ddd571c, type: 3}
       propertyPath: messages.Array.data[0].message
-      value: "\xA1Espectacular, Guardi\xE1n! \u2728 Has alcanzado el nivel superior
-        de tu val\xEDa y logramos subir  toda la informaci\xF3n correcta a la nube
-        de Gobierno de Ciberseguridad.\n\n     Creo que te mereces lo que andabas
-        buscando..."
+      value: "<b>\xA1Espectacular, Guardi\xE1n!</b> Has alcanzado el nivel superior
+        de tu val\xEDa y logramos subir toda la informaci\xF3n correcta a la nube
+        de Gobierno de Ciberseguridad."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4382129924617085360, guid: 5eb0459fea167b84b8c46c495ddd571c, type: 3}
+      propertyPath: messages.Array.data[0].nextmessage
+      value: "\xA1Genial!"
       objectReference: {fileID: 0}
     - target: {fileID: 5121216000529841500, guid: 5eb0459fea167b84b8c46c495ddd571c, type: 3}
       propertyPath: m_Pivot.x
@@ -3009,7 +3012,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4239060035493091782, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -79
+      value: -101.34
       objectReference: {fileID: 0}
     - target: {fileID: 4239060035493091782, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

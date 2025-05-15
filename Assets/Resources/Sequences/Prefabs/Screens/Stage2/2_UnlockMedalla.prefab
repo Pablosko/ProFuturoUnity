@@ -583,6 +583,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonLarge
       objectReference: {fileID: 0}
+    - target: {fileID: 4544564270096040037, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7261783393836562062, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -613,7 +617,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8393267641738568253, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_text
-      value: ESTOY LISTO(A)
+      value: "\xA1Estoy listo(a)"
       objectReference: {fileID: 0}
     - target: {fileID: 8393267641738568253, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_HorizontalAlignment
@@ -660,7 +664,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4339618546995002981, guid: 54bdb10b4c01c2749943a2630be2a2c8, type: 3}
       propertyPath: messages.Array.data[0].message
-      value: "\xA1Insignia del Gobierno Cibern\xE9tico conseguida! \u2728 Esta insignia
+      value: "<b>\xA1Insignia del Gobierno Cibern\xE9tico conseguida!</b> Esta insignia
         representa las leyes de la galaxia Profuturo. Sin ellas, el caos reinar\xEDa.
         Pero... a\xFAn faltan 4 insignias para activar la nave."
       objectReference: {fileID: 0}

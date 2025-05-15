@@ -617,7 +617,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8393267641738568253, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_text
-      value: ESTOY LISTO(A)
+      value: "\xA1Estoy m\xE1s que listo(a)!"
       objectReference: {fileID: 0}
     - target: {fileID: 8393267641738568253, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_HorizontalAlignment
@@ -673,10 +673,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4339618546995002981, guid: 54bdb10b4c01c2749943a2630be2a2c8, type: 3}
       propertyPath: messages.Array.data[0].message
-      value: "<b>\xA1Correcto! \xA1Enhorabuena Guardi\xE1n!</b> \xA1Conseguiste la
-        <b>Insignia del Archivero Estelar!</b> \u2728 Dominas el arte de etiquetar
-        datos sensibles (\xA1como cartas estelares secretas!). Sin esto, el ENJAMBRE
-        robar\xEDa nuestros mapas cr\xEDticos; pero... <b>a\xFAn faltan 3 insignias</b>
+      value: "<b>\xA1Correcto! \xA1 Enhorabuena, Guardi\xE1n!</b> \xA1Conseguiste
+        la <b>Insignia del Archivero Estelar!</b> Dominas el arte de etiquetar datos
+        importantes (\xA1como cartas estelares secretas!). Sin esto, el ENJAMBRE
+        robar\xEDa nuestros mapas cr\xEDticos; pero \u2026 <b>a\xFAn faltan 3 insignias</b>
         para activar la nave."
       objectReference: {fileID: 0}
     - target: {fileID: 4339618546995002981, guid: 54bdb10b4c01c2749943a2630be2a2c8, type: 3}
