@@ -104,17 +104,17 @@ public class InputComponent : Component
     }
    public virtual void Update()
     {
-        if (inputData.CanType(currentInput) && blinkCoroutine == null)
+        if (inputData.CanType(currentInput, cpu) && blinkCoroutine == null)
         {
             blinkCoroutine = StartCoroutine(BlinkCursor());
         }
-        else if (!inputData.CanType(currentInput) && blinkCoroutine != null)
+        else if (!inputData.CanType(currentInput, cpu) && blinkCoroutine != null)
         {
             StopCoroutine(blinkCoroutine);
             blinkCoroutine = null;
             inputData.RemoveInputEffect();
         }
-        else if(inputData.typeEffect != "" && !inputData.CanType(currentInput))
+        else if(inputData.typeEffect != "" && !inputData.CanType(currentInput, cpu))
         {
             inputData.typeEffect = "";
             RefreshScreen();
@@ -143,7 +143,7 @@ public class InputComponent : Component
         {
             if (data == "")
                 currentInput = "";
-            if(inputData.capped && !inputData.MatchLength(currentInput))
+            if(inputData.capped && !inputData.MatchLength(currentInput, cpu))
              currentInput += data;
 
             screen.SetData(inputData.GetDisplayInput(this));
@@ -153,7 +153,7 @@ public class InputComponent : Component
     {
         foreach (ScreenComponent screen in screens)
         {
-            if (inputData.capped && !inputData.MatchLength(data))
+            if (inputData.capped && !inputData.MatchLength(data, cpu))
                 currentInput = data;
 
             screen.SetData(inputData.GetDisplayInput(this));
@@ -178,7 +178,7 @@ public class InputComponent : Component
     }
     public virtual bool IsInputCorrect()
     {
-        return inputData.Matches(currentInput);
+        return inputData.Matches(currentInput, cpu);
     }
     public override bool IsActive()
     {

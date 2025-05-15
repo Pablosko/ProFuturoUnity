@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Text.RegularExpressions;
@@ -12,22 +12,21 @@ public struct ScreenData
     public InputData inputData;
     public Sprite image;
 
-    public bool hasInput() 
+    public bool hasInput()
     {
         return inputData.IsValid;
     }
-    public bool HasFeedBack() 
+
+    public bool HasFeedBack()
     {
         return true;
     }
 }
 
-
-
 public class Computer : Game
 {
     public List<Program> programs;
-    public Dictionary<string,string> memoryBlocks = new();
+    public Dictionary<string, string> memoryBlocks = new();
     public GameObject correctFeedBack;
     public GameObject correctFeedBackNoText;
     public GameObject incorrectFeedBack;
@@ -39,70 +38,48 @@ public class Computer : Game
     public Color correct;
     public Color incorrect;
     public Color normal;
-
-
     [HideInInspector] public int index;
     int currentProgram;
     bool canProgress;
+    public bool hardcodedNumberOneTime;
 
     void Start()
     {
         currentProgram = 0;
         StartProgram();
     }
+
     public void Update()
     {
         if (Input.GetKey(KeyCode.LeftControl))
         {
-            if (Input.GetKeyDown(KeyCode.Z))
-            {
-                ChangeProgram(-1);
-            }
-
-            if (Input.GetKeyDown(KeyCode.Y))
-            {
-                ChangeProgram(1);
-            }
-
+            if (Input.GetKeyDown(KeyCode.Z)) ChangeProgram(-1);
+            if (Input.GetKeyDown(KeyCode.Y)) ChangeProgram(1);
         }
     }
+
     public Program GetCurrentProgram() => programs[currentProgram];
-
     public ComputerScreenAsset GetCurrentScreen() => GetCurrentProgram().screens[index];
-
     public bool HasNext() => index < GetCurrentProgram().screens.Count - 1;
     public bool HasPrev() => index > 0;
-
-    public bool IsEnd()
-    {
-        return currentProgram >= programs.Count && !HasNext();
-    }
-
-    public bool NeedsInput()
-    {
-        return GetCurrentScreen().HasInput;
-    }
-    public bool CanProgress()
-    {
-        return GetCurrentProgram().CanProgress() && !IsEnd() && !IsScreenBlock();
-    }
-    public bool IsScreenBlock()
-    {
-        return GetCurrentProgram().IsBlocked();
-    }
-
+    public bool IsEnd() => currentProgram >= programs.Count && !HasNext();
+    public bool NeedsInput() => GetCurrentScreen().HasInput;
+    public bool CanProgress() => GetCurrentProgram().CanProgress() && !IsEnd() && !IsScreenBlock();
+    public bool IsScreenBlock() => GetCurrentProgram().IsBlocked();
+    public bool IsInFeedBack(bool state) => upScreenImage.color == (state == true ? correct : incorrect);
+    public bool IsInFeedBack() => upScreenImage.color != normal;
     public void SetProgressState(bool state) => canProgress = state;
+
     public void LoadPrev()
     {
         if (!HasPrev()) return;
-
         index--;
         RefresScreen();
     }
+
     public void LoadNext()
     {
-        if (IsScreenBlock())
-            return;
+        if (IsScreenBlock()) return;
 
         if (GetCurrentScreen().HasFeedback && upScreenImage.color == normal)
         {
@@ -112,22 +89,20 @@ public class Computer : Game
                 SetInCorrectFeedBack(GetCurrentScreen());
             return;
         }
-        if (IsInFeedBack() && (!CanProgress() || !GetCurrentScreen().HasOptions))
+
+        if (IsInFeedBack(false) && (!CanProgress() || !GetCurrentScreen().HasOptions))
         {
             RefresScreen();
         }
-        bool canProgress = CanProgress();
-        bool hasOptions = GetCurrentScreen().HasOptions;
 
-        if (!canProgress && !hasOptions && HasNext())
-        {
+        if (!CanProgress() && !GetCurrentScreen().HasOptions && HasNext())
             return;
-        }
 
         if (index < GetCurrentProgram().screens.Count - 1)
         {
             GetCurrentProgram().EndScreen();
             index++;
+            RefreshComponents();
             RefresScreen();
             GetCurrentProgram().StartScreen();
         }
@@ -135,38 +110,36 @@ public class Computer : Game
         {
             ChangeProgram(1);
         }
-        else
-            EndGame();
+        else EndGame();
     }
-    public bool IsInFeedBack() 
+    public void RefreshComponents() 
     {
-        return upScreenImage.color != normal;
+        if (GetCurrentScreen().overrideConfiguration != null) 
+        {
+            GetCurrentProgram().OverrideComponents(false,GetCurrentScreen().overrideConfiguration.components,this);
+        }
     }
-    public void ChangeProgram(int direction) 
+
+    public void ChangeProgram(int direction)
     {
         currentProgram += direction;
         currentProgram = Mathf.Clamp(currentProgram, 0, programs.Count - 1);
         StartProgram();
         RefresScreen();
     }
-    public void EndGame() 
-    {
-        TerminateGame();
-    }
-    public void RefresScreen() 
+
+    public void EndGame() => TerminateGame();
+
+    public void RefresScreen()
     {
         SetNormalFeedBack();
         GenerateScreen();
         foreach (Component component in GetCurrentProgram().components)
-        {
-            component.SetRefreshFeedBack((GetCurrentScreen()));
-        }
+            component.SetRefreshFeedBack(GetCurrentScreen());
+
         foreach (Component component in GetCurrentProgram().mainScreenComponents)
-        {
-            component.SetRefreshFeedBack((GetCurrentScreen()));
-        }
+            component.SetRefreshFeedBack(GetCurrentScreen());
     }
-    
 
     public void StartProgram()
     {
@@ -177,13 +150,10 @@ public class Computer : Game
     public void GenerateScreen()
     {
         foreach (Component component in GetCurrentProgram().components)
-        {
-            component.SetScreenData((GetCurrentScreen()));
-        }
+            component.SetScreenData(GetCurrentScreen());
+
         foreach (Component component in GetCurrentProgram().mainScreenComponents)
-        {
-            component.SetScreenData((GetCurrentScreen()));
-        }
+            component.SetScreenData(GetCurrentScreen());
     }
 
     public void SetCorrectFeedBack(ComputerScreenAsset screenData)
@@ -192,52 +162,97 @@ public class Computer : Game
         lowScreenImage.color = correct;
         GetCurrentProgram().SetComponentsFeedBack(screenData, true);
     }
+
     public void SetInCorrectFeedBack(ComputerScreenAsset screenData)
     {
         upScreenImage.color = incorrect;
         lowScreenImage.color = incorrect;
         GetCurrentProgram().SetComponentsFeedBack(screenData, false);
         if (screenData.temporalFeedBack)
-            Invoke("RefresScreen", 0.5f);
-
+            Invoke(nameof(RefresScreen), 0.5f);
     }
-    public void SetNormalFeedBack() 
+
+    public void SetNormalFeedBack()
     {
         upScreenImage.color = normal;
         lowScreenImage.color = normal;
     }
-    public string GetMemoryRegister(string direction) 
+
+    public string GetMemoryRegister(string direction)
     {
-        if (memoryBlocks.ContainsKey(direction))
-            return memoryBlocks[direction];
-        return "";
+        string cleanKey = direction.TrimStart('#').ToLower();
+        return memoryBlocks.TryGetValue(cleanKey, out string value) ? value : "";
     }
-    public void ApplyMemoryRegister(ref string source, string direction) 
+
+    public void ApplyMemoryRegister(ref string source, string direction)
     {
         string content = GetMemoryRegister(direction);
         if (!string.IsNullOrEmpty(content))
-        {
             source = content;
-        }
     }
+
     public void SetMemoryRegister(string source, string direction)
     {
-        memoryBlocks[direction] = source;
+        string cleanKey = direction.TrimStart('#').ToLower();
+        memoryBlocks[cleanKey] = source;
+        Debug.Log($"SetMemoryRegister: Guardado en memoryBlocks → clave: '{cleanKey}', valor: '{source}'");
     }
+
     public string ComputeText(string text)
     {
         if (string.IsNullOrEmpty(text))
-            return "";
-
-        // Expresi�n regular para encontrar patrones como #A1B2
-        return Regex.Replace(text, @"#([A-Za-z0-9]{4})", match =>
         {
-            string key = match.Groups[1].Value; // Extrae el valor sin el "#"
-            if (memoryBlocks.TryGetValue(key, out string value))
-            {
-                return value;
-            }
-            return match.Value; // Si no se encuentra, devuelve el original (con #)
+            Debug.Log("ComputeText: El texto está vacío o es nulo.");
+            return "";
+        }
+
+        System.Random rng = new System.Random();
+        Debug.Log($"ComputeText: Texto original recibido: \"{text}\"");
+
+        foreach (var pair in memoryBlocks)
+            Debug.Log($"MemoryBlock: {pair.Key} => {pair.Value}");
+
+        // #XXXX → registros de memoria
+        text = Regex.Replace(text, @"#([A-Za-z0-9]{4})", match =>
+        {
+            string key = match.Groups[1].Value.ToLower();
+            return memoryBlocks.TryGetValue(key, out var value) ? value : match.Value;
         });
+
+        // <upper=N> → pone letra en posición N en mayúsculas
+        text = Regex.Replace(text, @"<upper=(-?\d+)>", match =>
+        {
+            int index = int.Parse(match.Groups[1].Value);
+            int realIndex = index >= 0 ? index - 1 : text.Length + index;
+            if (realIndex >= 0 && realIndex < text.Length)
+                text = text.Remove(realIndex, 1).Insert(realIndex, char.ToUpper(text[realIndex]).ToString());
+            return "";
+        });
+
+        // <add='number',N> → inserta N números aleatorios
+        text = Regex.Replace(text, @"<add='number',(\d+)>", match =>
+        {
+            int count = int.Parse(match.Groups[1].Value);
+            for (int i = 0; i < count; i++)
+            {
+                int pos = rng.Next(0, text.Length + 1);
+                char digit = (char)('0' + rng.Next(10));
+                text = text.Insert(pos, digit.ToString());
+            }
+            return "";
+        });
+
+        // <special=N> → añade N símbolos especiales al final
+        text = Regex.Replace(text, @"<special=(\d+)>", match =>
+        {
+            int count = int.Parse(match.Groups[1].Value);
+            char[] specials = { '@', '#', '$', '%', '&' };
+            for (int i = 0; i < count; i++)
+                text += specials[rng.Next(specials.Length)];
+            return "";
+        });
+
+        Debug.Log($"ComputeText: Resultado final tras parseo: \"{text}\"");
+        return text;
     }
 }

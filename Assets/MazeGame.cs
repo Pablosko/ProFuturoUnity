@@ -1,9 +1,10 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
 using UnityEngine.Tilemaps;
+using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
 
-public class MazeGame : MonoBehaviour
+
+public class MazeGame : Game
 {
     public static MazeGame Instance;
 
@@ -17,6 +18,9 @@ public class MazeGame : MonoBehaviour
     public Tile cableCorner1, cableCorner2, cableCorner3, cableCorner4;
     public Tile up, down, rigth, left;
 
+    [Header("Floor Tiles")]
+    public Tile Floor;
+
     [Header("Prefabs")]
     public GameObject connectionPrefab;
 
@@ -28,10 +32,11 @@ public class MazeGame : MonoBehaviour
 
     private bool isPlacing = false;
     private List<Vector3Int> currentPath = new();
+    public int connections = 0;
+    public int neededConnections = 4;
 
     private void Awake() => Instance = this;
     private void Start() => GenerateTriggers();
-
     private void Update()
     {
         if (!isPlacing) return;
@@ -40,20 +45,23 @@ public class MazeGame : MonoBehaviour
         Vector3Int mouseCell = cableTilemap.WorldToCell(mouseWorld);
 
         if (CheckForEndConnection(mouseCell)) return;
+
         if (!HayMovimientoPosibleDesde(lastPosition))
         {
             CancelConnection();
             return;
         }
 
-        if (mouseCell != lastPosition && cableTilemap.GetTile(mouseCell) == null)
+        if (mouseCell != lastPosition &&
+            tilemap.GetTile(mouseCell) == Floor &&
+            cableTilemap.GetTile(mouseCell) == null)
         {
-            if (IsAdjacent(mouseCell, lastPosition) && HasNeighborWithColor(mouseCell, currentColor))
+            if (IsAdjacent(mouseCell, lastPosition) && HasNeighborWithFloor(mouseCell))
             {
                 PlaceCable(lastPosition, mouseCell, currentColor);
+                Debug.Log($"[MazeGame] ➕ Placed cable at {mouseCell}");
                 lastPosition = mouseCell;
                 currentPath.Add(mouseCell);
-                currentConnection.path.Add(mouseCell);
             }
         }
 
@@ -71,48 +79,85 @@ public class MazeGame : MonoBehaviour
 
     private bool CheckForEndConnection(Vector3Int cell)
     {
-        Collider2D hit = Physics2D.OverlapPoint(cableTilemap.GetCellCenterWorld(cell));
+        Collider2D hit = Physics2D.OverlapPoint(tilemap.GetCellCenterWorld(cell));
         if (hit && hit.TryGetComponent(out ConnectionPoint endPoint))
         {
-            if (endPoint != startPoint && endPoint.tipo == currentType)
+            if (endPoint == startPoint)
+                return false;
+
+            var startTile = startPoint.tile;
+            var endTile = endPoint.tile;
+
+            if (endTile == null)
             {
-                endPoint.OnConect();
-                startPoint.OnConect();
-                FaceLastTo(cell); // 🔁 orienta la última tile
-                StopPlacingCable();
-                return true;
+                Debug.Log("[MazeGame] ⛔ No se puede conectar a un punto sin tile.");
+                CancelConnection();
+                return false;
             }
+
+            if (!startTile.CheckConnection(endTile))
+            {
+                Debug.Log("[MazeGame] ❌ Tipos incompatibles.");
+                CancelConnection();
+                return false;
+            }
+
+            // Colocar el último tramo del cable antes de finalizar la conexión
+            PlaceCable(lastPosition, cell, currentColor);
+            currentPath.Add(cell);
+            FaceLastTo(cell);
+
+            startPoint.SetPatch(currentPath);
+            endPoint.OnConect();
+            startPoint.OnConect();
+            StopPlacingCable();
+            connections++;
+            if (connections >= 4)
+                TerminateGame();
+
+            Debug.Log($"✅ Conexión completada. Total: {connections}");
+            return true;
         }
+
         return false;
     }
 
+
     public void StartPlacingCable(ConnectionPoint point, Color color)
     {
+        if (point.tile != null && point.tile.HasCable())
+        {
+            foreach (var pos in point.tile.cablePath)
+            {
+                cableTilemap.SetTile(pos, null);
+                cableTilemap.SetColor(pos, Color.white);
+            }
+            point.tile.ClearPath();
+        }
         startPoint = point;
         currentConnection = point;
         currentType = point.tipo;
         currentColor = color;
         lastPosition = cableTilemap.WorldToCell(point.transform.position);
 
-        point.path.Clear();
-        point.path.Add(lastPosition);
         currentPath.Clear();
         currentPath.Add(lastPosition);
         isPlacing = true;
-    }
 
-    public void CancelConnection()
-    {
-        isPlacing = false;
-        if (currentConnection != null && currentConnection.path.Count > 1)
-        {
-            List<Vector3Int> toFade = new(currentConnection.path);
-            toFade.RemoveAt(0);
-            StartCoroutine(FadeAndRemoveTiles(toFade));
-        }
-        startPoint = null;
-        currentConnection = null;
+        Debug.Log($"[MazeGame] 🟢 Start placing cable at {lastPosition} with color {color}");
     }
+public void CancelConnection()
+{
+    isPlacing = false;
+    if (currentPath != null && currentPath.Count > 0)
+    {
+        List<Vector3Int> toFade = new(currentPath);
+        StartCoroutine(FadeAndRemoveTiles(toFade));
+    }
+    startPoint = null;
+    currentConnection = null;
+}
+
 
     public void StopPlacingCable()
     {
@@ -146,6 +191,8 @@ public class MazeGame : MonoBehaviour
 
     private IEnumerator FadeAndRemoveTiles(List<Vector3Int> tiles, float duration = 0.5f)
     {
+        Debug.Log($"[MazeGame] ❌ Removing {tiles.Count} cable tiles...");
+
         float elapsed = 0f;
         Dictionary<Vector3Int, Color> originalColors = new();
         foreach (var pos in tiles) originalColors[pos] = cableTilemap.GetColor(pos);
@@ -170,6 +217,7 @@ public class MazeGame : MonoBehaviour
         {
             cableTilemap.SetTile(pos, null);
             cableTilemap.SetColor(pos, Color.white);
+            Debug.Log($"[MazeGame] 🪑 Tile at {pos} removed.");
         }
     }
 
@@ -231,14 +279,12 @@ public class MazeGame : MonoBehaviour
         return Mathf.Abs(delta.x) + Mathf.Abs(delta.y) == 1;
     }
 
-    private bool HasNeighborWithColor(Vector3Int pos, Color color)
+    private bool HasNeighborWithFloor(Vector3Int pos)
     {
-        if (currentPath.Count == 1 && pos == currentPath[0]) return true;
-
         foreach (Vector3Int dir in new[] { Vector3Int.right, Vector3Int.left, Vector3Int.up, Vector3Int.down })
         {
             Vector3Int neighbor = pos + dir;
-            if (cableTilemap.HasTile(neighbor) && cableTilemap.GetColor(neighbor) == color)
+            if (tilemap.GetTile(neighbor) == Floor)
                 return true;
         }
         return false;
@@ -255,29 +301,30 @@ public class MazeGame : MonoBehaviour
             if (hit && hit.TryGetComponent(out ConnectionPoint cp) && cp.tipo == currentType && cp != startPoint)
                 return true;
 
-            if (!cableTilemap.HasTile(vecino) && HasNeighborWithColor(vecino, currentColor))
+            if (!cableTilemap.HasTile(vecino) && tilemap.GetTile(vecino) == Floor && HasNeighborWithFloor(vecino))
                 return true;
         }
         return false;
     }
+
     private void TryMoveCableInDirection(Vector3Int direction)
     {
         Vector3Int next = lastPosition + direction;
+
         if (!tilemap.cellBounds.Contains(next)) return;
-
         if (CheckForEndConnection(next)) return;
-
-        // Solo colocar cable si no hay tile aún (los ConnectionPoint no usan tile en el tilemap)
         if (cableTilemap.HasTile(next)) return;
+        if (tilemap.GetTile(next) != Floor) return;
 
-        if (HasNeighborWithColor(next, currentColor))
+        if (HasNeighborWithFloor(next))
         {
             PlaceCable(lastPosition, next, currentColor);
+            Debug.Log($"[MazeGame] ➕ Placed cable with arrow key at {next}");
             lastPosition = next;
             currentPath.Add(next);
-            currentConnection.path.Add(next);
         }
     }
+
     public void GenerateTriggers()
     {
         foreach (var pos in tilemap.cellBounds.allPositionsWithin)
@@ -285,8 +332,9 @@ public class MazeGame : MonoBehaviour
             if (tilemap.GetTile(pos) is ConnectionTile conTile)
             {
                 Vector3 worldPos = tilemap.GetCellCenterWorld(pos);
-                GameObject trigger = Instantiate(connectionPrefab, worldPos, Quaternion.identity);
+                GameObject trigger = Instantiate(connectionPrefab, worldPos, Quaternion.identity,transform);
                 trigger.GetComponent<BoxCollider2D>().isTrigger = true;
+                trigger.GetComponent<BoxCollider2D>().size = new Vector2(45.69503f, 45.69503f);
                 trigger.GetComponent<ConnectionPoint>().tipo = conTile.tipo;
             }
         }

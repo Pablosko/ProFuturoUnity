@@ -33,7 +33,7 @@ public class ScreenNavigation : Component
     public override void RefreshState()
     {
         base.RefreshState();
-        backButton.interactable = cpu.HasPrev();
+        backButton.interactable = cpu.HasPrev() && !cpu.GetCurrentProgram().CantUndo;
         continueButton.interactable = cpu.CanProgress() || cpu.GetCurrentScreen().HasOptions;
         animator.SetBool("Active", cpu.CanProgress());
     }

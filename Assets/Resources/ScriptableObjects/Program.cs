@@ -18,6 +18,7 @@ public class Program : ScriptableObject
     [HideInInspector]
     public List<Component> mainScreenComponents;
     public List<ComputerScreenAsset> screens;
+    public bool CantUndo;
     public List<T> GetAllComponentsOfType<T>() where T : Component
     {
         return components
@@ -142,6 +143,37 @@ public class Program : ScriptableObject
         {
             component.EndScreen();
         }
+    }
+    public void OverrideComponents(bool upper, List<GameObject> newComponents, Computer computer)
+    {
+        Transform targetTransform = upper ? computer.highScreenTransform : computer.lowScreenTransform;
+        List<Component> targetList = upper ? mainScreenComponents : components;
+
+        // Limpiar objetos anteriores
+        ClearChildren(targetTransform);
+        targetList.Clear();
+
+        foreach (GameObject prefab in newComponents)
+        {
+            if (prefab == null) continue;
+
+            GameObject instance = Object.Instantiate(prefab, targetTransform);
+            Component comp = instance.GetComponent<Component>();
+
+            if (comp != null)
+            {
+                targetList.Add(comp);
+            }
+            else
+            {
+                Debug.LogWarning($"OverrideComponents: El prefab '{prefab.name}' no tiene un componente base válido.");
+            }
+        }
+        foreach (Component component in targetList)
+        {
+            component.Initialize(computer);
+        }
+
     }
     public void StartScreen()
     {

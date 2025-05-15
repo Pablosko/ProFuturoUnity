@@ -35,7 +35,11 @@ public class ComputerButtonComponent : Component
         text.text = normalText;
     }
 
-
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
+            SendDataToComputer();
+    }
     public void SendDataToComputer()
     {
         cpu.LoadNext();

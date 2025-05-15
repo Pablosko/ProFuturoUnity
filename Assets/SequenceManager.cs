@@ -24,8 +24,11 @@ public class SequenceManager : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-            currentSequence.End();
+        if (Input.GetKey(KeyCode.LeftControl))
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+                currentSequence.End();
+        }
     }
     public void End() 
     {

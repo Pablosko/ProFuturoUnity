@@ -27,8 +27,8 @@ public class SCORMManager : MonoBehaviour
 
     void Start()
     {
-       initScorm();
-       //Debug.Log(getCurseData()); // Ahora no dará error en Editor
+        initScorm();
+        //Debug.Log(getCurseData()); // Ahora no dará error en Editor
     }
 
     public void InitPage(string pageId)

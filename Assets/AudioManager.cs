@@ -33,6 +33,11 @@ public class AudioManager : MonoBehaviour
 
     [Header("-------- EXTRAS --------")]
     public AudioClip winMedal;
+    public static AudioManager instance;
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {
