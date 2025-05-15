@@ -696,9 +696,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5621432902830187617, guid: 54bdb10b4c01c2749943a2630be2a2c8, type: 3}
       propertyPath: m_text
-      value: "\xA1Insignia del Gobierno Cibern\xE9tico conseguida! \u2728 Esta insignia
-        representa las leyes de la galaxia Profuturo. Sin ellas, el caos reinar\xEDa.
-        Pero... a\xFAn faltan 4 insignias para activar la nave."
+      value: "<b>\xA1Correcto! \xA1 Enhorabuena, Guardi\xE1n!</b> \xA1Conseguiste
+        la <b>Insignia del Archivero Estelar!</b> Dominas el arte de etiquetar datos
+        importantes (\xA1como cartas estelares secretas!). Sin esto, el ENJAMBRE
+        robar\xEDa nuestros mapas cr\xEDticos; pero \u2026 <b>a\xFAn faltan 3 insignias</b>
+        para activar la nave."
       objectReference: {fileID: 0}
     - target: {fileID: 5754434618923007893, guid: 54bdb10b4c01c2749943a2630be2a2c8, type: 3}
       propertyPath: m_IsActive
