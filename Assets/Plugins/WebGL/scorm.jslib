@@ -14,7 +14,9 @@ mergeInto(LibraryManager.library, {
     pageState: function (ptr) {
         var str = UTF8ToString(ptr);
         var str2 = pageState(str);
-        var buffer = allocate(intArrayFromString(str2), 'i8', ALLOC_STACK);
+        var lengthBytes = lengthBytesUTF8(str2) + 1;
+        var buffer = stackAlloc(lengthBytes);
+        stringToUTF8(str2, buffer, lengthBytes);
         return buffer;
     }
 });

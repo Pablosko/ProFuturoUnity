@@ -44,7 +44,6 @@ public class SCORMManager : MonoBehaviour
         //Debug.Log(getCurseData()); // Ahora no dará error en Editor
         ParseSimulation();
     }
-
     public void InitPage(string pageId)
     {
         initPage(pageId);
@@ -60,9 +59,28 @@ public class SCORMManager : MonoBehaviour
     public void ParseSimulation() 
     {
         currentStage = ScormStage.sequencia;
-        int avatarTest = 2;
-        int t = 4;
-        int s = 12; // hay 7 pantallas, si sale 8 subsequencia -> 9 aventura hasta 18, post aventura -> 1.19,1.20.
+        var pagesTema = new int[] { 20, 17, 9, 7, 19, 2 };
+        int avatarTest = 2;        
+        int t = 0;
+        int s = 1;
+#if UNITY_WEBGL && !UNITY_EDITOR
+        bool encontrado = false;
+        for (int i = 0; i < pagesTema.Length && !encontrado; i++)
+        {
+            for (int j = 1; j <= pagesTema[i]; j++)
+            {
+                string estado = PageState(i+1 + "_1_" + j);
+                if (estado != "C")
+                {
+                    t = i;
+                    s = j;
+                    encontrado = true;
+                    break;
+                }
+            }
+        }
+#endif
+        // hay 7 pantallas, si sale 8 subsequencia -> 9 aventura hasta 18, post aventura -> 1.19,1.20.
         if (!(t == 0 && s < 8)) 
         {
             HudController.instance.header.gameObject.SetActive(true);

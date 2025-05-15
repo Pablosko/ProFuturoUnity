@@ -3,7 +3,6 @@ using TMPro;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Collections;
-using UnityEditor.Rendering;
 
 public class AventuraGrafica : MonoBehaviour
 {
