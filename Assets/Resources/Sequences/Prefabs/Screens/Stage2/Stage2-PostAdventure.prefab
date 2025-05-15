@@ -61,7 +61,7 @@ MonoBehaviour:
         m_MethodName: SpawnMinigame
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 4367505626985935570, guid: 3167cafce47e10e47832711888d14923, type: 3}
+          m_ObjectArgument: {fileID: 5157476765489730630, guid: 93c65b386620db9468416a851a84aabd, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0

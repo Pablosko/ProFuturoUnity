@@ -37,9 +37,12 @@ public class AventuraGrafica : MonoBehaviour
     }
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKey(KeyCode.LeftControl))
         {
-            End();
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                End();
+            }
         }
     }
     public void Delay() 

@@ -49,10 +49,14 @@ public class TinderGame : Game
     }
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKey(KeyCode.LeftControl))
         {
-            correctAnswers = 10;
-            EndGame();
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                correctAnswers = 10;
+                totalRounds = 10;
+                EndGame();
+            }
         }
     }
 
@@ -121,16 +125,19 @@ public class TinderGame : Game
     }
 
     public void CompleteSelection(bool correct)
-    {        
+    {
         if (correct)
         {
             correctAnswers++;
             UpdateRoundsText();
             audioManager.PlaySFX(audioManager.minigameFbOk);
-            OpenFeedBack(true,GetCurrentQuestion().successMessage,MessageType.NextCard);
-        }else
+            OpenFeedBack(true, GetCurrentQuestion().successMessage, MessageType.NextCard);
+        }
+        else 
+        {
             audioManager.PlaySFX(audioManager.minigameFbKo);
             OpenFeedBack(false, GetCurrentQuestion().errorMessage, MessageType.NextCard); 
+        }
     }
 
     void EndGame()

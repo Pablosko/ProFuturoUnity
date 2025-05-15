@@ -6,10 +6,8 @@ public class SequenceBase : MonoBehaviour
     public SequenceManager sequenceManager;
     public bool hasTransition;
 
-    AudioManager audioManager;
-    private void Awake()
+    public virtual void Awake()
     {
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     private void Start() 
@@ -57,6 +55,6 @@ public class SequenceBase : MonoBehaviour
 
     public void PlayNextSFX()
     {
-        audioManager.PlaySFX(audioManager.nextBtn);
+        AudioManager.instance.PlaySFX(AudioManager.instance.nextBtn);
     }
 }

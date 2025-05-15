@@ -200,7 +200,7 @@ MonoBehaviour:
   - {fileID: 2176857180443748998, guid: 7da19d44928fda44f90fbac0b41963d0, type: 3}
   - {fileID: 2176857180443748998, guid: d18c78f909b4cac4ba00397e97efee29, type: 3}
   - {fileID: 2176857180443748998, guid: 73e053d54654d474fbd57a0b7b6ed298, type: 3}
-  currentStage: 1
+  currentStage: 0
 --- !u!224 &103782832 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2439692815482650179, guid: 0649f0af9ca193e4a85109034d7abb39, type: 3}
@@ -2706,11 +2706,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6070716774328222632, guid: 0649f0af9ca193e4a85109034d7abb39, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -21.000021
+      value: -21.000023
       objectReference: {fileID: 0}
     - target: {fileID: 6070716774328222632, guid: 0649f0af9ca193e4a85109034d7abb39, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -11.000009
+      value: -11.000008
       objectReference: {fileID: 0}
     - target: {fileID: 6378980175924575735, guid: 0649f0af9ca193e4a85109034d7abb39, type: 3}
       propertyPath: m_IsActive
@@ -4460,3 +4460,4 @@ SceneRoots:
   - {fileID: 1459561167}
   - {fileID: 1585067346}
   - {fileID: 1731515873}
+  - {fileID: 819058087}

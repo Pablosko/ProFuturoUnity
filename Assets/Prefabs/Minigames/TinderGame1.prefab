@@ -2639,6 +2639,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -307
       objectReference: {fileID: 0}
+    - target: {fileID: 1557173048293826810, guid: 5eb0459fea167b84b8c46c495ddd571c, type: 3}
+      propertyPath: m_fontSize
+      value: 15.65
+      objectReference: {fileID: 0}
     - target: {fileID: 2057297354755933397, guid: 5eb0459fea167b84b8c46c495ddd571c, type: 3}
       propertyPath: m_SizeDelta.y
       value: 412

@@ -61,7 +61,7 @@ public class ComputerSelectionButtonsComponent : InputComponent
     }
     public override bool IsInputCorrect()
     {
-        return inputData.Matches(currentInput);
+        return inputData.Matches(currentInput , cpu);
     }
    
 }

@@ -15,20 +15,21 @@ public class GameController : MonoBehaviour
     }
     public void Update()
     {
-        for (int i = 1; i <= 5; i++)
+        if (Input.GetKey(KeyCode.LeftShift))
         {
-            if (Input.GetKeyDown(KeyCode.Alpha0 + i))
+            for (int i = 1; i <= 5; i++)
             {
-                GoHomeAndUnlockStage(i);
-            }
-            if (Input.GetKey(KeyCode.Alpha0 + i))
-                if (Input.GetKeyDown(KeyCode.D))
+                if (Input.GetKeyDown(KeyCode.Alpha0 + i))
                 {
-                    GoToMiniGame(i);
+                    GoHomeAndUnlockStage(i);
                 }
+                if (Input.GetKey(KeyCode.Alpha0 + i))
+                    if (Input.GetKeyDown(KeyCode.D))
+                    {
+                        GoToMiniGame(i);
+                    }
+            }
         }
-
-
     }
     public void GoToMiniGame(int stage) 
     {
