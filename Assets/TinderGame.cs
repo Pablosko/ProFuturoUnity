@@ -115,7 +115,7 @@ public class TinderGame : Game
 
     void UpdateRoundsText()
     {
-        questionCounterText.text = $"{correctAnswers}/{totalRounds}";
+        questionCounterText.text = $"{currentRound}/{totalRounds}";
         UpdateProgress();
     }
     void UpdateProgress() 
