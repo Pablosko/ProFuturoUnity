@@ -82,6 +82,9 @@ public class AventuraGrafica : MonoBehaviour
     }
     void SetScreen(GraphicAdventureData data)
     {
+        data.Init();
+        if(currentData != null)
+        currentData.EndPage();
         currentData = data;
         if (screenObj != null)
             Destroy(screenObj);

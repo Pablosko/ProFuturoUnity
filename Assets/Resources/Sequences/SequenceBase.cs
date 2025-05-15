@@ -5,6 +5,7 @@ public class SequenceBase : MonoBehaviour
     [HideInInspector]
     public SequenceManager sequenceManager;
     public bool hasTransition;
+    public string id;
 
     public virtual void Awake()
     {
@@ -12,10 +13,12 @@ public class SequenceBase : MonoBehaviour
 
     private void Start() 
     {
+
     }
     public virtual void OnStart(SequenceManager sm)
     {
         sequenceManager = sm;
+        SCORMManager.instance.InitPage(id);
     }
     public virtual void Update()
     {
@@ -23,6 +26,7 @@ public class SequenceBase : MonoBehaviour
     }
     protected virtual void OnEnd()
     {
+        SCORMManager.instance.EndPage(id);
     }
     public void End()
     {

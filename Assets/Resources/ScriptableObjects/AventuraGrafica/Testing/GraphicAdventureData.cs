@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "GraphicAdventureData", menuName = "Scriptable Objects/GraphicAdventureData")]
@@ -15,6 +16,8 @@ public class GraphicAdventureData : ScriptableObject
     [Header("Siguiente pantalla si no hay opciones")]
     public GraphicAdventureData feedbackCorrect;
     public GraphicAdventureData feedbackIncorrect;
+
+    public string id;
     public GraphicAdventureData GetNextScreenData(bool rigth) 
     {
         if (feedbackIncorrect == null)
@@ -38,5 +41,13 @@ public class GraphicAdventureData : ScriptableObject
     public bool IsQuestion() 
     {
         return leftOption != "" && rightOption != "";
+    }
+    public void Init() 
+    {
+        SCORMManager.instance.InitPage(id);
+    }
+    public void EndPage()
+    {
+        SCORMManager.instance.EndPage(id);
     }
 }

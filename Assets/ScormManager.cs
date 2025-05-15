@@ -17,6 +17,7 @@ public class SCORMManager : MonoBehaviour
     ScormStage currentStage;
     public Home home;
     public List<AvatarScript> avatars;
+    public static SCORMManager instance;
 #if UNITY_WEBGL && !UNITY_EDITOR
 
     [DllImport("__Internal")]
@@ -37,7 +38,10 @@ public class SCORMManager : MonoBehaviour
     private static void endPage(string value) { Debug.Log("END page(Dummy): " + value); }
     private static string pageState(string value) { Debug.Log("GET STATE (Dummy): " + value); return "0"; }
 #endif
-
+    private void Awake()
+    {
+        instance = this;
+    }
     void Start()
     {
         initScorm();
@@ -46,10 +50,14 @@ public class SCORMManager : MonoBehaviour
     }
     public void InitPage(string pageId)
     {
+        if (pageId == "")
+            Debug.LogError("Pagina sin id");
         initPage(pageId);
     }
     public void EndPage(string pageId)
     {
+        if (pageId == "")
+            Debug.LogError("Pagina sin id");
         endPage(pageId);
     }
     public string PageState(string pageId)
@@ -59,7 +67,7 @@ public class SCORMManager : MonoBehaviour
     public void ParseSimulation() 
     {
         currentStage = ScormStage.sequencia;
-        var pagesTema = new int[] { 20, 17, 9, 7, 19, 2 };
+        var pagesTema = new int[] { 20, 17, 11, 8, 18, 2 };
         int avatarTest = 2;        
         int t = 0;
         int s = 1;

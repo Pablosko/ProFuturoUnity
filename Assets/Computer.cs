@@ -49,9 +49,9 @@ public class Computer : Game
     int currentProgram;
     bool canProgress;
     public bool hardcodedNumberOneTime;
-
-    void Start()
+    public override void Start()
     {
+        base.Start();
         currentProgram = 0;
         StartProgram();
     }

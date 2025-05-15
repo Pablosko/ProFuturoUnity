@@ -36,7 +36,11 @@ public class MazeGame : Game
     public int neededConnections = 4;
 
     private void Awake() => Instance = this;
-    private void Start() => GenerateTriggers();
+    public override void Start()
+    {
+        base.Start();
+        GenerateTriggers();
+    }
     private void Update()
     {
         if (!isPlacing) return;

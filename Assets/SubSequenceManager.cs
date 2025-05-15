@@ -16,12 +16,14 @@ public class SubSequenceManager : MonoBehaviour
     public List<SubSequenceData> subsequences;
     public int index;
     public Transform movingTransform;
+    public string id;
     void Start()
     {
 
     }
     public void InstantiteSubSequence() 
     {
+        SCORMManager.instance.InitPage(id);
         GetCurrent().activationSequence.SetActive(true);
         GetCurrent().activationSequence.transform.SetParent(movingTransform);
         GetCurrent().activationSequence.GetComponent<SubSequence>().OnStart(this);
@@ -68,6 +70,7 @@ public class SubSequenceManager : MonoBehaviour
     }
     public void EndSubSequence() 
     {
+        SCORMManager.instance.EndPage(id);
         GetCurrent().enSequenceEvents?.Invoke();
         ResetSubSequence();
         gameObject.SetActive(false);

@@ -175,8 +175,14 @@ public class TinderGame : Game
 public class Game : MonoBehaviour 
 {
     public int stageGame;
+    public string id;
+    public virtual void Start()
+    {
+        SCORMManager.instance.InitPage(id);
+    }
     public void TerminateGame()
     {
+        SCORMManager.instance.EndPage(id);
         Destroy(gameObject);
         Home.instance.gameObject.SetActive(true);
         Home.instance.StartStage(stageGame+ 1);
