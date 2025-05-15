@@ -102,12 +102,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5686437264630922164, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
       propertyPath: m_text
-      value: "\xA1Atenci\xF3n, Guardi\xE1n! \U0001F6A8 Los controles de esta nave
-        requieren <b>credenciales indestructibles\u2026</b> Es momento que demuestres
-        todo tu saber.\r\n\xBFPodr\xE1s forjar una contrase\xF1a tan poderosa que
-        hasta el ENJAMBRE se rendir\xE1 ante ella? \U0001F510\u2728El destino de
-        la Red Gal\xE1ctica depende de tu habilidad.\r\n\r\n\r\n\xBFListo(a) para
-        desbloquear el poder de contrase\xF1as legendarias?\r\n"
+      value: "\xA1Atenci\xF3n, Guardi\xE1n! Los controles de esta nave requieren
+        <b>credenciales indestructibles\u2026</b> Es momento que demuestres todo
+        tu saber.\r\n\xBFPodr\xE1s forjar una contrase\xF1a tan poderosa que hasta
+        el ENJAMBRE se rendir\xE1 ante ella? El destino de la Red Gal\xE1ctica depende
+        de tu habilidad.\r\n\r\n\r\n\xBFListo(a) para desbloquear el poder de contrase\xF1as
+        legendarias?\r"
       objectReference: {fileID: 0}
     - target: {fileID: 5686437264630922164, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
       propertyPath: m_HorizontalAlignment
