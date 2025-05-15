@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
+using System.Runtime.InteropServices;
+
 enum ScormStage
 {
     sequencia,
@@ -101,6 +103,7 @@ public class SCORMManager : MonoBehaviour
                     }
                     i++;
                 }
+                        i++;
                 currentStage++;
             }
 

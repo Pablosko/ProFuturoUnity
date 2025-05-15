@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3403083623617663402, guid: 46acf0fea8cf5a84ca836bc88391cbcd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -490
+      objectReference: {fileID: 0}
     - target: {fileID: 4354760266145338367, guid: 46acf0fea8cf5a84ca836bc88391cbcd, type: 3}
       propertyPath: m_Name
       value: ComputerGame Tema5
@@ -24,6 +28,18 @@ PrefabInstance:
       propertyPath: 'programs.Array.data[0]'
       value: 
       objectReference: {fileID: 11400000, guid: 22e33e21d49e8f5459b133702a074946, type: 2}
+    - target: {fileID: 6495685019218450405, guid: 46acf0fea8cf5a84ca836bc88391cbcd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3836053362754353257, guid: 45970db67f113cc418a8cc0ea5f65372, type: 3}
+    - target: {fileID: 6495685019218450405, guid: 46acf0fea8cf5a84ca836bc88391cbcd, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495685019218450405, guid: 46acf0fea8cf5a84ca836bc88391cbcd, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6503913052938918106, guid: 46acf0fea8cf5a84ca836bc88391cbcd, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -103,6 +119,18 @@ PrefabInstance:
     - target: {fileID: 6503913052938918106, guid: 46acf0fea8cf5a84ca836bc88391cbcd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413238427315969837, guid: 46acf0fea8cf5a84ca836bc88391cbcd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3836053362754353257, guid: 45970db67f113cc418a8cc0ea5f65372, type: 3}
+    - target: {fileID: 8413238427315969837, guid: 46acf0fea8cf5a84ca836bc88391cbcd, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413238427315969837, guid: 46acf0fea8cf5a84ca836bc88391cbcd, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

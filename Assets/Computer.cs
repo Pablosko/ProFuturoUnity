@@ -35,9 +35,16 @@ public class Computer : Game
     public Transform lowScreenTransform;
     public Image upScreenImage;
     public Image lowScreenImage;
-    public Color correct;
-    public Color incorrect;
-    public Color normal;
+
+    public Sprite normalUp;
+    public Sprite normalDown;
+
+    public Sprite correctDown;
+    public Sprite correctUp;
+
+    public Sprite incorrectDown;
+    public Sprite incorrectUp;
+
     [HideInInspector] public int index;
     int currentProgram;
     bool canProgress;
@@ -66,8 +73,8 @@ public class Computer : Game
     public bool NeedsInput() => GetCurrentScreen().HasInput;
     public bool CanProgress() => GetCurrentProgram().CanProgress() && !IsEnd() && !IsScreenBlock();
     public bool IsScreenBlock() => GetCurrentProgram().IsBlocked();
-    public bool IsInFeedBack(bool state) => upScreenImage.color == (state == true ? correct : incorrect);
-    public bool IsInFeedBack() => upScreenImage.color != normal;
+    public bool IsInFeedBack(bool state) => upScreenImage.sprite == (state == true ? correctUp : correctDown);
+    public bool IsInFeedBack() => upScreenImage.sprite != normalUp;
     public void SetProgressState(bool state) => canProgress = state;
 
     public void LoadPrev()
@@ -81,7 +88,7 @@ public class Computer : Game
     {
         if (IsScreenBlock()) return;
 
-        if (GetCurrentScreen().HasFeedback && upScreenImage.color == normal)
+        if (GetCurrentScreen().HasFeedback && upScreenImage.sprite == normalUp)
         {
             if (CanProgress())
                 SetCorrectFeedBack(GetCurrentScreen());
@@ -158,15 +165,15 @@ public class Computer : Game
 
     public void SetCorrectFeedBack(ComputerScreenAsset screenData)
     {
-        upScreenImage.color = correct;
-        lowScreenImage.color = correct;
+        upScreenImage.sprite = correctUp;
+        lowScreenImage.sprite = correctDown;
         GetCurrentProgram().SetComponentsFeedBack(screenData, true);
     }
 
     public void SetInCorrectFeedBack(ComputerScreenAsset screenData)
     {
-        upScreenImage.color = incorrect;
-        lowScreenImage.color = incorrect;
+        upScreenImage.sprite = incorrectUp;
+        lowScreenImage.sprite = incorrectDown;
         GetCurrentProgram().SetComponentsFeedBack(screenData, false);
         if (screenData.temporalFeedBack)
             Invoke(nameof(RefresScreen), 0.5f);
@@ -174,8 +181,8 @@ public class Computer : Game
 
     public void SetNormalFeedBack()
     {
-        upScreenImage.color = normal;
-        lowScreenImage.color = normal;
+        upScreenImage.sprite = normalUp;
+        lowScreenImage.sprite = normalDown;
     }
 
     public string GetMemoryRegister(string direction)
