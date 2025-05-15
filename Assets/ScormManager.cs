@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Runtime.InteropServices;
+using System;
 
 enum ScormStage
 {
@@ -15,6 +16,7 @@ public class SCORMManager : MonoBehaviour
     public List<StageData> temasData;
     ScormStage currentStage;
     public Home home;
+    public List<AvatarScript> avatars;
 #if UNITY_WEBGL && !UNITY_EDITOR
 
     [DllImport("__Internal")]
@@ -40,7 +42,7 @@ public class SCORMManager : MonoBehaviour
     {
         initScorm();
         //Debug.Log(getCurseData()); // Ahora no dará error en Editor
-        //ParseSimulation();
+        ParseSimulation();
     }
 
     public void InitPage(string pageId)
@@ -58,28 +60,43 @@ public class SCORMManager : MonoBehaviour
     public void ParseSimulation() 
     {
         currentStage = ScormStage.sequencia;
-        int t = 0;
-        int s = 15; // hay 7 pantallas, si sale 8 subsequencia -> 9 aventura hasta 18, post aventura -> 1.19,1.20.
-
+        int avatarTest = 2;
+        int t = 4;
+        int s = 12; // hay 7 pantallas, si sale 8 subsequencia -> 9 aventura hasta 18, post aventura -> 1.19,1.20.
+        if (!(t == 0 && s < 8)) 
+        {
+            HudController.instance.header.gameObject.SetActive(true);
+            HudController.instance.header.SetAvatar(avatars[avatarTest].headerSprite, avatars[avatarTest].fullSprite);
+        }
+        HudController.instance.header.SetAllMedals(t);
         for (int i = 1; i <= s; i++)
         {
             if (currentStage == ScormStage.sequencia)
             {
-                SequenceManager manager = temasData[t].sequencia.GetComponent<SequenceManager>();
-                for (int seq = 0; seq < manager.GetCount(); seq++)
-                {
-                    if (seq == manager.GetCount() - 1)
+                SequenceManager manager;
+                manager = temasData[t].sequencia.GetComponent<SequenceManager>();
+                    for (int seq = 0; seq < manager.GetCount(); seq++)
                     {
-                        currentStage++;
-                    }
-                    i++;
                     if (i == s)
                     {
-                        GoToSequencia(t, s);
+                        if (t == 0)
+                        {
+                            manager.gameObject.SetActive(true);
+                            GoToSequencia(manager, t, seq);
+                        }
+                        else 
+                        {
+                            GameObject go = Instantiate(temasData[t].sequencia, HudController.instance.stagesTransform);
+                            GoToSequencia(go.GetComponent<SequenceManager>(), t, seq);
+                        }
                         return;
                     }
-
-                }
+                    if (seq == manager.GetCount() - 1)
+                        {
+                            currentStage++;
+                        }
+                        i++;
+                    }
             }
             if (currentStage == ScormStage.subsequencia)
             {
@@ -93,31 +110,52 @@ public class SCORMManager : MonoBehaviour
             }
             if (currentStage == ScormStage.aventura)
             {
-                AventuraGrafica aventura = temasData[t].aventura.DelayedDelayed();
+                AventuraGrafica aventura = temasData[t].aventura.adventurePrefab.GetComponent<AventuraGrafica>();
                 for (int adventureScreen = 0; adventureScreen < aventura.TotalScreens; adventureScreen++)
                 {
-                    if (i == s) 
+                    if (i == s)
                     {
+                        aventura = temasData[t].aventura.DelayedDelayed();
                         aventura.SetToScreen(adventureScreen);
                         return;
                     }
                     i++;
                 }
-                        i++;
                 currentStage++;
             }
+            if (currentStage == ScormStage.postaventura)
+            {
+
+                SequenceManager manager = temasData[t].postaventura.GetComponent<SequenceManager>();
+                for (int seq = 0; seq < manager.GetCount(); seq++)
+                {
+                    if (i == s)
+                    {
+                        GameObject go = Instantiate(temasData[t].postaventura, HudController.instance.stagesTransform);
+                        GoToSequencia(go.GetComponent<SequenceManager>(), t, seq);
+                        return;
+                    }
+                    if (seq == manager.GetCount() - 1)
+                    {
+                        currentStage++;
+                    }
+                    i++;
+
+                }
+            }
+            if (currentStage == ScormStage.minigame)
+            {
+                MiniGameTrasform.instance.StartMiniGame(temasData[t].minigame);
+                return;
+            }
+            Debug.LogError("Cargando pantalla inexistente en el sistema");
 
         }
-        if (t > 0)
-            temasData[t].sequencia.GetComponent<SequenceManager>().End();
-
-        GoToSequencia(t, s);
-
     }
-    public void GoToSequencia(int tema,int screen) 
+    public void GoToSequencia(SequenceManager manager,int tema,int screen) 
     {
-        temasData[tema].sequencia.SetActive(true);
-        temasData[tema].sequencia.GetComponent<SequenceManager>().GoToSequence(screen);
+        manager.gameObject.SetActive(true);
+        manager.GoToSequence(screen);
     }
     public void GoToSubsequencia(int tema, int screen)
     {

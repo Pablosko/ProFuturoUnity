@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Collections;
+using UnityEditor.Rendering;
 
 public class AventuraGrafica : MonoBehaviour
 {
@@ -71,8 +72,13 @@ public class AventuraGrafica : MonoBehaviour
         {
             assetName = $"Tema{tema}_" + screen + "_Selection";
             data = Resources.Load<GraphicAdventureData>($"{folderPath}/{assetName}");
-            if(data == null)
+            if (data == null)
                 Debug.LogError($"❌ No se encontró la pantalla inicial en: {folderPath}/{assetName}");
+            else 
+            {
+                currentData = data;
+                SetScreen(data);
+            }
         }
     }
     void SetScreen(GraphicAdventureData data)
@@ -131,8 +137,7 @@ public class AventuraGrafica : MonoBehaviour
 
         if (currentData.IsFinal())
         {
-            Instantiate(nextSequenceManager,HudController.instance.transform);
-            Destroy(gameObject);
+            End();
             return;
         }
 

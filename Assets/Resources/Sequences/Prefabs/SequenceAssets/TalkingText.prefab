@@ -228,6 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acfa4183aedd9a0408302b76bad9180c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  talkingSound: {fileID: 8300000, guid: bd02f68318e58654382615b9e024d647, type: 3}
   messages: []
   contentText: {fileID: 5621432902830187617}
   lettersPerSecond: 200

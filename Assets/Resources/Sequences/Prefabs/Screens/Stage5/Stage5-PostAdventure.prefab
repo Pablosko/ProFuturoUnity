@@ -49,6 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sequences:
+  - {fileID: 5919098568307080686, guid: ae43c94d2ce9a8b498409edc2eb4e686, type: 3}
   - {fileID: 5919098568307080686, guid: e76700e243921a840a7c34ecc6c9f3a0, type: 3}
   - {fileID: 3286334052818711933, guid: 23cc5662420f1484abb56a90b3eefa91, type: 3}
   - {fileID: 3286334052818711933, guid: ee2a72b5c5f6bd34fa9fbee57ecb1b77, type: 3}

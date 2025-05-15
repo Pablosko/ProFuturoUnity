@@ -17,6 +17,7 @@ public struct TalkingTextContent
 
 public class TalkingText : MonoBehaviour
 {
+    public AudioClip talkingSound;
     public List<TalkingTextContent> messages;
     public TextMeshProUGUI contentText;
     public float lettersPerSecond = 100f;
@@ -59,6 +60,7 @@ public class TalkingText : MonoBehaviour
 
     void ShowMessage(string message)
     {
+        AudioManager.instance.PlaySFXLoop(talkingSound, 1);
         SetNextMessage();
         if (typingCoroutine != null)
             StopCoroutine(typingCoroutine);
@@ -75,7 +77,10 @@ public class TalkingText : MonoBehaviour
             typingCoroutine = StartCoroutine(TypeText(message));
         }
     }
-
+    public void StopTalk() 
+    {
+        AudioManager.instance.StopFX();
+    }
     IEnumerator TypeText(string message)
     {
         contentText.text = "";
@@ -121,6 +126,7 @@ public class TalkingText : MonoBehaviour
         }
 
         messages[currentMessageIndex].onEndTalkEvent?.Invoke();
+        StopTalk();
 
         if (currentMessageIndex >= messages.Count - 1)
             onLastMessageEnd?.Invoke();
@@ -219,6 +225,7 @@ public class TalkingText : MonoBehaviour
         SetNextMessage();
         isTyping = false;
         messages[currentMessageIndex].onEndTalkEvent?.Invoke();
+        StopTalk();
 
         if (currentMessageIndex >= messages.Count - 1)
             onLastMessageEnd?.Invoke();

@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
-  m_Name: Tema5_5_Fail
+  m_Name: Tema5_7_Screen
   m_EditorClassIdentifier: 
-  mainText: "\xA1Casi! Aunque podr\xEDa dar la sensaci\xF3n de seguridad es relativamente
-    sencillo para los hackers encontrar el patr\xF3n y m\xE1s si dejamos alguna referencia
-    personal."
-  rightOption: Entendido
+  mainText: "Ahora que sabes mucho m\xE1s\u2026 \xA1Te dejo los C\xF3digo de Fortaleza
+    que todo Guardi\xE1n debe portar para crear contrase\xF1as robustas en el Ciberespacio
+    y tambi\xE9n las grietas \xA1a evitar! \xA1Desc\xE1rgalo aqu\xED! Gu\xE1rdalo
+    bien."
+  rightOption: 
   leftOption: 
   rigthCorrect: 0
-  feedbackCorrect: {fileID: 11400000, guid: 6e5c7631eb52daa48819bc74a893ba66, type: 2}
+  feedbackCorrect: {fileID: 0}
   feedbackIncorrect: {fileID: 0}

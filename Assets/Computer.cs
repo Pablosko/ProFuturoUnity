@@ -77,6 +77,7 @@ public class Computer : Game
     public bool IsInFeedBack() => upScreenImage.sprite != normalUp;
     public void SetProgressState(bool state) => canProgress = state;
 
+
     public void LoadPrev()
     {
         if (!HasPrev()) return;

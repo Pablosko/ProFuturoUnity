@@ -18,5 +18,5 @@ MonoBehaviour:
   rightOption: Perfecto
   leftOption: 
   rigthCorrect: 0
-  feedbackCorrect: {fileID: 11400000, guid: b0dd4f861c2f9ff468d6b2377318f5bd, type: 2}
+  feedbackCorrect: {fileID: 11400000, guid: 6e5c7631eb52daa48819bc74a893ba66, type: 2}
   feedbackIncorrect: {fileID: 0}

@@ -151,7 +151,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &77986304
 RectTransform:
   m_ObjectHideFlags: 0
@@ -635,7 +635,32 @@ MonoBehaviour:
     aventura: {fileID: 57317900}
     postaventura: {fileID: 1604702391409720733, guid: 8d1ef533ec815ef4eb3d88b508347c40, type: 3}
     minigame: {fileID: 6745794279351640614, guid: 55b7d470b5684684fbc5556079a16601, type: 3}
+  - sequencia: {fileID: 2176857180443748998, guid: e5cbe45989bfee744a67ba014e55d02a, type: 3}
+    aventura: {fileID: 103782833}
+    postaventura: {fileID: 1604702391409720733, guid: 5937ef0dc14c45b498dade381d7aece5, type: 3}
+    minigame: {fileID: 5157476765489730630, guid: 93c65b386620db9468416a851a84aabd, type: 3}
+  - sequencia: {fileID: 2176857180443748998, guid: 77463ec08ce548349bd855a8bdb1d966, type: 3}
+    aventura: {fileID: 2059202324}
+    postaventura: {fileID: 1604702391409720733, guid: 0a691ede7bdae744cb543ab1bcdefbe0, type: 3}
+    minigame: {fileID: 4354760266145338367, guid: 46acf0fea8cf5a84ca836bc88391cbcd, type: 3}
+  - sequencia: {fileID: 2176857180443748998, guid: 7da19d44928fda44f90fbac0b41963d0, type: 3}
+    aventura: {fileID: 644445436}
+    postaventura: {fileID: 1604702391409720733, guid: 6532298cc96063a40b3e538cf68475b6, type: 3}
+    minigame: {fileID: 6745794279351640614, guid: 55b7d470b5684684fbc5556079a16601, type: 3}
+  - sequencia: {fileID: 2176857180443748998, guid: d18c78f909b4cac4ba00397e97efee29, type: 3}
+    aventura: {fileID: 553080286}
+    postaventura: {fileID: 1604702391409720733, guid: 8a8adc727c154e5498f1ad8adbe8124b, type: 3}
+    minigame: {fileID: 8042054643531520170, guid: 527ffde52fa6ac0449d13f09a075fb10, type: 3}
+  - sequencia: {fileID: 2176857180443748998, guid: 73e053d54654d474fbd57a0b7b6ed298, type: 3}
+    aventura: {fileID: 0}
+    postaventura: {fileID: 0}
+    minigame: {fileID: 0}
   home: {fileID: 77986305}
+  avatars:
+  - {fileID: 11400000, guid: 80096373c4ae5f0469c028aee8944519, type: 2}
+  - {fileID: 11400000, guid: 09e31720b731e4e40a091168a9d9d678, type: 2}
+  - {fileID: 11400000, guid: 4a972ee256fce9846855c44a3afbeeb4, type: 2}
+  - {fileID: 11400000, guid: dc7ff4619884db244a3ffc4ef31b689e, type: 2}
 --- !u!114 &519420036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4955,10 +4980,6 @@ PrefabInstance:
       propertyPath: subsequences.Array.data[1].enSequenceEvents.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 77986305}
-    - target: {fileID: 7741823779003506500, guid: 1f539fc11452d4740970b6ddc4d6aaba, type: 3}
-      propertyPath: messages.Array.data[1].nextmessage
-      value: "\xA1Perfecto!"
-      objectReference: {fileID: 0}
     - target: {fileID: 7741823779003506500, guid: 1f539fc11452d4740970b6ddc4d6aaba, type: 3}
       propertyPath: onEndConversation.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

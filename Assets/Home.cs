@@ -17,6 +17,7 @@ public class Home : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        gameObject.SetActive(false);
     }
     public void OnEnable()
     {
