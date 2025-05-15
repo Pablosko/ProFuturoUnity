@@ -230,7 +230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messages: []
   contentText: {fileID: 5621432902830187617}
-  typingSpeed: 0.02
+  lettersPerSecond: 200
   tagCongifs: {fileID: 11400000, guid: 833b0f1369fab4c47b5a6a355a116c8a, type: 2}
   nextButton: {fileID: 6158045299412447314}
   previusButton: {fileID: 5754434618923007893}

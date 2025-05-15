@@ -17,7 +17,7 @@ MonoBehaviour:
     al nivel que nuestra nave requiere. Se encargan de <b>detectar amenazas y establecer
     estrategias</b> para evitar alg\xFAn impacto en Profuturo, e incluso, est\xE1
     capacitado para pensar como <b>atacante.</b>\n\n"
-  rightOption: Vamos
+  rightOption: Perfecto
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: 5b7e52def13db5d4e8f9b2c1c8067101, type: 2}

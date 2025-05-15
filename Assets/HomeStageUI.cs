@@ -40,7 +40,6 @@ public class HomeStageUI : MonoBehaviour
         animator.SetBool("Clickable", true);
         animator.SetBool("Unlocked", false);
         aura.SetActive(true);
-
     }
     public void MoveTo() 
     {
@@ -53,6 +52,8 @@ public class HomeStageUI : MonoBehaviour
     }
     public void SetUnlock() 
     {
+        if (!HudController.instance.header.HasMedal(temario))
+            return;
         animator.SetBool("Clickable", false);
         animator.SetBool("Unlocked", true);
         animator.StopPlayback();

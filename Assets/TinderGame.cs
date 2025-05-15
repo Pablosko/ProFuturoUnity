@@ -54,7 +54,6 @@ public class TinderGame : Game
             if (Input.GetKeyDown(KeyCode.S))
             {
                 correctAnswers = 10;
-                totalRounds = 10;
                 EndGame();
             }
         }
@@ -98,7 +97,7 @@ public class TinderGame : Game
     {
         feedBackMessage.gameObject.SetActive(false);
         currentRound++;
-        if (currentRound >= totalRounds || currentRound > questions.Count)
+        if (currentRound > totalRounds || currentRound > questions.Count)
         {
             EndGame();
             return;
@@ -151,10 +150,12 @@ public class TinderGame : Game
         {
             endFeedBackcorrect.SetActive(true);
             correctText.text = $"{correctAnswers}/{totalRounds}";
+            endFeedBackIncorrect.SetActive(false);
 
         }
         else
         {
+            endFeedBackcorrect.SetActive(false);
             endFeedBackIncorrect.SetActive(true);
             incorrectText.text = $"{correctAnswers}/{totalRounds}";
         }
