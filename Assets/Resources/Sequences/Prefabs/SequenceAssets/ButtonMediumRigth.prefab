@@ -25,7 +25,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5099730046013729183}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -175,9 +175,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonMediumRigth
       objectReference: {fileID: 0}
+    - target: {fileID: 6299311640502893546, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -70.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 6299311640502893546, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -18.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8393267641738568253, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
       propertyPath: m_text
-      value: Siguiente
+      value: "\xA1Vamos por la \xFAltima insignia!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393267641738568253, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
+      propertyPath: m_fontSize
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393267641738568253, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
+      propertyPath: m_margin.x
+      value: 0.75475883
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393267641738568253, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
+      propertyPath: m_margin.y
+      value: -2.1165333
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393267641738568253, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
+      propertyPath: m_margin.z
+      value: 1.4110107
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393267641738568253, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 8393267641738568253, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
       propertyPath: m_HorizontalAlignment
