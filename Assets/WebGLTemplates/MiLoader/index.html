@@ -180,6 +180,19 @@
             console.log("🔵 Estado " + pageId + ": " + state);
             return state;
         }
+
+        function saveAvatar(avatar) {
+            console.log("🤖 Guardando avatar: " + avatar);
+            CURSO.guardarVariables(avatar);            
+        }
+
+        function getAvatar() {
+            console.log("🤖 Recuperando avatar...");
+            var avatar = CURSO.recuperarVariable(0);            
+            console.log("🤖 Avatar recuperado: " + avatar);
+            return avatar;
+        }
+
     </script>
     <!-- UNITY LOADER -->
     <script>

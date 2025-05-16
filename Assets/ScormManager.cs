@@ -31,12 +31,20 @@ public class SCORMManager : MonoBehaviour
 
     [DllImport("__Internal")]
     private static extern string pageState(string value);
+
+    [DllImport("__Internal")]
+    private static extern string getAvatar();
+
+    [DllImport("__Internal")]
+    private static extern void saveAvatar(string value);
 #else
     // Dummy (falsas) funciones para cuando no estás en WebGL
     private static int initScorm() { Debug.Log("SCORM INIT (Dummy)"); return 1; }
     private static void initPage(string value) { Debug.Log("INIT PAGE (Dummy): " + value); }
     private static void endPage(string value) { Debug.Log("END page(Dummy): " + value); }
     private static string pageState(string value) { Debug.Log("GET STATE (Dummy): " + value); return "0"; }
+    private static void saveAvatar(string value) { Debug.Log("SAVE AVATAR (Dummy): " + value); }
+    private static string getAvatar() { Debug.Log("GET AVATAR (Dummy)"); return "0"; }
 #endif
     private void Awake()
     {
@@ -64,11 +72,21 @@ public class SCORMManager : MonoBehaviour
     {
         return pageState(pageId);
     }
+    public string GetAvatar()
+    {
+        string avatar = getAvatar();
+        if (avatar == null || avatar == "") { avatar = "0"; }
+        return avatar;
+    }
+    public void SaveAvatar(string avatar)
+    {
+        saveAvatar(avatar);
+    }
     public void ParseSimulation() 
     {
         currentStage = ScormStage.sequencia;
         var pagesTema = new int[] { 20, 17, 11, 8, 18, 2 };
-        int avatarTest = 2;        
+        int avatarTest = 0;        
         int t = 0;
         int s = 1;
 #if UNITY_WEBGL && !UNITY_EDITOR
@@ -87,6 +105,8 @@ public class SCORMManager : MonoBehaviour
                 }
             }
         }
+        avatarTest = int.Parse(GetAvatar());
+
 #endif
         // hay 7 pantallas, si sale 8 subsequencia -> 9 aventura hasta 18, post aventura -> 1.19,1.20.
         if (!(t == 0 && s < 8)) 

@@ -52,6 +52,7 @@ public class AvatarSelectionScript : MonoBehaviour
     public void SelectAvatar() 
     {
         audioManager.PlaySFX(audioManager.avatarChange);
+        SCORMManager.instance.SaveAvatar(selectedIndex.ToString());
         HudController.instance.header.SetAvatar(avatars[selectedIndex].headerSprite, avatars[selectedIndex].fullSprite);
     }
 }

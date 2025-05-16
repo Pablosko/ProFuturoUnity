@@ -18,5 +18,16 @@ mergeInto(LibraryManager.library, {
         var buffer = stackAlloc(lengthBytes);
         stringToUTF8(str2, buffer, lengthBytes);
         return buffer;
+    },
+    getAvatar: function () {
+        var str = getAvatar();
+        var lengthBytes = lengthBytesUTF8(str) + 1;
+        var buffer = stackAlloc(lengthBytes);
+        stringToUTF8(str, buffer, lengthBytes);
+        return buffer;
+    },
+    saveAvatar: function (ptr) {
+        var str = UTF8ToString(ptr);
+        saveAvatar(str);
     }
 });
