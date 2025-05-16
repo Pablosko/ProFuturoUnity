@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8e76eba1ca9b6f43afe58519e3930e1, type: 3}
   m_Name: Question_5
   m_EditorClassIdentifier: 
-  text: "Hoy es la gran fiesta en la nave, pero detecto un comportamiento extra\xF1o
-    en mi m\xE1quina\u2026 \xBFTerminando la fiesta lo reporto?"
-  rightText: "\xA1No! Inmediatamente lo reporto al equipo de soporte y seguridad"
-  leftText: "S\xED, ya con m\xE1s calma lo revisamos"
-  successMessage: "Efecto magistral: La nave no fue comprometida. La anomal\xEDa
-    era un intento de ataque."
-  errorMessage: "Crisis en la nave: La fiesta dur\xF3 1 d\xEDa y el miembro de la
-    colmena forz\xF3 el acceso a trav\xE9s de tu m\xE1quina."
+  text: "Un amigo te pide tu contrase\xF1a de correo electr\xF3nico por un chat que
+    no tiene cifrado. \xBFSe la env\xEDas?"
+  rightText: "\xA1No, jam\xE1s!"
+  leftText: "Claro, \xA1es mi amigo!"
+  successMessage: "\xA1Muy bien! <b>\xA1As\xED se defiende un Guardi\xE1n! \u2694\uFE0F
+    Nunca compartas contrase\xF1as</b> por canales no seguros. Las contrase\xF1as
+    son como c\xF3digos de autodestrucci\xF3n: \xA1solo para ti!"
+  errorMessage: "<b>\xA1Pi\xE9nsalo dos veces!</b> La informaci\xF3n personal debe
+    protegerse. \xA1El ENJAMBRE disfraza sus drones de aliados! Nunca compartas llaves."
   correct: 1

@@ -12,13 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8e76eba1ca9b6f43afe58519e3930e1, type: 3}
   m_Name: Question_2
   m_EditorClassIdentifier: 
-  text: "\xBFIgnorar\xEDas un curso sobre phishing porque \u201Cya es muy conocida
-    esta t\xE9cnica y nunca caer\xEDa\u201D?"
-  rightText: No, tomo el curso.
-  leftText: "S\xED, estoy muy capacitado"
-  successMessage: 'Efecto expansivo estelar: Identificas y reportas 2 intentos de
-    phishing ese mes.'
-  errorMessage: "Error importante estelar: Tu nave fue infectada por un malware\u2026
-    Los atacantes ahora usan IA para mandarte una nota de voz hecha por IA en el
-    correo..."
-  correct: 1
+  text: "Si la URL de un sitio web empieza con \"https://\", significa que la conexi\xF3n
+    est\xE1 cifrada y es segura."
+  rightText: "\xA1Falso!"
+  leftText: "\xA1Cierto!"
+  successMessage: "\xA1As\xED es! <b>\"https://\"</b> indica que el sitio utiliza
+    un protocolo seguro, lo que significa que tus datos est\xE1n encriptados."
+  errorMessage: "<b>Nuuuu exactamente.</b> \"https://\" es crucial para la seguridad,
+    ya que asegura que la conexi\xF3n est\xE1 encriptada y protegida."
+  correct: 0

@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8e76eba1ca9b6f43afe58519e3930e1, type: 3}
   m_Name: Question_6
   m_EditorClassIdentifier: 
-  text: "\xBFPides permiso de escritura para una app aunque solo necesitas lectura?"
-  rightText: "No, s\xF3lo pido el acceso que necesito."
-  leftText: "S\xED, lo puedo llegar a necesitar."
-  successMessage: "Cumplimiento superior: Destacado al Guardi\xE1n atento(a)"
-  errorMessage: "Acto fulminante: Eliminaste datos que no deb\xEDas sin darte cuenta."
+  text: "Un email urgente de tu banco pide datos. \xBFClic r\xE1pido en el enlace
+    y los proporcionas?"
+  rightText: "\xA1No, no me fio!"
+  leftText: "S\xED, \xA1es mi banco!"
+  successMessage: "<b>\xA1Sabia decisi\xF3n!</b> Siempre verifica la autenticidad
+    de los sitios \U0001F4E7 Los hackers suplantan hasta al Alto Mando."
+  errorMessage: "<b>\xA1Alerta de phishing!</b> \xA1Brecha de seguridad! Podr\xEDas
+    estar cayendo en una trampa."
   correct: 1

@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8e76eba1ca9b6f43afe58519e3930e1, type: 3}
   m_Name: Question_4
   m_EditorClassIdentifier: 
-  text: "Est\xE1s en tu oficina y necesitas pararte, \xBFle encargas tu m\xE1quina
-    sin bloquear a tu compa\xF1ero(a)?"
-  rightText: "No, bloqueo mi m\xE1quina y despu\xE9s salgo\u2026"
-  leftText: "\xA1S\xED! Somos compa\xF1eros y nos cuidamos\u2026"
-  successMessage: "Decisi\xF3n insuperable: Recuerda que formas parte de la primera
-    l\xEDnea de defensa de la nave."
-  errorMessage: "Riesgo. Alguien us\xF3 tu m\xE1quina sin permiso. Cuida tu informaci\xF3n
-    y as\xED \xA1nos cuidamos todos!"
+  text: "Una web de comercio interestelar usa \u201Chttp://\u201D \xBFCompras Guardi\xE1n?"
+  rightText: "\xA1No compro!"
+  leftText: "\xA1Es la hora del shopping!"
+  successMessage: "<b>\xA1Excelente! \xA1Sabia decisi\xF3n! \"https://\"</b> indica
+    una conexi\xF3n segura. Sin \u2018S\u2019, tus cr\xE9ditos gal\xE1cticos podr\xEDan
+    ser robados y filtrados."
+  errorMessage: "<b>\xA1Atenci\xF3n! \xA1Peligro! \"http://\"</b> no cifra la informaci\xF3n,
+    haci\xE9ndola vulnerable. Es muy probable que tus datos y cr\xE9ditos gal\xE1cticos
+    podr\xEDan ser robados y filtrados."
   correct: 1

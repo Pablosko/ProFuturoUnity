@@ -12,12 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8e76eba1ca9b6f43afe58519e3930e1, type: 3}
   m_Name: Question_3
   m_EditorClassIdentifier: 
-  text: "\xBFSubir\xEDas una foto de la oficina con logos visibles a tu Instagram
-    personal?"
-  rightText: No, editas o pides permiso.
-  leftText: "S\xED, es orgullo corporativo."
-  successMessage: "\xA1Bien ah\xED Guardi\xE1n! La confidencialidad de la informaci\xF3n
-    imposibilita a entes de la colmena saber m\xE1s que lo p\xFAblico."
-  errorMessage: "Gran error Guardi\xE1n. Sin autorizaci\xF3n, expones activos de
-    marca. Diste una idea a miembros de la colmena para usar esa info en tu contra."
+  text: "Est\xE1s en un caf\xE9 espacial padre y necesitas enviar un documento con
+    informaci\xF3n confidencial de la compa\xF1\xEDa. \xBFUsas la red Wi-Fi p\xFAblica
+    del caf\xE9?"
+  rightText: "\xA1No!"
+  leftText: "\xA1S\xED!"
+  successMessage: "<b>\xA1Eres grande!</b> Las redes <b>Wi-Fi p\xFAblicas no son
+    seguras</b> para informaci\xF3n sensible. Si las us\xE1ramos, ser\xEDa como meterse
+    en un campo de asteroides."
+  errorMessage: "<b>\xA1Alerta!</b> \u2620\uFE0F El ENJAMBRE puede encontrarte en
+    esas redes. \xA1Usa la VPN corporativa! Las redes p\xFAblicas pueden ser peligrosas
+    para la informaci\xF3n confidencial."
   correct: 1

@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8e76eba1ca9b6f43afe58519e3930e1, type: 3}
   m_Name: Question_7
   m_EditorClassIdentifier: 
-  text: "\xBFGuardar\xEDas copias de seguridad en tu equipo local?"
-  rightText: No, uso la nube.
-  leftText: "Claro, es m\xE1s r\xE1pido."
-  successMessage: "Excelencia superior: Tus respaldos est\xE1n seguros en la nube."
-  errorMessage: "P\xE9rdida en Agujero Negro: Ransomware cifra tu PC y copias. Sin
-    recuperaci\xF3n."
+  text: "Est\xE1s en tu caf\xE9 favorito trabajando con Wi-Fi p\xFAblica. \xBFTe
+    conectas a la VPN corporativa antes de acceder a documentos de la empresa?"
+  rightText: "\xA1Claro!"
+  leftText: "\xA1No, no me fio!"
+  successMessage: "<b>\xA1Perfecto!</b> \xA1Escudo de invisibilidad activado! Ni
+    el ENJAMBRE con superl\xE1ser podr\xEDa rastrearte. La VPN a\xF1ade una capa
+    de seguridad esencial."
+  errorMessage: "<b>\xA1Error fatal!</b> \xA1Sin VPN, eres un blanco f\xE1cil! Hasta
+    un protocol droid te hackear\xEDa. La VPN protege tus datos en redes p\xFAblicas. "
   correct: 1
