@@ -277,6 +277,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   autoSpeak: 0
+  dontstart: 0
 --- !u!1 &1095742977105501561
 GameObject:
   m_ObjectHideFlags: 0

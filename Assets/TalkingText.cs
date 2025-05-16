@@ -62,7 +62,10 @@ public class TalkingText : MonoBehaviour
 
     public void ShowMessage(string message)
     {
-        AudioManager.instance.PlaySFXLoop(talkingSound, 1);
+        if(autoSpeak == false)
+            AudioManager.instance.PlaySFXLoop(talkingSound, 1);
+
+
         SetNextMessage();
         if (typingCoroutine != null)
             StopCoroutine(typingCoroutine);
@@ -266,15 +269,11 @@ public class TalkingText : MonoBehaviour
     }
     public void SetNextMessage() 
     {
-        if (currentMessageIndex < messages.Count) 
-        {
+        if (nextButton == null)
+            return;
             if (messages[currentMessageIndex].nextmessage == null)
                 return;
-            if (nextButton != null) 
-            {
-
-            }
-            nextButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = messages[currentMessageIndex].nextmessage == "" ? "Siguiente" : messages[currentMessageIndex].nextmessage;
-        }
+   
+            nextButton.transform.GetComponentInChildren<TextMeshProUGUI>().text = messages[currentMessageIndex].nextmessage == "" ? "Siguiente" : messages[currentMessageIndex].nextmessage;
     }
 }

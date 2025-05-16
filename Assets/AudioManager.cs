@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -86,13 +87,14 @@ public class AudioManager : MonoBehaviour
 
     private IEnumerator PlaySFXWhenReady(AudioClip clip, float volume)
     {
-        float timeout = 1.5f;
+        yield return null;
+        if (!clip.loadInBackground && clip.loadState != AudioDataLoadState.Loaded)
+            clip.LoadAudioData(); // ⚠️ importante: fuerza la carga si aún no está cargado
+
+        float timeout = 2f;
         float timer = 0f;
 
-        // Esperar un frame para asegurar que todo esté instanciado
-        yield return null;
-
-        while (clip.loadState != AudioDataLoadState.Loaded)
+        while (clip.loadState == AudioDataLoadState.Loading)
         {
             if (timer >= timeout)
             {
@@ -104,19 +106,28 @@ public class AudioManager : MonoBehaviour
             yield return null;
         }
 
+        if (clip.loadState != AudioDataLoadState.Loaded)
+        {
+            Debug.LogWarning($"[AudioManager] ❌ El clip '{clip.name}' no pudo cargarse (estado: {clip.loadState}).");
+            yield break;
+        }
+
         SFXSource.pitch = Random.Range(0.9f, 1.1f);
         SFXSource.volume = volume;
         SFXSource.PlayOneShot(clip);
     }
 
+
     private IEnumerator PlaySFXLoopWhenReady(AudioClip clip, float volume)
     {
-        float timeout = 1.5f;
+        yield return null;
+        if (!clip.loadInBackground && clip.loadState != AudioDataLoadState.Loaded)
+            clip.LoadAudioData();
+
+        float timeout = 2f;
         float timer = 0f;
 
-        yield return null;
-
-        while (clip.loadState != AudioDataLoadState.Loaded)
+        while (clip.loadState == AudioDataLoadState.Loading)
         {
             if (timer >= timeout)
             {
@@ -128,11 +139,19 @@ public class AudioManager : MonoBehaviour
             yield return null;
         }
 
+        if (clip.loadState != AudioDataLoadState.Loaded)
+        {
+            Debug.LogWarning($"[AudioManager] ❌ El clip LOOP '{clip.name}' no pudo cargarse.");
+            yield break;
+        }
+
         SFXSource.loop = true;
         SFXSource.pitch = Random.Range(0.85f, 1.2f);
         SFXSource.clip = clip;
         SFXSource.volume = volume;
-        SFXSource.Play();
+        SFXSource.Play(); // 🔄 Usar Play(), no PlayOneShot(), para loop
     }
+
+
 
 }
