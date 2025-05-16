@@ -142,7 +142,7 @@ public class TalkingText : MonoBehaviour
             PutAllText();
             return;
         }
-        audioManager.PlaySFX(audioManager.nextBtn);
+        AudioManager.instance.PlaySFX(AudioManager.instance.nextBtn);
 
         if (currentMessageIndex < messages.Count - 1)
         {
@@ -164,7 +164,7 @@ public class TalkingText : MonoBehaviour
             PutAllText();
             return;
         }
-        audioManager.PlaySFX(audioManager.prevBtn);
+        AudioManager.instance.PlaySFX(AudioManager.instance.prevBtn);
         if (currentMessageIndex > 0)
         {
             messages[currentMessageIndex].undoButtonEvent?.Invoke();

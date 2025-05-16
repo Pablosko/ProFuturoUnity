@@ -58,12 +58,10 @@ public class AudioManager : MonoBehaviour
         SFXSource.volume = volume;
         SFXSource.PlayOneShot(clip);
     }
-
-    [System.Obsolete]
     public void PlaySFXLoop(AudioClip clip, float volume = 1f)
     {
         SFXSource.volume = volume;
-        SFXSource.pitch = Random.RandomRange(0.85f, 1.25f); 
+        SFXSource.pitch = Random.Range(0.85f, 1.25f); 
         SFXSource.loop = true;
         SFXSource.PlayOneShot(clip);
     }

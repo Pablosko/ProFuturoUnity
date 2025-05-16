@@ -5001,6 +5001,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 77986305}
     - target: {fileID: 7741823779003506500, guid: 1f539fc11452d4740970b6ddc4d6aaba, type: 3}
+      propertyPath: messages.Array.data[1].nextmessage
+      value: "\xA1Perfecto!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7741823779003506500, guid: 1f539fc11452d4740970b6ddc4d6aaba, type: 3}
       propertyPath: onEndConversation.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 77986305}
