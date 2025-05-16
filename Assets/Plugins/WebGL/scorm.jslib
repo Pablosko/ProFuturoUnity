@@ -29,5 +29,14 @@ mergeInto(LibraryManager.library, {
     saveAvatar: function (ptr) {
         var str = UTF8ToString(ptr);
         saveAvatar(str);
-    }
+    },
+    downloadPDF: function (urlPtr) {
+        var url = UTF8ToString(urlPtr);
+        var link = document.createElement('a');
+        link.href = url;
+        link.download = url.split('/').pop();
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
 });
