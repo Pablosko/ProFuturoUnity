@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5032220354319138313, guid: 46acf0fea8cf5a84ca836bc88391cbcd, type: 3}
       propertyPath: id
-      value: 5_1_10
+      value: 5_1_18
       objectReference: {fileID: 0}
     - target: {fileID: 5032220354319138313, guid: 46acf0fea8cf5a84ca836bc88391cbcd, type: 3}
       propertyPath: stageGame
