@@ -1,14 +1,19 @@
-using Unity.VisualScripting;
+using System;
 using UnityEngine;
-
+using UnityEngine.Audio;
+using Random = UnityEngine.Random;
 public class AudioManager : MonoBehaviour
 {
+    public static AudioManager instance;
+
+    [Header("-------- Audio Mixer --------")]
+    public AudioMixer audioMixer; 
+
     [Header("-------- Audio Source --------")]
     [SerializeField] AudioSource musicSource;
     [SerializeField] AudioSource SFXSource;
 
-    [Header("-------- Audio Clip --------")]
-    [Header("-------- Background --------")]
+    [Header("-------- Background Music --------")]
     public AudioClip tutorialBg;
     public AudioClip storytellingBg;
     public AudioClip minigameBg;
@@ -34,18 +39,17 @@ public class AudioManager : MonoBehaviour
 
     [Header("-------- EXTRAS --------")]
     public AudioClip winMedal;
-    public static AudioManager instance;
+
     private void Awake()
     {
-        instance = this;
+        if (instance == null) instance = this;
+        else Destroy(gameObject);
     }
 
     private void Start()
     {
-        musicSource.clip = tutorialBg;
-        musicSource.volume = 0.3f;
-        musicSource.Play();
     }
+
     public void PlayMusic(AudioClip clip, float volume = 1f)
     {
         musicSource.Stop();
@@ -54,28 +58,32 @@ public class AudioManager : MonoBehaviour
         musicSource.Play();
     }
 
-    public void PlaySFX(AudioClip clip, float volume = 1f) {
+    public void PlaySFX(AudioClip clip, float volume = 1f)
+    {
+        SFXSource.pitch = Random.Range(0.9f, 1.1f); // Variación leve de pitch
         SFXSource.volume = volume;
         SFXSource.PlayOneShot(clip);
     }
 
-    [System.Obsolete]
     public void PlaySFXLoop(AudioClip clip, float volume = 1f)
     {
-        SFXSource.volume = volume;
-        SFXSource.pitch = Random.RandomRange(0.85f, 1.25f); 
         SFXSource.loop = true;
-        SFXSource.PlayOneShot(clip);
+        SFXSource.pitch = Random.Range(0.85f, 1.2f);
+        SFXSource.clip = clip;
+        SFXSource.volume = volume;
+        SFXSource.Play();
     }
+
     public void StopFX()
     {
         SFXSource.Stop();
-        SFXSource.pitch = 1;
-
+        SFXSource.loop = false;
+        SFXSource.pitch = 1f;
     }
-    public void SetVolumne(bool state) 
+
+    public void SetMasterVolume(float volume)
     {
-        musicSource.volume = state == true ? 1:0 ;
-        SFXSource.volume = state == true ? 1:0;
+        float v = Mathf.Log10(volume) * 20;
+        audioMixer.SetFloat("MasterVolume", Mathf.Clamp(v, -80, 0)); // dB scale
     }
 }

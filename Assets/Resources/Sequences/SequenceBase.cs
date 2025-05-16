@@ -1,14 +1,15 @@
 using UnityEngine;
-
 public class SequenceBase : MonoBehaviour
 {
     [HideInInspector]
     public SequenceManager sequenceManager;
     public bool hasTransition;
     public string id;
-
+    public AudioClip music;
     public virtual void Awake()
     {
+        if(music != null)
+        AudioManager.instance.PlayMusic(music);  
     }
 
     private void Start() 
