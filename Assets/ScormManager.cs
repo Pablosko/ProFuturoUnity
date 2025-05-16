@@ -37,6 +37,9 @@ public class SCORMManager : MonoBehaviour
 
     [DllImport("__Internal")]
     private static extern void saveAvatar(string value);
+
+    [DllImport("__Internal")]
+    private static extern void downloadPDF(string url);
 #else
     // Dummy (falsas) funciones para cuando no estás en WebGL
     private static int initScorm() { Debug.Log("SCORM INIT (Dummy)"); return 1; }
@@ -45,6 +48,7 @@ public class SCORMManager : MonoBehaviour
     private static string pageState(string value) { Debug.Log("GET STATE (Dummy): " + value); return "0"; }
     private static void saveAvatar(string value) { Debug.Log("SAVE AVATAR (Dummy): " + value); }
     private static string getAvatar() { Debug.Log("GET AVATAR (Dummy)"); return "0"; }
+    private static void downloadPDF(string url) { Debug.Log("DOWNLOAD FILE (Dummy): " + url);}
 #endif
     private void Awake()
     {
@@ -81,6 +85,13 @@ public class SCORMManager : MonoBehaviour
     public void SaveAvatar(string avatar)
     {
         saveAvatar(avatar);
+    }
+    public void DownloadPDF(string fileNameWithoutExtension)
+    {
+        string fileName = fileNameWithoutExtension + ".pdf";
+        string relativePath = "StreamingAssets/" + fileName;
+        string fullPath = Application.absoluteURL + relativePath;
+        downloadPDF(fullPath);
     }
     public void ParseSimulation() 
     {
