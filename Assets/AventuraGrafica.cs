@@ -148,8 +148,9 @@ public class AventuraGrafica : MonoBehaviour
     }
     public void End() 
     {
-        Instantiate(nextSequenceManager, HudController.instance.transform);
-        Destroy(gameObject);
+       SequenceManager sq = Instantiate(nextSequenceManager, HudController.instance.stagesTransform).GetComponent<SequenceManager>();
+       sq.LoadFirstSequence();
+       Destroy(gameObject);
     }
     public void SetToScreen(int index) 
     {

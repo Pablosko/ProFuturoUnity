@@ -13,7 +13,7 @@ public class SequenceManager : MonoBehaviour
 
     void Start()
     {
-        LoadFirstSequence();
+       // LoadFirstSequence();
     }
     public void LoadFirstSequence() 
     {
