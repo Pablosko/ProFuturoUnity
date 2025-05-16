@@ -32,7 +32,7 @@ public class TalkingText : MonoBehaviour
 
     private bool isTyping = false;
     private string currentFullMessage;
-   
+    public bool dontstart;
     AudioManager audioManager;
     private void Awake()
     {
@@ -40,6 +40,8 @@ public class TalkingText : MonoBehaviour
     }
     void Start()
     {
+        if (dontstart)
+            return;
         CheckButtonStates();
         if (messages.Count > 0)
         {
@@ -58,7 +60,7 @@ public class TalkingText : MonoBehaviour
         */
     }
 
-    void ShowMessage(string message)
+    public void ShowMessage(string message)
     {
         AudioManager.instance.PlaySFXLoop(talkingSound, 1);
         SetNextMessage();
@@ -124,7 +126,7 @@ public class TalkingText : MonoBehaviour
 
             yield return null;
         }
-
+        if(messages.Count > 0)
         messages[currentMessageIndex].onEndTalkEvent?.Invoke();
         StopTalk();
 
@@ -156,7 +158,38 @@ public class TalkingText : MonoBehaviour
         }
         CheckButtonStates();
     }
+    public void SetAndPlayMessage(string text)
+    {
+        // Detener lo que se esté escribiendo
+        if (typingCoroutine != null)
+        {
+            StopCoroutine(typingCoroutine);
+            typingCoroutine = null;
+        }
 
+        // Detener sonido si estaba escribiendo
+        StopTalk();
+
+        // Reset de estado
+        isTyping = false;
+        currentMessageIndex = 0;
+        contentText.text = "";
+        currentFullMessage = "";
+
+        // Limpiar y agregar único mensaje
+        messages = new List<TalkingTextContent>
+    {
+        new TalkingTextContent
+        {
+            message = text,
+        }
+    };
+
+        // Mostrar desde cero
+        CheckButtonStates();
+        messages[0].onStartTalkEvent?.Invoke();
+        ShowMessage(ProcessTags(messages[0].message));
+    }
     public void Prev()
     {
         if (isTyping)
@@ -233,8 +266,15 @@ public class TalkingText : MonoBehaviour
     }
     public void SetNextMessage() 
     {
-        if(nextButton != null)
-        nextButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = messages[currentMessageIndex].nextmessage == "" ? "Siguiente" : messages[currentMessageIndex].nextmessage;
-    }
+        if (currentMessageIndex < messages.Count) 
+        {
+            if (messages[currentMessageIndex].nextmessage == null)
+                return;
+            if (nextButton != null) 
+            {
 
+            }
+            nextButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = messages[currentMessageIndex].nextmessage == "" ? "Siguiente" : messages[currentMessageIndex].nextmessage;
+        }
+    }
 }

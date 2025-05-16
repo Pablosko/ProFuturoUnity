@@ -23,6 +23,12 @@ public class MazeGame : Game
 
     [Header("Prefabs")]
     public GameObject connectionPrefab;
+    [Header("FeedBacks")]
+    public GameObject error;
+    public GameObject correct;
+    public TalkingText talkingText;
+    public List<string> messages;
+
 
     private ConnectionPoint startPoint;
     private ConnectionPoint currentConnection;
@@ -43,6 +49,8 @@ public class MazeGame : Game
     }
     private void Update()
     {
+        if (paused)
+            return;
         if (!isPlacing) return;
 
         Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -81,7 +89,26 @@ public class MazeGame : Game
         else if (Input.GetKeyDown(KeyCode.A)) TryMoveCableInDirection(Vector3Int.left);
         else if (Input.GetKeyDown(KeyCode.S)) TryMoveCableInDirection(Vector3Int.down);
     }
-
+    public void ShowError() 
+    {
+        paused = true;
+        error.SetActive(true);
+    }
+    public void ShowCorrect(TipoConexion type) 
+    {
+        paused = true;
+        correct.SetActive(true);
+        talkingText.gameObject.SetActive(true);
+        talkingText.SetAndPlayMessage(messages[(int)type]);
+    }
+    public void UnPause() 
+    {
+        error.SetActive(false);
+        correct.SetActive(false);
+        paused = false;
+        if (connections >= 4)
+            TerminateGame();
+    }
     private bool CheckForEndConnection(Vector3Int cell)
     {
         Collider2D hit = Physics2D.OverlapPoint(tilemap.GetCellCenterWorld(cell));
@@ -92,21 +119,22 @@ public class MazeGame : Game
 
             var startTile = startPoint.tile;
             var endTile = endPoint.tile;
-
+            if (startTile.input == endTile.input)
+                return false;
+            if (!startTile.CheckConnection(endTile))
+            {
+                ShowError();
+                Debug.Log("[MazeGame] ❌ Tipos incompatibles.");
+                CancelConnection();
+                return false;
+            }
             if (endTile == null)
             {
                 Debug.Log("[MazeGame] ⛔ No se puede conectar a un punto sin tile.");
                 CancelConnection();
                 return false;
             }
-
-            if (!startTile.CheckConnection(endTile))
-            {
-                Debug.Log("[MazeGame] ❌ Tipos incompatibles.");
-                CancelConnection();
-                return false;
-            }
-
+            ShowCorrect(startTile.tipo);
             // Colocar el último tramo del cable antes de finalizar la conexión
             PlaceCable(lastPosition, cell, currentColor);
             currentPath.Add(cell);
@@ -117,8 +145,7 @@ public class MazeGame : Game
             startPoint.OnConect();
             StopPlacingCable();
             connections++;
-            if (connections >= 4)
-                TerminateGame();
+ 
 
             Debug.Log($"✅ Conexión completada. Total: {connections}");
             return true;
@@ -174,6 +201,8 @@ public void CancelConnection()
 
     private void FinalizeCable()
     {
+        if(startPoint != null)
+            startPoint.animator.SetBool("Selected", false);
         startPoint = null;
         currentConnection = null;
         currentPath.Clear();

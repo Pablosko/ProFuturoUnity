@@ -60,6 +60,13 @@ public class Computer : Game
     {
         if (Input.GetKey(KeyCode.LeftControl))
         {
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                EndGame();
+            }
+        }
+        if (Input.GetKey(KeyCode.LeftControl))
+        {
             if (Input.GetKeyDown(KeyCode.Z)) ChangeProgram(-1);
             if (Input.GetKeyDown(KeyCode.Y)) ChangeProgram(1);
         }

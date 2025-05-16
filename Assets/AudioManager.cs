@@ -1,17 +1,18 @@
-using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
 using Random = UnityEngine.Random;
+
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
 
     [Header("-------- Audio Mixer --------")]
-    public AudioMixer audioMixer; 
+    public AudioMixer audioMixer;
 
     [Header("-------- Audio Source --------")]
-    [SerializeField] AudioSource musicSource;
-    [SerializeField] AudioSource SFXSource;
+    [SerializeField] private AudioSource musicSource;
+    [SerializeField] private AudioSource SFXSource;
 
     [Header("-------- Background Music --------")]
     public AudioClip tutorialBg;
@@ -46,12 +47,10 @@ public class AudioManager : MonoBehaviour
         else Destroy(gameObject);
     }
 
-    private void Start()
-    {
-    }
-
     public void PlayMusic(AudioClip clip, float volume = 1f)
     {
+        if (clip == null) return;
+
         musicSource.Stop();
         musicSource.clip = clip;
         musicSource.volume = volume;
@@ -60,18 +59,14 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySFX(AudioClip clip, float volume = 1f)
     {
-        SFXSource.pitch = Random.Range(0.9f, 1.1f); // Variaci�n leve de pitch
-        SFXSource.volume = volume;
-        SFXSource.PlayOneShot(clip);
+        if (clip == null) return;
+        StartCoroutine(PlaySFXWhenReady(clip, volume));
     }
 
     public void PlaySFXLoop(AudioClip clip, float volume = 1f)
     {
-        SFXSource.loop = true;
-        SFXSource.pitch = Random.Range(0.85f, 1.2f);
-        SFXSource.clip = clip;
-        SFXSource.volume = volume;
-        SFXSource.Play();
+        if (clip == null) return;
+        StartCoroutine(PlaySFXLoopWhenReady(clip, volume));
     }
 
     public void StopFX()
@@ -83,7 +78,61 @@ public class AudioManager : MonoBehaviour
 
     public void SetMasterVolume(float volume)
     {
-        float v = Mathf.Log10(volume) * 20;
-        audioMixer.SetFloat("MasterVolume", Mathf.Clamp(v, -80, 0)); // dB scale
+        float v = Mathf.Log10(Mathf.Clamp(volume, 0.0001f, 1f)) * 20f;
+        audioMixer.SetFloat("MasterVolume", Mathf.Clamp(v, -80f, 0f));
     }
+
+    // ----------- CORUTINAS -----------
+
+    private IEnumerator PlaySFXWhenReady(AudioClip clip, float volume)
+    {
+        float timeout = 1.5f;
+        float timer = 0f;
+
+        // Esperar un frame para asegurar que todo esté instanciado
+        yield return null;
+
+        while (clip.loadState != AudioDataLoadState.Loaded)
+        {
+            if (timer >= timeout)
+            {
+                Debug.LogWarning($"[AudioManager] ❌ El clip '{clip.name}' no se cargó a tiempo.");
+                yield break;
+            }
+
+            timer += Time.unscaledDeltaTime;
+            yield return null;
+        }
+
+        SFXSource.pitch = Random.Range(0.9f, 1.1f);
+        SFXSource.volume = volume;
+        SFXSource.PlayOneShot(clip);
+    }
+
+    private IEnumerator PlaySFXLoopWhenReady(AudioClip clip, float volume)
+    {
+        float timeout = 1.5f;
+        float timer = 0f;
+
+        yield return null;
+
+        while (clip.loadState != AudioDataLoadState.Loaded)
+        {
+            if (timer >= timeout)
+            {
+                Debug.LogWarning($"[AudioManager] ❌ El clip LOOP '{clip.name}' no se cargó a tiempo.");
+                yield break;
+            }
+
+            timer += Time.unscaledDeltaTime;
+            yield return null;
+        }
+
+        SFXSource.loop = true;
+        SFXSource.pitch = Random.Range(0.85f, 1.2f);
+        SFXSource.clip = clip;
+        SFXSource.volume = volume;
+        SFXSource.Play();
+    }
+
 }

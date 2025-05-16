@@ -5,6 +5,6 @@ public class DownloadPdf : MonoBehaviour
 {
     public void DownloadPDF() 
     {
-
+      //  SCORMManager.instance.load
     }
 }

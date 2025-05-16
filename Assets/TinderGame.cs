@@ -176,6 +176,7 @@ public class Game : MonoBehaviour
 {
     public int stageGame;
     public string id;
+    protected bool paused;
     public virtual void Start()
     {
         SCORMManager.instance.InitPage(id);
@@ -187,4 +188,5 @@ public class Game : MonoBehaviour
         Home.instance.gameObject.SetActive(true);
         Home.instance.StartStage(stageGame+ 1);
     }
+
 }

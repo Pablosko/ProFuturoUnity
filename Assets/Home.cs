@@ -10,7 +10,7 @@ public class Home : MonoBehaviour
     public List<HomeStageUI> homeStagesUI;
     public static Home instance;
     public List<GameObject> SequenceManagers;
-
+    public SubSequenceManager hardcodedTema6;
     private Coroutine currentCoroutine;
     public int currentStage = 0;
 
@@ -47,7 +47,10 @@ public class Home : MonoBehaviour
     }
     public void StartStageSubSequence(int stage) 
     {
-        homeStagesUI[stage - 1].StartSubSequence();
+        if (stage == 6)
+            hardcodedTema6.StartSubSequence();
+        else
+            homeStagesUI[stage - 1].StartSubSequence();
     }
     public void SetNavegableState(bool state) 
     {
