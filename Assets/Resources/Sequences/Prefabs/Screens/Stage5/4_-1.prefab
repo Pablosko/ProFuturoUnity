@@ -79,7 +79,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 8498242601753777941}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -160,6 +160,10 @@ PrefabInstance:
     - target: {fileID: 288820260778972186, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
       propertyPath: m_Name
       value: 4_-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 682966278053669984, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1557173048293826810, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
       propertyPath: m_text
@@ -253,6 +257,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5667679502576054798, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5686437264630922164, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
       propertyPath: m_text
       value: "Ahora que sabes mucho m\xE1s\u2026 \xA1Te dejo los C\xF3digo de Fortaleza
@@ -262,6 +270,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5686437264630922164, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
       propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686437264630922164, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_RaycastTarget
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5686437264630922164, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
@@ -283,6 +295,10 @@ PrefabInstance:
     - target: {fileID: 7755658670467567200, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: 7995333349447040632, guid: 26720237e5b550343ba13cc33105d97e, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

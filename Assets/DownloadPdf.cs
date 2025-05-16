@@ -5,6 +5,6 @@ public class DownloadPdf : MonoBehaviour
 {
     public void DownloadPDF() 
     {
-      //  SCORMManager.instance.load
+        SCORMManager.instance.DownloadPDF("PDF-T5-5.1.6");
     }
 }
