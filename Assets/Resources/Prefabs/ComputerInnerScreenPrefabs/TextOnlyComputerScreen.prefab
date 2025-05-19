@@ -226,7 +226,10 @@ MonoBehaviour:
       m_Calls: []
   tagCongifs: {fileID: 11400000, guid: 833b0f1369fab4c47b5a6a355a116c8a, type: 2}
   endType: 0
-  speakAudio: {fileID: 8300000, guid: 244951c1a3024224bb7f22ea3869b67d, type: 3}
+  effectClicks:
+  - {fileID: 8300000, guid: 2c1ea659762271d488585cc4dd93ef94, type: 3}
+  - {fileID: 8300000, guid: 3ed6a7132bebd2a4e9ba011f5825cf8e, type: 3}
+  - {fileID: 8300000, guid: 17ea251fb035b0647aaffb9f2310ffb4, type: 3}
 --- !u!1 &3447282527880764558
 GameObject:
   m_ObjectHideFlags: 0

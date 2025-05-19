@@ -8,21 +8,123 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 504572788546274351, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -21.2703
+      objectReference: {fileID: 0}
+    - target: {fileID: 504572788546274351, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.8886
+      objectReference: {fileID: 0}
     - target: {fileID: 690033532215096245, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
       propertyPath: m_Name
       value: 4_1_Checks
+      objectReference: {fileID: 0}
+    - target: {fileID: 1566023901125257315, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1566023901125257315, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1566023901125257315, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1566023901125257315, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1566023901125257315, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 888
+      objectReference: {fileID: 0}
+    - target: {fileID: 1566023901125257315, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 284.2611
+      objectReference: {fileID: 0}
+    - target: {fileID: 1566023901125257315, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.50006104
+      objectReference: {fileID: 0}
+    - target: {fileID: 1566023901125257315, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -112.86951
+      objectReference: {fileID: 0}
+    - target: {fileID: 2599101158229466616, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_fontSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2599101158229466616, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2599101158229466616, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2599101158229466616, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2599101158229466616, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3630626234099949098, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 888
+      objectReference: {fileID: 0}
+    - target: {fileID: 3630626234099949098, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 78
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795467192346872139, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795467192346872139, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3795467192346872139, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7148716360156204512}
     - target: {fileID: 3795467192346872139, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 3411436905971328813}
+    - target: {fileID: 3795467192346872139, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795467192346872139, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: End
       objectReference: {fileID: 0}
+    - target: {fileID: 3795467192346872139, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: TriggerSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795467192346872139, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: buttonSound, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795467192346872139, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5133343919411350312, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
       propertyPath: id
-      value: 5_1_12
+      value: 5_1_10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5585996949994387893, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_text
+      value: "Aqu\xED tienes <b>las leyes de acero</b> que te comprometes a cumplir
+        para mantener a <b>salvo la Red Gal\xE1ctica.</b> \xA1Da clic en cada ley
+        cuando te hayas comprometido con ella! "
       objectReference: {fileID: 0}
     - target: {fileID: 7458210948524299305, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
       propertyPath: m_Pivot.x
@@ -104,11 +206,43 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7889875506451167684, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: 'checkBoxes.Array.data[0]'
+      value: "La vigencia de la contrase\xF1a debe ser de <b>90 d\xEDas m\xE1ximo.</b>
+        Al efectuar un cambio de contrase\xF1a, la nueva contrase\xF1a no deber\xE1
+        de ser igual a las <b>\xFAltimas cinco anteriores.</b>"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889875506451167684, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: 'checkBoxes.Array.data[1]'
+      value: "No compartir la contrase\xF1a con nadie (son personales e intransferibles),
+        <b>recuerda que eres responsable de su uso.</b> "
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8032932897013415840, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3411436905971328813}
   m_SourcePrefab: {fileID: 100100000, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+--- !u!1 &5436600490035394920 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8032932897013415840, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+  m_PrefabInstance: {fileID: 2596354595861989064}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3411436905971328813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5436600490035394920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8e15efda289d9e4e882021aab7793e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: b554a0882111a034785b994368ed252e, type: 3}
 --- !u!114 &7148716360156204512 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5133343919411350312, guid: 7ec99931d807ce544bff663cfe718326, type: 3}

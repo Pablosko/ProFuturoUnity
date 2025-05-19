@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema5_5_Fail
   m_EditorClassIdentifier: 
-  mainText: "\xA1Casi! Aunque podr\xEDa dar la sensaci\xF3n de seguridad es relativamente
-    sencillo para los hackers encontrar el patr\xF3n y m\xE1s si dejamos alguna referencia
-    personal."
+  mainText: "<b>\xA1Casi!</b> Si sospechas que algo va mal, cambia tu contrase\xF1a
+    y rep\xF3rtalo inmediatamente con el equipo de Incidentes. Para elevar tus defensas,
+    la mejor pr\xE1ctica es cambiar tu contrase\xF1a cada 90 d\xEDas."
   rightOption: Entendido
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: 6e5c7631eb52daa48819bc74a893ba66, type: 2}
   feedbackIncorrect: {fileID: 0}
+  id: 

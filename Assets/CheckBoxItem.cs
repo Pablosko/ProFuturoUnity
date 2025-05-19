@@ -12,12 +12,14 @@ public class CheckBoxItem : MonoBehaviour
     public TextMeshProUGUI text;
     public TextMeshProUGUI numberText;
     CheckBoxChecker parent;
+    public AudioClip checkClip;
 
     public void onClick() 
     {
         active = !active;
         checkImage.sprite = active == true ? activeSprite : notActiveSprite;
         parent.AddCheck(active == true ? 1 : -1);
+        AudioManager.instance.PlaySFX(checkClip);
     }
     public void SetData(int number, string t,CheckBoxChecker p) 
     {

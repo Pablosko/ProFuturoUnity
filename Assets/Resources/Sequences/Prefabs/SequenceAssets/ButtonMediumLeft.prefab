@@ -167,13 +167,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonMediumLeft
       objectReference: {fileID: 0}
+    - target: {fileID: 6299311640502893546, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -21.5238
+      objectReference: {fileID: 0}
+    - target: {fileID: 6299311640502893546, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.4356
+      objectReference: {fileID: 0}
+    - target: {fileID: 6299311640502893546, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.0395
+      objectReference: {fileID: 0}
     - target: {fileID: 8393267641738568253, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
       propertyPath: m_text
       value: Volver
       objectReference: {fileID: 0}
     - target: {fileID: 8393267641738568253, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
       propertyPath: m_fontSize
-      value: 18.55
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8393267641738568253, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
       propertyPath: m_fontAsset

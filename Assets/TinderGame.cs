@@ -116,7 +116,7 @@ public class TinderGame : Game
     }
     void UpdateProgress() 
     {
-        float progress = (float)correctAnswers / totalRounds;
+        float progress = (float)currentRound / totalRounds;
         progressBar.fillAmount = progress;
     }
 

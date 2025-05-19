@@ -180,12 +180,20 @@ PrefabInstance:
       value: -70.74
       objectReference: {fileID: 0}
     - target: {fileID: 6299311640502893546, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -21.9385
+      objectReference: {fileID: 0}
+    - target: {fileID: 6299311640502893546, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -18.35
       objectReference: {fileID: 0}
+    - target: {fileID: 6299311640502893546, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.2469
+      objectReference: {fileID: 0}
     - target: {fileID: 8393267641738568253, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
       propertyPath: m_text
-      value: "\xA1Vamos por la \xFAltima insignia!"
+      value: "\xA1Vamos por la \xFAltima!"
       objectReference: {fileID: 0}
     - target: {fileID: 8393267641738568253, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
       propertyPath: m_fontSize

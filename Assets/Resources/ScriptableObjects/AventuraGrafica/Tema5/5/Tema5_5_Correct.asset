@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema5_5_Correct
   m_EditorClassIdentifier: 
-  mainText: "<b>\xA1Brillante!</b> Renovar tus contrase\xF1as \xA1es la clave! Evita
-    usar combinaciones f\xE1ciles de adivinar como palabras o nombres comunes con
-    n\xFAmeros (p. e. P3rr1To, C4r0l1n4, etc.). mejor: <b>\xA1Ev\xEDtalo!</b>"
+  mainText: "<b>\xA1Brillante!</b> Renovar tus contrase\xF1as regularmente \xA1es
+    la clave! Si sospechas que algo va mal,cambia tu contrase\xF1a y rep\xF3rtalo
+    inmediatamente con el equipo de Incidentes."
   rightOption: Perfecto
   leftOption: 
   rigthCorrect: 0
   feedbackCorrect: {fileID: 11400000, guid: 6e5c7631eb52daa48819bc74a893ba66, type: 2}
   feedbackIncorrect: {fileID: 0}
+  id: 

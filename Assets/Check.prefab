@@ -56,6 +56,7 @@ MonoBehaviour:
   checkImage: {fileID: 60514791895310859}
   text: {fileID: 1650940480826769751}
   numberText: {fileID: 8658410380969752788}
+  checkClip: {fileID: 8300000, guid: c833a77c56628d34e8c14da2762acf40, type: 3}
 --- !u!1 &5118474943962077597
 GameObject:
   m_ObjectHideFlags: 0

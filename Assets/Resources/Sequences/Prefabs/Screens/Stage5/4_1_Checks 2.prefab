@@ -12,6 +12,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: 4_1_Checks 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1566023901125257315, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1566023901125257315, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1566023901125257315, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1566023901125257315, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1566023901125257315, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 888
+      objectReference: {fileID: 0}
+    - target: {fileID: 1566023901125257315, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 296.3603
+      objectReference: {fileID: 0}
+    - target: {fileID: 1566023901125257315, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -106.819916
+      objectReference: {fileID: 0}
     - target: {fileID: 1672985941630668662, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
       propertyPath: startNumber
       value: 7
@@ -38,9 +66,65 @@ PrefabInstance:
         Seguridad de la Informaci\xF3n a trav\xE9s de un correo a seguridad.delainformacion@profuturo.com.mx
         o llamando a la extensi\xF3n 96128. "
       objectReference: {fileID: 0}
+    - target: {fileID: 2599101158229466616, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_fontSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3630626234099949098, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3630626234099949098, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3630626234099949098, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 888
+      objectReference: {fileID: 0}
+    - target: {fileID: 3630626234099949098, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 55.100006
+      objectReference: {fileID: 0}
+    - target: {fileID: 3630626234099949098, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795467192346872139, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795467192346872139, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795467192346872139, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 8289240759923466110}
+    - target: {fileID: 3795467192346872139, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795467192346872139, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: TriggerSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795467192346872139, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: buttonSound, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795467192346872139, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5133343919411350312, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
       propertyPath: id
-      value: 5_1_14
+      value: 5_1_13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5585996949994387893, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      propertyPath: m_text
+      value: "Yo, como buen(a) Guardi\xE1n Legendario(a) me comprometo: "
       objectReference: {fileID: 0}
     - target: {fileID: 7458210948524299305, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
       propertyPath: m_Pivot.x
@@ -136,25 +220,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7889875506451167684, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
       propertyPath: 'checkBoxes.Array.data[0]'
-      value: "Cerrar la sesi\xF3n de trabajo (log off) o activar el protector de
-        pantalla (screen saver) protegido por contrase\xF1a, antes de dejar la computadora
-        desatendida. "
+      value: "<b>Cerrar la sesi\xF3n de trabajo</b> (log off) o activar el protector
+        de pantalla (screen saver) protegido por contrase\xF1a, antes de dejar la
+        computadora desatendida. "
       objectReference: {fileID: 0}
     - target: {fileID: 7889875506451167684, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
       propertyPath: 'checkBoxes.Array.data[1]'
-      value: "No aceptar tareas o peticiones que permitan / sugieran guardar la contrase\xF1a
-        para que autom\xE1ticamente se realicen accesos futuros."
+      value: "<b>No aceptar tareas o peticiones</b> que permitan / sugieran guardar
+        la contrase\xF1a para que autom\xE1ticamente se realicen futuros accesos."
       objectReference: {fileID: 0}
     - target: {fileID: 7889875506451167684, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
       propertyPath: 'checkBoxes.Array.data[2]'
       value: "<b>Si se sospecha que la contrase\xF1a est\xE1 siendo utilizada por
-        alguien m\xE1s,</b> se debe <b>reportar de inmediato</b> con el Oficial de
-        Seguridad de la Informaci\xF3n a trav\xE9s de un correo a seguridad.delainformacion@profuturo.com.mx
-        o llamando a la extensi\xF3n 96128. "
+        alguien m\xE1s, se debe reportar de inmediato con el Oficial de Seguridad
+        de la Informaci\xF3n a trav\xE9s del correo seguridad.delainformacion@profuturo.com.mx
+        o llamando a la extensi\xF3n 96128, si sospecho que mi contrase\xF1a est\xE1
+        siendo utilizada por alguien m\xE1s.</b> "
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7535987586035241628, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8032932897013415840, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8289240759923466110}
   m_SourcePrefab: {fileID: 100100000, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+--- !u!1 &5436600490035394920 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8032932897013415840, guid: 7ec99931d807ce544bff663cfe718326, type: 3}
+  m_PrefabInstance: {fileID: 2596354595861989064}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8289240759923466110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5436600490035394920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8e15efda289d9e4e882021aab7793e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: b554a0882111a034785b994368ed252e, type: 3}

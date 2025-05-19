@@ -261,10 +261,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6798658882535422978, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: m_text
-      value: "\xA1Sab\xEDamos que pod\xEDamos confiar en ti Guardi\xE1n! Eres digno(a)
-        de ser parte de esta misi\xF3n. Nunca dudamos de ello.\nTe queda una \xFAltima
-        parte del entrenamiento y con ello\u2026 te har\xE1s con la quinta insignia
-        que nos permitir\xE1 poder activar la nave."
+      value: "<b>\xA1Sab\xEDamos que pod\xEDamos confiar en ti Guardi\xE1n! </b>\r\n
+        Eres digno(a) de ser parte de esta misi\xF3n. Nunca dudamos de ello.\r\nTe
+        queda una \xFAltima parte del entrenamiento y con ello\u2026 Recibir\xE1s 
+        la <b>quinta insignia</b> que nos permitir\xE1 <b>poder activar la nave.</b>"
       objectReference: {fileID: 0}
     - target: {fileID: 6798658882535422978, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: m_fontSize
@@ -344,19 +344,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8868250481838295510, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -127.2855
+      value: -102.9938
       objectReference: {fileID: 0}
     - target: {fileID: 8868250481838295510, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 35.628
       objectReference: {fileID: 0}
     - target: {fileID: 8868250481838295510, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 137
+      value: 133
       objectReference: {fileID: 0}
     - target: {fileID: 8868250481838295510, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -5.9028015
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1457056115961464243, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
@@ -386,7 +386,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sequenceManager: {fileID: 0}
   hasTransition: 1
-  id: 5_1_16
+  id: 5_1_14
+  music: {fileID: 0}
+  autoSkip: 0
 --- !u!1 &6843037047713153698 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5639810048483558676, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}

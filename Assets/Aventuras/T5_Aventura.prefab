@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2838250755775656704, guid: d5373ea585fa3b54eb4b6c6cf5d8ae36, type: 3}
       propertyPath: TotalScreens
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2838250755775656704, guid: d5373ea585fa3b54eb4b6c6cf5d8ae36, type: 3}
       propertyPath: lastFeedbackScreen

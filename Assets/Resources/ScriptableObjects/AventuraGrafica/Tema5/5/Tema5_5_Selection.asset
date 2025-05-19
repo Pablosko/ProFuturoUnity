@@ -15,7 +15,7 @@ MonoBehaviour:
   mainText: "\xA1Guardi\xE1n! El ENJAMBRE est\xE1 probando 10,000 contrase\xF1as
     por segundo. \xBFC\xF3mo elevas tus defensas?"
   rightOption: "Cambiar mis contrase\xF1as cada 90 d\xEDas"
-  leftOption: "Usar caracteres alfanum\xE9ricos (p.ej. P3rr1To, Pr0fu7uR0)"
+  leftOption: "Cambiar la contrase\xF1a cuando sospecho que algo est\xE1 mal"
   rigthCorrect: 1
   feedbackCorrect: {fileID: 11400000, guid: 91e457013ce465c49aa648f37fc92ac2, type: 2}
   feedbackIncorrect: {fileID: 11400000, guid: a13c8cabe71a8fe48a04979861bfe77d, type: 2}

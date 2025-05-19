@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using TMPro;
+using System.Collections.Generic;
 
 public class ComputerText : MonoBehaviour
 {
@@ -16,7 +17,8 @@ public class ComputerText : MonoBehaviour
     private string processedText;
     private bool isTyping = false;
     public bool endType = false;
-    public AudioClip speakAudio;
+    public List<AudioClip> effectClicks;
+
 
     public void StartType(string text,Computer cpu)
     {
@@ -42,14 +44,13 @@ public class ComputerText : MonoBehaviour
             onEndTyping?.Invoke();
             yield break;
         }
-        if(text != "")
-        AudioManager.instance.PlaySFXLoop(speakAudio);
 
         float timePerChar = 1f / speed;
         float nextCharTime = Time.time;
         int i = 0;
         string currentText = "";
-
+        int effectCount = 3;
+        int currentEffectCount = 0;
         while (i < text.Length)
         {
             // Añadir etiquetas HTML de forma correcta
@@ -82,16 +83,24 @@ public class ComputerText : MonoBehaviour
             }
 
             uiText.text = currentText + "_";
+            if (currentEffectCount >=effectCount) 
+            {
+                TriggerSoundEffect();
+                currentEffectCount = 0;
+            }
+            currentEffectCount++;
             yield return null;
         }
-
         uiText.text = currentText;
         isTyping = false;
         endType = true;
         onEndTyping?.Invoke();
-        AudioManager.instance.StopFX();
     }
-
+    public void TriggerSoundEffect()
+    {
+        if (effectClicks.Count > 0)
+            AudioManager.instance.PlaySFX(effectClicks[Random.Range(0, effectClicks.Count)],1,8f,12f);
+    }
     public void Skip()
     {
         if (typingCoroutine != null)

@@ -63,6 +63,11 @@ public class AudioManager : MonoBehaviour
         if (clip == null) return;
         StartCoroutine(PlaySFXWhenReady(clip, volume));
     }
+    public void PlaySFX(AudioClip clip, float minp, float maxp,float volume = 1f)
+    {
+        if (clip == null) return;
+        StartCoroutine(PlaySFXWhenReady(clip, volume,minp,maxp));
+    }
 
     public void PlaySFXLoop(AudioClip clip, float volume = 1f)
     {
@@ -117,7 +122,37 @@ public class AudioManager : MonoBehaviour
         SFXSource.PlayOneShot(clip);
     }
 
+    private IEnumerator PlaySFXWhenReady(AudioClip clip, float volume,float minp,float maxp)
+    {
+        yield return null;
+        if (!clip.loadInBackground && clip.loadState != AudioDataLoadState.Loaded)
+            clip.LoadAudioData(); // ⚠️ importante: fuerza la carga si aún no está cargado
 
+        float timeout = 2f;
+        float timer = 0f;
+
+        while (clip.loadState == AudioDataLoadState.Loading)
+        {
+            if (timer >= timeout)
+            {
+                Debug.LogWarning($"[AudioManager] ❌ El clip '{clip.name}' no se cargó a tiempo.");
+                yield break;
+            }
+
+            timer += Time.unscaledDeltaTime;
+            yield return null;
+        }
+
+        if (clip.loadState != AudioDataLoadState.Loaded)
+        {
+            Debug.LogWarning($"[AudioManager] ❌ El clip '{clip.name}' no pudo cargarse (estado: {clip.loadState}).");
+            yield break;
+        }
+
+        SFXSource.pitch = Random.Range(minp, maxp);
+        SFXSource.volume = volume;
+        SFXSource.PlayOneShot(clip);
+    }
     private IEnumerator PlaySFXLoopWhenReady(AudioClip clip, float volume)
     {
         yield return null;
