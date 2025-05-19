@@ -233,7 +233,7 @@ PrefabInstance:
       propertyPath: 'checkBoxes.Array.data[2]'
       value: "<b>Si se sospecha que la contrase\xF1a est\xE1 siendo utilizada por
         alguien m\xE1s, se debe reportar de inmediato con el Oficial de Seguridad
-        de la Informaci\xF3n a trav\xE9s del correo seguridad.delainformacion@profuturo.com.mx
+        de la Informaci\xF3n a trav\xE9s del correo team_seguridad@profuturo.con.mx
         o llamando a la extensi\xF3n 96128, si sospecho que mi contrase\xF1a est\xE1
         siendo utilizada por alguien m\xE1s.</b> "
       objectReference: {fileID: 0}

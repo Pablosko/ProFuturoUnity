@@ -223,6 +223,12 @@
         function initScorm() {
             createCourse();
             console.log("🔵 Iniciando conexión SCORM...");
+            CURSO.iniciarPagina("1_1_1");
+            CURSO.finalizarPagina("1_1_1", "");
+            CURSO.setPages();
+            CURSO.iniciarPagina("1_1_3");
+            CURSO.finalizarPagina("1_1_3", "");
+            CURSO.setPages();
         }
 
         function initPage(pageId) {

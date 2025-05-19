@@ -145,7 +145,7 @@ MonoBehaviour:
         m_Calls: []
   index: 0
   movingTransform: {fileID: 0}
-  id: 5_1_2
+  id: 6_1_3
 --- !u!1001 &6325118109257299898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -154,6 +154,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4319385625879917467}
     m_Modifications:
+    - target: {fileID: 302316712112845852, guid: 2c18744d441d3ab488a97aa3b7825720, type: 3}
+      propertyPath: m_fontSize
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 653519177174768228, guid: 2c18744d441d3ab488a97aa3b7825720, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -176,9 +180,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4376326751328196532, guid: 2c18744d441d3ab488a97aa3b7825720, type: 3}
       propertyPath: messages.Array.data[0].message
-      value: "\xA1Enhorabuena! Hoy ya eres un Guardi\xE1n del Ciberespacio certificado(a).\nEs
-        momento de descansar, tu misi\xF3n por ahora ha finalizado.\n\xA1Aunque nos
-        vemos pronto! Esta aventura continuar\xE1 en el siguiente cap\xEDtulo\u2026\_"
+      value: "<b>\xA1Enhorabuena!</b> Hoy ya eres un Guardi\xE1n del Ciberespacio
+        certificado(a).\nEs momento de descansar, tu misi\xF3n por ahora ha finalizado.\n<b>\xA1Aunque
+        nos vemos pronto!</b> Esta aventura continuar\xE1 <b>pr\xF3ximamente en la
+        misi\xF3n 2\u2026</b>"
       objectReference: {fileID: 0}
     - target: {fileID: 4376326751328196532, guid: 2c18744d441d3ab488a97aa3b7825720, type: 3}
       propertyPath: messages.Array.data[1].message

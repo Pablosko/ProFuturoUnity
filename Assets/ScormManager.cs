@@ -40,6 +40,9 @@ public class SCORMManager : MonoBehaviour
 
     [DllImport("__Internal")]
     private static extern void downloadPDF(string url);
+
+    [DllImport("__Internal")]
+    private static extern void closeBrowserWindow();
 #else
     // Dummy (falsas) funciones para cuando no estás en WebGL
     private static int initScorm() { Debug.Log("SCORM INIT (Dummy)"); return 1; }
@@ -49,6 +52,7 @@ public class SCORMManager : MonoBehaviour
     private static void saveAvatar(string value) { Debug.Log("SAVE AVATAR (Dummy): " + value); }
     private static string getAvatar() { Debug.Log("GET AVATAR (Dummy)"); return "0"; }
     private static void downloadPDF(string url) { Debug.Log("DOWNLOAD FILE (Dummy): " + url);}
+    private static void closeBrowserWindow() { Debug.Log("CLOSE WINDOW (Dummy)"); }
 #endif
     private void Awake()
     {
@@ -93,6 +97,11 @@ public class SCORMManager : MonoBehaviour
         string fullPath = Application.absoluteURL + relativePath;
         downloadPDF(fullPath);
     }
+
+    public void CloseGame()
+    {
+        closeBrowserWindow();
+    }
     public void ParseSimulation() 
     {
         currentStage = ScormStage.sequencia;
@@ -102,6 +111,11 @@ public class SCORMManager : MonoBehaviour
         int s = 1;
 #if UNITY_WEBGL && !UNITY_EDITOR
         bool encontrado = false;
+        if(PageState("6_1_3") == "C"){
+            encontrado = true;
+            t = 6;
+            s = 3;
+        }
         for (int i = 0; i < pagesTema.Length && !encontrado; i++)
         {
             for (int j = 1; j <= pagesTema[i]; j++)

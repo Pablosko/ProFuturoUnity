@@ -38,5 +38,12 @@ mergeInto(LibraryManager.library, {
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-      }
+   },
+   closeBrowserWindow: function () {
+        if (typeof parent !== 'undefined' && parent.close) {
+            parent.close();
+        } else {
+            alert("Datos guardados, ya puedes cerrar la ventana del navegador.");
+        }
+    }
 });
