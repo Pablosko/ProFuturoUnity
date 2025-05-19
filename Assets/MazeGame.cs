@@ -92,10 +92,12 @@ public class MazeGame : Game
     public void ShowError() 
     {
         paused = true;
+        AudioManager.instance.PlaySFX(AudioManager.instance.minigameFbKo);
         error.SetActive(true);
     }
     public void ShowCorrect(TipoConexion type) 
     {
+        AudioManager.instance.PlaySFX(AudioManager.instance.minigameFbOk);
         paused = true;
         correct.SetActive(true);
         talkingText.gameObject.SetActive(true);
@@ -103,6 +105,7 @@ public class MazeGame : Game
     }
     public void UnPause() 
     {
+        AudioManager.instance.PlaySFX(AudioManager.instance.nextBtn);
         error.SetActive(false);
         correct.SetActive(false);
         paused = false;

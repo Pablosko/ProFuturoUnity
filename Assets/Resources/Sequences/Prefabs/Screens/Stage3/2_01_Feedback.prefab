@@ -273,7 +273,7 @@ PrefabInstance:
     - target: {fileID: 6798658882535422978, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: m_text
       value: "\xA1Genial! \xA1Laberinto descontaminado! \nLos archivos est\xE1n blindados
-        en sus ubicaciones correctas Guardi\xE1n y el Enjambre ya no podr\xE1 con
+        en sus ubicaciones correctas Guardi\xE1n, y el Enjambre ya no podr\xE1 con
         ello. \n\xBFSabes lo que significa eso?"
       objectReference: {fileID: 0}
     - target: {fileID: 6798658882535422978, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
@@ -282,11 +282,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6798658882535422978, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: m_margin.x
-      value: 82.653595
+      value: 0.6307068
       objectReference: {fileID: 0}
     - target: {fileID: 6798658882535422978, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: m_margin.y
       value: -82.32721
+      objectReference: {fileID: 0}
+    - target: {fileID: 6798658882535422978, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
+      propertyPath: m_margin.z
+      value: -3.9586182
       objectReference: {fileID: 0}
     - target: {fileID: 6798658882535422978, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: m_HorizontalAlignment
@@ -342,7 +346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8868250481838295510, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: -116.6544
       objectReference: {fileID: 0}
     - target: {fileID: 8868250481838295510, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: m_SizeDelta.y
@@ -350,7 +354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8868250481838295510, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 34.631683
       objectReference: {fileID: 0}
     - target: {fileID: 8868250481838295510, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -385,6 +389,7 @@ MonoBehaviour:
   sequenceManager: {fileID: 0}
   hasTransition: 1
   id: 3_1_1
+  music: {fileID: 0}
 --- !u!1 &6843037047713153698 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5639810048483558676, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
