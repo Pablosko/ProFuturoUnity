@@ -41,8 +41,20 @@ PrefabInstance:
       value: FinalPremedalla
       objectReference: {fileID: 0}
     - target: {fileID: 1554342196872623103, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554342196872623103, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 5444917664021955498}
+    - target: {fileID: 1554342196872623103, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: End
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554342196872623103, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SequenceBase, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1711005786152017098, guid: 08952a59535c7be40a6afec45a5376a6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -336,5 +348,5 @@ MonoBehaviour:
   sequenceManager: {fileID: 0}
   hasTransition: 0
   id: 6_1_3
-  music: {fileID: 8300000, guid: 8e3bd5ed85ac4034d89d1feebff2f620, type: 3}
+  music: {fileID: 0}
   autoSkip: 0

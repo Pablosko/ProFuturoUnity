@@ -23,6 +23,7 @@ public class UnlockMedal : MonoBehaviour
     {
         audioManager.PlaySFX(audioManager.winMedal);
         HudController.instance.header.SetMedalState(number - 1, true);
+        Home.instance.CompleteStage(number);
     }
 
 }

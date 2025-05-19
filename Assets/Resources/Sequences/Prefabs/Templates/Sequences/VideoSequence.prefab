@@ -122,4 +122,6 @@ MonoBehaviour:
   sequenceManager: {fileID: 0}
   hasTransition: 1
   id: 6_1_2
+  music: {fileID: 8300000, guid: 8e3bd5ed85ac4034d89d1feebff2f620, type: 3}
+  autoSkip: 0
   videoName: video_cierre_t5

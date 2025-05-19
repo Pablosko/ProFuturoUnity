@@ -1,7 +1,12 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
-
+public enum stageState 
+{
+    bloqued,
+    unlocked,
+    completed
+}
 public class HomeStageUI : MonoBehaviour
 {
     public RectTransform cameraTravel;
@@ -15,11 +20,11 @@ public class HomeStageUI : MonoBehaviour
     public Button navigateButton;
     public UnityEvent startEvent;
     public GameObject miniGame;
-    public GameObject aura;
     public int temario;
     public SubSequenceManager subsequenceManager;
     AudioManager audioManager;
-
+    public stageState state;
+    public GameObject completedImage;
     void Awake()
     {
         Image img = GetComponent<Image>();
@@ -31,15 +36,26 @@ public class HomeStageUI : MonoBehaviour
     {
         playerAnim.gameObject.GetComponent<Image>().sprite = HudController.instance.header.spawnedAvatar;
     }
+    public void SetComplete() 
+    {
+        state = stageState.completed;
+        animator.SetBool("Completed", true);
+        animator.SetBool("Blocked", false);
+        animator.SetBool("Unlocked", false);
+        completedImage.gameObject.SetActive(true);
+    }
     public void StartSubSequence() 
     {
         subsequenceManager.StartSubSequence();
     }
-    public void SetClickable() 
+    public void SetUnlocked() 
     {
-        animator.SetBool("Clickable", true);
-        animator.SetBool("Unlocked", false);
-        aura.SetActive(true);
+        if (state == stageState.completed)
+            return;
+        animator.SetBool("Completed", false);
+        animator.SetBool("Blocked", false);
+        animator.SetBool("Unlocked", true);
+        completedImage.gameObject.SetActive(false);
     }
     public void MoveTo() 
     {
@@ -50,19 +66,17 @@ public class HomeStageUI : MonoBehaviour
     {
         navigateButton.enabled = state;
     }
-    public void SetUnlock() 
+    public void SetBlocked() 
     {
-        if (!HudController.instance.header.HasMedal(temario))
+        if (state == stageState.completed)
             return;
-        animator.SetBool("Clickable", false);
-        animator.SetBool("Unlocked", true);
-        animator.StopPlayback();
-        aura.SetActive(false);
-        effectImge.color = new Color(0, 0, 0, 0);
+        animator.SetBool("Completed", false);
+        animator.SetBool("Blocked", true);
+        animator.SetBool("Unlocked", false);
     }
     public void ArriveSite()
     {
-        SetUnlock();
+        SetBlocked();
         playerAnim.SetTrigger("Alpha0to1");
         buttons.SetActive(true);
 
