@@ -42,6 +42,8 @@ public class ComputerText : MonoBehaviour
             onEndTyping?.Invoke();
             yield break;
         }
+        if(text != "")
+        AudioManager.instance.PlaySFXLoop(speakAudio);
 
         float timePerChar = 1f / speed;
         float nextCharTime = Time.time;
@@ -87,6 +89,7 @@ public class ComputerText : MonoBehaviour
         isTyping = false;
         endType = true;
         onEndTyping?.Invoke();
+        AudioManager.instance.StopFX();
     }
 
     public void Skip()

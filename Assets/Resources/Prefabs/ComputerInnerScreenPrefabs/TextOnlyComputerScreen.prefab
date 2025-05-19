@@ -219,13 +219,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiText: {fileID: 984214110628157380}
   message: Hola, este es el mensaje.
-  speed: 75
+  speed: 150
   instant: 0
   onEndTyping:
     m_PersistentCalls:
       m_Calls: []
   tagCongifs: {fileID: 11400000, guid: 833b0f1369fab4c47b5a6a355a116c8a, type: 2}
   endType: 0
+  speakAudio: {fileID: 8300000, guid: 244951c1a3024224bb7f22ea3869b67d, type: 3}
 --- !u!1 &3447282527880764558
 GameObject:
   m_ObjectHideFlags: 0
