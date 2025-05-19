@@ -253,11 +253,12 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   miniGame: {fileID: 0}
-  aura: {fileID: 5551666198713162189}
   temario: 1
   subsequenceManager: {fileID: 7228173647855354073}
   state: 0
   completedImage: {fileID: 9153751597877581911}
+  aura: {fileID: 5551666198713162189}
+  completedColor: {r: 0.17202853, g: 0.9528302, b: 0.1033731, a: 1}
 --- !u!95 &441249170847023008
 Animator:
   serializedVersion: 7

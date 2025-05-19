@@ -25,6 +25,8 @@ public class HomeStageUI : MonoBehaviour
     AudioManager audioManager;
     public stageState state;
     public GameObject completedImage;
+    public GameObject aura;
+    public Color completedColor;
     void Awake()
     {
         Image img = GetComponent<Image>();
@@ -39,6 +41,8 @@ public class HomeStageUI : MonoBehaviour
     public void SetComplete() 
     {
         state = stageState.completed;
+        aura.SetActive(true);
+        aura.GetComponent<Image>().color = completedColor;
         animator.SetBool("Completed", true);
         animator.SetBool("Blocked", false);
         animator.SetBool("Unlocked", false);
@@ -50,8 +54,10 @@ public class HomeStageUI : MonoBehaviour
     }
     public void SetUnlocked() 
     {
-        if (state == stageState.completed)
+        if (state != stageState.bloqued)
             return;
+        state = stageState.unlocked;
+
         animator.SetBool("Completed", false);
         animator.SetBool("Blocked", false);
         animator.SetBool("Unlocked", true);
@@ -68,8 +74,11 @@ public class HomeStageUI : MonoBehaviour
     }
     public void SetBlocked() 
     {
-        if (state == stageState.completed)
+
+        if (state != stageState.bloqued)
             return;
+        state = stageState.bloqued;
+
         animator.SetBool("Completed", false);
         animator.SetBool("Blocked", true);
         animator.SetBool("Unlocked", false);

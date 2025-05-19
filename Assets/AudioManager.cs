@@ -81,7 +81,12 @@ public class AudioManager : MonoBehaviour
         SFXSource.loop = false;
         SFXSource.pitch = 1f;
     }
-
+    public void StopMusic()
+    {
+        musicSource.Stop();
+        musicSource.loop = false;
+        musicSource.pitch = 1f;
+    }
     public void SetMasterVolume(float volume)
     {
         float v = Mathf.Log10(Mathf.Clamp(volume, 0.0001f, 1f)) * 20f;

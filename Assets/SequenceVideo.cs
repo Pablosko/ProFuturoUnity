@@ -7,7 +7,7 @@ public class SequenceVideo : SequenceBase
     public string videoName = "intro_trailer_profuturo_v3";
 
     private bool finished = false;
-
+    public bool stopMusicEnd;
     public override void OnStart(SequenceManager sm)
     {
         base.OnStart(sm);
@@ -32,7 +32,12 @@ public class SequenceVideo : SequenceBase
 #endif
         End();
     }
-
+    protected override void OnEnd()
+    {
+        base.OnEnd();
+        if(stopMusicEnd)
+        AudioManager.instance.StopMusic();
+    }
     public void FinishFromHTML()
     {
         if (autoSkip)

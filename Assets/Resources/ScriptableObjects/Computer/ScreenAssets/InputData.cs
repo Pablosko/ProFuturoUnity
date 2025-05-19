@@ -186,7 +186,7 @@ public struct InputData
         System.Random rng = new System.Random();
 
         // Procesar tags básicos
-        MatchCollection matches = Regex.Matches(pattern, @"<(numbers|letters|any)=(\d+)>");
+        MatchCollection matches = Regex.Matches(pattern, @"<(numbers|letters|any|special)=(\d+)>");
         foreach (Match match in matches)
         {
             string type = match.Groups[1].Value;
@@ -200,6 +200,7 @@ public struct InputData
                     "letters" => char.IsLetter(c),
                     "numbers" => char.IsDigit(c),
                     "any" => true,
+                    "special" => "@#%&$".Contains(c),
                     _ => false
                 };
 
