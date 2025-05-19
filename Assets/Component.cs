@@ -86,6 +86,7 @@ public class InputComponent : Component
     [HideInInspector]
     public InputData inputData;
     private Coroutine blinkCoroutine;
+    public List<AudioClip> effectClicks;
     public override void Start()
     {
         base.Start();
@@ -137,8 +138,14 @@ public class InputComponent : Component
     {
         return base.CanProgress() && IsInputCorrect();
     }
+    public void TriggerSoundEffect() 
+    {
+        if (effectClicks.Count > 0 )
+            AudioManager.instance.PlaySFX(effectClicks[Random.Range(0, effectClicks.Count)]);
+    }
     public void AddDataToScreen(string data) 
     {
+ 
         foreach (ScreenComponent screen in screens)
         {
             if (data == "")

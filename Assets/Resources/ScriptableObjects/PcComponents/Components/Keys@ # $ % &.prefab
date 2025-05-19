@@ -113,6 +113,11 @@ MonoBehaviour:
     typeEffect: 
     alwaysPass: 0
     DontForceUppercase: 0
+    ForceLowerCase: 0
+  effectClicks:
+  - {fileID: 8300000, guid: 2c1ea659762271d488585cc4dd93ef94, type: 3}
+  - {fileID: 8300000, guid: 3ed6a7132bebd2a4e9ba011f5825cf8e, type: 3}
+  - {fileID: 8300000, guid: 17ea251fb035b0647aaffb9f2310ffb4, type: 3}
   keys:
   - '@'
   - '#'

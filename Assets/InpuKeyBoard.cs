@@ -1,3 +1,5 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class InpuKeyBoard : InputComponent
@@ -38,10 +40,13 @@ public class InpuKeyBoard : InputComponent
                 {
                     processedChar = char.ToUpper(c);
                 }
+                if (char.IsLetter(c) && inputData.ForceLowerCase)
+                    processedChar = char.ToLower(c);
 
+            
                 currentInput += processedChar;
             }
-
+            TriggerSoundEffect();
             // Siempre aplicar parseo y actualizar pantalla
             inputData.ParseInput(ref currentInput);
             SetDataToScreen(currentInput);

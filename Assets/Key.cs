@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Windows;
 
 public class Key : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class Key : MonoBehaviour
     }
     public void Click() 
     {
+            input.TriggerSoundEffect();
         button.interactable = false;
         input.AddDataToScreen(text.text);
     }

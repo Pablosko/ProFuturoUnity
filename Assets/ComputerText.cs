@@ -16,6 +16,7 @@ public class ComputerText : MonoBehaviour
     private string processedText;
     private bool isTyping = false;
     public bool endType = false;
+    public AudioClip speakAudio;
 
     public void StartType(string text,Computer cpu)
     {

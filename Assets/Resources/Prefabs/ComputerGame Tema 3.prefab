@@ -536,6 +536,8 @@ MonoBehaviour:
   incorrectUp: {fileID: 6606942175498295780, guid: 3695fa9c41b4c3445b3f52c617322edf, type: 3}
   index: 0
   hardcodedNumberOneTime: 0
+  fail: {fileID: 8300000, guid: e9f2f033aa4f59b4cb9d2a7b85bd5243, type: 3}
+  correct: {fileID: 8300000, guid: b554a0882111a034785b994368ed252e, type: 3}
 --- !u!224 &6503913052938918106 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6669346029487358713, guid: 5417a6fef568c964abbf6b15db6b6d22, type: 3}

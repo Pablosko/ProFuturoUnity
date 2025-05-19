@@ -41,7 +41,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1062.57, y: 45.2745}
+  m_SizeDelta: {x: 1062.57, y: 67.91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3912141552391291573
 MonoBehaviour:
@@ -69,6 +69,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fff4c6dc7abd244993c4a84f15cb6de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cpu: {fileID: 0}
   continueButton: {fileID: 1720724948674997950}
   backButton: {fileID: 8826061877796439676}
   progressionObjects: []
@@ -134,6 +135,7 @@ GameObject:
   - component: {fileID: 6089752482088190867}
   - component: {fileID: 6778128638624994571}
   - component: {fileID: 8826061877796439676}
+  - component: {fileID: 678329188873746559}
   m_Layer: 0
   m_Name: ArrrowLeft
   m_TagString: Untagged
@@ -158,7 +160,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -0.4319992}
-  m_SizeDelta: {x: 60, y: 43}
+  m_SizeDelta: {x: 90, y: 64.5}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &6089752482088190867
 CanvasRenderer:
@@ -254,6 +256,31 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 678329188873746559}
+        m_TargetAssemblyTypeName: buttonSound, Assembly-CSharp
+        m_MethodName: TriggerSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &678329188873746559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4731750045150940130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8e15efda289d9e4e882021aab7793e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: ca65ef7ba5643244fa229faf0b10b1f6, type: 3}
 --- !u!1 &5704686894488273320
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,6 +294,7 @@ GameObject:
   - component: {fileID: 4334732305719952381}
   - component: {fileID: 1720724948674997950}
   - component: {fileID: 4199763047825999087}
+  - component: {fileID: 6332251104097462579}
   m_Layer: 0
   m_Name: ArrowRigth
   m_TagString: Untagged
@@ -291,7 +319,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0.97998047, y: -0.4319992}
-  m_SizeDelta: {x: 60, y: 43}
+  m_SizeDelta: {x: 90, y: 64.5}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &6343970072701752679
 CanvasRenderer:
@@ -387,6 +415,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 678329188873746559}
+        m_TargetAssemblyTypeName: buttonSound, Assembly-CSharp
+        m_MethodName: TriggerSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!95 &4199763047825999087
 Animator:
   serializedVersion: 7
@@ -409,6 +449,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6332251104097462579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5704686894488273320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8e15efda289d9e4e882021aab7793e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: ca65ef7ba5643244fa229faf0b10b1f6, type: 3}
 --- !u!1 &8388771380593057326
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,10 +494,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 4176812402499591232}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 531.77, y: -22.864006}
-  m_SizeDelta: {x: 943.55, y: 43}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.77001953, y: 0}
+  m_SizeDelta: {x: 943.55005, y: 43}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &709809669126220157
 CanvasRenderer:

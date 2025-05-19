@@ -49,6 +49,8 @@ public class Computer : Game
     int currentProgram;
     bool canProgress;
     public bool hardcodedNumberOneTime;
+    public AudioClip fail;
+    public AudioClip correct;
     public override void Start()
     {
         base.Start();
@@ -173,6 +175,7 @@ public class Computer : Game
 
     public void SetCorrectFeedBack(ComputerScreenAsset screenData)
     {
+        AudioManager.instance.PlaySFX(correct);
         upScreenImage.sprite = correctUp;
         lowScreenImage.sprite = correctDown;
         GetCurrentProgram().SetComponentsFeedBack(screenData, true);
@@ -180,11 +183,12 @@ public class Computer : Game
 
     public void SetInCorrectFeedBack(ComputerScreenAsset screenData)
     {
+        AudioManager.instance.PlaySFX(correct);
         upScreenImage.sprite = incorrectUp;
         lowScreenImage.sprite = incorrectDown;
         GetCurrentProgram().SetComponentsFeedBack(screenData, false);
         if (screenData.temporalFeedBack)
-            Invoke(nameof(RefresScreen), 0.5f);
+            Invoke(nameof(RefresScreen), 2f);
     }
 
     public void SetNormalFeedBack()

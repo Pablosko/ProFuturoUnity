@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      maze-tuto-bg_0: -5905409269802362588
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

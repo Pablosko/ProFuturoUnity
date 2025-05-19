@@ -24,6 +24,7 @@ public struct InputData
     public string typeEffect;
     public bool alwaysPass;
     public bool DontForceUppercase;
+    public bool ForceLowerCase;
     public bool IsValid => !string.IsNullOrEmpty(expectedInput) || (options != null && options.Count > 0 && !string.IsNullOrEmpty(correctOption));
     public bool CanType(string currentInput,Computer cpu)
     {
@@ -238,20 +239,6 @@ public struct InputData
                 result = result.Insert(insertPos, randomDigit.ToString());
             }
         }
-
-        // <special=N>
-        Match specialMatch = Regex.Match(pattern, @"<special=(\d+)>");
-        if (specialMatch.Success)
-        {
-            int count = int.Parse(specialMatch.Groups[1].Value);
-            char[] specials = new char[] { '@', '#', '$', '%', '&' };
-            for (int i = 0; i < count; i++)
-            {
-                char special = specials[rng.Next(specials.Length)];
-                result += special;
-            }
-        }
-
         input = result;
     }
 
