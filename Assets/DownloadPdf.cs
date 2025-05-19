@@ -3,8 +3,9 @@ using UnityEngine;
 
 public class DownloadPdf : MonoBehaviour
 {
+    public string pdf;
     public void DownloadPDF() 
     {
-        SCORMManager.instance.DownloadPDF("PDF-T5-5.1.6");
+        SCORMManager.instance.DownloadPDF(pdf);
     }
 }

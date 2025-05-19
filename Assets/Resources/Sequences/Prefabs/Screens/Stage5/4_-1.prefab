@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49529738ef5066845a4f49ea8c999274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pdf: PDF-T5-5.1.6
 --- !u!1001 &6207865425391118836
 PrefabInstance:
   m_ObjectHideFlags: 0
