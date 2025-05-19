@@ -9,12 +9,12 @@ public class AnimatedSequence : SequenceBase
  
     public override void OnStart(SequenceManager sm)
     {
-        base.OnStart(sm);
         currentDuration = 0;
         if (gameObject.name == "01_MovingShip(Clone)")
         {            
             AudioManager.instance.PlaySFX(AudioManager.instance.spaceship);
         }
+        base.OnStart(sm);
     }
 
     public override void Update()

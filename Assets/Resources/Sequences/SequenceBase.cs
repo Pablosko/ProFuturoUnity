@@ -6,10 +6,12 @@ public class SequenceBase : MonoBehaviour
     public bool hasTransition;
     public string id;
     public AudioClip music;
+    public bool autoSkip;
     public virtual void Awake()
     {
         if(music != null)
-        AudioManager.instance.PlayMusic(music);  
+        AudioManager.instance.PlayMusic(music);
+
     }
 
     private void Start() 
@@ -20,6 +22,8 @@ public class SequenceBase : MonoBehaviour
     {
         sequenceManager = sm;
         SCORMManager.instance.InitPage(id);
+        if (autoSkip)
+            LoadNextSequence();
     }
     public virtual void Update()
     {
