@@ -72,6 +72,10 @@ PrefabInstance:
       propertyPath: m_margin.y
       value: -14.797928
       objectReference: {fileID: 0}
+    - target: {fileID: 3263837069614759608, guid: 557c07b6c3e58a84b96b35c6115a7a38, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3683319082788780552, guid: 557c07b6c3e58a84b96b35c6115a7a38, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -739,7 +743,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8393267641738568253, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_margin.w
-      value: -10.514267
+      value: -30.692703
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
