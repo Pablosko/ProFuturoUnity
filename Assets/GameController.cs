@@ -96,13 +96,17 @@ public class GameController : MonoBehaviour
     {
         ClearAll();
         Home.instance.gameObject.SetActive(true);
-        Home.instance.SetStageClickable(stage);
+        Home.instance.UnlockStage(stage);
         Home.instance.currentStage = stage;
         Home.instance.SetStageUnlocks();
         HudController.instance.header.SetAllMedals(stage - 1);
+        Home.instance.MoveCameraToFullView();
     }
     public void GoHome() 
     {
+        ClearAll();
+        Home.instance.gameObject.SetActive(true);
+        Home.instance.MoveCameraToFullView();
     }
     public void Exit() 
     {

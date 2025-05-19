@@ -22,7 +22,7 @@ public class HeaderUI : MonoBehaviour
     {
         medalsUI[index].sprite = unlocked == true ? medals[index] : notActiveMedal;
         if(unlocked)
-            Home.instance.SetUnlocked(index + 1);
+            Home.instance.CompleteStage(index + 1);
     }
     private void OnValidate()
     {

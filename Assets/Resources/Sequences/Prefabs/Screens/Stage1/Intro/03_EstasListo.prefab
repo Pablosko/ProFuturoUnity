@@ -530,12 +530,16 @@ PrefabInstance:
       value: ButtonLarge
       objectReference: {fileID: 0}
     - target: {fileID: 6299311640502893546, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -29.0239
+      objectReference: {fileID: 0}
+    - target: {fileID: 6299311640502893546, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6299311640502893546, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 6.2
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 7261783393836562062, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size

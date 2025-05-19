@@ -28,7 +28,7 @@ public class Home : MonoBehaviour
         SetNavegableState(false);
         for (int i = 0; i < currentStage; i++)
         {
-            SetUnlocked(i + 1);
+            CompleteStage(i + 1);
         }
     }
     public void StartStage(int stage)
@@ -59,14 +59,14 @@ public class Home : MonoBehaviour
             stageUI.SetNavigable(state);
         }
     }
-    public void SetStageClickable(int stage)
+    public void UnlockStage(int stage)
     {
-        homeStagesUI[stage - 1].SetClickable();
+        homeStagesUI[stage - 1].SetUnlocked();
         homeStagesUI[stage - 1].SetNavigable(true);
     }
-    public void SetUnlocked(int stage)
+    public void CompleteStage(int stage)
     {
-        homeStagesUI[stage - 1].SetUnlock();
+        homeStagesUI[stage - 1].SetComplete();
         homeStagesUI[stage - 1].SetNavigable(true);
     }
 

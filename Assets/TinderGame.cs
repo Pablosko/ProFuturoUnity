@@ -174,7 +174,7 @@ public class TinderGame : Game
 public class Game : MonoBehaviour 
 {
     public int stageGame;
-    public string id;
+    public string id;   
     protected bool paused;
     public virtual void Start()
     {
@@ -187,6 +187,7 @@ public class Game : MonoBehaviour
         Destroy(gameObject);
         Home.instance.gameObject.SetActive(true);
         Home.instance.StartStage(stageGame+ 1);
+        Home.instance.CompleteStage(stageGame);
     }
 
 }
