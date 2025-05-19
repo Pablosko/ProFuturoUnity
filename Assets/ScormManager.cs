@@ -96,7 +96,7 @@ public class SCORMManager : MonoBehaviour
     public void ParseSimulation() 
     {
         currentStage = ScormStage.sequencia;
-        var pagesTema = new int[] { 20, 17, 11, 11, 16, 2 };
+        var pagesTema = new int[] { 20, 17, 11, 11, 16, 3 };
         int avatarTest = 0;        
         int t = 0;
         int s = 1;
