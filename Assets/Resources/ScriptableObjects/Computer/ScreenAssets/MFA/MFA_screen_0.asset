@@ -13,15 +13,24 @@ MonoBehaviour:
   m_Name: MFA_screen_0
   m_EditorClassIdentifier: 
   screenPrefab: {fileID: 3112471921619178224, guid: 04ae72e9767eb7f4a9fc5271972e456d, type: 3}
-  text: "Muy bien org\xE1nico(a), veo que aprendes r\xE1pido, pero te queda la prueba
+  text: "Muy bien guardi\xE1n, veo que aprendes r\xE1pido, pero te queda la prueba
     final: Conocer qu\xE9 es el <b>MFA</b> o Authentication MultiFactor."
   inputData:
     expectedInput: 
     startInput: 
     endInput: 
-    addSpaces: 0
+    capped: 0
     options: []
+    registers: []
     correctOption: 
+    typed: 0
+    typeEffect: 
+    alwaysPass: 0
+    DontForceUppercase: 0
+    ForceLowerCase: 0
   image: {fileID: 0}
   feedbackCorrectText: 
+  temporalFeedBack: 0
   feedbackIncorrectText: 
+  cpu: {fileID: 0}
+  overrideConfiguration: {fileID: 0}
