@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3051c07d25d366f4993298e5e7421d50, type: 3}
   m_Name: Tema4_2_Selection
   m_EditorClassIdentifier: 
-  mainText: "<b>\xBFQu\xE9 significa que la comunicaci\xF3n de mis dispositivos sea
-    segura?</b>\r\n\r\nImagina que est\xE1s escribiendo un <b>mensaje muy personal
-    a un ser querido.</b> \xBFPreferir\xEDas enviar ese mensaje en una <b>postal</b>
-    que todos pueden leer en la oficina de correos, o en un <b>sobre cerrado</b>
-    que s\xF3lo el destinatario puede abrir?"
+  mainText: "Imagina que est\xE1s escribiendo un <b>mensaje muy personal a un ser
+    querido.</b> \xBFPreferir\xEDas enviar ese mensaje en una <b>postal</b> que todos
+    pueden leer en la oficina de correos, o en un <b>sobre cerrado</b> que s\xF3lo
+    el destinatario puede abrir?"
   rightOption: Un sobre cerrado
   leftOption: Una postal
   rigthCorrect: 1

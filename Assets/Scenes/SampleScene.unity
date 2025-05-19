@@ -833,7 +833,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b732a5f9eb35784fa3f523da7be49ce, type: 3}
   m_Name: 
@@ -1567,6 +1567,21 @@ PrefabInstance:
     - target: {fileID: 745355017565315545, guid: 0649f0af9ca193e4a85109034d7abb39, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -45.099987
+      objectReference: {fileID: 0}
+    - target: {fileID: 959586135176830794, guid: 0649f0af9ca193e4a85109034d7abb39, type: 3}
+      propertyPath: messages.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 959586135176830794, guid: 0649f0af9ca193e4a85109034d7abb39, type: 3}
+      propertyPath: messages.Array.data[0].message
+      value: "El ENJAMBRE lanz\xF3 su ataque final: est\xE1n corrompiendo los n\xFAcleos
+        de <b>Gesti\xF3n de Contrase\xF1as.</b> \xA1Sin esto, la nave NUNCA despegar\xE1!
+        Te necesitamos ya.\r\n\r\xBFAceptas el desaf\xEDo para poder as\xED activar
+        la nave? Algo grande nos espera.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 959586135176830794, guid: 0649f0af9ca193e4a85109034d7abb39, type: 3}
+      propertyPath: messages.Array.data[0].nextmessage
+      value: "\xA1Vamos por la \xFAltima insignia!"
       objectReference: {fileID: 0}
     - target: {fileID: 959586135176830794, guid: 0649f0af9ca193e4a85109034d7abb39, type: 3}
       propertyPath: 'messages.Array.data[1].activationObjects.Array.data[0]'
@@ -2559,15 +2574,19 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 959586135176830794, guid: 0649f0af9ca193e4a85109034d7abb39, type: 3}
+      propertyPath: messages.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 959586135176830794, guid: 0649f0af9ca193e4a85109034d7abb39, type: 3}
       propertyPath: messages.Array.data[0].message
-      value: "El ENJAMBRE lanz\xF3 su ataque final: est\xE1n corrompiendo los n\xFAcleos
-        de <b>Gesti\xF3n de Contrase\xF1as.</b> \xA1Sin esto, la nave NUNCA despegar\xE1!
-        Te necesitamos ya.\r\n\r\n\xBFAceptas el desaf\xEDo para poder as\xED activar
-        la nave? Algo grande nos espera.\r\n"
+      value: "La Academia Estelar no se esperaba este nivel\u2026 \xA1Bravo! Pero
+        \xA1el ENJAMBRE est\xE1 atacando como nunca! Necesitamos tu ayuda en la secci\xF3n
+        4: <b>Protocolos de autenticaci\xF3n segura.</b> Es momento de demostrar
+        de qu\xE9 est\xE1s hecho(a)."
       objectReference: {fileID: 0}
     - target: {fileID: 959586135176830794, guid: 0649f0af9ca193e4a85109034d7abb39, type: 3}
       propertyPath: messages.Array.data[0].nextmessage
-      value: "\xA1Vamos por la \xFAltima insignia!"
+      value: "\xA1Voy con todo!"
       objectReference: {fileID: 0}
     - target: {fileID: 959586135176830794, guid: 0649f0af9ca193e4a85109034d7abb39, type: 3}
       propertyPath: 'messages.Array.data[1].activationObjects.Array.data[0]'
