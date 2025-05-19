@@ -13,18 +13,29 @@ MonoBehaviour:
   m_Name: MFA_screen_9
   m_EditorClassIdentifier: 
   screenPrefab: {fileID: 3112471921619178224, guid: 04ae72e9767eb7f4a9fc5271972e456d, type: 3}
-  text: "Escenario 3:\nMar\xEDa debe ingresar un PIN de 6 d\xEDgitos.\n\xBFQu\xE9
-    se utiliza para la verificaci\xF3n?"
+  text: "<b>Escenario 3:</b>\r\nPara desbloquear su computadora port\xE1til, Mar\xEDa
+    debe ingresar un PIN de 6 d\xEDgitos.\r\n<b>Pregunta:</b> \xBFQu\xE9 se utiliza
+    para la verificaci\xF3n?"
   inputData:
     expectedInput: 
     startInput: 
     endInput: 
-    addSpaces: 0
+    capped: 0
     options:
     - Un token USB
     - "Un PIN de 6 d\xEDgitos"
+    registers: []
     correctOption: "Un PIN de 6 d\xEDgitos"
+    typed: 0
+    typeEffect: 
+    alwaysPass: 0
+    DontForceUppercase: 0
   image: {fileID: 0}
-  feedbackCorrectText: "<b>\xA1Correcto!</b> El PIN es un ejemplo de <b>\"\xBFQu\xE9
-    conoces?\"</b>."
-  feedbackIncorrectText: Incorrecto. No se menciona un token USB.
+  feedbackCorrectText: "<b>Respuesta Correcta:</b> Opci\xF3n B: Un PIN de 6 d\xEDgitos\r\nUn
+    PIN de 6 d\xEDgitos: \xA1Correcto! El PIN de 6 d\xEDgitos es un ejemplo de \"\xBFQu\xE9
+    conoces?\", ya que es informaci\xF3n que Mar\xEDa debe memorizar.\r"
+  temporalFeedBack: 0
+  feedbackIncorrectText: "<b>Respuesta Incorrecta:</b>\r\nUn token USB: Incorrecto.
+    No se menciona el uso de un token USB en este escenario.\r"
+  cpu: {fileID: 0}
+  overrideConfiguration: {fileID: 0}

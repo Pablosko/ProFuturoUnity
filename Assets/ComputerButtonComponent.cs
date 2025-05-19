@@ -42,6 +42,7 @@ public class ComputerButtonComponent : Component
     }
     public void SendDataToComputer()
     {
+        AudioManager.instance.PlaySFX(AudioManager.instance.nextBtn);
         cpu.LoadNext();
     }
     public override void SetRefreshFeedBack(ComputerScreenAsset screenData)

@@ -13,18 +13,29 @@ MonoBehaviour:
   m_Name: MFA_screen_8
   m_EditorClassIdentifier: 
   screenPrefab: {fileID: 3112471921619178224, guid: 04ae72e9767eb7f4a9fc5271972e456d, type: 3}
-  text: "Escenario 2:\nLuis debe escanear su huella digital.\n\xBFQu\xE9 se utiliza
-    para la verificaci\xF3n?"
+  text: "<b>Escenario 2:</b>\r\nAl intentar iniciar sesi\xF3n en una aplicaci\xF3n
+    de Profuturo, Luis debe escanear su huella digital en su tel\xE9fono.\r\n\xBFQu\xE9
+    se utiliza para la verificaci\xF3n en este caso?\r"
   inputData:
     expectedInput: 
     startInput: 
     endInput: 
-    addSpaces: 0
+    capped: 0
     options:
     - "El PIN del tel\xE9fono"
     - La huella digital
+    registers: []
     correctOption: La huella digital
+    typed: 0
+    typeEffect: 
+    alwaysPass: 0
+    DontForceUppercase: 0
   image: {fileID: 0}
-  feedbackCorrectText: "<b>\xA1Correcto!</b> La huella digital es un ejemplo de <b>\"\xBFQu\xE9
-    eres?\"</b>."
-  feedbackIncorrectText: Incorrecto. Se especifica que se usa la huella, no el PIN.
+  feedbackCorrectText: "<b>Respuesta Correcta:</b> Opci\xF3n B: La huella digital\r\nLa
+    huella digital: <b>\xA1Correcto!</b> La huella digital es un ejemplo de \"\xBFQu\xE9
+    eres?\", ya que es una caracter\xEDstica biom\xE9trica \xFAnica de Luis."
+  temporalFeedBack: 0
+  feedbackIncorrectText: "<b>Respuesta Incorrecta:</b>\r\nEl PIN del tel\xE9fono:
+    Incorrecto. Se especifica que se utiliza la huella digital, no el PIN.\r\n"
+  cpu: {fileID: 0}
+  overrideConfiguration: {fileID: 0}

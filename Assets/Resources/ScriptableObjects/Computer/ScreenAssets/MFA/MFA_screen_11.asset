@@ -13,15 +13,24 @@ MonoBehaviour:
   m_Name: MFA_screen_11
   m_EditorClassIdentifier: 
   screenPrefab: {fileID: 3112471921619178224, guid: 04ae72e9767eb7f4a9fc5271972e456d, type: 3}
-  text: "\xA1Enhorabuena! Has conseguido un gran conocimiento y con ello\u2026 <b>\xA1GUARDI\xC1N
-    DE LA CIBERSEGURIDAD!</b>"
+  text: "\xA1Enhorabuena! Has conseguido un gran conocimiento y con ello\u2026 No
+    solo mi confianza estelar, sino el m\xE9rito de poder empezarte a llamar en alto
+    <b>\xA1GUARDI\xC1N DE LA CIBERSEGURIDAD!</b>"
   inputData:
     expectedInput: 
     startInput: 
     endInput: 
-    addSpaces: 0
+    capped: 0
     options: []
+    registers: []
     correctOption: 
+    typed: 0
+    typeEffect: 
+    alwaysPass: 0
+    DontForceUppercase: 0
   image: {fileID: 0}
   feedbackCorrectText: 
+  temporalFeedBack: 0
   feedbackIncorrectText: 
+  cpu: {fileID: 0}
+  overrideConfiguration: {fileID: 0}
