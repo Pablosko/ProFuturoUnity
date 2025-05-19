@@ -607,7 +607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8393267641738568253, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_margin.w
-      value: -7.3529053
+      value: -31.074738
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

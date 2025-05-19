@@ -40,6 +40,10 @@ mergeInto(LibraryManager.library, {
         document.body.removeChild(link);
    },
    closeBrowserWindow: function () {
-        window.close();
+        if (typeof parent !== 'undefined' && parent.close) {
+            parent.close();
+        } else {
+            alert("Datos guardados, ya puedes cerrar la ventana del navegador.");
+        }
     }
 });

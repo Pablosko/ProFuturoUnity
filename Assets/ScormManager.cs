@@ -111,6 +111,11 @@ public class SCORMManager : MonoBehaviour
         int s = 1;
 #if UNITY_WEBGL && !UNITY_EDITOR
         bool encontrado = false;
+        if(PageState("6_1_3") == "C"){
+            encontrado = true;
+            t = 6;
+            s = 3;
+        }
         for (int i = 0; i < pagesTema.Length && !encontrado; i++)
         {
             for (int j = 1; j <= pagesTema[i]; j++)
