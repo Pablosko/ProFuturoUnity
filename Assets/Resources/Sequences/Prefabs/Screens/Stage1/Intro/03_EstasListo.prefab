@@ -170,7 +170,7 @@ PrefabInstance:
         ENJAMBRE SOMBR\xCDO para salvar la galaxia Profuturo...</b>\L\r\nPero antes
         de iniciar este viaje retador junto con el resto de equipo, debes integrar
         los conceptos b\xE1sicos que todo guardi\xE1n legendario(a) debe portar dentro.\L\L\r\n\xBFSer\xE1s
-        capaz de conseguirlo?."
+        capaz de conseguirlo?"
       objectReference: {fileID: 0}
     - target: {fileID: 7458210948524299305, guid: cdf7b6d05cfb3b74284992497a3bcd27, type: 3}
       propertyPath: m_Pivot.x
