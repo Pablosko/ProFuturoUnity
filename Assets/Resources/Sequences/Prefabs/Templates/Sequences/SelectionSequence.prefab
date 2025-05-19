@@ -308,6 +308,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonExtraLarge
       objectReference: {fileID: 0}
+    - target: {fileID: 4544564270096040037, guid: f28d37b3a51228e458739e7574c434ba, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6299311640502893546, guid: f28d37b3a51228e458739e7574c434ba, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0.2800293
