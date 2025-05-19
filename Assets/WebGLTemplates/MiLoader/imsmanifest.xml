@@ -11,7 +11,7 @@
 			<imsmd:general>
 				<imsmd:identifier>12101</imsmd:identifier>
 				<imsmd:title>
-					<imsmd:langstring xml:lang="es">Act 1: Guardianes del ciberespacio</imsmd:langstring>
+					<imsmd:langstring xml:lang="es">Primera misión: Guardianes del ciberespacio</imsmd:langstring>
 				</imsmd:title>
 				<imsmd:language>esp</imsmd:language>
 			</imsmd:general>
@@ -19,9 +19,9 @@
 	</metadata>
 	<organizations default="ORG-12101">
 		<organization identifier="ORG-12101" structure="hierarchical">
-			<title>Act 1: Guardianes del ciberespacio</title>
+			<title>Primera misión: Guardianes del ciberespacio</title>
 			<item identifier="ITEM-12101" identifierref="RES-12101" isvisible="true">
-				<title>Act 1: Guardianes del ciberespacio</title>
+				<title>Primera misión:: Guardianes del ciberespacio</title>
 			</item>
 		</organization>
 	</organizations>
