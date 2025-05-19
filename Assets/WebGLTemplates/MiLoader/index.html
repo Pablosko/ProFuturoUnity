@@ -8,6 +8,7 @@
         html, body {
             margin: 0;
             padding: 0;
+            width: 100%;
             height: 100%;
             background: #000 url("fondo.jpg") no-repeat center center fixed;
             background-size: cover;
@@ -18,17 +19,19 @@
         }
 
         #unity-container {
-            width: 80vw;
-            aspect-ratio: 16 / 9;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         #unity-canvas {
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: 100vh;
             background: transparent;
         }
 
@@ -48,7 +51,18 @@
             margin: auto;
         }
 
-        .planet-background,
+        .planet-background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url('planeta.png');
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            opacity: 0.34;
+            z-index: 1;
+        }
+
         .planet-fill {
             position: absolute;
             width: 100%;
@@ -57,16 +71,9 @@
             background-size: cover;
             background-position: center;
             border-radius: 50%;
-        }
-
-        .planet-background {
-            background-color: rgba(79, 77, 77, 0.34);
-        }
-
-        .planet-fill {
-            overflow: hidden;
-            mask-image: linear-gradient(to top, black var(--fill, 0%), transparent var(--fill, 0%));
-            -webkit-mask-image: linear-gradient(to top, black var(--fill, 0%), transparent var(--fill, 0%));
+            z-index: 2;
+            clip-path: inset(calc(100% - var(--fill, 0%)) 0 0 0);
+            -webkit-clip-path: inset(calc(100% - var(--fill, 0%)) 0 0 0);
         }
 
         #progress-text {
@@ -122,11 +129,10 @@
 
         #html-video {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 80vw;
-            aspect-ratio: 16 / 9;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
             object-fit: cover;
             background: black;
             z-index: 999;

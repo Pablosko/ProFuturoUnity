@@ -101,8 +101,16 @@ PrefabInstance:
       value: 1_1_3
       objectReference: {fileID: 0}
     - target: {fileID: 7260477283505209364, guid: 691f400a1fbea3947a83b197fff5ced3, type: 3}
+      propertyPath: autoSkip
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7260477283505209364, guid: 691f400a1fbea3947a83b197fff5ced3, type: 3}
       propertyPath: videoName
       value: intro_trailer_profuturo_v3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7260477283505209364, guid: 691f400a1fbea3947a83b197fff5ced3, type: 3}
+      propertyPath: hasTransition
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -635,8 +635,12 @@ PrefabInstance:
       value: 1_1_1
       objectReference: {fileID: 0}
     - target: {fileID: 8585709969864854795, guid: 3135aa67a7e49cf459245697393be2ac, type: 3}
-      propertyPath: hasTransition
+      propertyPath: autoSkip
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585709969864854795, guid: 3135aa67a7e49cf459245697393be2ac, type: 3}
+      propertyPath: hasTransition
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9072151087197842091, guid: 3135aa67a7e49cf459245697393be2ac, type: 3}
       propertyPath: m_LocalScale.x

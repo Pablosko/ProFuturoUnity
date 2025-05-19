@@ -317,7 +317,9 @@ MonoBehaviour:
   sequenceManager: {fileID: 0}
   hasTransition: 1
   id: 1_1_2
-  animationDuration: 3
+  music: {fileID: 0}
+  autoSkip: 0
+  animationDuration: 2
   endSequence: 1
 --- !u!224 &5122753662785881483 stripped
 RectTransform:

@@ -11,6 +11,8 @@ public class SequenceVideo : SequenceBase
     public override void OnStart(SequenceManager sm)
     {
         base.OnStart(sm);
+        if (autoSkip)
+            return;
         HTMLVideoBridge bridge = HTMLVideoBridge.instance;
         if (bridge != null)
         {
@@ -33,6 +35,8 @@ public class SequenceVideo : SequenceBase
 
     public void FinishFromHTML()
     {
+        if (autoSkip)
+            return;
         if (finished) return;
         finished = true;
         Debug.Log("🎬 HTML pidió finalizar video → llamando End()");
