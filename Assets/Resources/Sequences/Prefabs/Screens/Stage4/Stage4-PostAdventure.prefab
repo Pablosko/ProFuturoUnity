@@ -48,7 +48,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce9b767c048468442ba9f726888a2fda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sequences: []
+  sequences:
+  - {fileID: 5217137588645426929, guid: cd43148abd221aa4e93ad27bf008aa6d, type: 3}
+  - {fileID: 5217137588645426929, guid: 8785b9b47e5893544ad8e9e0e64e64a2, type: 3}
+  - {fileID: 5217137588645426929, guid: b72cfcc176a833c49b8b9375fa59b6eb, type: 3}
   currentSequence: {fileID: 0}
   sequenceIndex: 0
   endStageActivationGo: {fileID: 0}
