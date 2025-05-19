@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 2401869512444109796, guid: 5417a6fef568c964abbf6b15db6b6d22, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 5580161044719373237, guid: f937032af11716a4d923b9ff75da0748, type: 3}
+      objectReference: {fileID: -5905409269802362588, guid: 93c25066087156a4ea3e91edeef34924, type: 3}
     - target: {fileID: 4225497905360194012, guid: 5417a6fef568c964abbf6b15db6b6d22, type: 3}
       propertyPath: m_Name
       value: 2_Prelaberinto
@@ -194,6 +194,10 @@ PrefabInstance:
     - target: {fileID: 4508734113096120599, guid: 2c0f39cfaa87ccc4d88fe1ded74c750c, type: 3}
       propertyPath: onEndConversation.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5523672274922644243, guid: 2c0f39cfaa87ccc4d88fe1ded74c750c, type: 3}
+      propertyPath: m_fontSize
+      value: 22.6
       objectReference: {fileID: 0}
     - target: {fileID: 5523672274922644243, guid: 2c0f39cfaa87ccc4d88fe1ded74c750c, type: 3}
       propertyPath: m_margin.w
