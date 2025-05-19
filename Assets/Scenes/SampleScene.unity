@@ -3157,11 +3157,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 959586135176830794, guid: 0649f0af9ca193e4a85109034d7abb39, type: 3}
+      propertyPath: messages.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 959586135176830794, guid: 0649f0af9ca193e4a85109034d7abb39, type: 3}
       propertyPath: messages.Array.data[0].message
-      value: "La Academia Estelar no se esperaba este nivel\u2026 \xA1bravo! Pero
-        \xA1el ENJAMBRE est\xE1 atacando como nunca! Necesitamos tu ayuda en la secci\xF3n
-        4: <b>Protocolos de autenticaci\xF3n segura.</b> Es momento de demostrar
-        de qu\xE9 est\xE1s hecho(a)."
+      value: "La Academia Estelar est\xE1 orgullosa de ti... pero \xA1el ENJAMBRE
+        ya ataca el siguiente frente! Necesitamos tu ayuda en la secci\xF3n 3: <b>Control
+        de accesos.</b> Es momento de saber qui\xE9n cruza los umbrales digitales
+        de Profuturo."
       objectReference: {fileID: 0}
     - target: {fileID: 959586135176830794, guid: 0649f0af9ca193e4a85109034d7abb39, type: 3}
       propertyPath: messages.Array.data[0].nextmessage

@@ -13,17 +13,30 @@ MonoBehaviour:
   m_Name: MFA_screen_10
   m_EditorClassIdentifier: 
   screenPrefab: {fileID: 3112471921619178224, guid: 04ae72e9767eb7f4a9fc5271972e456d, type: 3}
-  text: "Escenario 4:\nPedro usa algo que recuerda y luego una contrase\xF1a.\n\xBFQu\xE9
-    se usa adem\xE1s de la contrase\xF1a?"
+  text: "<b>Escenario 4:</b>\r\nPara acceder a un \xE1rea restringida en su trabajo,
+    Pedro debe usar algo que debes recordar y luego ingresar una contrase\xF1a.\r\n<b>Pregunta:</b>
+    \xBFQu\xE9 se utiliza para la verificaci\xF3n adem\xE1s de la contrase\xF1a?"
   inputData:
     expectedInput: 
     startInput: 
     endInput: 
-    addSpaces: 0
+    capped: 0
     options:
     - Reconocimiento facial
     - Una tarjeta de acceso
+    registers: []
     correctOption: Una tarjeta de acceso
+    typed: 0
+    typeEffect: 
+    alwaysPass: 0
+    DontForceUppercase: 0
   image: {fileID: 0}
-  feedbackCorrectText: "<b>\xA1Correcto!</b> Es un ejemplo de <b>\"\xBFQu\xE9 tienes?\"</b>."
-  feedbackIncorrectText: Incorrecto. No se menciona reconocimiento facial.
+  feedbackCorrectText: "<b>Respuesta Correcta:</b> Opci\xF3n B: Una tarjeta de acceso\r\nUna
+    tarjeta de acceso: <b>\xA1Correcto!</b> La tarjeta de acceso es un ejemplo de
+    \"\xBFQu\xE9 tienes?\", ya que es un objeto f\xEDsico que Pedro posee y que se
+    utiliza para verificar su identidad."
+  temporalFeedBack: 0
+  feedbackIncorrectText: "<b>Respuesta Incorrecta</b>\r\nReconocimiento facial: Incorrecto.
+    No se menciona el reconocimiento facial en este escenario.\r"
+  cpu: {fileID: 0}
+  overrideConfiguration: {fileID: 0}

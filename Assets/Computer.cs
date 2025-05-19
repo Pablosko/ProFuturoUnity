@@ -99,9 +99,15 @@ public class Computer : Game
         if (GetCurrentScreen().HasFeedback && upScreenImage.sprite == normalUp)
         {
             if (CanProgress())
+            {
+                AudioManager.instance.PlaySFX(AudioManager.instance.minigameFbOk);
                 SetCorrectFeedBack(GetCurrentScreen());
+            }
             else
-                SetInCorrectFeedBack(GetCurrentScreen());
+            {
+                AudioManager.instance.PlaySFX(AudioManager.instance.minigameFbKo);
+                SetInCorrectFeedBack(GetCurrentScreen());               
+            }
             return;
         }
 

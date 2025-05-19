@@ -93,12 +93,16 @@ PrefabInstance:
       value: ButtonComponent
       objectReference: {fileID: 0}
     - target: {fileID: 6299311640502893546, guid: f28d37b3a51228e458739e7574c434ba, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -28.5046
+      objectReference: {fileID: 0}
+    - target: {fileID: 6299311640502893546, guid: f28d37b3a51228e458739e7574c434ba, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0.2800293
       objectReference: {fileID: 0}
     - target: {fileID: 6299311640502893546, guid: f28d37b3a51228e458739e7574c434ba, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.29000854
+      value: -5.0527
       objectReference: {fileID: 0}
     - target: {fileID: 7261783393836562062, guid: f28d37b3a51228e458739e7574c434ba, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -131,6 +135,14 @@ PrefabInstance:
     - target: {fileID: 8393267641738568253, guid: f28d37b3a51228e458739e7574c434ba, type: 3}
       propertyPath: m_text
       value: ENVIAR
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393267641738568253, guid: f28d37b3a51228e458739e7574c434ba, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393267641738568253, guid: f28d37b3a51228e458739e7574c434ba, type: 3}
+      propertyPath: m_margin.y
+      value: -14.2881775
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -168,6 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6c6fae3a15465448b8a5afd17be29fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cpu: {fileID: 0}
   incorrectText: Volver A Intentar
   normalText: Enviar
   text: {fileID: 2460785251064511886}

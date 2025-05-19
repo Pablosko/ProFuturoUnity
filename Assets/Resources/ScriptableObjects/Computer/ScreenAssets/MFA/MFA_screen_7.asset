@@ -13,19 +13,31 @@ MonoBehaviour:
   m_Name: MFA_screen_7
   m_EditorClassIdentifier: 
   screenPrefab: {fileID: 3112471921619178224, guid: 04ae72e9767eb7f4a9fc5271972e456d, type: 3}
-  text: "Escenario 1:\nSof\xEDa debe ingresar su contrase\xF1a y aprobar una notificaci\xF3n
-    en su celular.\n\xBFQu\xE9 se utiliza adem\xE1s de la contrase\xF1a?"
+  text: "Para acceder a su correo electr\xF3nico del trabajo desde casa, Sof\xEDa
+    debe ingresar su contrase\xF1a y luego aprobar una notificaci\xF3n en su celular.\r\n<b>Pregunta:
+    \xBFQu\xE9 se utiliza adem\xE1s de la contrase\xF1a para la verificaci\xF3n?</b>"
   inputData:
     expectedInput: 
     startInput: 
     endInput: 
-    addSpaces: 0
+    capped: 0
     options:
     - "Una contrase\xF1a adicional"
     - "El tel\xE9fono celular"
+    registers: []
     correctOption: "El tel\xE9fono celular"
+    typed: 0
+    typeEffect: 
+    alwaysPass: 0
+    DontForceUppercase: 0
   image: {fileID: 0}
-  feedbackCorrectText: "<b>\xA1Correcto!</b> El tel\xE9fono celular es un ejemplo
-    de <b>\"\xBFQu\xE9 tienes?\"</b>."
-  feedbackIncorrectText: "<b>Incorrecto.</b> No es otra contrase\xF1a, es el tel\xE9fono
-    m\xF3vil."
+  feedbackCorrectText: "<b>Respuesta Correcta:</b> Opci\xF3n B: El tel\xE9fono celular\r\n(tel\xE9fono
+    celular): <b>\xA1Correcto!</b> El tel\xE9fono celular es un ejemplo de <b>\"\xBFQu\xE9
+    tienes?\"</b>, ya que es un objeto f\xEDsico que Sof\xEDa posee y que se utiliza
+    para confirmar su identidad."
+  temporalFeedBack: 0
+  feedbackIncorrectText: "<b>Respuesta Incorrecta</b>\r\nUna contrase\xF1a adicional:
+    <b>Incorrecto</b>. La verificaci\xF3n adicional no es otra contrase\xF1a. El
+    m\xE9todo correcto es el tel\xE9fono m\xF3vil."
+  cpu: {fileID: 0}
+  overrideConfiguration: {fileID: 0}
