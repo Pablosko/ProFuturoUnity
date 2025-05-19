@@ -223,17 +223,15 @@
         function initScorm() {
             createCourse();
             console.log("🔵 Iniciando conexión SCORM...");
-            CURSO.iniciarPagina("1_1_1");
-            CURSO.finalizarPagina("1_1_1", "");
-            CURSO.setPages();
-            CURSO.iniciarPagina("1_1_3");
-            CURSO.finalizarPagina("1_1_3", "");
-            CURSO.setPages();
         }
 
         function initPage(pageId) {
             console.log("🔵 Iniciando pagina... " + pageId);
             CURSO.iniciarPagina(pageId);
+            if (padgeId=="1_1_1" || padgeId=="1_1_3") {
+                CURSO.finalizarPagina(pageId, "");
+                CURSO.setPages();
+            }
         }
 
         function endPage(pageId) {
