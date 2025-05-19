@@ -19,7 +19,7 @@ MonoBehaviour:
   successMessage: "\xA1Correcto! El candado indica que el sitio utiliza una conexi\xF3n
     segura y que la informaci\xF3n que env\xEDas est\xE1 protegida, como \xA1los
     escudos de nuestra nave Guardi\xE1n!"
-  errorMessage: "Consecuencia: Mes despu\xE9s, sufren un ataque por malware en su
-    sistema. Pol\xEDtica 1 existe porque un alto porcentaje de las brechas vienen
-    de terceros."
+  errorMessage: "\xA1FALSO! Sin candado, hasta un dron del ENJAMBRE podr\xEDa interceptar
+    tus mensajes. El <b>candado es un indicador clave</b> de que la conexi\xF3n est\xE1
+    protegida. Es importante buscarlo para asegurarte de que tus datos est\xE1n seguros."
   correct: 1

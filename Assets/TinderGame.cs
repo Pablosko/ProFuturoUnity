@@ -156,6 +156,7 @@ public class TinderGame : Game
             endFeedBackcorrect.SetActive(false);
             endFeedBackIncorrect.SetActive(true);
             incorrectText.text = $"{correctAnswers}/{totalRounds}";
+            AudioManager.instance.PlaySFX(AudioManager.instance.storytellingFbKo);
         }
     }
     public void OpenFeedBack(bool correct, string message, MessageType type)

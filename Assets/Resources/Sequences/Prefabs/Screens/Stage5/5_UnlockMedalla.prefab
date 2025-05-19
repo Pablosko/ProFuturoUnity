@@ -1016,6 +1016,14 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 26
       objectReference: {fileID: 0}
+    - target: {fileID: 5621432902830187617, guid: 54bdb10b4c01c2749943a2630be2a2c8, type: 3}
+      propertyPath: m_margin.w
+      value: -23.815659
+      objectReference: {fileID: 0}
+    - target: {fileID: 5621432902830187617, guid: 54bdb10b4c01c2749943a2630be2a2c8, type: 3}
+      propertyPath: m_margin.y
+      value: 2.3995972
+      objectReference: {fileID: 0}
     - target: {fileID: 5754434618923007893, guid: 54bdb10b4c01c2749943a2630be2a2c8, type: 3}
       propertyPath: m_IsActive
       value: 0

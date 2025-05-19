@@ -20,6 +20,30 @@ PrefabInstance:
       propertyPath: totalRounds
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 2227695462855631484, guid: 55b7d470b5684684fbc5556079a16601, type: 3}
+      propertyPath: m_margin.z
+      value: 21.568848
+      objectReference: {fileID: 0}
+    - target: {fileID: 4296917624089548712, guid: 55b7d470b5684684fbc5556079a16601, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4296917624089548712, guid: 55b7d470b5684684fbc5556079a16601, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5011787969613885062, guid: 55b7d470b5684684fbc5556079a16601, type: 3}
+      propertyPath: m_fontSize
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053416066866367954, guid: 55b7d470b5684684fbc5556079a16601, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6058285184608787046, guid: 55b7d470b5684684fbc5556079a16601, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6377838514171505377, guid: 55b7d470b5684684fbc5556079a16601, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -103,6 +127,18 @@ PrefabInstance:
     - target: {fileID: 6745794279351640614, guid: 55b7d470b5684684fbc5556079a16601, type: 3}
       propertyPath: m_Name
       value: TinderGame4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836599575142854604, guid: 55b7d470b5684684fbc5556079a16601, type: 3}
+      propertyPath: messages.Array.data[0].message
+      value: "<b>\xA1Espectacular, Guardi\xE1n!</b> Has alcanzado el nivel superior
+        de tu val\xEDa y lograste obtener todo el conocimiento del sabio planeta
+        la Tierra con los <b>protocolos de autenticaci\xF3n segura</b> suprema."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840879492229101688, guid: 55b7d470b5684684fbc5556079a16601, type: 3}
+      propertyPath: messages.Array.data[0].message
+      value: "<b>\xA1Alerta, alerta!</b> No has llegado al nivel superior que todo
+        Guardi\xE1n debe mostrar. Necesitas dominar estos protocolos o el ENJAMBRE
+        se har\xE1 con toda la Tierra. \xA1Reintenta!"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

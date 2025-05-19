@@ -15,12 +15,12 @@ MonoBehaviour:
   text: "Est\xE1s en un caf\xE9 espacial padre y necesitas enviar un documento con
     informaci\xF3n confidencial de la compa\xF1\xEDa. \xBFUsas la red Wi-Fi p\xFAblica
     del caf\xE9?"
-  rightText: "\xA1No!"
-  leftText: "\xA1S\xED!"
+  rightText: "\xA1S\xED!"
+  leftText: "\xA1No!"
   successMessage: "<b>\xA1Eres grande!</b> Las redes <b>Wi-Fi p\xFAblicas no son
     seguras</b> para informaci\xF3n sensible. Si las us\xE1ramos, ser\xEDa como meterse
     en un campo de asteroides."
-  errorMessage: "<b>\xA1Alerta!</b> \u2620\uFE0F El ENJAMBRE puede encontrarte en
-    esas redes. \xA1Usa la VPN corporativa! Las redes p\xFAblicas pueden ser peligrosas
-    para la informaci\xF3n confidencial."
-  correct: 1
+  errorMessage: "<b>\xA1Alerta!</b> El ENJAMBRE puede encontrarte en esas redes.
+    \xA1Usa la VPN corporativa! Las redes p\xFAblicas pueden ser peligrosas para
+    la informaci\xF3n confidencial."
+  correct: 0
