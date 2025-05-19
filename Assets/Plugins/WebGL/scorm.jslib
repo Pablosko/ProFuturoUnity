@@ -38,5 +38,8 @@ mergeInto(LibraryManager.library, {
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-      }
+   },
+   closeBrowserWindow: function () {
+        window.close();
+    }
 });

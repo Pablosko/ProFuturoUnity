@@ -106,6 +106,7 @@ public class GameController : MonoBehaviour
     }
     public void Exit() 
     {
+        SCORMManager.instance.CloseGame();
         Application.Quit();
     }
 }
