@@ -1773,7 +1773,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5885829317809606559, guid: ad78639ccc8b9b1439c8be0a915ef934, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6049845141203420070, guid: ad78639ccc8b9b1439c8be0a915ef934, type: 3}
       propertyPath: m_fontSize
@@ -1785,7 +1785,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7100227275282605019, guid: ad78639ccc8b9b1439c8be0a915ef934, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7745206844282314766, guid: ad78639ccc8b9b1439c8be0a915ef934, type: 3}
       propertyPath: messages.Array.data[0].message
