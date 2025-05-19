@@ -14,6 +14,7 @@
             overflow: hidden;
             backface-visibility: hidden;
             -webkit-font-smoothing: antialiased;
+            font-family: Arial, sans-serif;
         }
 
         #unity-container {
@@ -37,25 +38,86 @@
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
-            font-family: Arial, sans-serif;
-            color: white;
             z-index: 10;
         }
 
-        #progress-bar {
-            width: 300px;
-            height: 20px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 10px;
+        .planet-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+        }
+
+        .planet-background,
+        .planet-fill {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url('planeta.png');
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+        }
+
+        .planet-background {
+            background-color: rgba(79, 77, 77, 0.34);
+        }
+
+        .planet-fill {
             overflow: hidden;
+            mask-image: linear-gradient(to top, black var(--fill, 0%), transparent var(--fill, 0%));
+            -webkit-mask-image: linear-gradient(to top, black var(--fill, 0%), transparent var(--fill, 0%));
+        }
+
+        #progress-text {
+            color: white;
+            font-size: 20px;
             margin-top: 20px;
         }
 
-        #progress-bar-fill {
-            height: 100%;
-            background: #00ffff;
-            width: 0%;
-            transition: width 0.2s ease;
+        #phrase-box {
+            color: white;
+            margin-top: 30px;
+            font-size: 18px;
+            width: 300px;
+            min-height: 40px;
+            overflow: hidden;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            position: relative;
+        }
+
+        .phrase {
+            position: absolute;
+            width: 100%;
+            opacity: 0;
+            transform: translateX(-100%);
+            animation: slideIn 0.5s forwards;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideOut {
+            from {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+            to {
+                opacity: 0;
+                transform: translateX(100%);
+            }
         }
 
         #html-video {
@@ -96,15 +158,16 @@
             }
     </style>
 </head>
-
 <body>
     <div id="unity-container">
         <canvas id="unity-canvas"></canvas>
-        <div id="loading">            
-            <div id="progress-bar">
-                <div id="progress-bar-fill"></div>
+        <div id="loading">
+            <div class="planet-container">
+                <div class="planet-background"></div>
+                <div class="planet-fill" id="planet-fill"></div>
             </div>
             <div id="progress-text">0%</div>
+            <div id="phrase-box"></div>
         </div>
     </div>
 
@@ -150,22 +213,15 @@
     <script defer src="cookie_api.js"></script>
     <script defer src="lookApi.js"></script>
 
-    <script type="text/javascript">
+    <script>
         function initScorm() {
             createCourse();
             console.log("🔵 Iniciando conexión SCORM...");
-            /*pageState("1_1_1");
-            initPage("1_1_1");
-            pageState("1_1_1");
-            endPage("1_1_1");
-            pageState("1_1_1");*/
-
         }
 
         function initPage(pageId) {
             console.log("🔵 Iniciando pagina... " + pageId);
             CURSO.iniciarPagina(pageId);
-
         }
 
         function endPage(pageId) {
@@ -183,21 +239,26 @@
 
         function saveAvatar(avatar) {
             console.log("🤖 Guardando avatar: " + avatar);
-            CURSO.guardarVariables(avatar);            
+            CURSO.guardarVariables(avatar);
         }
 
         function getAvatar() {
             console.log("🤖 Recuperando avatar...");
-            var avatar = CURSO.recuperarVariable(0);            
+            var avatar = CURSO.recuperarVariable(0);
             console.log("🤖 Avatar recuperado: " + avatar);
             return avatar;
         }
-
     </script>
+
     <!-- UNITY LOADER -->
     <script>
         window.onload = () => {
             initScorm();
+
+            fetch('frases.json')
+                .then(res => res.json())
+                .then(frases => startPhraseLoop(frases))
+                .catch(err => console.error("Error cargando frases.json", err));
 
             const buildUrl = "Build";
             const loaderUrl = `${buildUrl}/Build.loader.js`;
@@ -219,7 +280,7 @@
 
             const canvas = document.querySelector("#unity-canvas");
             const loading = document.querySelector("#loading");
-            const barFill = document.querySelector("#progress-bar-fill");
+            const barFill = document.getElementById("planet-fill");
 
             const script = document.createElement("script");
             script.src = loaderUrl;
@@ -227,21 +288,36 @@
                 const startTime = performance.now();
                 createUnityInstance(canvas, config, (progress) => {
                     const percent = Math.round(progress * 100);
-                    barFill.style.width = `${percent}%`;
+                    barFill.style.setProperty('--fill', `${percent}%`);
                     document.getElementById("progress-text").textContent = `${percent}%`;
-
                 }).then(() => {
                     const loadTime = performance.now() - startTime;
-                    const loadSeconds = (loadTime / 1000).toFixed(2);
-                    console.log(`⏱ Tiempo de carga Unity: ${loadSeconds}s`);
+                    console.log(`⏱ Tiempo de carga Unity: ${(loadTime / 1000).toFixed(2)}s`);
                     loading.style.display = "none";
-                }).catch((err) => {
+                }).catch(err => {
                     console.error("❌ Error al iniciar Unity:", err);
                     alert("Error al cargar Unity: " + err);
                 });
             };
             document.body.appendChild(script);
         };
+
+        function startPhraseLoop(frases) {
+            const phraseBox = document.getElementById("phrase-box");
+            const showNextPhrase = () => {
+                const oldPhrase = phraseBox.querySelector('.phrase');
+                if (oldPhrase) {
+                    oldPhrase.style.animation = 'slideOut 0.5s forwards';
+                    setTimeout(() => oldPhrase.remove(), 500);
+                }
+                const newPhrase = document.createElement('div');
+                newPhrase.className = 'phrase';
+                newPhrase.textContent = frases[Math.floor(Math.random() * frases.length)];
+                phraseBox.appendChild(newPhrase);
+            };
+            showNextPhrase();
+            setInterval(showNextPhrase, 5000);
+        }
     </script>
 
     <!-- VIDEO CONTROL -->
@@ -263,8 +339,7 @@
                 console.warn("⚠️ No se pudo reproducir automáticamente:", err);
             });
 
-            // Fallback por si onended falla
-            clearInterval(videoInterval); // <--- agrega esto antes de iniciar uno nuevo
+            clearInterval(videoInterval);
             videoInterval = setInterval(() => {
                 if (htmlVideo.ended) {
                     console.log("🕒 Fallback: video ha terminado (via interval)");
@@ -285,14 +360,13 @@
             }
         }
 
-
         htmlVideo.onended = () => {
             console.log("✅ onended ejecutado por navegador");
             endHTMLVideo();
         };
 
         function endHTMLVideo() {
-            if (htmlVideo.style.display === "none") return; // ya fue cerrado
+            if (htmlVideo.style.display === "none") return;
 
             htmlVideo.style.display = "none";
             htmlVideo.classList.remove("showing");
