@@ -38,6 +38,7 @@ public class FeedBackMessage : MonoBehaviour
     }
     public void NextCard() 
     {
+        AudioManager.instance.PlaySFX(AudioManager.instance.nextBtn);
         TinderGame.instance.NextCard();
 
     }
@@ -55,6 +56,7 @@ public class FeedBackMessage : MonoBehaviour
     }
     public void NextCardButton()
     {
+
         nextGeniallyButton?.SetActive(false);
         nextCardButton?.SetActive(true);
         restartButton?.SetActive(false);

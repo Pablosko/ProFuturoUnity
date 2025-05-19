@@ -36,8 +36,6 @@ public class TinderGame : Game
     [TextArea(3, 5)]
     public string endinCorrectText;
 
-    AudioManager audioManager;
-
     private void Awake()
     {
         instance = this;
@@ -45,7 +43,6 @@ public class TinderGame : Game
         // Cargar preguntas desde Resources
         questions = new List<GameQuestion>(Resources.LoadAll<GameQuestion>("ScriptableObjects/Games/SelectionGame/" + stageGame));
         Debug.Log($"Cargadas {questions.Count} preguntas.");
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
     public void Update()
     {
@@ -69,7 +66,7 @@ public class TinderGame : Game
         maingameobject.SetActive(true);
         currentRound = 0;
         correctAnswers = 0;
-        audioManager.PlayMusic(audioManager.minigameBg, 0.3f);
+        AudioManager.instance.PlayMusic(AudioManager.instance.minigameBg, 0.3f);
         ShuffleQuestions();
         NextCard();
         UpdateProgress();
@@ -129,12 +126,12 @@ public class TinderGame : Game
         {
             correctAnswers++;
             UpdateRoundsText();
-            audioManager.PlaySFX(audioManager.minigameFbOk);
+            AudioManager.instance.PlaySFX(AudioManager.instance.minigameFbOk);
             OpenFeedBack(true, GetCurrentQuestion().successMessage, MessageType.NextCard);
         }
         else 
         {
-            audioManager.PlaySFX(audioManager.minigameFbKo);
+            AudioManager.instance.PlaySFX(AudioManager.instance.minigameFbKo);
             OpenFeedBack(false, GetCurrentQuestion().errorMessage, MessageType.NextCard); 
         }
     }
@@ -151,6 +148,7 @@ public class TinderGame : Game
             endFeedBackcorrect.SetActive(true);
             correctText.text = $"{correctAnswers}/{totalRounds}";
             endFeedBackIncorrect.SetActive(false);
+            AudioManager.instance.PlaySFX(AudioManager.instance.storytellingFbOk);
 
         }
         else
@@ -169,7 +167,7 @@ public class TinderGame : Game
 
     public  void playDragSound()
     {
-        audioManager.PlaySFX(audioManager.minigameCardSlide);
+        AudioManager.instance.PlaySFX(AudioManager.instance.minigameCardSlide);
     }
 }
 public class Game : MonoBehaviour 
@@ -183,6 +181,7 @@ public class Game : MonoBehaviour
     }
     public void TerminateGame()
     {
+        AudioManager.instance.PlaySFX(AudioManager.instance.nextBtn);
         SCORMManager.instance.EndPage(id);
         Destroy(gameObject);
         Home.instance.gameObject.SetActive(true);
