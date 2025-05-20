@@ -8,6 +8,10 @@ public class SequenceVideo : SequenceBase
 
     private bool finished = false;
     public bool stopMusicEnd;
+    public override void Awake()
+    {
+        base.Awake();
+    }
     public override void OnStart(SequenceManager sm)
     {
         base.OnStart(sm);

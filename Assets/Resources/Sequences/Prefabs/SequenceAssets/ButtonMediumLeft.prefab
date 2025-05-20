@@ -168,12 +168,16 @@ PrefabInstance:
       value: ButtonMediumLeft
       objectReference: {fileID: 0}
     - target: {fileID: 6299311640502893546, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -27.3071
+      objectReference: {fileID: 0}
+    - target: {fileID: 6299311640502893546, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
       propertyPath: m_SizeDelta.y
       value: -21.5238
       objectReference: {fileID: 0}
     - target: {fileID: 6299311640502893546, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.4356
+      value: -5.3815
       objectReference: {fileID: 0}
     - target: {fileID: 6299311640502893546, guid: d559a9bb84f14134cb815b69aca6b906, type: 3}
       propertyPath: m_AnchoredPosition.y

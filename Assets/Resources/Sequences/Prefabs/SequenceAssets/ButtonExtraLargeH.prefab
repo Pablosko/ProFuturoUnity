@@ -150,6 +150,7 @@ GameObject:
   - component: {fileID: 7261783393836562062}
   - component: {fileID: 8497205518889015641}
   - component: {fileID: 6456510696759625227}
+  - component: {fileID: 34478546878893727}
   m_Layer: 0
   m_Name: ButtonExtraLargeH
   m_TagString: Untagged
@@ -206,7 +207,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 6597000540134352708, guid: 0fd34147967559e48bb1417d7d24a85a, type: 3}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -294,3 +295,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnStart: 1
+--- !u!225 &34478546878893727
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4544564270096040037}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0

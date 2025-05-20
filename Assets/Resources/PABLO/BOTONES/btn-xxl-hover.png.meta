@@ -116,13 +116,13 @@ TextureImporter:
       name: btn-xxl-hover_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 6
         width: 592
         height: 122
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 32, y: 34, z: 27, w: 28}
       customData: 
       outline: []
       physicsShape: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b84d540881859bd49b0dae3041a3f0a1
     internalID: 0
     vertices: []
     indices: 
