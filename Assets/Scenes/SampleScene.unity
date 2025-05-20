@@ -882,8 +882,8 @@ MonoBehaviour:
   muteBar: {fileID: 990567183}
   slider: {fileID: 586036210}
   volumeSlider: {fileID: 586036210}
-  stages: {fileID: 0}
-  minigames: {fileID: 0}
+  stages: {fileID: 620860812}
+  minigames: {fileID: 1232448734}
 --- !u!114 &519420037
 MonoBehaviour:
   m_ObjectHideFlags: 0
