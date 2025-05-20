@@ -269,6 +269,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
   m_Name: DefaultVolumeProfile
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  components: []
+=======
   components:
   - {fileID: 8518254601622762545}
   - {fileID: -7456014497525123799}
@@ -793,3 +796,4 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
+>>>>>>> da99e90fde57009939257d0207127e50dd093452
