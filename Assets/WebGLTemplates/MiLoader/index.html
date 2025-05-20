@@ -342,6 +342,7 @@
             htmlVideo.classList.add("showing");
             skipButton.style.display = "block";
             htmlVideo.currentTime = 0;
+            htmlVideo.volume = 0.25
 
             htmlVideo.play().then(() => {
                 console.log("▶ Reproduciendo video:", path);
