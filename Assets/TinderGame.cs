@@ -49,6 +49,14 @@ public class TinderGame : Game
     }
     public void Update()
     {
+        if (Input.GetKey(KeyCode.LeftControl))
+        {
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                correctAnswers = 10;
+                EndGame();
+            }
+        }
         if (Input.mousePosition != lastMousePosition || Input.GetMouseButtonDown(0) || Input.GetMouseButtonUp(0))
         {
             afkCurrentTime = 0;
@@ -73,16 +81,8 @@ public class TinderGame : Game
                 currentCard.StartAutoSwipe();
         }
     
-        if (GameController.instance)
 
-        if (Input.GetKey(KeyCode.LeftControl))
-        {
-            if (Input.GetKeyDown(KeyCode.S))
-            {
-                correctAnswers = 10;
-                EndGame();
-            }
-        }
+      
     }
 
     void OnEnable()

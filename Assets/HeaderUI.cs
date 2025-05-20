@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -30,7 +31,7 @@ public class HeaderUI : MonoBehaviour
     }
     public bool HasMedal(int stage) 
     {
-        return medals[stage - 1] == notActiveMedal;
+        return medalsUI[stage].sprite != notActiveMedal;
     }
     public void SetAllMedals() 
     {

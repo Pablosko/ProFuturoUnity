@@ -35,6 +35,20 @@ public class HomeStageUI : MonoBehaviour
         img.alphaHitTestMinimumThreshold = 1;
         SetPlayerImage();
     }
+    private void OnEnable()
+    {
+        switch (state)
+        {
+            case stageState.unlocked:
+                SetUnlocked();
+                break;
+            case stageState.completed:
+                SetComplete();
+                break;
+            default:
+                break;
+        }
+    }
     public void SetPlayerImage() 
     {
         playerAnim.gameObject.GetComponent<Image>().sprite = HudController.instance.header.spawnedAvatar;
@@ -55,8 +69,6 @@ public class HomeStageUI : MonoBehaviour
     }
     public void SetUnlocked() 
     {
-        if (state != stageState.bloqued)
-            return;
         state = stageState.unlocked;
 
         animator.SetBool("Completed", false);

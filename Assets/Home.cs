@@ -26,9 +26,10 @@ public class Home : MonoBehaviour
     public void SetStageUnlocks() 
     {
         SetNavegableState(false);
-        for (int i = 0; i < currentStage; i++)
+        for (int i = 0; i < 5; i++)
         {
-            CompleteStage(i + 1);
+            if(HudController.instance.header.HasMedal(i))
+                CompleteStage(i + 1);
         }
     }
     public void StartStage(int stage)
@@ -54,10 +55,23 @@ public class Home : MonoBehaviour
     }
     public void SetNavegableState(bool state) 
     {
+        int i = 0;
+        if(state == true)
         foreach (HomeStageUI stageUI in homeStagesUI)
         {
-            stageUI.SetNavigable(state);
+            if(i == 0)
+                stageUI.SetNavigable(true);
+            else
+                stageUI.SetNavigable(HudController.instance.header.HasMedal(i - 1));
+            i++;
+
         }
+        if(state == false)
+            foreach (HomeStageUI stageUI in homeStagesUI)
+            {
+                stageUI.SetNavigable(state);
+            }
+
     }
     public void UnlockStage(int stage)
     {
