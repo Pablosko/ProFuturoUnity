@@ -355,7 +355,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 109, y: 0}
+  m_AnchoredPosition: {x: 127.73, y: 0}
   m_SizeDelta: {x: 30, y: 26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5833265982764748737
@@ -835,7 +835,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4239060035493091782, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 295
+      value: 332.4551
       objectReference: {fileID: 0}
     - target: {fileID: 4239060035493091782, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_SizeDelta.y
@@ -871,7 +871,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4239060035493091782, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 477.3479
+      value: 458.62036
       objectReference: {fileID: 0}
     - target: {fileID: 4239060035493091782, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -963,7 +963,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8393267641738568253, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_fontSize
-      value: 18.3
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393267641738568253, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
+      propertyPath: m_margin.x
+      value: 7.885376
       objectReference: {fileID: 0}
     - target: {fileID: 8393267641738568253, guid: c7142069ee4e83b43ae3f8a38d52cecb, type: 3}
       propertyPath: m_margin.y
@@ -1072,6 +1076,10 @@ PrefabInstance:
         robar\xEDa nuestros mapas cr\xEDticos; pero \u2026 <b>a\xFAn faltan 3 insignias</b>
         para activar la nave."
       objectReference: {fileID: 0}
+    - target: {fileID: 5621432902830187617, guid: 54bdb10b4c01c2749943a2630be2a2c8, type: 3}
+      propertyPath: m_margin.z
+      value: -65.6438
+      objectReference: {fileID: 0}
     - target: {fileID: 5754434618923007893, guid: 54bdb10b4c01c2749943a2630be2a2c8, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1163,6 +1171,14 @@ PrefabInstance:
     - target: {fileID: 7458210948524299305, guid: 54bdb10b4c01c2749943a2630be2a2c8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730637226724921781, guid: 54bdb10b4c01c2749943a2630be2a2c8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 121
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730637226724921781, guid: 54bdb10b4c01c2749943a2630be2a2c8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.0000017881
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
