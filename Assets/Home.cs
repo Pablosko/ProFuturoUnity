@@ -61,6 +61,7 @@ public class Home : MonoBehaviour
     }
     public void UnlockStage(int stage)
     {
+        currentStage = stage;
         homeStagesUI[stage - 1].SetUnlocked();
         homeStagesUI[stage - 1].SetNavigable(true);
     }
@@ -80,7 +81,6 @@ public class Home : MonoBehaviour
     {
         if (currentCoroutine != null)
             StopCoroutine(currentCoroutine);
-
         SetNavegableState(true);
         currentCoroutine = StartCoroutine(ResetCameraView(duration));
     }

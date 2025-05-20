@@ -133,6 +133,10 @@ public class SCORMManager : MonoBehaviour
         avatarTest = int.Parse(GetAvatar());
 
 #endif
+        if (t == 6) 
+        {
+            GoToSubsequencia(6,3);
+        }
         // hay 7 pantallas, si sale 8 subsequencia -> 9 aventura hasta 18, post aventura -> 1.19,1.20.
         if (!(t == 0 && s < 8)) 
         {
@@ -232,6 +236,8 @@ public class SCORMManager : MonoBehaviour
     {
         home.gameObject.SetActive(true);
         home.StartStage(tema + 1);
+        if (tema == 6)
+            home.StartStageSubSequence(tema);
     }
 }
 [System.Serializable]

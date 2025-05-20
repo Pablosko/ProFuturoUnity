@@ -22,17 +22,18 @@ public class HomeStageUI : MonoBehaviour
     public GameObject miniGame;
     public int temario;
     public SubSequenceManager subsequenceManager;
-    AudioManager audioManager;
     public stageState state;
     public GameObject completedImage;
     public GameObject aura;
     public Color completedColor;
+    GameObject instancedMiniGame;
+    bool canClick;
+
     void Awake()
     {
         Image img = GetComponent<Image>();
         img.alphaHitTestMinimumThreshold = 1;
         SetPlayerImage();
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
     public void SetPlayerImage() 
     {
@@ -65,12 +66,14 @@ public class HomeStageUI : MonoBehaviour
     }
     public void MoveTo() 
     {
+        navigateButton.interactable = false;
         Home.instance.MoveCameraToStage(this);
         startEvent?.Invoke();
     }
     public void SetNavigable(bool state) 
     {
-        navigateButton.enabled = state;
+        navigateButton.interactable = state;
+        ClearPlayer();
     }
     public void SetBlocked() 
     {
@@ -88,21 +91,31 @@ public class HomeStageUI : MonoBehaviour
         SetBlocked();
         playerAnim.SetTrigger("Alpha0to1");
         buttons.SetActive(true);
+        canClick = true;
+
+    }
+    public void ClearPlayer() 
+    {
+        if (playerAnim.GetComponent<Image>().color.a == 1) 
+            playerAnim.SetTrigger("Alpha1to0");
+        buttons.SetActive(false);
 
     }
     public void BackToShip() 
     {
-        buttons.SetActive(false);
-        playerAnim.SetTrigger("Alpha1to0");
+        ClearPlayer();
         Home.instance.MoveCameraToFullView();
     }
     public void GoToMinigame() 
     {
+        if (!canClick)
+            return;
         if (adventurePrefab == null)
             return;
-        playerAnim.SetTrigger("Alpha1to0");
+        canClick = false;
+        ClearPlayer();
         portalAnim.SetTrigger("portalSpawn");
-        audioManager.PlaySFX(audioManager.portal);
+        AudioManager.instance.PlaySFX(AudioManager.instance.portal);
         Invoke("DelayedCall", 2f);
     }
     public void DelayedCall()
@@ -113,9 +126,10 @@ public class HomeStageUI : MonoBehaviour
     }
     public AventuraGrafica DelayedDelayed() 
     {
-        GameObject instance = Instantiate(adventurePrefab, HudController.instance.stagesTransform);
-        instance.SetActive(true);
-        var aventura = instance.GetComponent<AventuraGrafica>();
+        canClick = true;
+        instancedMiniGame = Instantiate(adventurePrefab, HudController.instance.stagesTransform);
+        instancedMiniGame.SetActive(true);
+        var aventura = instancedMiniGame.GetComponent<AventuraGrafica>();
 
         if(Home.instance != null)
         Home.instance.gameObject.SetActive(false);

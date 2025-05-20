@@ -137,6 +137,8 @@ public class MazeGame : Game
                 CancelConnection();
                 return false;
             }
+            if (!HasCableAround(cell))
+                return false ;
             ShowCorrect(startTile.tipo);
             // Colocar el último tramo del cable antes de finalizar la conexión
             PlaceCable(lastPosition, cell, currentColor);
@@ -362,6 +364,23 @@ public void CancelConnection()
             lastPosition = next;
             currentPath.Add(next);
         }
+    }
+    private bool HasCableAround(Vector3Int cell)
+    {
+        Vector3Int[] directions = { Vector3Int.up, Vector3Int.down, Vector3Int.left, Vector3Int.right };
+
+        foreach (var dir in directions)
+        {
+            Vector3Int neighbor = cell + dir;
+            if (cableTilemap.HasTile(neighbor))
+            {
+                Debug.Log($"[MazeGame] ✅ Cable detectado en {neighbor}");
+                return true;
+            }
+        }
+
+        Debug.Log("[MazeGame] ❌ Ningún cable adyacente al punto final.");
+        return false;
     }
 
     public void GenerateTriggers()

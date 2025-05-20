@@ -20,7 +20,8 @@ public class ConnectionPoint : MonoBehaviour, IPointerDownHandler
     {
         if (tile == null)
             return;
-        animator.SetBool("Selected", true);
+        if (!tile.input)
+            animator.SetBool("Selected", true);
 
         // Si ya tiene un cable conectado → se borra al hacer clic
         if (tile.HasCable())

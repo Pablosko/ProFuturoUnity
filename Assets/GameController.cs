@@ -12,7 +12,12 @@ public class GameController : MonoBehaviour
 
     private float lastVolume = 1f;
     private bool isMuting = false;
-
+    public Transform stages;
+    public Transform minigames;
+    private void Start()
+    {
+        slider.value = 0.25f;
+    }
     public void SetSound(float volume)
     {
         muteBar.SetActive(volume == 0);
@@ -90,8 +95,26 @@ public class GameController : MonoBehaviour
         {
             Destroy(games[i].gameObject);
         }
-  
+        DestroyAllChildren(stages);
+        DestroyAllChildren(minigames);
     }
+    void DestroyAllChildren(Transform parent)
+    {
+        List<Transform> children = new List<Transform>();
+
+        // Copiamos los hijos a una lista para evitar modificar la colección durante la iteración
+        foreach (Transform child in parent)
+        {
+            children.Add(child);
+        }
+
+        // Ahora podemos destruirlos sin problema
+        foreach (Transform child in children)
+        {
+            Destroy(child.gameObject);
+        }
+    }
+
     public void GoHomeAndUnlockStage(int stage) 
     {
         ClearAll();
@@ -104,6 +127,8 @@ public class GameController : MonoBehaviour
     }
     public void GoHome() 
     {
+        if (Home.instance.currentStage <= 0)
+            return;
         ClearAll();
         Home.instance.gameObject.SetActive(true);
         Home.instance.MoveCameraToFullView();

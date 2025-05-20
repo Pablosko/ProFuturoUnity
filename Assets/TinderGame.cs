@@ -66,7 +66,6 @@ public class TinderGame : Game
         maingameobject.SetActive(true);
         currentRound = 0;
         correctAnswers = 0;
-        AudioManager.instance.PlayMusic(AudioManager.instance.minigameBg, 0.3f);
         ShuffleQuestions();
         NextCard();
         UpdateProgress();
@@ -179,6 +178,7 @@ public class Game : MonoBehaviour
     public virtual void Start()
     {
         SCORMManager.instance.InitPage(id);
+        AudioManager.instance.PlayMusic(AudioManager.instance.minigameBg, 0.3f);
     }
     public void TerminateGame()
     {
@@ -189,5 +189,4 @@ public class Game : MonoBehaviour
         Home.instance.StartStage(stageGame+ 1);
         Home.instance.CompleteStage(stageGame);
     }
-
 }

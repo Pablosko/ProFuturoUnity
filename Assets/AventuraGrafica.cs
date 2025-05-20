@@ -111,7 +111,7 @@ public class AventuraGrafica : MonoBehaviour
                 case FeedbackType.Incorrect:
                     feedbackScreen.text.autoSpeak = true;
                     feedbackScreen.SetBackground(false);
-                    AudioManager.instance.PlaySFX(AudioManager.instance.storytellingFbKo);
+                    AudioManager.instance.PlaySFX(AudioManager.instance.storytellingFbKo,0.40f);
                     break;
                 default:
                     feedbackScreen.SetBackground(null);                    
