@@ -2,6 +2,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
+using Random = UnityEngine.Random;
 public class TinderGame : Game
 {
     public List<GameQuestion> questions;
@@ -35,17 +37,44 @@ public class TinderGame : Game
     public string endCorrectText;
     [TextArea(3, 5)]
     public string endinCorrectText;
-
+    private float afkTimer = 1f;
+    private float afkCurrentTime = 0;
+    private Vector3 lastMousePosition;
     private void Awake()
     {
         instance = this;
 
         // Cargar preguntas desde Resources
         questions = new List<GameQuestion>(Resources.LoadAll<GameQuestion>("ScriptableObjects/Games/SelectionGame/" + stageGame));
-        Debug.Log($"Cargadas {questions.Count} preguntas.");
     }
     public void Update()
     {
+        if (Input.mousePosition != lastMousePosition || Input.GetMouseButtonDown(0) || Input.GetMouseButtonUp(0))
+        {
+            afkCurrentTime = 0;
+
+            lastMousePosition = Input.mousePosition;
+            currentCard.StopAutoSwipe();
+        }
+        else if(currentCard != null && !feedBackMessage.gameObject.activeSelf)
+        {
+            if (currentCard.cardAnswerInstance == null) 
+            {
+                afkCurrentTime += Time.deltaTime;
+            }
+            else if (!currentCard.cardAnswerInstance.isDragging && currentCard.cardAnswerInstance.isFading)
+                 afkCurrentTime += Time.deltaTime;
+            else
+                afkCurrentTime = 0;
+        }
+        if (afkCurrentTime >= afkTimer)
+        {
+            if(currentCard != null)
+                currentCard.StartAutoSwipe();
+        }
+    
+        if (GameController.instance)
+
         if (Input.GetKey(KeyCode.LeftControl))
         {
             if (Input.GetKeyDown(KeyCode.S))

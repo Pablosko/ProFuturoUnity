@@ -93,8 +93,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contentText: {fileID: 4054055012248369798}
   image: {fileID: 7436060465646149683}
-  sensitivity: 0.008
-  activationThreshold: 0.25
+  sensitivity: 0.01
+  activationThreshold: 2.5
   fadeOutTime: 0.5
   correctSprite: {fileID: -6799337096899210173, guid: df856e677498f2d4d91dda707a117256, type: 3}
   IncorrectSprite: {fileID: 1966685168427412075, guid: c90946751a584b84b852292df5f78f2f, type: 3}

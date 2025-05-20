@@ -12,20 +12,21 @@ public class CardAnswer : MonoBehaviour
     private CanvasGroup canvasGroup;
 
     private Vector3 initialMousePos;
-    private bool isDragging = false;
+    public bool isDragging = false;
     private bool selectedRight;
 
-    public float sensitivity = 0.01f;
-    public float activationThreshold = 0.3f;
+    public float sensitivity = 0.02f;
+    public float activationThreshold = 120;
     public float fadeOutTime = 0.5f;
 
     private GameQuestion question;
     private bool decisionShown = false;
-    private bool isFading = false;
+    public bool isFading = false;
     public Sprite correctSprite;
     public Sprite IncorrectSprite;
 
     public System.Action onDestroyed; // para notificar al controlador (opcional)
+
 
     void Awake()
     {
@@ -36,9 +37,10 @@ public class CardAnswer : MonoBehaviour
             canvasGroup = gameObject.AddComponent<CanvasGroup>();
         }
     }
-
+  
     void Update()
     {
+      
         if (isDragging)
         {
             Vector3 delta = (Input.mousePosition - initialMousePos) * sensitivity;
@@ -50,7 +52,7 @@ public class CardAnswer : MonoBehaviour
             rectTransform.localRotation = Quaternion.Euler(0f, 0f, -delta.x * 5f);
 
             // Mostrar u ocultar texto según umbral
-            if (Mathf.Abs(delta.x) > activationThreshold * 10)
+            if (Mathf.Abs(delta.x) > activationThreshold)
             {
                 if (!decisionShown)
                 {
@@ -78,9 +80,16 @@ public class CardAnswer : MonoBehaviour
         contentText.text = "";
     }
 
-    public void EndDrag()
+    public void EndDrag(bool feedback)
     {
+     
+
         isDragging = false;
+        if (!feedback)
+        {
+            Destroy(gameObject);
+            return;
+        }
         TinderGame.instance.playDragSound();
 
         Vector3 delta = (Input.mousePosition - initialMousePos) * sensitivity;
@@ -96,7 +105,7 @@ public class CardAnswer : MonoBehaviour
         }
         else
         {
-            DestroyImmediately();
+            Destroy(gameObject);
         }
     }
 
@@ -116,6 +125,7 @@ public class CardAnswer : MonoBehaviour
             canvasGroup.alpha = Mathf.Lerp(startAlpha, 0f, t);
             yield return null;
         }
+        isFading = false;
 
         onDestroyed?.Invoke();
         TinderGame.instance.CompleteSelection(isCorrect);

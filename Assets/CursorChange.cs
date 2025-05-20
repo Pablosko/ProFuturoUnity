@@ -7,7 +7,8 @@ public class CursorChanger : MonoBehaviour
 {
     public Texture2D defaultCursor;
     public Texture2D interactCursor;
-
+    public Vector2 offsetCursor;
+    public Vector2 offsetSelect;
     void Update()
     {
         bool overInteractable = false;
@@ -45,6 +46,6 @@ public class CursorChanger : MonoBehaviour
         }
 
         // 3. Cambiar el cursor
-        Cursor.SetCursor(overInteractable ? interactCursor : defaultCursor, Vector2.zero, CursorMode.Auto);
+        Cursor.SetCursor(overInteractable ? interactCursor : defaultCursor, overInteractable ? offsetSelect : offsetCursor, CursorMode.Auto);
     }
 }
