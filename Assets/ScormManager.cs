@@ -93,10 +93,10 @@ public class SCORMManager : MonoBehaviour
     public void DownloadPDF(string fileNameWithoutExtension)
     {
         string fileName = fileNameWithoutExtension + ".pdf";
-        string relativePath = "StreamingAssets/" + fileName;
-        string fullPath = Application.absoluteURL + relativePath;
-        downloadPDF(fullPath);
+        string relativePath = fileName;
+        downloadPDF(relativePath);
     }
+
 
     public void CloseGame()
     {
