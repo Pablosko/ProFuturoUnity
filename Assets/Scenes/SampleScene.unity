@@ -194,7 +194,6 @@ MonoBehaviour:
   - {fileID: 2059202324}
   - {fileID: 644445436}
   - {fileID: 553080286}
-  - {fileID: 553080286}
   SequenceManagers:
   - {fileID: 8035945296162801755, guid: c36eeafd2d517ba42ba2d58af9eb816f, type: 3}
   - {fileID: 2176857180443748998, guid: e5cbe45989bfee744a67ba014e55d02a, type: 3}

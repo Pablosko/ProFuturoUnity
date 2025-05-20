@@ -37,10 +37,9 @@ public class TinderGame : Game
     public string endCorrectText;
     [TextArea(3, 5)]
     public string endinCorrectText;
-    private float afkTimer = 1f;
-    private float afkCurrentTime = 1f;
+    private float afkTimer = 4f;
+    private float afkCurrentTime = 4f;
     private Vector3 lastMousePosition;
-    bool tutorialAppered = false;
     private void Awake()
     {
         instance = this;
@@ -76,12 +75,11 @@ public class TinderGame : Game
             else
                 afkCurrentTime = 0;
         }
-        if (afkCurrentTime >= afkTimer && !tutorialAppered)
+        if (afkCurrentTime >= afkTimer)
         {
             if (currentCard != null) 
             {
                 currentCard.StartAutoSwipe();
-                tutorialAppered = true;
             }
         }
     
