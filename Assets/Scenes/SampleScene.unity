@@ -882,8 +882,8 @@ MonoBehaviour:
   muteBar: {fileID: 990567183}
   slider: {fileID: 586036210}
   volumeSlider: {fileID: 586036210}
-  stages: {fileID: 620860812}
-  minigames: {fileID: 1232448734}
+  stages: {fileID: 0}
+  minigames: {fileID: 0}
 --- !u!114 &519420037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -898,8 +898,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultCursor: {fileID: 2800000, guid: c1eeb271071cfd54c9ecd89f2c280427, type: 3}
   interactCursor: {fileID: 2800000, guid: d5d73e1b67d62b945801c7ed0cce4af9, type: 3}
-  offsetCursor: {x: 22, y: 0}
-  offsetSelect: {x: 10.5, y: 0}
+  offsetCursor: {x: 2.514, y: 0}
+  offsetSelect: {x: 1.204, y: 0}
 --- !u!224 &553080285 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2439692815482650179, guid: 0649f0af9ca193e4a85109034d7abb39, type: 3}
